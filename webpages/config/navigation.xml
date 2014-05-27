@@ -27,9 +27,9 @@
             <label xml:lang="de">Haftungshinweise</label>
             <label xml:lang="en">Disclaimer</label>
         </item>
-        <item href="/content/rights/rights.xml" replaceMenu="false" constrainPopUp="false" template="undefined">
-            <label xml:lang="de">Datenschutzs</label>
-            <label xml:lang="en">Rights</label>
+        <item href="/content/rights/privacy.xml" replaceMenu="false" constrainPopUp="false" template="undefined">
+            <label xml:lang="de">Datenschutz</label>
+            <label xml:lang="en">Privacy</label>
         </item>
         <item href="/content/rights/impressum.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Impressum</label>
