@@ -23,7 +23,7 @@
             <label xml:lang="de">Urheberrecht</label>
             <label xml:lang="en">Rights</label>
         </item>
-        <item href="/content/brand/disclaimer.xml" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/rights/disclaimer.xml" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Haftungshinweise</label>
             <label xml:lang="en">Disclaimer</label>
         </item>
