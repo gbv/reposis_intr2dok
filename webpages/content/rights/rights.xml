@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Urheberrecht">
+    <div>
+      <h2>Urheberrecht</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Urheberrechtliche Rahmenbedingungen</h3>
+          <p>Während die Erstpublikation von Originalbeiträgen auf &lt;intr&gt;²Dok unter urheberrechtlichem Aspekt in aller Regel unproblematisch ist, ergeben sich bei der Zweitveröffentlichung zuvor bereits in gedruckter oder elektronischer Form in monographischen Sammelwerken und abonnementpflichtigen Zeitschriften erschienener Aufsätze regelmäßig Fragen nach der Zulässigkeit.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Zweitveröffentlichungsrecht aus Kulanz</h3>
+          <p>Bei der Klärung Ihrer Zweitveröffentlichungsrechte unterstützt Sie das nahtlos in das Upload-Verfahren von &lt;intr&gt;²Dok eingebundene SHERPA/RoMEO-Verzeichnis1, das die Bedingungen zahlreicher internationaler Wissenschaftsverlage und einzelner Fachzeitschriften in Hinblick auf eine mögliche Zweitveröffentlichung im Open Access dokumentiert und nach einer vierteiligen Typologie klassifiziert. Dabei reicht das Spektrum von Verlagen, die eine nicht-kommerzielle Zweitveröffentlichung auf institutionellen oder disziplinären Repositorien prinzipiell verweigern, bis hin zu Zeitschriften, deren Inhalte für eine Open Access-Publikation in der zum Druck akzeptierten Manuskriptversion oder sogar im tatsächlichen Verlagslayout freigegeben sind. Bitte beachten Sie, dass etwaige abweichende Vereinbarungen Ihres jeweiligen Verlagsvertrags von den rechtlich ohnehin unverbindlichen Angaben des SHERPA/RoMEO-Verzeichnisses in jedem Fall unberührt bleiben.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Abdingbares Zweitveröffentlichungsrecht</h3>
+          <p>Wurde dagegen kein expliziter Verlagsvertrag geschlossen, so sind in diesem Zusammenhang vorrangig die Bestimmungen der Abätze eins und zwei des novellierten § 38 UrhG zu berücksichtigen, der bei nicht finanziell honorierten Publikationen in monographischen, nicht periodisch erscheinenden Sammlungen – etwa Handbüchern, Festschriften oder Kongressbänden – sowie bei Veröffentlichungen in Zeitschriften und Jahrbüchern zur Anwendung kommt. Gemäß dieser Norm erwirbt der Verlag für die Vervielfältigung, Verbreitung und öffentliche Zugänglichmachung eines entsprechenden Werks im Zweifel zwar ein ausschließliches Nutzungsrecht, dennoch aber dürfen Sie Ihren Beitrag nach Ablauf einer Embargofrist von zwölf Monaten anderweit und damit auch auf &lt;intr&gt;²Dok zweitverwerten – unter dem Vorbehalt, dass nichts anderes vereinbart wurde.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Unabdingbares Zweitveröffentlichungsrecht</h3>
+          <p>Sollte ihr wissenschaftlicher Aufsatz allerdings im Rahmen einer mindestens zur Hälfte mit öffentlichen (Dritt)Mitteln geförderten Forschungstätigkeit entstanden und in einer periodisch mindestens zweimal jährlich erscheinenden Sammlung veröffentlicht worden sein, so können Sie von den seit 1. Januar 2014 novellierten Schrankenregelungen in § 38 Abs. 4 UrhG profitieren. Selbst wenn Sie einem Verlag ein ausschließliches Nutzungsrecht an einem solchen Beitrag eingeräumt und anderweitige Vereinbarungen zu Ihrem Nachteil getroffen haben, sind Sie nämlich auf der Grundlage dieser Norm frei, das Werk nach Ablauf von zwölf Monaten seit der Erstveröffentlichung in der akzeptierten Manuskriptversion – also nicht im Verlagslayout – öffentlich zugänglich zu machen, soweit dies keinem gewerblichen Zweck dient.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="administrator" date="2014-05-23" time="23:32" />
+  </meta>
+</MyCoReWebPage>

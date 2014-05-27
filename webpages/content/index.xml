@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Willkommen bei &lt;intR&gt;²Dok!">
+    <div class="container jumbotwo">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>
+            <a href="/IntR2Dok/content/brand/who.xml"><span class="glyphicon glyphicon-heart">WER sind wir</span></a>
+          </h3>
+          <p>
+            Das mit Unterstützung der Deutschen Forschungsgemeinschaft
+            <sup>
+              <a href="http://www.dfg.de/">[1]</a>
+            </sup>
+            realisierte disziplinäre Repositorium &lt;intR&gt;²Dok ist die zentrale Publikationsplattform des an der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz
+            <sup>
+              <a href="http://staatsbibliothek-berlin.de/">[2]</a>
+            </sup>
+            angesiedelten Fachinformationsdiensts für internationale und interdisziplinäre Rechtsforschung
+            <sup>
+              <a href="http://staatsbibliothek-berlin.de/recherche/fachgebiete/rechtswissenschaft/">[3]</a>
+            </sup>
+            .
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h3>
+            <a href="/IntR2Dok/content/brand/what.xml"><span class="glyphicon glyphicon-check">WAS sammeln wir</span></a>
+          </h3>
+          <p>Als erstes rechtswissenschaftliches Fachrepositorium in Deutschland ist &lt;intR&gt;²Dok dem Ziel verpflichtet, offenen und kostenfreien Zugang zu qualitätsgesicherten wissenschaftlichen Originalbeiträgen und Zweitveröffentlichungen aus allen Bereichen der internationalen und interdisziplinären Rechtsforschung dauerhaft sicherzustellen.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>
+            <a href="/IntR2Dok/content/brand/how.xml"><span class="glyphicon glyphicon-flash">WIE geht es</span></a>
+          </h3>
+          <p>Als Serviceangebot des Fachinformationsdiensts für internationale und interdisziplinäre Rechtsforschung ist das Publizieren auf &lt;intR&gt;²Dok an eine Registrierung gebunden, die vorrangig dem wissenschaftlichen Personal universitärer wie außeruniversitärer Forschungseinrichtungen in Deutschland offen steht.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="administrator" date="2014-05-23" time="21:37" />
+  </meta>
+</MyCoReWebPage>
