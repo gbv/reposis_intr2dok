@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-  <section xml:lang="de" title="neuer Eintrag">
-    <p>TODO</p>
+  <section xml:lang="de" title="&lt;intR&gt;²Dok - Kontakt">
+    <div>
+      <h2>Kontakt</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            TODO
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
   <meta>
     <log lastEditor="administrator" date="2014-05-23" time="23:35" />
