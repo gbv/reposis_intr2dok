@@ -98,7 +98,9 @@
                 <div class="col-md-3">
                   <h4>Institutionelles</h4>
                   <ul class="internal_links">
-                    <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='institution']/*" />
+                    <li><a href="http://www.staatsbibliothek-berlin.de/"><img src="{$WebApplicationBaseURL}/content/images/SBB_Logo.png" style="height:15px;float:left;" /> SBB</a></li>
+                    <li><a href="http://dfg.de/"><img src="{$WebApplicationBaseURL}/content/images/dfg_logo_grey.jpg" style="height:15px;float:left;" /> DFG</a></li>
+                    <li><a href="http://www.open-access.net/"><img src="{$WebApplicationBaseURL}/content/images/OpenAccess_Logo_grey.jpg" style="height:15px;float:left;" /> Open Access</a></li>
                   </ul>
                 </div>
             </div>
