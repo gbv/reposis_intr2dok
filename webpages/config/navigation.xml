@@ -43,6 +43,18 @@
             <label xml:lang="de">Grundlagen</label>
             <label xml:lang="en">Basics</label>
         </item>
+        <item href="http://www.gbv.de/" type="extern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">GBV</label>
+            <label xml:lang="en">GBV</label>
+        </item>
+        <item href="http://www.mycore.de/" type="extern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">MyCoRe</label>
+            <label xml:lang="en">MyCoRe</label>
+        </item>
+        <item href="http://www.dini.de/" type="extern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">DINI</label>
+            <label xml:lang="en">DINI</label>
+        </item>
     </menu>
     <menu id="social" dir="/content/social">
         <label xml:lang="de">Soziales</label>
