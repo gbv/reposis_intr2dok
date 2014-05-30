@@ -45,7 +45,7 @@
         <xsl:if test="//div/@class='container jumbotwo'">
           <div class="jumbotron">
              <div class="container">
-               <h1>&lt;intR>²Dok</h1>
+               <h1><img src="images/logo_intR2Dok.png" title="IntR2Dok - Logo" class="intR2Dok_logo" alt="&lt;intR&gt;²Dok [§]" /></h1>
                <h2>Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung</h2>
              </div>
           </div>
