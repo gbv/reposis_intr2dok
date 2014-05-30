@@ -91,7 +91,7 @@
                 <div class="col-md-2">
                   <h4>Soziales</h4>
                   <ul class="social_links">
-                      <li><a href="#"><button type="button" class="social_icons social_icon_tw"></button>Twitter</a></li>
+                      <li><a href="http://twitter.com/vifarecht"><button type="button" class="social_icons social_icon_tw"></button>Twitter</a></li>
                       <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
                   </ul>
                 </div>
