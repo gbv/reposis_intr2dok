@@ -17,7 +17,7 @@
             </span>
           </button>
           <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}" class="navbar-brand">
-            <span id="logo_mir">&lt;intR>&#178;Dok</span>
+            <img src="images/logo_intR2Dok.png" title="IntR2Dok - Logo" class="intR2Dok_logo_small" alt="&lt;intR&gt;²Dok [§]" />
             <span id="logo_modul">Repositorium</span>
             <!-- span id="logo_slogan">mods institutional repository</span -->
           </a>
