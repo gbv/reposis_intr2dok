@@ -53,8 +53,13 @@
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" />
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='main']" />
             <xsl:call-template name="mir.basketMenu" />
-            <!-- xsl:call-template name="mir.searchMenu" / -->
           </ul>
+          <form action="{$WebApplicationBaseURL}servlets/solr/find?qry={0}" class="navbar-form navbar-left pull-right" role="search">
+            <div class="form-group">
+              <input name="qry" placeholder="Search" class="form-control search-query" id="searchInput" type="text" />
+            </div>
+            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+          </form>
         </nav>
       </div><!-- /container -->
     </div>

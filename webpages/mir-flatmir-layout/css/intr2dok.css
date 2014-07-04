@@ -1,0 +1,120 @@
+#searchInput {
+    padding: 4px 15px;
+    height: auto;
+    margin-top: 4px;
+}
+div.preview {
+    position: relative;
+}
+span.number {
+    position: absolute;
+    left: -50px;
+    top:-1px;
+    font-size: 22px;
+    color: #ddd;
+    border: 1px solid #ECF0F1;
+    border-radius: 30%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 6px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    border-top-color: #ccc;
+    border-left-color: #ccc;
+}
+#resultList a {
+    margin-left: 0px;
+    font-size: 16px;
+}
+.top-head h3 span {
+    font-size: 160%;
+}
+.top-head h3 a {
+    color: #999;
+}
+.top-head h3 {
+    margin: 26px 0px 10px 0px;
+}
+article {
+    position: relative;
+}
+#resultList li {
+    border-bottom: 0px solid #DDD;
+}
+#resultList ul.actions {
+    float: right;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: #fff;
+    border-radius: 3px;
+
+}
+#resultList ul.actions li {
+    border: none;
+    margin: 0 10px 4px 0;
+
+}
+#resultList ul.actions li i{
+    padding-right: 4px;
+    vertical-align: middle;
+}
+.hit_links {
+    margin: 10px 0px 10px 10px;
+}
+.files ul {
+    list-style: none;
+    margin: 10px 0 10px 10px;
+    padding: 0;
+}
+.files ul li {
+    border: none;
+    border-bottom: none;
+    border-left: 5px solid #ddd;
+    padding-left: 5px;
+    margin: 0 0 2px 0;
+}
+.hitInFileLabel {
+    text-transform: capitalize;
+    color: #999;
+}
+.date p {
+    margin: 0 0 0 0;
+    padding: 0;
+}
+.date {
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    margin: 0 0 4px 0;
+    font-size: 12px;
+    color: #999;
+}
+section {
+    margin-bottom: 5px;
+}
+section > span:first-child {
+    color: #999;
+    padding-right: 10px;
+}
+#resultList article.result aside {
+    margin: 0em 1em 0em 0em;
+}
+#resultList .well {
+    background-color: #f6f6f6;
+    border-radius: 0;
+}
+#resultList article.result {
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-top-color: #ccc;
+    border-bottom-color: #eee;
+}
+.summary p {
+    font-size: 16px;
+    margin-left: 10px;
+}

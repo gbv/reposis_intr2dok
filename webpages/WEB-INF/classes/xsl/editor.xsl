@@ -647,8 +647,7 @@
     <xsl:text>top=100, left=100, scrollbars=yes, status=no</xsl:text>
   </xsl:variable>
 
-  <!-- input tabindex="9999" type="image" onClick="window.open('{$url}','help','{$properties}');return false;" src="{$WebApplicationBaseURL}images/help-button.png" -->
-  <input tabindex="9999" type="button" onClick="window.open('{$url}','help','{$properties}');">
+  <input tabindex="9999" type="image" onClick="window.open('{$url}','help','{$properties}');return false;" src="{$WebApplicationBaseURL}images/help-button.png">
     <xsl:call-template name="editor.set.css" />
     <xsl:attribute name="value">
       <xsl:choose>

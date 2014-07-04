@@ -31,6 +31,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="//netdna.bootstrapcdn.com/font-awesome/{$fontawesome.version}/css/font-awesome.min.css" rel="stylesheet" />
         <link href="{$WebApplicationBaseURL}mir-flatmir-layout/css/layout.css" rel="stylesheet" />
+        <link href="{$WebApplicationBaseURL}mir-flatmir-layout/css/intr2dok.css" rel="stylesheet" />
         <script type="text/javascript" src="//code.jquery.com/jquery-{$jquery.version}.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-{$jquery.migrate.version}.min.js"></script>
       </head>
@@ -116,13 +117,18 @@
           if (jQuery.fn.button){jQuery.fn.btn = jQuery.fn.button.noConflict();}
         </script>
         <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/{$bootstrap.version}/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{$WebApplicationBaseURL}js/jquery.confirm.min.js"></script>
         <script type="text/javascript" src="{$WebApplicationBaseURL}js/mir/base.js"></script>
-<!--         <script src="{$WebApplicationBaseURL}mir-flatmir-layout/datepicker/js/bootstrap-datepicker.js"></script> -->
         <script>
           $( document ).ready(function() {
             $('.overtext').tooltip();
-    //        $('#start_date').datepicker();
-    //        $('#end_date').datepicker();
+            $.confirm.options = {
+              text: "<xsl:value-of select="i18n:translate('mir.confirm.text')" />",
+              title: "<xsl:value-of select="i18n:translate('mir.confirm.title')" />",
+              confirmButton: "<xsl:value-of select="i18n:translate('mir.confirm.confirmButton')" />",
+              cancelButton: "<xsl:value-of select="i18n:translate('mir.confirm.cancelButton')" />",
+              post: false
+            }
           });
         </script>
       </body>
