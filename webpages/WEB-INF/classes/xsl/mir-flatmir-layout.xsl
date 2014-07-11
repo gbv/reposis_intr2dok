@@ -103,9 +103,9 @@
                 <div class="col-md-3">
                   <h4>Institutionelles</h4>
                   <ul class="internal_links">
-                    <li><a style="margin:0 0 10px 27px;" href="http://www.staatsbibliothek-berlin.de/"><img src="{$WebApplicationBaseURL}/content/images/logo_sbb.png" /></a></li>
-                    <li><a style="margin:0 0 10px 0px;"  href="http://dfg.de/"><img src="{$WebApplicationBaseURL}/content/images/logo_dfg.png" /></a></li>
-                    <li><a style="margin:0 0 0px 10px;"  href="http://www.open-access.net/"><img src="{$WebApplicationBaseURL}/content/images/logo_oa.png" /></a></li>
+                    <li><a href="http://www.staatsbibliothek-berlin.de/"><img style="margin:0 0 10px 27px;" src="{$WebApplicationBaseURL}/content/images/logo_sbb.png" /></a></li>
+                    <li><a href="http://dfg.de/"><img style="margin:0 0 10px 0px;" src="{$WebApplicationBaseURL}/content/images/logo_dfg.png" /></a></li>
+                    <li><a href="http://www.open-access.net/"><img style="margin:0 0 0px 10px;" src="{$WebApplicationBaseURL}/content/images/logo_oa.png" /></a></li>
                   </ul>
                 </div>
             </div>
