@@ -18,7 +18,7 @@
           </button>
           <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}" class="navbar-brand">
             <img src="{$WebApplicationBaseURL}content/images/logo_intR2Dok_small.png" title="IntR2Dok - Logo" class="intR2Dok_logo_small" alt="&lt;intR&gt;²Dok [§]" />
-            <span id="logo_modul">Repositorium</span>
+            <!-- span id="logo_modul">Repositorium</span -->
             <!-- span id="logo_slogan">mods institutional repository</span -->
           </a>
         </div>
@@ -51,7 +51,6 @@
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='search']" />
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='browse']" />
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" />
-            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='main']" />
             <xsl:call-template name="mir.basketMenu" />
           </ul>
           <form action="{$WebApplicationBaseURL}servlets/solr/find?qry={0}" class="navbar-form navbar-left pull-right" role="search">
