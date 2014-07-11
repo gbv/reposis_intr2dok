@@ -6,12 +6,9 @@
       <div class="row">
         <div class="col-md-12">
           <p>
-            Benötigen Sie Hilfe bei der Suche nach Material zur rechtswissenschaftlichen Forschung?</p>
-          <p>
-            Der Fachinformationsdienst Recht der Staatsbibliothek zu Berlin bietet Ihnen Kurzinformationen und Unterstützung bei
-            der Recherche. Dieses Angebot ist kostenlos und kann von allen Rechtswissenschaftlerinnen und Rechtswissenschaftlern
-            genutzt werden. Bitte beachten Sie, dass dieser Dienst <b>keine Rechtsberatung</b> darstellt! Weitere Informationen zum
-            <a name="dienstleistung" href="#dienstleistung">Dienstleistungsumfang</a>.
+            Bitte beachten Sie, dass der Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung keine
+            Rechtsberatung anbietet, die über die Klärung von allgemeinen Fragen zu den urheberrechtlichen Rahmenbedingungen
+            des Open Access-Publizierens hinausgeht.
           </p>
           <script language="JavaScript" src="http://www.questionpoint.org/crs/html/admin/patronform.js"></script>
           <script language="JavaScript" src="http://www.questionpoint.org/crs/html/admin/patron.js"></script>
@@ -72,26 +69,6 @@
             <input type="submit" value="Frage senden" onclick="validate(); return false" style="display: inline; margin: 0 1em 0 0" />
             <input type="reset" value="Formular leeren" style="display: inline" />
           </form>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Dienstleitungsumfang</h3>
-          <ul>
-            <li>Wir unterstützen Sie bei der Literaturrecherche in Katalogen, Bibliographien und Datenbanken und nehmen
-              aufgrund Ihrer Anfrage gegebenenfalls auch Einsicht in Bestände des Sondersammelgebietes Recht der
-              Staatsbibliothek zu Berlin.</li>
-            <li>
-              Wir beantworten Ihre Fragen schnellstmöglich. Wenn die Bearbeitung innerhalb einer Woche nicht möglich ist,
-              erhalten Sie von uns einen Zwischenbescheid. Informationen zu Reproduktionsmöglichkeiten in der Staatsbibliothek
-              zu Berlin finden Sie auf der Seite
-              <a href="http://www.staatsbibliothek-berlin.de/?id=146">Digitalisate und Reproduktionen</a>
-              .
-            </li>
-            <li>Bei umfangreichen Anfragen behalten wir uns die Überprüfung von maximal 10 Positionen vor.</li>
-            <li>Nicht zu unserem Leistungsumfang zählen Literaturzusammenstellungen, Wertermittlungen, Transkriptionen und
-              Übersetzungen, kommerzielle Empfehlungen sowie juristische Beratung.</li>
-          </ul>
         </div>
       </div>
     </div>
