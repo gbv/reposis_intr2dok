@@ -96,16 +96,16 @@
                 <div class="col-md-2">
                   <h4>Soziales</h4>
                   <ul class="social_links">
-                      <li><a href="http://twitter.com/vifarecht"><button type="button" class="social_icons social_icon_tw"></button>Twitter</a></li>
+                      <li><a href="http://twitter.com/vifarecht"><img src="{$WebApplicationBaseURL}/content/images/logo_twitter.png" style="float:left;" />#vifarecht</a></li>
                       <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
                   </ul>
                 </div>
                 <div class="col-md-3">
                   <h4>Institutionelles</h4>
                   <ul class="internal_links">
-                    <li><a href="http://www.staatsbibliothek-berlin.de/"><img src="{$WebApplicationBaseURL}/content/images/SBB_Logo.png" style="height:15px;float:left;" /> SBB</a></li>
-                    <li><a href="http://dfg.de/"><img src="{$WebApplicationBaseURL}/content/images/dfg_logo_grey.jpg" style="height:15px;float:left;" /> DFG</a></li>
-                    <li><a href="http://www.open-access.net/"><img src="{$WebApplicationBaseURL}/content/images/OpenAccess_Logo_grey.jpg" style="height:15px;float:left;" /> Open Access</a></li>
+                    <li><a href="http://www.staatsbibliothek-berlin.de/"><img src="{$WebApplicationBaseURL}/content/images/logo_sbb.png" /></a></li>
+                    <li><a href="http://dfg.de/"><img src="{$WebApplicationBaseURL}/content/images/logo_dfg.png" /></a></li>
+                    <li><a href="http://www.open-access.net/"><img src="{$WebApplicationBaseURL}/content/images/logo_oa.png" /></a></li>
                   </ul>
                 </div>
             </div>
