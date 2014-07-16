@@ -75,9 +75,6 @@
         <footer class="panel-footer flatmir-footer" role="contentinfo">
           <div class="container">
             <div class="row">
-              <div class="col-md-1">
-                <!-- placeholder -->
-              </div>
               <div class="col-md-2">
                 <h4>Über uns</h4>
                 <ul class="internal_links">
@@ -103,7 +100,7 @@
                     <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
                 </ul>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <h4>Institutionelles</h4>
                 <ul class="internal_links">
                   <li><a href="http://www.staatsbibliothek-berlin.de/"><img style="margin:0 0 10px 27px;" src="{$WebApplicationBaseURL}/content/images/logo_sbb.png" /></a></li>
