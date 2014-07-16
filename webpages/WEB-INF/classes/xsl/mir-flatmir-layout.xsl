@@ -109,9 +109,10 @@
                   </ul>
                 </div>
             </div>
+            <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
             <div class="row">
-              <div id="powered_by"  class="pull-right"><a href="http://www.mycore.de"><img src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" /></a></div>
-              <div id="mcr_version"><xsl:value-of select="concat('MyCoRe ',mcrver:getCompleteVersion())" /></div>
+              <div id="powered_by"  class="pull-right"><a href="http://www.mycore.de"><img title="$mcr_version" src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" /></a></div>
+              <!-- div id="mcr_version"><xsl:value-of select="$mcr_version" /></div -->
             </div>
           </div>
         </footer>
