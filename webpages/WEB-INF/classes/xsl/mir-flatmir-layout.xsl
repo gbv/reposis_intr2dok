@@ -13,7 +13,7 @@
   <xsl:param name="MIR.DefaultLayout.CSS" select="'flatly.min'" />
   <xsl:param name="MIR.CustomLayout.CSS" select="''" />
   <!-- Various versions -->
-  <xsl:variable name="bootstrap.version" select="'3.1.1'" />
+  <xsl:variable name="bootstrap.version" select="'3.2.0'" />
   <xsl:variable name="bootswatch.version" select="$bootstrap.version" />
   <xsl:variable name="fontawesome.version" select="'4.0.3'" />
   <xsl:variable name="jquery.version" select="'1.11.0'" />
@@ -34,7 +34,7 @@
         <link href="//netdna.bootstrapcdn.com/font-awesome/{$fontawesome.version}/css/font-awesome.min.css" rel="stylesheet" />
         <link href="{$WebApplicationBaseURL}mir-flatmir-layout/css/{$MIR.DefaultLayout.CSS}.css" rel="stylesheet" />
         <xsl:if test="string-length($MIR.CustomLayout.CSS) &gt; 0">
-          <link href="{$WebApplicationBaseURL}mir-flatmir-layout/css/{$MIR.CustomLayout.CSS}" rel="stylesheet" />
+          <link href="{$WebApplicationBaseURL}css/{$MIR.CustomLayout.CSS}" rel="stylesheet" />
         </xsl:if>
         <script type="text/javascript" src="//code.jquery.com/jquery-{$jquery.version}.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-{$jquery.migrate.version}.min.js"></script>
@@ -75,39 +75,42 @@
         <footer class="panel-footer flatmir-footer" role="contentinfo">
           <div class="container">
             <div class="row">
+              <div class="col-md-1">
+                <!-- placeholder -->
+              </div>
               <div class="col-md-2">
                 <h4>Über uns</h4>
-                  <ul class="internal_links">
-                    <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
-                  </ul>
-                </div>
-                <div class="col-md-2">
-                  <h4>Rechtliches</h4>
-                  <ul class="internal_links">
-                    <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='rights']/*" />
-                  </ul>
-                </div>
-                <div class="col-md-2">
-                  <h4>Technisches</h4>
-                  <ul class="internal_links">
-                    <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='technical']/*" />
-                  </ul>
-                </div>
-                <div class="col-md-2">
-                  <h4>Soziales</h4>
-                  <ul class="social_links">
-                      <li><a href="http://twitter.com/vifarecht"><img src="{$WebApplicationBaseURL}/content/images/logo_twitter.png" style="margin-right:5px;float:left;" />@vifarecht</a></li>
-                      <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
-                  </ul>
-                </div>
-                <div class="col-md-4">
-                  <h4>Institutionelles</h4>
-                  <ul class="internal_links">
-                    <li><a href="http://www.staatsbibliothek-berlin.de/"><img style="margin:0 0 10px 27px;" src="{$WebApplicationBaseURL}/content/images/logo_sbb.png" /></a></li>
-                    <li><a href="http://dfg.de/"><img style="margin:0 0 10px 0px;" src="{$WebApplicationBaseURL}/content/images/logo_dfg.png" /></a></li>
-                    <li><a href="http://www.open-access.net/"><img style="margin:0 0 0px 10px;" src="{$WebApplicationBaseURL}/content/images/logo_oa.png" /></a></li>
-                  </ul>
-                </div>
+                <ul class="internal_links">
+                  <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <h4>Rechtliches</h4>
+                <ul class="internal_links">
+                  <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='rights']/*" />
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <h4>Technisches</h4>
+                <ul class="internal_links">
+                  <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='technical']/*" />
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <h4>Soziales</h4>
+                <ul class="social_links">
+                    <li><a href="http://twitter.com/vifarecht"><img src="{$WebApplicationBaseURL}/content/images/logo_twitter.png" style="margin-right:5px;float:left;" />@vifarecht</a></li>
+                    <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4>Institutionelles</h4>
+                <ul class="internal_links">
+                  <li><a href="http://www.staatsbibliothek-berlin.de/"><img style="margin:0 0 10px 27px;" src="{$WebApplicationBaseURL}/content/images/logo_sbb.png" /></a></li>
+                  <li><a href="http://dfg.de/"><img style="margin:0 0 10px 0px;" src="{$WebApplicationBaseURL}/content/images/logo_dfg.png" /></a></li>
+                  <li><a href="http://www.open-access.net/"><img style="margin:0 0 0px 10px;" src="{$WebApplicationBaseURL}/content/images/logo_oa.png" /></a></li>
+                </ul>
+              </div>
             </div>
             <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
             <div class="row">

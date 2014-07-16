@@ -1,9 +1,15 @@
 h3 > a {
-    color: #9E1B34;
+  color: #9E1B34;
 }
 
-.mir-main-nav{
-  background-color:#A9A9A9;
+.mir-main-nav {
+  box-shadow: none;
+  background-color: #4b0c18;
+  color: #9E1B34;
+}
+
+.flatmir-footer {
+  background-color: #4b0c18
 }
 
 #main_content{
@@ -15,17 +21,23 @@ a #logo_mir,a #logo_slogan{
 }
 
 .jumbotron{
-  background:-webkit-linear-gradient(70deg, #666666 30%, #F6F6F6 87%, #F6F6F6 100%);
-  background:-o-linear-gradient(70deg, #666666 30%, #A9A9A9 87%, #F6F6F6 100%);
-  background:-ms-linear-gradient(70deg, #666666 30%, #A9A9A9 87%, #F6F6F6 100%);
-  background:-moz-linear-gradient(70deg, #666666 30%, #A9A9A9 87%, #F6F6F6 100%);
-  background:linear-gradient(20deg, #666666 30%, #A9A9A9 87%, #E6E6E6 100%);
+  background:-webkit-linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
+  background:-o-linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
+  background:-ms-linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
+  background:-moz-linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
+  background:linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
+  border-bottom: 1px solid #B7B7B7;
 }
 
 .jumbotron h1{
     color:#9E1B34;
     font-weight: bold;
     text-shadow: 0px 0px 10px #fff;
+}
+
+.jumbotron h2{
+    color:#9E1B34;
+    font-size:110%;
 }
 
 .jumbotwo h3 span{
