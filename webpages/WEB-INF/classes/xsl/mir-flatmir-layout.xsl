@@ -75,7 +75,7 @@
         <footer class="panel-footer flatmir-footer" role="contentinfo">
           <div class="container">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-2">
                 <h4>Über uns</h4>
                   <ul class="internal_links">
                     <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
@@ -100,7 +100,7 @@
                       <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
                   </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <h4>Institutionelles</h4>
                   <ul class="internal_links">
                     <li><a href="http://www.staatsbibliothek-berlin.de/"><img style="margin:0 0 10px 27px;" src="{$WebApplicationBaseURL}/content/images/logo_sbb.png" /></a></li>
@@ -111,7 +111,7 @@
             </div>
             <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
             <div class="row">
-              <div id="powered_by"  class="pull-right"><a href="http://www.mycore.de"><img title="$mcr_version" src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" /></a></div>
+              <div id="powered_by"  class="pull-right"><a href="http://www.mycore.de"><img title="{$mcr_version}" src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" /></a></div>
               <!-- div id="mcr_version"><xsl:value-of select="$mcr_version" /></div -->
             </div>
           </div>
