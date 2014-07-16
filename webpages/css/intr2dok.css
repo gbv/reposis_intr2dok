@@ -8,10 +8,6 @@ h3 > a {
   color: #9E1B34;
 }
 
-.flatmir-footer {
-  background-color: #4b0c18
-}
-
 #main_content{
   min-height:250px
 }
@@ -47,11 +43,11 @@ a #logo_mir,a #logo_slogan{
 
 .flatmir-footer{
   color:#F0F0F0;
-  background-color:#A9A9A9;
+  background-color:#4b0c18;
 }
 
 .flatmir-footer h4{
-  color:#9E1B34
+  color:#F0F0F0
 }
 
 .intR2Dok_logo_small {
