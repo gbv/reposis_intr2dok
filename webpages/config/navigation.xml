@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<navigation hrefStartingPage="/content/index.xml" dir="/content" template="template_mir">
+<navigation hrefStartingPage="/content/index.xml" dir="/content" template="undefined">
     <menu id="brand" dir="/content/brand">
         <label xml:lang="de">Über uns</label>
         <label xml:lang="en">About</label>

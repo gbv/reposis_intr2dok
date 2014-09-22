@@ -6,12 +6,19 @@
       <div class="row">
         <div class="col-md-12">
           <p>
-            Publikationsservice &lt;intR&gt;²Dok<br />
-            Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung<br />
-            Staatsbibliothek zu Berlin – Preußischer Kulturbesitz<br />
-            Potsdamer Straße 33<br />
-            D-10785 Berlin<br />
-            E-Mail: intr2dok@sbb.spk-berlin.de<br />
+            Publikationsservice &lt;intR&gt;²Dok
+            <br />
+            Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung
+            <br />
+            Staatsbibliothek zu Berlin – Preußischer Kulturbesitz
+            <br />
+            Potsdamer Straße 33
+            <br />
+            D-10785 Berlin
+            <br />
+            E-Mail:
+            <a href="mailto:intR2dok@sbb.spk-berlin.de">intR2dok@sbb.spk-berlin.de</a>
+            <br />
             <a href="http://www.vifa-recht.de/">http://www.vifa-recht.de/</a>
           </p>
         </div>
@@ -19,6 +26,6 @@
     </div>
   </section>
   <meta>
-    <log lastEditor="administrator" date="2014-05-23" time="23:35" />
+    <log lastEditor="cmathieu" date="2014-09-22" time="15:52" />
   </meta>
 </MyCoReWebPage>
