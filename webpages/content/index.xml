@@ -3,7 +3,7 @@
   <section xml:lang="de" title="Willkommen bei &lt;intR&gt;²Dok!">
     <div class="container jumbotwo">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" lang="de">
           <h3>
             <a href="brand/who.xml">WER wir sind</a>
           </h3>
@@ -14,7 +14,7 @@
             <a style="color:#9E1B34" title="mehr erfahren" href="brand/who.xml">[...]</a>
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" lang="de">
           <h3>
             <a href="brand/what.xml">WAS wir sammeln</a>
           </h3>
@@ -25,7 +25,7 @@
             <a style="color:#9E1B34" title="mehr erfahren" href="brand/what.xml">[...]</a>
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" lang="de">
           <h3>
             <a href="brand/how.xml">WIE es geht</a>
           </h3>

@@ -174,3 +174,12 @@ section > span:first-child {
     font-size: 16px;
     margin-left: 10px;
 }
+
+p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  text-rendering: optimizeLegibility;
+}
+
