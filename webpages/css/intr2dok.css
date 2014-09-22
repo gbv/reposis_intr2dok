@@ -181,5 +181,5 @@ p {
   -ms-hyphens: auto;
   hyphens: auto;
   text-rendering: optimizeLegibility;
+  line-height: 180%;
 }
-
