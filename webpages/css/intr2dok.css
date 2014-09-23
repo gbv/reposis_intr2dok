@@ -183,3 +183,26 @@ p {
   text-rendering: optimizeLegibility;
   line-height: 180%;
 }
+
+p.three_column {
+  -webkit-column-width: 300px;
+     -moz-column-width: 300px;
+          column-width: 300px;
+  -webkit-column-gap: 52px;
+     -moz-column-gap: 52px;
+          column-gap: 52px;
+}
+
+/* Logo nur 2 statt 15 Pixel vom Rand entfernt
+   Flucht liegt bei 13px vom linken Logo-Rand */
+.navbar-brand {
+    padding: 20px 2px;
+}
+/* Anmeldenknopf ohne rechten (und linken) Rand*/
+.nav > li > a#loginURL {
+    padding: 20px 0px;
+}
+/* Hauptmenü ohne linken (und rechten) Rand*/
+.mir-main-nav .navbar-form{
+    padding: 10px 0px;
+}

@@ -47,7 +47,7 @@
         </header>
 
         <!-- show only on startpage -->
-        <xsl:if test="//div/@class='container jumbotwo'">
+        <xsl:if test="//div/@class='jumbotwo'">
           <div class="jumbotron">
              <div class="container">
                <h1><img src="images/logo_intR2Dok.png" title="IntR2Dok - Logo" class="intR2Dok_logo" alt="&lt;intR&gt;²Dok [§]" /></h1>
