@@ -48,11 +48,15 @@
 
         <!-- show only on startpage -->
         <xsl:if test="//div/@class='jumbotwo'">
-          <div class="jumbotron">
-             <div class="container">
-               <h1><img src="images/logo_intR2Dok.png" title="IntR2Dok - Logo" class="intR2Dok_logo" alt="&lt;intR&gt;²Dok [§]" /></h1>
-               <h2>Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung</h2>
-             </div>
+          <div class="jumboHome">
+              <div class="container">
+                  <div class="col-md-6">
+                      <h1><img alt="<intR>²Dok [§]" class="intR2Dok_logo" title="IntR2Dok - Logo" src="images/logo_intR2Dok.png" /></h1>
+                  </div>
+                  <div class="col-md-6">
+                      <h2>Fachinformationsdienst für <br />internationale und interdisziplinäre<br /> Rechtsforschung</h2>
+                  </div>
+              </div>
           </div>
         </xsl:if>
 
