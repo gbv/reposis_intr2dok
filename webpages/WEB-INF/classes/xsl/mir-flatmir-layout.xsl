@@ -51,7 +51,7 @@
           <div class="jumboHome">
               <div class="container">
                   <div class="col-md-6">
-                      <h1><img alt="<intR>²Dok [§]" class="intR2Dok_logo" title="IntR2Dok - Logo" src="images/logo_intR2Dok.png" /></h1>
+                      <h1><img alt="&lt;intR>²Dok [§]" class="intR2Dok_logo" title="IntR2Dok - Logo" src="images/logo_intR2Dok.png" /></h1>
                   </div>
                   <div class="col-md-6">
                       <h2>Fachinformationsdienst für <br />internationale und interdisziplinäre<br /> Rechtsforschung</h2>

@@ -55,9 +55,9 @@
           </ul>
           <form action="{$WebApplicationBaseURL}servlets/solr/find?qry={0}" class="navbar-form navbar-right" role="search">
             <div class="form-group">
-              <input name="qry" placeholder="Search" class="form-control search-query" id="searchInput" type="text" />
+              <input id="searchInput" class="form-control search-query" placeholder="Suchbegriff eingeben" name="qry" type="text" />
+              <button class="btn btn-flat" type="submit"><i class="fa fa-search"></i></button>
             </div>
-            <button type="submit" class="btn btn-default" style="background-color:#9E1B34"><i class="fa fa-search"></i></button>
           </form>
         </nav>
       </div><!-- /container -->
