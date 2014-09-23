@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
   <section xml:lang="de" title="Willkommen bei &lt;intR&gt;²Dok!">
-    <div class="container jumbotwo">
+    <div class="jumbotwo">
       <div class="row">
         <div class="col-md-4" lang="de">
           <h3>
