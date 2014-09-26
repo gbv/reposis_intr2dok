@@ -61,18 +61,16 @@
         </xsl:if>
 
         <div class="container" id="page">
-          <div class="row">
-            <div class="col-md-12" id="main_content">
-              <xsl:call-template name="print.writeProtectionMessage" />
-              <xsl:choose>
-                <xsl:when test="$readAccess='true'">
-                  <xsl:copy-of select="*" />
-                </xsl:when>
-                <xsl:otherwise>
-                  <xsl:call-template name="printNotLoggedIn" />
-                </xsl:otherwise>
-              </xsl:choose>
-            </div>
+          <div id="main_content">
+            <xsl:call-template name="print.writeProtectionMessage" />
+            <xsl:choose>
+              <xsl:when test="$readAccess='true'">
+                <xsl:copy-of select="*" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:call-template name="printNotLoggedIn" />
+              </xsl:otherwise>
+            </xsl:choose>
           </div>
         </div>
 
@@ -88,38 +86,39 @@
               <div class="col-md-2">
                 <h4>Rechtliches</h4>
                 <ul class="internal_links">
-                  <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='rights']/*" />
+                  <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
                 </ul>
               </div>
               <div class="col-md-2">
                 <h4>Technisches</h4>
                 <ul class="internal_links">
-                  <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='technical']/*" />
+                  <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='rights']/*" />
                 </ul>
               </div>
               <div class="col-md-2">
                 <h4>Soziales</h4>
                 <ul class="social_links">
                     <li><a href="http://twitter.com/vifarecht"><img src="{$WebApplicationBaseURL}/content/images/logo_twitter.png" style="margin-right:5px;float:left;" />#vifarecht</a></li>
-                    <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
+                    <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='technical']/*" />
                 </ul>
               </div>
               <div class="col-md-4">
                 <h4>Institutionelles</h4>
-                <ul class="internal_links">
-                  <li><a href="http://www.staatsbibliothek-berlin.de/"><img style="margin:0 0 10px 27px;" src="{$WebApplicationBaseURL}/content/images/logo_sbb.png" /></a></li>
-                  <li><a href="http://dfg.de/"><img style="margin:0 0 10px 0px;" src="{$WebApplicationBaseURL}/content/images/logo_dfg.png" /></a></li>
-                  <li><a href="http://www.open-access.net/"><img style="margin:0 0 0px 10px;" src="{$WebApplicationBaseURL}/content/images/logo_oa.png" /></a></li>
+                <ul class="internal_links institutions">
+                  <li><a id="vfr" href="http://vifa-recht.de/"><img src="{$WebApplicationBaseURL}/content/images/logo-vfr.png" /></a></li>
+                  <li class="even_entry"><a id="sbb" href="http://www.staatsbibliothek-berlin.de/"><img src="{$WebApplicationBaseURL}/content/images/logo_sbb.png" /></a></li>
+                  <li><a id="dfg" href="http://dfg.de/"><img src="{$WebApplicationBaseURL}/content/images/logo_dfg.png" /></a></li>
+                  <li class="even_entry"><a id="oa" href="http://www.open-access.net/"><img src="{$WebApplicationBaseURL}/content/images/logo_oa.png" /></a></li>
                 </ul>
               </div>
             </div>
-            <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
-            <div class="row">
-              <div id="powered_by"  class="pull-right"><a href="http://www.mycore.de"><img title="{$mcr_version}" src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" /></a></div>
-              <!-- div id="mcr_version"><xsl:value-of select="$mcr_version" /></div -->
-            </div>
           </div>
         </footer>
+
+        <div class="row">
+          <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
+          <div id="powered_by"><a href="http://www.mycore.de"><img src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" /></a></div>
+        </div>
 
         <script type="text/javascript">
           <!-- Bootstrap & Query-Ui button conflict workaround  -->

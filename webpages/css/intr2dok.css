@@ -18,6 +18,10 @@ a #logo_mir,a #logo_slogan{
   color:#9E1B34
 }
 
+#powered_by {
+  background-color: #444;
+}
+
 .jumbotron{
   background:-webkit-linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
   background:-o-linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
@@ -271,4 +275,19 @@ p.three_column {
     letter-spacing: .180em;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+}
+
+.internal_links.institutions li {
+    float: left;
+    margin-bottom: 20px;
+}
+.internal_links.institutions .even_entry {
+    float: right;
+
+}
+.internal_links.institutions .even_entry li:after {
+    clear: both;
+}
+.internal_links.institutions #dfg img {
+    margin-top: 17px;
 }
