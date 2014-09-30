@@ -115,10 +115,8 @@
           </div>
         </footer>
 
-        <div class="row">
-          <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
-          <div id="powered_by"><a href="http://www.mycore.de"><img src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" /></a></div>
-        </div>
+        <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
+        <div id="powered_by"><a href="http://www.mycore.de"><img src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" /></a></div>
 
         <script type="text/javascript">
           <!-- Bootstrap & Query-Ui button conflict workaround  -->
