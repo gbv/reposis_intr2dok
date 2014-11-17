@@ -20,6 +20,7 @@
   <xsl:variable name="jquery.migrate.version" select="'1.2.1'" />
   <!-- End of various versions -->
   <xsl:variable name="PageTitle" select="/*/@title" />
+
   <xsl:template match="/site">
     <html lang="{$CurrentLang}" class="no-js">
       <head>
@@ -38,6 +39,8 @@
         </xsl:if>
         <script type="text/javascript" src="//code.jquery.com/jquery-{$jquery.version}.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-{$jquery.migrate.version}.min.js"></script>
+
+       <xsl:copy-of select="head/*" />
       </head>
 
       <body>
@@ -65,7 +68,7 @@
             <xsl:call-template name="print.writeProtectionMessage" />
             <xsl:choose>
               <xsl:when test="$readAccess='true'">
-                <xsl:copy-of select="*" />
+                <xsl:copy-of select="*[not(name()='head')]" />
               </xsl:when>
               <xsl:otherwise>
                 <xsl:call-template name="printNotLoggedIn" />
@@ -115,8 +118,13 @@
           </div>
         </footer>
 
+
         <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
-        <div id="powered_by"><a href="http://www.mycore.de"><img src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" /></a></div>
+        <div id="powered_by">
+          <a href="http://www.mycore.de">
+            <img src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
+          </a>
+        </div>
 
         <script type="text/javascript">
           <!-- Bootstrap & Query-Ui button conflict workaround  -->
@@ -139,5 +147,8 @@
         </script>
       </body>
     </html>
+  </xsl:template>
+  <xsl:template match="/*[not(local-name()='site')]">
+    <xsl:message terminate="yes">This is not a site document, fix your properties.</xsl:message>
   </xsl:template>
 </xsl:stylesheet>

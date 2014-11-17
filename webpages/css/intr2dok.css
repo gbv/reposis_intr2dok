@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
+html {
+  background-color: #FFFFFF;
+}
 h3 > a {
   color: #9E1B34;
 }
@@ -32,19 +35,19 @@ a #logo_mir,a #logo_slogan{
 }
 
 .jumbotron h1{
-    color:#9E1B34;
-    font-weight: bold;
-    text-shadow: 0px 0px 10px #fff;
+  color:#9E1B34;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px #fff;
 }
 
 .jumbotron h2{
-    color:#9E1B34;
-    font-size:110%;
+  color:#9E1B34;
+  font-size:110%;
 }
 
 .jumbotwo h3 span{
   padding-right:30px;
-    color: #9E1B34;
+  color: #9E1B34;
 }
 
 .flatmir-footer{
@@ -57,123 +60,12 @@ a #logo_mir,a #logo_slogan{
 }
 
 .intR2Dok_logo_small {
-    float: left;
+  float: left;
 }
 
-div.preview {
-    position: relative;
-}
-span.number {
-    position: absolute;
-    left: -50px;
-    top:-1px;
-    font-size: 22px;
-    color: #ddd;
-    border: 1px solid #ECF0F1;
-    border-radius: 30%;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-left-radius: 6px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    vertical-align: middle;
-    background-color: white;
-    border-top-color: #ccc;
-    border-left-color: #ccc;
-}
-#resultList a {
-    margin-left: 0px;
-    font-size: 16px;
-}
-.top-head h3 span {
-    font-size: 160%;
-}
-.top-head h3 a {
-    color: #999;
-}
-.top-head h3 {
-    margin: 26px 0px 10px 0px;
-}
-article {
-    position: relative;
-}
-#resultList li {
-    border-bottom: 0px solid #DDD;
-}
-#resultList ul.actions {
-    float: right;
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    background-color: #fff;
-    border-radius: 3px;
-
-}
-#resultList ul.actions li {
-    border: none;
-    margin: 0 10px 4px 0;
-
-}
-#resultList ul.actions li i{
-    padding-right: 4px;
-    vertical-align: middle;
-}
-.hit_links {
-    margin: 10px 0px 10px 10px;
-}
-.files ul {
-    list-style: none;
-    margin: 10px 0 10px 10px;
-    padding: 0;
-}
-.files ul li {
-    border: none;
-    border-bottom: none;
-    border-left: 5px solid #ddd;
-    padding-left: 5px;
-    margin: 0 0 2px 0;
-}
-.hitInFileLabel {
-    text-transform: capitalize;
-    color: #999;
-}
-.date p {
-    margin: 0 0 0 0;
-    padding: 0;
-}
-.date {
-    position: absolute;
-    top: 4px;
-    left: 0px;
-    margin: 0 0 4px 0;
-    font-size: 12px;
-    color: #999;
-}
-section {
-    margin-bottom: 5px;
-}
-section > span:first-child {
-    color: #999;
-    padding-right: 10px;
-}
-#resultList article.result aside {
-    margin: 0em 1em 0em 0em;
-}
-#resultList .well {
-    background-color: #f6f6f6;
-    border-radius: 0;
-}
-#resultList article.result {
-    border-radius: 3px;
-    border-top-left-radius: 0;
-    border-top-color: #ccc;
-    border-bottom-color: #eee;
-}
 .summary p {
-    font-size: 16px;
-    margin-left: 10px;
+  font-size: 16px;
+  margin-left: 10px;
 }
 
 p {
@@ -197,69 +89,30 @@ p.three_column {
 /* Logo nur 2 statt 15 Pixel vom Rand entfernt
    Flucht liegt bei 13px vom linken Logo-Rand */
 .navbar-brand {
-    padding: 20px 2px;
+  padding: 20px 2px;
 }
 /* Anmeldenknopf ohne rechten (und linken) Rand*/
 .nav > li > a#loginURL {
-    padding: 20px 0px;
+  padding: 20px 0px;
 }
 /* Hauptmenü ohne linken (und rechten) Rand*/
 .mir-main-nav .navbar-form {
-    padding: 0px 0px;
-    margin: 0px -15px;
+  padding: 0px 0px;
+  margin: 0px -15px;
 }
 .mir-main-nav .navbar-nav {
-    margin: 0px -15px;
+  margin: 0px -15px;
 }
 .mir-main-nav .navbar-nav a {
-    color: #f3f3f3;
+  color: #f3f3f3;
 }
 .mir-main-nav .navbar-form {
-    width: 360px;
-}
-#searchInput {
-    color: #f3f3f3;
-    background-color: #a9a9a9;
-    border-radius: 0;
-    border: none;
-    margin: 0;
-    padding: 0 20px 0 20px;
-    height: 60px;
-    width: 300px;
-    border-left: 1px solid #f3f3f3;
-}
-.btn-flat {
-    color: #bb0734;
-    background-color: #a9a9a9;
-    border-none;
-    border-radius: 0;
-    margin: 0;
-    padding: 0;
-    height: 60px;
-    width: 60px;
-    border-left: 1px solid #f3f3f3;
-    border-right: 1px solid #f3f3f3;
-}
-.btn-flat .fa-search {
-    font-size: 20px;
-}
-
-.form-control::-moz-placeholder{
-    color:#c3c3c3;
-    color: #f3f3f3;
-}
-.form-control:-ms-input-placeholder{
-    color:#c3c3c3;
-    color: #f3f3f3;
-}
-.form-control::-webkit-input-placeholder{
-    color:#c3c3c3;
-    color: #f3f3f3;
+  width: 360px;
 }
 
 .jumboHome {
-    height: 225px;
-    border-bottom: 1px solid #bb0734;
+  height: 225px;
+  border-bottom: 1px solid #bb0734;
 
 }
 .jumboHome h1 {
@@ -268,26 +121,26 @@ p.three_column {
 .jumboHome h1 img {
 }
 .jumboHome h2 {
-    margin-top: 67px;
-    color: #bb0734;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: .180em;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+  margin-top: 67px;
+  color: #bb0734;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: .180em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
 .internal_links.institutions li {
-    float: left;
-    margin-bottom: 20px;
+  float: left;
+  margin-bottom: 20px;
 }
 .internal_links.institutions .even_entry {
-    float: right;
+  float: right;
 
 }
 .internal_links.institutions .even_entry li:after {
-    clear: both;
+  clear: both;
 }
 .internal_links.institutions #dfg img {
-    margin-top: 17px;
+  margin-top: 17px;
 }
