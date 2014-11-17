@@ -96,18 +96,11 @@ p.three_column {
   padding: 20px 0px;
 }
 /* Hauptmenü ohne linken (und rechten) Rand*/
-.mir-main-nav .navbar-form {
-  padding: 0px 0px;
-  margin: 0px -15px;
-}
 .mir-main-nav .navbar-nav {
   margin: 0px -15px;
 }
 .mir-main-nav .navbar-nav a {
   color: #f3f3f3;
-}
-.mir-main-nav .navbar-form {
-  width: 360px;
 }
 
 .jumboHome {
