@@ -32,6 +32,7 @@ a #logo_mir,a #logo_slogan{
   background:-moz-linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
   background:linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
   border-bottom: 1px solid #B7B7B7;
+  color: #2C3E50;
 }
 
 .jumbotron h1{
