@@ -19,7 +19,7 @@
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/user-editor.xed" ref="failed-validation-messages" />
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/user-editor.xed" ref="userAccount" />
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/user-editor.xed" ref="editor4currentUser" />
-            <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/intr2dokuser-editor.xed" ref="institute" />
+            <xed:include uri="xslStyle:user-xeditor-templates:webapp:content/authorization/user-editor.xed" ref="institute" />
           </div>
           <div class="panel-footer clearfix">
             <div class="pull-right">
