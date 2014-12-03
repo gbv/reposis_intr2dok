@@ -12,7 +12,8 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">
-              <xed:output i18n="component.user2.admin.create.title" />
+              <!--<xed:output i18n="component.user2.admin.create.title" />-->
+              Erstregistrierung
             </h3>
           </div>
           <div class="panel-body">
