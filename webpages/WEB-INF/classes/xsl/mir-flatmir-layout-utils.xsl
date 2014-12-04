@@ -3,30 +3,21 @@
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
   <xsl:template name="mir.navigation">
 
-    <div class="navbar navbar-default mir-prop-nav">
-      <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".mir-prop-nav-entries">
-            <!-- TODO: translate -->
-            <span class="sr-only"> Toggle navigation </span>
-            <span class="icon-bar">
-            </span>
-            <span class="icon-bar">
-            </span>
-            <span class="icon-bar">
-            </span>
-          </button>
-          <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}" class="navbar-brand">
-            <img src="{$WebApplicationBaseURL}content/images/logo_intR2Dok_small.png" title="IntR2Dok - Logo" class="intR2Dok_logo_small" alt="&lt;intR&gt;²Dok [§]" />
-            <!-- span id="logo_modul">Repositorium</span -->
-            <!-- span id="logo_slogan">mods institutional repository</span -->
-          </a>
-        </div>
-        <nav class="collapse navbar-collapse mir-prop-nav-entries">
+    <div id="header_box" class="clearfix container">
+      <div id="options_nav_box" class="mir-prop-nav">
+        <nav>
           <ul class="nav navbar-nav pull-right">
             <xsl:call-template name="mir.loginMenu" />
           </ul>
         </nav>
+      </div>
+      <div id="project_logo_box">
+        <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"
+           class="">
+          <img src="{$WebApplicationBaseURL}content/images/logo_intR2Dok_small.png" title="IntR2Dok - Logo" class="intR2Dok_logo_small" alt="&lt;intR&gt;²Dok [§]" />
+          <!-- span id="logo_modul">Repositorium</span -->
+          <!-- span id="logo_slogan">mods institutional repository</span -->
+        </a>
       </div>
     </div>
 
@@ -48,6 +39,7 @@
         </div>
         <nav class="collapse navbar-collapse mir-main-nav-entries">
           <ul class="nav navbar-nav pull-left">
+            <!-- xsl:apply-templates select="$loaded_navigation_xml/menu[@id='search']" / -->
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='browse']" />
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" />
             <xsl:call-template name="mir.basketMenu" />
