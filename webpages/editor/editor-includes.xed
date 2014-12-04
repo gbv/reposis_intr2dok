@@ -56,6 +56,11 @@
   <xed:template id="title">
     <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" />
   </xed:template>
+  
+  <xed:template id="title.required">
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" />
+    <xed:validate xpath="mods:titleInfo/mods:title" required="true" />
+  </xed:template>
 
   <xed:template id="title.abbreviated">
     <mir:textfield xpath="mods:titleInfo[@type='abbreviated']/mods:title" label="mir.title.type.abbreviated" />
@@ -251,9 +256,17 @@
     </mir:person.repeated>
   </xed:template>
   
+  <xed:template id="thesisHabil.repeated">
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
+    <mir:person.repeated>
+      <option value="aut">
+        <xed:output i18n="mir.role.thesisHabil" />
+      </option>
+    </mir:person.repeated>
+  </xed:template>
+  
   <xed:template id="thesisHabil.reviewer.repeated">
     <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
-    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='rev']" />
     <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='rev']" />
     <mir:person.repeated>
       <option value="aut">
