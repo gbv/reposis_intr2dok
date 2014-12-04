@@ -23,6 +23,7 @@
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="realName" />
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="email" />
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/user-editor.xed" ref="passwords" />
+            <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-intr2dok-includes.xed" ref="institute" />
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="captcha" />
 
             <xed:validate display="global" xpath="/user"
