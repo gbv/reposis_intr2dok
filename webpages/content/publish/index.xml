@@ -6,11 +6,12 @@
   <section xml:lang="all">
 
 <div class="container">
-  <h1>Neue Publikation melden</h1>
+
+  <h1>Veröffentlichen einer Publikation</h1>
   <p>
-    Hier können Sie Ihre Publikation melden.
-    Über diese Auswahl gelangen Sie zu den gewünschten Eingabemasken, über die Sie Ihre Publikationen eintragen können.
-    Bitte wählen Sie den Publikationstyp:
+    Zur Veröffentlichung Ihres Beitrags auf &lt;intR>²Dok ist zunächst die Erfassung seiner bibliographischen Daten erforderlich. Dazu kombinieren Sie bitte
+    aus dem zweiteiligen Auswahlmenu – so im konkreten Fall überhaupt erforderlich – die dem Typus Ihrer Publikation entsprechende Erfassungsmaske. Bitte
+    beachten Sie, dass alle mit einen Asterisk „*“ gekennzeichneten Felder der jeweils gewählten Erfassungsmaske verpflichtend zu befüllen sind.
   </p>
   <form class="form-inline" role="form" method="get" action="../../editor/editor-dynamic.xed">
     <div class="form-group">
@@ -30,11 +31,11 @@
         <option title="Rezension" value="review">
           &#160;&#160;&#160;<text i18n="component.mods.genre.review" />
         </option>
-        <option title="Monographie" value="monograph">
-          <text i18n="component.mods.genre.monograph" />
-        </option>
         <option title="Buch" value="book">
-          &#160;&#160;&#160;<text i18n="component.mods.genre.book" />
+          <text i18n="component.mods.genre.book" />
+        </option>
+        <option title="Monographie" value="monograph">
+          &#160;&#160;&#160;<text i18n="component.mods.genre.monograph" />
         </option>
         <option title="Genuiner Open Access-Einzelbeitrag" value="book">
           &#160;&#160;&#160;Genuiner Open Access-Einzelbeitrag<!-- text i18n="component.mods.genre.book" / -->
@@ -62,7 +63,7 @@
         <option title="Bericht" value="report">
           Bericht<!-- text i18n="component.mods.genre.report" / -->
         </option>
-        <option title="Fachliche Stellungnahme" value="declaration">
+        <option title="Fachliche Stellungnahme / Gutachten" value="declaration">
           &#160;&#160;&#160;<text i18n="component.mods.genre.declaration" />
         </option>
         <option title="Zeitschrift" value="journal">
@@ -110,9 +111,6 @@
       <button type="submit" class="btn btn-default">OK</button>
     </div>
   </form>
-  <p>
-    ... oder Sie sind Admin und nutzen das <a href="../../editor/editor-admins.xed">ziemlich komplizierte Admin-Formular (für Admins)</a>.
-  </p>
 </div>
 
   </section>
