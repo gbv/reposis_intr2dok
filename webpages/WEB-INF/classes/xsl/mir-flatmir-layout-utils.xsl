@@ -41,7 +41,8 @@
           <ul class="nav navbar-nav pull-left">
             <!-- xsl:apply-templates select="$loaded_navigation_xml/menu[@id='search']" / -->
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='browse']" />
-            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" />
+            <!-- xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" / -->
+            <li id="publish"><a href="{$WebApplicationBaseURL}servlets/MCRActionMappingServlet/mods/create">Dokument einreichen</a></li>
             <xsl:call-template name="mir.basketMenu" />
           </ul>
           <form action="{$WebApplicationBaseURL}servlets/solr/find?qry={0}" class="navbar-form navbar-left pull-right" role="search">
