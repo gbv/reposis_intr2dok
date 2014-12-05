@@ -187,6 +187,10 @@
     <mir:role.repeated role="inv" label="mir.role.inventor" />
   </xed:template>
 
+  <xed:template id="advisor.repeated">
+    <mir:role.repeated role="ths" label="mir.role.advisor" />
+  </xed:template>
+
   <xed:template id="editor.honoree.repeated">
     <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='edt']" />
     <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='hnr']" />
@@ -227,16 +231,8 @@
   </xed:template>
 
   <xed:template id="thesis.advisor.repeated">
-    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
-    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='ths']" />
-    <mir:person.repeated>
-      <option value="aut">
-        <xed:output i18n="mir.role.thesis" />
-      </option>
-      <option value="ths">
-        <xed:output i18n="mir.role.advisor" />
-      </option>
-    </mir:person.repeated>
+    <mir:role.repeated role="aut" label="mir.role.thesis" />
+    <mir:role.repeated role="aut" label="mir.role.advisor" />
   </xed:template>
 
   <xed:template id="thesis.advisor.reviewer.repeated">
@@ -257,12 +253,7 @@
   </xed:template>
 
   <xed:template id="thesisHabil.repeated">
-    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
-    <mir:person.repeated>
-      <option value="aut">
-        <xed:output i18n="mir.role.thesisHabil" />
-      </option>
-    </mir:person.repeated>
+    <mir:role.repeated role="aut" label="mir.role.thesisHabil" />
   </xed:template>
 
   <xed:template id="thesisHabil.reviewer.repeated">
