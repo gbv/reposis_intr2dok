@@ -10,7 +10,7 @@
       Vor der Publikation Ihres Beitrags auf &lt;intR>²Dok ist eine einmalige Registrierung erforderlich. Zu diesem Zweck vervollständigen Sie bitte das folgende
       Formular unter Eingabe einer frei wählbaren Loginkennung sowie eines Passworts beliebiger Länge. Unmittelbar im Anschluss wird Ihnen ein Link an die angegebene
       E-Mail-Adresse zugesendet, dessen Aktivierung den Registrierungsvorgang abschließt. Mit Ihren Zugangsdaten können Sie sich nun jederzeit am Server von
-      &lt;intR>²Dok <a href="{$ServletsBaseURL}MCRLoginServlet?url=/content/index.xml">anmelden</a>, um beliebig viele Beiträge im Open Access zu publizieren.
+      &lt;intR>²Dok <a href="../servlets/MCRLoginServlet?url=../content/index.xml">anmelden</a>, um beliebig viele Beiträge im Open Access zu publizieren.
     </p>
     <br />
 
