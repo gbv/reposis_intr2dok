@@ -108,6 +108,9 @@ p {
 .mir-main-nav nav .navbar-nav > li > a:hover {
   background-color: #A9A9A9;
 }
+.navbar-form .form-group {
+    margin-bottom: 0px;
+}
 
 .jumboHome {
   border-bottom: 1px solid #bb0734;
@@ -153,6 +156,7 @@ p {
     height: 60px;
     width: 300px;
     border-left: 1px solid #f3f3f3;
+    float: right;
 }
 .btn-flat {
     color: #bb0734;
@@ -165,7 +169,6 @@ p {
     width: 60px;
     border-left: 1px solid #f3f3f3;
     border-right: 1px solid #f3f3f3;
-    float: right;
 }
 .btn-flat .fa-search {
     font-size: 20px;
