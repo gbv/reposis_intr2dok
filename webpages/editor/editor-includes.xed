@@ -57,11 +57,6 @@
     <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" />
   </xed:template>
 
-  <xed:template id="title.required">
-    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" />
-    <xed:validate xpath="mods:titleInfo/mods:title" required="true" />
-  </xed:template>
-
   <xed:template id="title.abbreviated">
     <mir:textfield xpath="mods:titleInfo[@type='abbreviated']/mods:title" label="mir.title.type.abbreviated" />
   </xed:template>
@@ -578,14 +573,14 @@
   </xed:template>
 
   <xed:template id="rights">
-    <div class="form-group">
-      <label class="col-md-3 control-label">
-        <xed:output i18n="mir.rights" />
-      </label>
-      <div class="col-md-6">
-        <xed:bind xpath="mods:accessCondition[@type='use and reproduction']" initially="rights_reserved">
+    <xed:bind xpath="mods:accessCondition[@type='use and reproduction']" initially="rights_reserved">
+      <div class="form-group {$xed-validation-marker}">
+        <label class="col-md-3 control-label">
+          <xed:output i18n="mir.rights" />
+        </label>
+        <div class="col-md-6">
           <select  class="form-control form-control-inline">
-            <option value="rights_reserved">Alle Rechte vorbehalten</option>
+            <option value="rights_reserved">Alle Rechte vorbehalten (&lt;intR>²Dok-Lizenz)</option>
             <option value="oa_nlz">Open-Access im Zuge einer Allianz- bzw. Nationallizenz</option>
             <option value="cc_by">CC BY</option>
             <option value="cc_by-sa">CC BY-SA</option>
@@ -594,9 +589,9 @@
             <option value="cc_by-nc-sa">CC BY-NC-SA</option>
             <option value="cc_by-nc-nd">CC BY-NC-ND</option>
           </select>
-        </xed:bind>
+        </div>
       </div>
-    </div>
+    </xed:bind>
   </xed:template>
 
   <xed:template id="embargo">
@@ -733,6 +728,9 @@
 
   <xed:template id="validation-rules">
     <xed:validate xpath="//mods:mods/mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />
+    <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" required="true" i18n="mir.validation.author" display="global" />
+    <xed:validate xpath="//mods:mods/mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" required="true" i18n="mir.validation.dateIssued" display="global" />
+    <xed:validate xpath="//mods:mods/mods:accessCondition[@type='use and reproduction']" required="true" i18n="mir.validation.rights" display="global" />
     <xed:validate xpath="//mods:identifier[@type='isbn']" matches="^((978|979)-?)?([\d -]{12}|\d{9})(\d|X)$" i18n="mir.validation.isbn" display="global" />
     <xed:validate xpath="//mods:identifier[@type='issn']" matches="[\dX]{4}\-[\dX]{4}" i18n="mir.validation.issn" display="global" />
     <xed:validate xpath="//mods:identifier[@type='doi']" matches="10\.\d+.*" i18n="mir.validation.doi" display="global" />
