@@ -4,14 +4,14 @@
     <div>
       <h2>Impressum</h2>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-7 col-sm-12">
           <p>
             Die nachstehenden Informationen enthalten die gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung, sowie wichtige rechtliche Hinweise zur Internetpräsenz von &lt;intR&gt;²Dok.
           </p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-7 col-sm-12">
           <h3>Anbieter</h3>
           <p>
             Anbieter dieser Internetpräsenz ist im Rechtssinne die Stiftung Preußischer Kulturbesitz: Staatsbibliothek zu Berlin.
@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-7 col-sm-12">
           <h3>Vertreter</h3>
           <p>
             Die Stiftung Preußischer Kulturbesitz wird gesetzlich vertreten durch ihren Präsidenten, Herrn Prof. Dr. Dr. hc. mult. Hermann Parzinger. Dieser wird vertreten durch die Generaldirektorin der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz, Frau Barbara Schneider-Kempf.
@@ -33,15 +33,15 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-7 col-sm-12">
           <h3>Umsatzsteueridentifikationsnummer</h3>
           <p>
-            Die Umsatzsteueridentifikationsnummer der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz lautet: DE 81 117 697 6
+            Die Umsatzsteueridentifikationsnummer der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz lautet:&#160;DE&#160;81&#160;117&#160;697&#160;6
           </p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-7 col-sm-12">
           <h3>Redaktion</h3>
           <p>
             Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung<br />
@@ -52,7 +52,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-7 col-sm-12">
           <h3>Technischer Betrieb</h3>
           <p>
             Verbundzentrale des GBV (VZG)<br />

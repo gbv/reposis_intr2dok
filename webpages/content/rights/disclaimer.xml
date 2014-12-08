@@ -4,7 +4,7 @@
     <div>
       <h2>Haftungshinweise</h2>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 three_column">
           <p>
             Als Trägerin des der Fachinformationsdiensts für internationale und interdisziplinäre Rechtsforschung ist die
             Staatsbibliothek zu Berlin – Preußischer Kulturbesitz um Richtigkeit und Aktualität der auf dieser Internetpräsenz
@@ -41,7 +41,7 @@
       <div class="row">
         <div class="col-md-12">
           <h3>Rechtswirksamkeit dieses Haftungsausschlusses</h3>
-          <p>
+          <p class="three_column">
             Dieser Haftungsausschluss ist als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite
             verwiesen wurde. Sofern Teile oder einzelne Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht mehr
             oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des Dokumentes in ihrem Inhalt und ihrer

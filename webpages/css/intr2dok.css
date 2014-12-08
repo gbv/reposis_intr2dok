@@ -78,10 +78,10 @@ p {
   line-height: 180%;
 }
 
-p.three_column {
-  -webkit-column-width: 300px;
-     -moz-column-width: 300px;
-          column-width: 300px;
+.three_column {
+  -webkit-column-width: 350px;
+     -moz-column-width: 350px;
+          column-width: 350px;
   -webkit-column-gap: 52px;
      -moz-column-gap: 52px;
           column-gap: 52px;

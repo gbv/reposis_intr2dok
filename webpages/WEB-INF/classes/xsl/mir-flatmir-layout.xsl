@@ -80,32 +80,32 @@
         <footer class="panel-footer flatmir-footer" role="contentinfo">
           <div class="container">
             <div class="row">
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6 col-sm-3">
                 <h4>Über uns</h4>
                 <ul class="internal_links">
                   <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
                 </ul>
               </div>
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6 col-sm-3">
                 <h4>Soziales</h4>
                 <ul class="social_links">
                   <li><a href="http://twitter.com/vifarecht"><img src="{$WebApplicationBaseURL}/content/images/logo_twitter.png" style="margin-right:5px;float:left;" />#vifarecht</a></li>
                   <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
                 </ul>
               </div>
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6 col-sm-3">
                 <h4>Rechtliches</h4>
                 <ul class="internal_links">
                   <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='rights']/*" />
                 </ul>
               </div>
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6 col-sm-3">
                 <h4>Technisches</h4>
                 <ul class="internal_links">
                   <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='technical']/*" />
                 </ul>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-xs-6 col-sm-3">
                 <h4>Institutionelles</h4>
                 <ul class="internal_links institutions">
                   <li><a id="vfr" href="http://vifa-recht.de/"><img src="{$WebApplicationBaseURL}/content/images/logo-vfr.png" /></a></li>
