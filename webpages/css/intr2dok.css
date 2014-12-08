@@ -18,7 +18,11 @@ h3 > a {
 }
 
 a #logo_mir,a #logo_slogan{
-  color:#9E1B34
+  color:#9E1B34;
+}
+
+sup a {
+  color: #9E1B34;
 }
 
 #powered_by {
@@ -99,6 +103,10 @@ p {
 }
 .mir-main-nav .navbar-nav a {
   color: #f3f3f3;
+}
+
+.mir-main-nav nav .navbar-nav > li > a:hover {
+  background-color: #A9A9A9;
 }
 
 .jumboHome {
