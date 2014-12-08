@@ -92,10 +92,7 @@ p.three_column {
 .navbar-brand {
   padding: 20px 2px;
 }
-/* Anmeldenknopf ohne rechten (und linken) Rand*/
-.nav > li > a#loginURL {
-  padding: 20px 0px;
-}
+
 /* Hauptmenü ohne linken (und rechten) Rand*/
 .mir-main-nav .navbar-nav {
   margin: 0px -15px;
@@ -137,4 +134,47 @@ p.three_column {
 }
 .internal_links.institutions #dfg img {
   margin-top: 17px;
+}
+
+
+
+
+#searchInput {
+    color: #f3f3f3;
+    background-color: #a9a9a9;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    padding: 0 20px 0 20px;
+    height: 60px;
+    width: 300px;
+    border-left: 1px solid #f3f3f3;
+}
+.btn-flat {
+    color: #bb0734;
+    background-color: #a9a9a9;
+    border-none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 60px;
+    border-left: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
+}
+.btn-flat .fa-search {
+    font-size: 20px;
+}
+
+.form-control::-moz-placeholder{
+    color:#c3c3c3;
+    color: #f3f3f3;
+}
+.form-control:-ms-input-placeholder{
+    color:#c3c3c3;
+    color: #f3f3f3;
+}
+.form-control::-webkit-input-placeholder{
+    color:#c3c3c3;
+    color: #f3f3f3;
 }
