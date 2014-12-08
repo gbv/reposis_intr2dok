@@ -1,9 +1,16 @@
 #
 # by Paul.Borchert@gbv.de
-# 
+#
 # created 2014-04-24
 # 2014-12-03: added mail configuration (neumann@gbv.de)
+# 2014-12-08: added mor documentation (neumann@gbv.de)
 #
+
+########################################################################################
+#                                                                                      #
+# basic application configuration                                                      #
+#                                                                                      #
+########################################################################################
 
 # name of project
   MCR.NameOfProject=IntR2Dok
@@ -17,11 +24,22 @@
 # Layout
   MIR.CustomLayout.CSS=intr2dok.css
 
-# ReCaptcha
+
+########################################################################################
+#                                                                                      #
+# Google - ReCaptcha (https://www.google.com/recaptcha)                                #
+# registered for: reposis-test.gbv.de, reposis.gbv.de, intr2dok.vifa-recht.de          #
+#                                                                                      #
+########################################################################################
   MIR.ReCaptcha.secret.key=6LcXrv4SAAAAAA-sdi8gEu8lASMUQxQF0ajuOTUv
   MIR.ReCaptcha.site.key=6LcXrv4SAAAAAHcQzQOpn1Vj88sxgRqfkjn2BKSw
 
-# Generic mail configuration for MCRMailer
+
+########################################################################################
+#                                                                                      #
+# Generic mail configuration for MCRMailer                                             #
+#                                                                                      #
+########################################################################################
 # The server for outgoing mails
   MCR.Mail.Server=mailer.gbv.de
 # The mail protocol
@@ -40,7 +58,12 @@
 #  MCR.mir-module.EditorMail=IntR2Dok, Editormail <IntR2Dok@sbb.spk-berlin.de>
 #  MCR.mir-module.MailSender=IntR2Dok, Repository <IntR2Dok@sbb.spk-berlin.de>
 
-# Logging
+
+########################################################################################
+#                                                                                      #
+# Logging                                                                              #
+#                                                                                      #
+########################################################################################
   log4j.appender.R=org.apache.log4j.DailyRollingFileAppender
   log4j.appender.R.File=/mcr/%MCR.NameOfProject%/logs/mycore-application
   log4j.appender.R.Append = true
