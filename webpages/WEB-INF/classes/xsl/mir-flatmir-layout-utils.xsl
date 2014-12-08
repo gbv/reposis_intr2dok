@@ -40,8 +40,8 @@
         <div class="searchfield_box">
           <form action="{$WebApplicationBaseURL}servlets/solr/find?qry={0}" class="navbar-form navbar-left pull-right" role="search">
             <div class="form-group">
-              <input id="searchInput" class="form-control search-query" placeholder="Suchbegriff eingeben" name="qry" type="text" />
               <button class="btn btn-flat" type="submit"><i class="fa fa-search"></i></button>
+              <input id="searchInput" class="form-control search-query" placeholder="Suchbegriff eingeben" name="qry" type="text" />
             </div>
           </form>
         </div>
