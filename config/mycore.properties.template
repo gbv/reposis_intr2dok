@@ -1,0 +1,50 @@
+#
+# by Paul.Borchert@gbv.de
+# 
+# created 2014-04-24
+# 2014-12-03: added mail configuration (neumann@gbv.de)
+#
+
+# name of project
+  MCR.NameOfProject=IntR2Dok
+
+# SOLR-URL
+  MCR.Module-solr.ServerURL=http\://esx-91.gbv.de:8081/solr/IntR2Dok/
+
+# Datadirecotry
+  MCR.datadir=/mcr/IntR2Dok/data
+
+# Layout
+  MIR.CustomLayout.CSS=intr2dok.css
+
+# ReCaptcha
+  MIR.ReCaptcha.secret.key=6LcXrv4SAAAAAA-sdi8gEu8lASMUQxQF0ajuOTUv
+  MIR.ReCaptcha.site.key=6LcXrv4SAAAAAHcQzQOpn1Vj88sxgRqfkjn2BKSw
+
+# Generic mail configuration for MCRMailer
+# The server for outgoing mails
+  MCR.Mail.Server=mailer.gbv.de
+# The mail protocol
+  MCR.Mail.Protocol=smtp
+# The debug option
+  MCR.Mail.Debug=false
+# Encoding for the mail
+  MCR.Mail.Encoding=UTF-8
+# Number of send tries
+  MCR.Mail.NumTries=1
+# Editor Mail adresses for Messages add1@serv1,add2@serv2,...
+  MCR.Mail.Address=
+  MCR.mir-module.EditorMail=Editor KNN <neumann@gbv.de>
+  MCR.mir-module.MailSender=IntR2Dok, Repository <dms-list@gbv.de>
+
+#  MCR.mir-module.EditorMail=IntR2Dok, Editormail <IntR2Dok@sbb.spk-berlin.de>
+#  MCR.mir-module.MailSender=IntR2Dok, Repository <IntR2Dok@sbb.spk-berlin.de>
+
+# Logging
+  log4j.appender.R=org.apache.log4j.DailyRollingFileAppender
+  log4j.appender.R.File=/mcr/%MCR.NameOfProject%/logs/mycore-application
+  log4j.appender.R.Append = true
+  log4j.appender.R.Encoding = UTF-8
+  log4j.appender.R.DatePattern = '.'yyyy-MM-dd'.log'
+  log4j.rootLogger=INFO, R
+  log4j.logger.org.mycore=INFO, R
