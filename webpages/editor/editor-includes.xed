@@ -580,14 +580,7 @@
         </label>
         <div class="col-md-6">
           <select  class="form-control form-control-inline">
-            <option value="rights_reserved">Alle Rechte vorbehalten (&lt;intR>²Dok-Lizenz)</option>
-            <option value="oa_nlz">Open-Access im Zuge einer Allianz- bzw. Nationallizenz</option>
-            <option value="cc_by">CC BY</option>
-            <option value="cc_by-sa">CC BY-SA</option>
-            <option value="cc_by-nd">CC BY-ND</option>
-            <option value="cc_by-nc">CC BY-NC</option>
-            <option value="cc_by-nc-sa">CC BY-NC-SA</option>
-            <option value="cc_by-nc-nd">CC BY-NC-ND</option>
+            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:rights" />
           </select>
         </div>
       </div>
