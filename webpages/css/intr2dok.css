@@ -184,14 +184,20 @@ p {
 }
 .form-control::-moz-placeholder{
     color:#c3c3c3;
-    color: #f3f3f3;
 }
 .form-control:-ms-input-placeholder{
     color:#c3c3c3;
-    color: #f3f3f3;
 }
 .form-control::-webkit-input-placeholder{
     color:#c3c3c3;
+}
+#searchInput.form-control::-moz-placeholder{
+    color: #f3f3f3;
+}
+#searchInput.form-control:-ms-input-placeholder{
+    color: #f3f3f3;
+}
+#searchInput.form-control::-webkit-input-placeholder{
     color: #f3f3f3;
 }
 
