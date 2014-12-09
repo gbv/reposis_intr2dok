@@ -13,7 +13,7 @@
     <category ID="koeln">
       <label xml:lang="de" text="Deutsche Sporthochschule Köln" description="Deutsche Sporthochschule Köln" />
     </category>
-    <category ID="wolfenbüttel">
+    <category ID="wolfenbuettel">
       <label xml:lang="de" text="European Law School Wolfenbüttel" description="Brunswick European Law School Wolfenbüttel" />
     </category>
     <category ID="hagen">
@@ -68,7 +68,7 @@
     <category ID="kaiserslautern">
       <label xml:lang="de" text="Technische Universität Kaiserslautern" />
     </category>
-    <category ID="muenchen">
+    <category ID="tumuenchen">
       <label xml:lang="de" text="Technische Universität München" />
     </category>
     <category ID="augsburg">
