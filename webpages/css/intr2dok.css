@@ -29,6 +29,39 @@ background-color: #9E1B34;
 border-color: transparent transparent #9E1B34 transparent;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+background-color: #797979;
+}
+
+.mir-main-nav nav .navbar-nav .dropdown-menu > li > a:hover, .mir-main-nav nav .navbar-nav .dropdown-menu > li > a:focus {
+    background-color: #a9a9a9;
+} 
+
+.result_body .result_list #hit_list .hit_item .hit_options .dropdown-menu > li > a:hover {
+    background-color: #a9a9a9;
+}
+a:hover, a:focus {
+    color: #a9a9a9;
+}
+.mir-main-nav nav .navbar-nav .dropdown-menu > .active > a, .mir-main-nav nav .navbar-nav .dropdown-menu > .active > a:hover, .mir-main-nav nav .navbar-nav .dropdown-menu > .active > a:focus {
+  background-color: #797979;
+}
+ul.cbList li li a {
+  color: #9E1B34;
+}
+.col-md-9 {
+  left: -21px;
+  width: 85%;
+}
+
+.pagination {
+   
+    padding-left: 65px;
+}
+.result_body .result_list #hit_list .hit_item:hover .btn {
+    border-color: #9E1B34;
+}
+
 .btn-primary {
 color: #fff;
 background-color: #9E1B34;
@@ -147,9 +180,6 @@ p {
 .jumboHome h1 {
   margin-top: 75px;
 }
-.jumboHome h1 img {
-  width: 100%;
-}
 .jumboHome h2 {
   margin-top: 67px;
   color: #bb0734;
@@ -230,9 +260,27 @@ p {
     color: #f3f3f3;
 }
 
-/* md: up to 1170 px *********************************************************/
+
+/* sm: tablets, 768px and less ***********************************************/
+@media (max-width: 991px) {
+  .jumboHome h1 img {
+      width: 64%;
+  }
+}
+
+/* md: up to 992 px *********************************************************/
 @media (min-width: 992px) {
   .jumboHome {
     height: 225px;
+  }
+  .jumboHome h1 img {
+    width: 100%;
+  }
+}
+
+/* lg: up to 1200 px ********************************************************/
+@media (min-width: 1200px) {
+  .jumboHome h1 img {
+    width: 478px;
   }
 }
