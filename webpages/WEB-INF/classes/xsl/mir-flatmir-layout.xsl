@@ -12,6 +12,7 @@
   <xsl:include href="resource:xsl/mir-flatmir-layout-utils.xsl"/>
   <xsl:param name="MIR.DefaultLayout.CSS" select="'flatly.min'" />
   <xsl:param name="MIR.CustomLayout.CSS" select="''" />
+  <xsl:param name="MCR.Users.Guestuser.UserName" />
   <!-- Various versions -->
   <xsl:variable name="bootstrap.version" select="'3.2.0'" />
   <xsl:variable name="bootswatch.version" select="$bootstrap.version" />
