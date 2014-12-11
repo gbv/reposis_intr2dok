@@ -1,3 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
+
   <xed:template id="intr2dok_systematik">
     <xed:bind xpath="mods:accessCondition[@type='use and reproduction']" initially="rights_reserved">
       <div class="form-group {$xed-validation-marker}">
@@ -12,3 +16,5 @@
       </div>
     </xed:bind>
   </xed:template>
+  
+</xed:template>
