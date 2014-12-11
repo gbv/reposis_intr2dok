@@ -51,7 +51,14 @@
             <!-- xsl:apply-templates select="$loaded_navigation_xml/menu[@id='search']" / -->
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='browse']" />
             <!-- xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" / -->
-            <li id="publish"><a href="{$WebApplicationBaseURL}servlets/MCRActionMappingServlet/mods/create">Dokument einreichen</a></li>
+            <li id="publish">
+              <a href="{$WebApplicationBaseURL}servlets/MCRActionMappingServlet/mods/create">
+                <xsl:choose>
+                  <xsl:when test="$CurrentUser!=$MCR.Users.Guestuser.UserName">Publizieren</xsl:when>
+                  <xsl:otherwise>Registrieren</xsl:otherwise>
+                </xsl:choose>
+              </a>
+            </li>
             <xsl:call-template name="mir.basketMenu" />
           </ul>
         </nav>
