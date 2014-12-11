@@ -637,11 +637,12 @@
   </xed:template>
 
   <xed:template id="related.item.reviewOf">
-    <xed:bind xpath="mods:relatedItem" min="1" max="10">
+    <xed:repeat xpath="mods:relatedItem" min="1" max="1">
       <div class="form-group">
-        <div class="col-md-3">
+        <div class="col-md-3 control-label">
           <xed:bind xpath="@type" initially="reviewOf" />
           <xed:output i18n="mir.relatedItem.reviewOf" />
+          
         </div>
         <div class="col-md-6">
           <div class="controls form-inline">
@@ -669,7 +670,7 @@
         </div>
         <mir:pmud />
       </div>
-    </xed:bind>
+    </xed:repeat>
   </xed:template>
 
   <xed:template id="related.item">
