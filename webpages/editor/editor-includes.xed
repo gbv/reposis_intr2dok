@@ -636,6 +636,42 @@
     <mir:textarea xpath="mods:note" label="mir.comment" rows="2" />
   </xed:template>
 
+  <xed:template id="related.item.reviewOf">
+    <xed:bind xpath="mods:relatedItem" min="1" max="10">
+      <div class="form-group">
+        <div class="col-md-3">
+          <xed:bind xpath="@type" initially="reviewOf" />
+          <xed:output i18n="mir.relatedItem.reviewOf" />
+        </div>
+        <div class="col-md-6">
+          <div class="controls form-inline">
+            <xed:bind xpath="@xlink:href">
+              <input type="text" class="form-control form-control-inline" size="25" placeholder="{i18n:mir.editing.related.id}" />
+            </xed:bind>
+            <button type="submit" class="btn btn-default" xed:target="subselect" xed:href="../../mir/search/search-advanced.xed">
+              <xed:output i18n="mir.editing.related.select" />
+            </button>
+          </div>
+          <xed:if test="string-length(@xlink:href) &gt; 0">
+            <div class="controls">
+              <xed:load-resource name="relatedItem" uri="notnull:mcrobject:{@xlink:href}" />
+              <p class="form-control-static">
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo/mods:nonSort" />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo/mods:title" />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo/mods:subTitle" />
+                <br />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:name[@type='conference']/mods:namePart" />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:name[@type='personal']/mods:namePart[@type='family']" />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:name[@type='personal']/mods:namePart[@type='given']" />
+              </p>
+            </div>
+          </xed:if>
+        </div>
+        <mir:pmud />
+      </div>
+    </xed:bind>
+  </xed:template>
+
   <xed:template id="related.item">
     <xed:repeat xpath="mods:relatedItem" min="1" max="10">
       <div class="form-group">
