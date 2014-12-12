@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MyCoReWebPage>
+
+<MyCoReWebPage>
+
+  <section i18n="browse.mods.institution.corporate" xml:lang="all">
+
+    <h3>Systematik Recht</h3>
+    <classificationbrowser classification="intr2dok_systematik"
+                               objecttype="mods"
+                              restriction="+category.top:&quot;mir_status:published&quot;"
+                                    field="category.top"
+                             countresults="true"
+                               addclassid="true"
+                              emptyleaves="true"
+                                    style="bootstrap"
+                               parameters="sort=mods.dateIssued+desc"
+                             addParameter="XSL.template=template_mir"
+    />
+
+  </section>
+
+</MyCoReWebPage>
