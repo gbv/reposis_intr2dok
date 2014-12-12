@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="actionmapping">
+<xsl:stylesheet version="1.0" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions" exclude-result-prefixes="actionmapping">
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
   <xsl:template name="mir.navigation">
 
@@ -54,7 +54,7 @@
             <li id="publish">
               <a href="{$WebApplicationBaseURL}servlets/MCRActionMappingServlet/mods/create">
                 <xsl:choose>
-                  <xsl:when test="$CurrentUser!=$MCR.Users.Guestuser.UserName">Publizieren</xsl:when>
+                  <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">Publizieren</xsl:when>
                   <xsl:otherwise>Registrieren</xsl:otherwise>
                 </xsl:choose>
               </a>
