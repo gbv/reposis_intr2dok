@@ -79,11 +79,11 @@
             <label xml:lang="de">nach Dokumenttyp</label>
             <label xml:lang="en">Genre</label>
         </item>
-        <item href="/content/browse/sdnb.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/browse/ddc.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">nach DCC</label>
             <label xml:lang="en">DDC</label>
         </item>
-        <item href="/content/browse/sdnb.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/browse/intr2dok_systematik.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">nach Systematik Recht</label>
             <label xml:lang="en">Systematik Recht</label>
         </item>
