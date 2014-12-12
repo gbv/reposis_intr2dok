@@ -385,6 +385,14 @@ p {
     background-color: #B9B9B9;
 }
 
+.form-login-heading {
+  display: none;
+}
+
+.form-login {
+  margin-top:60px;
+}
+
 /* sm: tablets, 991px and less ***********************************************/
 @media (max-width: 991px) {
   .jumboHome h1 img {
