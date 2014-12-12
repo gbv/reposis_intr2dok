@@ -166,7 +166,7 @@ ul.cbList li li a {
     border-color: #9E1B34;
 }
 .label-info {
-   /* background-color: #9E1B34; */
+    background-color: #9E1B34;
 }
 .label-primary {
     background-color: #a9a9a9;
@@ -379,10 +379,6 @@ p {
 }
 #searchInput.form-control::-webkit-input-placeholder{
     color: #f3f3f3;
-}
-
-.shariff li.facebook a, .shariff li.twitter a, .shariff li.googleplus a {
-    background-color: #B9B9B9;
 }
 
 .form-login-heading {
