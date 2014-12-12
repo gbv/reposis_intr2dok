@@ -138,8 +138,14 @@ ul.cbList li li a {
 .panel-footer {
   background-color: #efefef;
   border-top: 1px solid #efefef;
-
 }
+
+.panel-default > .panel-heading {
+    background-color: #ECECEC;
+    border-color: #ECECEC;
+    color: #4B4B4B;
+}
+
 .btn-default {
   background-color: #A9A9A9;
   border-color: #A9A9A9;
@@ -160,7 +166,7 @@ ul.cbList li li a {
     border-color: #9E1B34;
 }
 .label-info {
-    background-color: #9E1B34;
+   /* background-color: #9E1B34; */
 }
 .label-primary {
     background-color: #a9a9a9;
@@ -375,6 +381,9 @@ p {
     color: #f3f3f3;
 }
 
+.shariff li.facebook a, .shariff li.twitter a, .shariff li.googleplus a {
+    background-color: #B9B9B9;
+}
 
 /* sm: tablets, 991px and less ***********************************************/
 @media (max-width: 991px) {
