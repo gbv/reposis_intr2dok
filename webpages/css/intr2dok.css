@@ -14,28 +14,29 @@ h3 > a {
 }
 
 a {
-color: #9E1B34;
+  color: #9E1B34;
 
 }
 body {
-    color: #000;
+  color: #000;
+  min-width: 320px;
 }
 
 .breadcrumb {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 .breadcrumb > .active {
-    color: #a9a9a9;
+  color: #a9a9a9;
 }
 .mir-main-nav nav .navbar-nav>.open>a, .mir-main-nav nav .navbar-nav>.open>a:hover, .mir-main-nav nav .navbar-nav>.open>a:focus {
-background-color: #9E1B34;
+  background-color: #9E1B34;
 }
 .mir-main-nav nav .navbar-nav .dropdown-menu {
-background-color: #9E1B34;
+  background-color: #9E1B34;
 
 }
 .result_body .result_filter .panel .panel-heading {
-    background-color: #EFEFEF;
+  background-color: #EFEFEF;
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
     color: #A9A9A9;
@@ -328,7 +329,6 @@ p {
     margin: 0;
     padding: 0 20px 0 20px;
     height: 60px;
-    width: 300px;
     border-left: 1px solid #f3f3f3;
     float: right;
 }
