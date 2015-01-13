@@ -83,7 +83,7 @@
 #                                                                            #
 ##############################################################################
 
-MCR.OAIDataProvider.OAI2.RepositoryName=Fachinformationsdienst füernationale und interdisziplinäRechtsforschung
+MCR.OAIDataProvider.OAI2.RepositoryName=Fachinformationsdienst für nationale und interdisziplinäre Rechtsforschung
 MCR.OAIDataProvider.OAI2.RepositoryIdentifier=intr2dok.vifa-recht.de
 MCR.OAIDataProvider.OAI2.AdminEmail=dokumente@vifa-recht.de
 
