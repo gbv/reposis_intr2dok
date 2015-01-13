@@ -4,13 +4,14 @@
 # created 2014-04-24
 # 2014-12-03: added mail configuration (neumann@gbv.de)
 # 2014-12-08: added mor documentation (neumann@gbv.de)
+# 2015-01-13: added FileUpload configuration (neumann@gbv.de)
 #
 
-########################################################################################
-#                                                                                      #
-# basic application configuration                                                      #
-#                                                                                      #
-########################################################################################
+##############################################################################
+#                                                                            #
+# basic application configuration                                            #
+#                                                                            #
+##############################################################################
 
 # name of project
   MCR.NameOfProject=IntR2Dok
@@ -25,21 +26,24 @@
   MIR.CustomLayout.CSS=intr2dok.css
 
 
-########################################################################################
-#                                                                                      #
-# Google - ReCaptcha (https://www.google.com/recaptcha)                                #
-# registered for: reposis-test.gbv.de, reposis.gbv.de, intr2dok.vifa-recht.de          #
-#                                                                                      #
-########################################################################################
+##############################################################################
+#                                                                            #
+# Google - ReCaptcha (https://www.google.com/recaptcha)                      #
+# registered for: reposis-test.gbv.de, reposis.gbv.de, intr2dok.vifa-recht.de #
+#                                                                            #
+##############################################################################
+
   MIR.ReCaptcha.secret.key=6LcXrv4SAAAAAA-sdi8gEu8lASMUQxQF0ajuOTUv
   MIR.ReCaptcha.site.key=6LcXrv4SAAAAAHcQzQOpn1Vj88sxgRqfkjn2BKSw
 
 
-########################################################################################
-#                                                                                      #
-# Generic mail configuration for MCRMailer                                             #
-#                                                                                      #
-########################################################################################
+
+##############################################################################
+#                                                                            #
+# Generic mail configuration for MCRMailer                                   #
+#                                                                            #
+##############################################################################
+
 # The server for outgoing mails
   MCR.Mail.Server=mailer.gbv.de
 # The mail protocol
@@ -59,11 +63,11 @@
 #  MCR.mir-module.MailSender=IntR2Dok, Repository <IntR2Dok@sbb.spk-berlin.de>
 
 
-########################################################################################
-#                                                                                      #
-# Logging                                                                              #
-#                                                                                      #
-########################################################################################
+##############################################################################
+#                                                                            #
+# Logging                                                                    #
+#                                                                            #
+##############################################################################
   log4j.appender.R=org.apache.log4j.DailyRollingFileAppender
   log4j.appender.R.File=/mcr/%MCR.NameOfProject%/logs/mycore-application
   log4j.appender.R.Append = true
@@ -72,11 +76,13 @@
   log4j.rootLogger=INFO, R
   log4j.logger.org.mycore=INFO, R
 
+
 ##############################################################################
 #                                                                            #
 # OAI Data Provider                                                          #
 #                                                                            #
 ##############################################################################
+
 MCR.OAIDataProvider.OAI2.RepositoryName=Fachinformationsdienst füernationale und interdisziplinäRechtsforschung
 MCR.OAIDataProvider.OAI2.RepositoryIdentifier=intr2dok.vifa-recht.de
 MCR.OAIDataProvider.OAI2.AdminEmail=dokumente@vifa-recht.de
@@ -99,4 +105,15 @@ MCR.OAIDataProvider.OAI2.Search.RequestHandler=/oai_search
 # added Restriction as workaround, without we get no results
 MCR.OAIDataProvider.OAI2.Search.Restriction=objectType\:mods
 MCR.OAIDataProvider.OAI2.Search.SortBy=modified desc, id desc
-MCR.OAIDataProvider.OAI2.Search.FromUntil=modified
+MCR.OAIDataProvider.OAI2.Search.FromUntil=modifiedi
+
+##############################################################################
+#                                                                            #
+# File Upload                                                                #
+#                                                                            #
+##############################################################################
+
+# FileUpload connection
+# MCR.FileUpload.IP=
+  MCR.FileUpload.Port=8305
+
