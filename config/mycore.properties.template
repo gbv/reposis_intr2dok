@@ -114,6 +114,6 @@ MCR.OAIDataProvider.OAI2.Search.FromUntil=modified
 ##############################################################################
 
 # FileUpload connection
-# MCR.FileUpload.IP=
+# MCR.FileUpload.IP=193.174.240.180
   MCR.FileUpload.Port=8305
 
