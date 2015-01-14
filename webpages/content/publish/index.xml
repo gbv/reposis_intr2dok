@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <MyCoReWebPage>
-  <section title="Neue Publikation" xml:lang="de"/>
+  <section title="Publizieren" xml:lang="de"/>
   <section title="New publication" xml:lang="en"/>
   <section xml:lang="all">
 
 <div class="container">
 
-  <h1>Veröffentlichen einer Publikation</h1>
+  <h1>Publizieren</h1>
   <p>
     Zur Veröffentlichung Ihres Beitrags auf &lt;intR>²Dok ist zunächst die Erfassung seiner bibliographischen Daten erforderlich. Dazu kombinieren Sie bitte
     aus dem zweiteiligen Auswahlmenu – so im konkreten Fall überhaupt erforderlich – die dem Typus Ihrer Publikation entsprechende Erfassungsmaske. Bitte

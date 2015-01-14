@@ -3,13 +3,14 @@
 
 <MyCoReWebPage>
 
-  <section i18n="browse.mods.institution.corporate" xml:lang="all">
+  <section i18n="reposis.ddc" xml:lang="all">
 
-    <h3>DDC</h3>
+    <h3> Dewey-Dezimalklassifikation </h3>
+    
     <classificationbrowser classification="DDC"
                                objecttype="mods"
                               restriction="+category.top:&quot;mir_status:published&quot;"
-                                    field="category.top"
+                                    field="category"
                              countresults="true"
                                addclassid="true"
                               emptyleaves="true"
