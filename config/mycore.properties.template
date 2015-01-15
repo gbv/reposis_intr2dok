@@ -5,6 +5,7 @@
 # 2014-12-03: added mail configuration (neumann@gbv.de)
 # 2014-12-08: added mor documentation (neumann@gbv.de)
 # 2015-01-13: added FileUpload configuration (neumann@gbv.de)
+# 2015-01-15: added URN configuration (neumann@gbv.de)
 #
 
 ##############################################################################
@@ -35,7 +36,6 @@
 
   MIR.ReCaptcha.secret.key=6LcXrv4SAAAAAA-sdi8gEu8lASMUQxQF0ajuOTUv
   MIR.ReCaptcha.site.key=6LcXrv4SAAAAAHcQzQOpn1Vj88sxgRqfkjn2BKSw
-
 
 
 ##############################################################################
@@ -107,6 +107,7 @@ MCR.OAIDataProvider.OAI2.Search.Restriction=objectType\:mods
 MCR.OAIDataProvider.OAI2.Search.SortBy=modified desc, id desc
 MCR.OAIDataProvider.OAI2.Search.FromUntil=modified
 
+
 ##############################################################################
 #                                                                            #
 # File Upload                                                                #
@@ -117,3 +118,13 @@ MCR.OAIDataProvider.OAI2.Search.FromUntil=modified
 # MCR.FileUpload.IP=193.174.240.180
   MCR.FileUpload.Port=8305
 
+
+##############################################################################
+#                                                                            #
+# URN configuration                                                          #
+#                                                                            #
+##############################################################################
+
+  MCR.URN.SubNamespace.UBL.Prefix=urn:nbn:de:gbv:intr2dok-
+#  MCR.URN.SubNamespace.UBL.NISSBuilder=org.mycore.urn.services.MCRNISSBuilderDateCounter
+#  MCR.URN.SubNamespace.UBL.NISSPattern=yyyyMMdd-HHmmss-
