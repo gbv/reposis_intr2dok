@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="mir_institutes">
   <label xml:lang="en" text="Institutions" description="A list of institutions" />
+  <label xml:lang="de" text="Forschungseinrichtung" description="Liste der Einrichtungen" />
+  <label xml:lang="de" text="Forschungseinrichtung" />
   <label xml:lang="x-uri" text="http://intr2dok.vifa-recht.de/classifications/mir_institutes" />
-  <label xml:lang="de" text="Einrichtungen" description="Liste der Einrichtungen" />
   <categories>
     <category ID="hamburg-bls">
       <label xml:lang="de" text="Bucerius Law School Hamburg" description="Bucerius Law School Hamburg" />
@@ -10,8 +11,16 @@
     <category ID="ubwhamburg">
       <label xml:lang="de" text="Bundeswehruniversität Hamburg" description="Helmut-Schmidt-Universität - Universität der Bundeswehr Hamburg" />
     </category>
+    <category ID="ubwmuenchen">
+      <label xml:lang="de" text="Bundeswehruniversität München" />
+      <label xml:lang="en" text="" />
+    </category>
     <category ID="koeln">
       <label xml:lang="de" text="Deutsche Sporthochschule Köln" description="Deutsche Sporthochschule Köln" />
+    </category>
+    <category ID="ebs">
+      <label xml:lang="en" text="" />
+      <label xml:lang="de" text="EBS Universität für Wirtschaft und Recht" />
     </category>
     <category ID="wolfenbuettel">
       <label xml:lang="de" text="European Law School Wolfenbüttel" description="Brunswick European Law School Wolfenbüttel" />
@@ -34,6 +43,54 @@
     </category>
     <category ID="karlsruhe">
       <label xml:lang="de" text="Karlsruher Institut für Technologie" description="Karlsruher Institut für Technologie" />
+    </category>
+    <category ID="mpiaorv">
+      <label xml:lang="de" text="MPI für ausländisches öffentliches Recht und Völkerrecht" />
+      <label xml:lang="en" text="" />
+    </category>
+    <category ID="mpiaip">
+      <label xml:lang="de" text="MPI für ausländisches und internationales Privatrecht" />
+      <label xml:lang="en" text="" />
+    </category>
+    <category ID="mpiais">
+      <label xml:lang="de" text="MPI für ausländisches und internationales Strafrecht" />
+      <label xml:lang="en" text="" />
+    </category>
+    <category ID="mpief">
+      <label xml:lang="en" text="" />
+      <label xml:lang="de" text="MPI für ethnologische Forschung" />
+    </category>
+    <category ID="1a96d2b0-104d-4609-8da9-7f1c932aea9f">
+      <label xml:lang="en" text="" />
+      <label xml:lang="de" text="MPI für europäische Rechtsgeschichte" />
+    </category>
+    <category ID="mpiiw">
+      <label xml:lang="de" text="MPI für Innovation und Wettbewerb" />
+      <label xml:lang="en" text="" />
+    </category>
+    <category ID="mpisoso">
+      <label xml:lang="de" text="MPI für Sozialrecht und Sozialpolitik" />
+      <label xml:lang="en" text="" />
+    </category>
+    <category ID="mpisof">
+      <label xml:lang="de" text="MPI für Steuerrecht und Öffentliche Finanzen" />
+      <label xml:lang="en" text="" />
+    </category>
+    <category ID="mpiemg">
+      <label xml:lang="de" text="MPI zur Erforschung multireligiöser Gesellschaften" />
+      <label xml:lang="en" text="" />
+    </category>
+    <category ID="mpilpl">
+      <label xml:lang="de" text="MPI Luxembourg for Procedural Law" />
+      <label xml:lang="en" text="" />
+    </category>
+    <category ID="mpieg">
+      <label xml:lang="de" text="MPI zur Erforschung von Gemeinschaftsgütern" />
+      <label xml:lang="en" text="" />
+    </category>
+    <category ID="berlin-sbb">
+      <label xml:lang="de" text="Staatsbibliothek zu Berlin - Preußischer Kulturbesitz" />
+      <label xml:lang="en" text="" />
     </category>
     <category ID="aachen">
       <label xml:lang="de" text="Technische Hochschule Aachen" description="Rheinisch-Westfälische Technische Hochschule Aachen" />
@@ -223,9 +280,6 @@
     </category>
     <category ID="ulm">
       <label xml:lang="de" text="Universität Ulm" />
-    </category>
-    <category ID="wiesbaden">
-      <label xml:lang="de" text="Universität Wiesbaden" description="EBS Universität für Wirtschaft und Recht Wiesbaden " />
     </category>
     <category ID="witten">
       <label xml:lang="de" text="Universität Witten/Herdecke" />
