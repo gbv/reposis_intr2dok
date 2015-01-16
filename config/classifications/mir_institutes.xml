@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="mir_institutes">
+  <label xml:lang="x-uri" text="http://www.mycore.org/classifications/mir_institutes" />
   <label xml:lang="en" text="Institutions" description="A list of institutions" />
   <label xml:lang="de" text="Forschungseinrichtung" description="Liste der Einrichtungen" />
   <label xml:lang="de" text="Forschungseinrichtung" />
-  <label xml:lang="x-uri" text="http://intr2dok.vifa-recht.de/classifications/mir_institutes" />
   <categories>
     <category ID="hamburg-bls">
       <label xml:lang="de" text="Bucerius Law School Hamburg" description="Bucerius Law School Hamburg" />
