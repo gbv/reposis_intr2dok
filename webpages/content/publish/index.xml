@@ -11,7 +11,7 @@
   <p>
     Zur Veröffentlichung Ihres Beitrags auf &lt;intR>²Dok ist zunächst die Erfassung seiner bibliographischen Daten erforderlich. Dazu kombinieren Sie bitte
     aus dem zweiteiligen Auswahlmenu – so im konkreten Fall überhaupt erforderlich – die dem Typus Ihrer Publikation entsprechende Erfassungsmaske. Bitte
-    beachten Sie, dass alle mit einen Asterisk „*“ gekennzeichneten Felder der jeweils gewählten Erfassungsmaske verpflichtend zu befüllen sind.
+    beachten Sie, dass alle mit einen Asterisk * gekennzeichneten Felder der jeweils gewählten Erfassungsmaske verpflichtend zu befüllen sind.
   </p>
   <form class="form-inline" role="form" method="get" action="../../editor/editor-dynamic.xed">
     <div class="form-group">
