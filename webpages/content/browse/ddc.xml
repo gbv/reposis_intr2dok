@@ -6,11 +6,11 @@
   <section i18n="reposis.ddc" xml:lang="all">
 
     <h3> Dewey-Dezimalklassifikation </h3>
-    
+
     <classificationbrowser classification="DDC"
                                objecttype="mods"
                               restriction="+category.top:&quot;mir_status:published&quot;"
-                                    field="category"
+                                    field="category.top"
                              countresults="true"
                                addclassid="true"
                               emptyleaves="true"
