@@ -125,6 +125,6 @@ MCR.OAIDataProvider.OAI2.Search.FromUntil=modified
 #                                                                            #
 ##############################################################################
 
-  MCR.URN.SubNamespace.UBL.Prefix=urn:nbn:de:gbv:intr2dok-
+  MCR.URN.SubNamespace.UBL.Prefix=urn:nbn:de:intr2dok:1-
 #  MCR.URN.SubNamespace.UBL.NISSBuilder=org.mycore.urn.services.MCRNISSBuilderDateCounter
 #  MCR.URN.SubNamespace.UBL.NISSPattern=yyyyMMdd-HHmmss-
