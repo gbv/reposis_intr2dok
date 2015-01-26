@@ -3,7 +3,7 @@
 <xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
 
   <xed:template id="intr2dok_systematik">
-    <xed:bind xpath="mods:classification[@authorityURI='http://intr2dok.vifa-recht.de/classifications/intr2dok_systematik']/@valueURIxEditor">
+    <xed:bind xpath="mods:classification[@authorityURI='http://intr2dok.vifa-recht.de/classifications/intr2dok_systematik'][@displayLabel='intr2dok']/@valueURIxEditor">
       <div class="form-group {$xed-validation-marker}">
         <label class="col-md-3 control-label">
           Systematik Recht:
