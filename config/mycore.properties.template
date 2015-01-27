@@ -6,6 +6,7 @@
 # 2014-12-08: added mor documentation (neumann@gbv.de)
 # 2015-01-13: added FileUpload configuration (neumann@gbv.de)
 # 2015-01-15: added URN configuration (neumann@gbv.de)
+# 2015-01-27: added SherpaRomeo ApiKey (neumann@gbv.de)
 #
 
 ##############################################################################
@@ -36,6 +37,16 @@
 
   MIR.ReCaptcha.secret.key=6LcXrv4SAAAAAA-sdi8gEu8lASMUQxQF0ajuOTUv
   MIR.ReCaptcha.site.key=6LcXrv4SAAAAAHcQzQOpn1Vj88sxgRqfkjn2BKSw
+
+
+##############################################################################
+#                                                                            #
+# Sherpa/Romeo API Key                                                       #
+# http://www.sherpa.ac.uk/romeo/api29.php?ak=                                #
+#                                                                            #
+##############################################################################
+
+  MCR.Mods.SherpaRomeo.ApiKey=qOI2QS6shQk
 
 
 ##############################################################################
