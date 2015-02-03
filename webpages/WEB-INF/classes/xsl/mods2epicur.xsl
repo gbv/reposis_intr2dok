@@ -7,8 +7,8 @@
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:urn="http://www.ddb.de/standards/urn"
   xmlns:mods="http://www.loc.gov/mods/v3"
-  xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-  exclude-result-prefixes="xsl mods mcrxsl"
+  xmlns:mcrurn="xalan://org.mycore.urn.MCRXMLFunctions"
+  exclude-result-prefixes="xsl mods mcrurn"
 >
 
   <xsl:output method="xml" encoding="UTF-8" />
@@ -28,7 +28,7 @@
           <xsl:variable name="deriv" select="./structure/derobjects/derobject/@xlink:href" />
           <xsl:variable name="derivlink" select="concat('mcrobject:',$deriv)" />
           <xsl:variable name="derivate" select="document($derivlink)" />
-          <xsl:variable name="derivateWithURN" select="mcrxsl:hasURNDefined($deriv)" />
+          <xsl:variable name="derivateWithURN" select="mcrurn:hasURNDefined($deriv)" />
           <xsl:value-of select="$derivate/mycorederivate/derivate/fileset/@urn" />
         </xsl:when>
         <xsl:otherwise>
