@@ -11,7 +11,9 @@
   <p>
     Zur Veröffentlichung Ihres Beitrags auf &lt;intR>²Dok ist zunächst die Erfassung seiner bibliographischen Daten erforderlich. Dazu kombinieren Sie bitte
     aus dem zweiteiligen Auswahlmenu – so im konkreten Fall überhaupt erforderlich – die dem Typus Ihrer Publikation entsprechende Erfassungsmaske. Bitte
-    beachten Sie, dass alle mit einen Asterisk * gekennzeichneten Felder der jeweils gewählten Erfassungsmaske verpflichtend zu befüllen sind.
+    beachten Sie, dass alle mit einen Asterisk * gekennzeichneten Felder der jeweils gewählten Erfassungsmaske verpflichtend zu befüllen sind. Für jede
+    angemeldete Veröffentlichung übersenden Sie bitte ergänzend einen vollständig ausgefüllten und mit Ihrer elektronischen Unterschrift versehenen
+    <a href="../rights/vertrag.pdf">Publikationsvertrag</a> an: <span class="madress">intR2dok [at] sbb.spk-berlin.de</span>
   </p>
   <form class="form-inline" role="form" method="get" action="../../editor/editor-dynamic.xed">
     <div class="form-group">
