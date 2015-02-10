@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:mods="http://www.loc.gov/mods/v3" exclude-result-prefixes="mods"
-  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:srw_dc="info:srw/schema/1/dc-schema"
+  xmlns:mods="http://www.loc.gov/mods/v3"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:srw_dc="info:srw/schema/1/dc-schema"
   xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:xlink="http://www.w3.org/1999/xlink">
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:mcrurn="xalan://org.mycore.urn.MCRXMLFunctions"
+  xmlns:mcrmods="xalan://org.mycore.mods.MCRMODSClassificationSupport"
+  exclude-result-prefixes="xsl mods mcrurn mcrmods">
 
   <!--
   Version 1.4		2013-12-13 tmee@loc.gov
@@ -48,6 +52,7 @@
   <xsl:output method="xml" indent="yes"/>
 
   <xsl:template match="/">
+
     <xsl:choose>
       <!-- WS: updated schema location -->
       <xsl:when test="//mods:modsCollection">
@@ -141,8 +146,16 @@
   </xsl:template>
 
   <xsl:template match="mods:classification">
+
+    <xsl:variable name="classlink" select="mcrmods:getClassCategLink(.)" />
+
     <dc:subject>
-      <xsl:value-of select="."/>
+    <xsl:choose>
+      <xsl:when test="string-length($classlink) &gt; 0"><xsl:value-of select="document($classlink)/mycoreclass/categories/category/label/@text"/></xsl:when>
+      <xsl:when test="@valueURI"><xsl:value-of select="substring-after(@valueURI, '#')"/></xsl:when>
+      <xsl:when test="@value"><xsl:value-of select="@value"/></xsl:when>
+      <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+    </xsl:choose>
     </dc:subject>
   </xsl:template>
 
@@ -345,7 +358,19 @@
   <xsl:template match="mods:identifier">
       <xsl:variable name="type"
         select="translate(@type,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>
-      <xsl:if test="contains ('isbn issn uri doi lccn uri urn', $type)">
+
+        <xsl:variable name="hasURN">
+          <xsl:choose>
+            <xsl:when test="//structure/derobjects/derobject/@xlink:href">
+              <xsl:value-of select="mcrurn:hasURNDefined(//structure/derobjects/derobject/@xlink:href)" />
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="boolean('false')" />
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+
+        <xsl:if test="not($hasURN) and contains ('isbn issn uri doi lccn uri urn', $type)">
     <dc:identifier>
 
       <xsl:choose>
@@ -377,7 +402,8 @@
         </xsl:otherwise> -->
       </xsl:choose>
     </dc:identifier>
-    </xsl:if>
+
+      </xsl:if>
   </xsl:template>
 
   <xsl:template match="mods:location">

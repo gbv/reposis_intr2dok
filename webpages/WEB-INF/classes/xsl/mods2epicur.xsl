@@ -28,8 +28,14 @@
           <xsl:variable name="deriv" select="./structure/derobjects/derobject/@xlink:href" />
           <xsl:variable name="derivlink" select="concat('mcrobject:',$deriv)" />
           <xsl:variable name="derivate" select="document($derivlink)" />
-          <xsl:variable name="derivateWithURN" select="mcrurn:hasURNDefined($deriv)" />
-          <xsl:value-of select="$derivate/mycorederivate/derivate/fileset/@urn" />
+          <xsl:choose>
+            <xsl:when test="mcrurn:hasURNDefined($deriv)">
+              <xsl:value-of select="$derivate/mycorederivate/derivate/fileset/@urn" />
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="'urn_new'" />
+            </xsl:otherwise>
+          </xsl:choose>
         </xsl:when>
         <xsl:otherwise>
           <xsl:value-of select="'urn_new'" />
