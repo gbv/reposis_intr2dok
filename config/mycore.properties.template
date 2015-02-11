@@ -7,6 +7,7 @@
 # 2015-01-13: added FileUpload configuration (neumann@gbv.de)
 # 2015-01-15: added URN configuration (neumann@gbv.de)
 # 2015-01-27: added SherpaRomeo ApiKey (neumann@gbv.de)
+# 2015-02-11: modified OAI configuration (neumann@gbv.de)
 #
 
 ##############################################################################
@@ -99,14 +100,23 @@ MCR.OAIDataProvider.OAI2.RepositoryName=Fachinformationsdienst f\u00FCr national
 MCR.OAIDataProvider.OAI2.RepositoryIdentifier=intr2dok.vifa-recht.de
 MCR.OAIDataProvider.OAI2.AdminEmail=intR2dok@sbb.spk-berlin.de
 
-MCR.OAIDataProvider.OAI2.RecordSampleID=mir_mods_00000002
+MCR.OAIDataProvider.ResumptionTokens.PartitionSize=100
+MCR.OAIDataProvider.ResumptionTokens.MaxAge=1441
+
+MCR.OAIDataProvider.OAI2.RecordSampleID=mir_mods_00000003
 
 MCR.OAIDataProvider.OAI2.MetadataFormats=oai_dc,epicur
 
-MCR.OAIDataProvider.OAI2.Sets=open_access,GENRE
+MCR.OAIDataProvider.OAI2.FilterEmptySets=false
+MCR.OAIDataProvider.OAI2.Sets=open_access,GENRE,DDC
 MCR.OAIDataProvider.OAI2.Sets.open_access=webapp:oai/set_open_access.xml
 MCR.OAIDataProvider.OAI2.Sets.GENRE=xslStyle:classification2sets:classification:metadata:10:children:mir_genres
-MCR.OAIDataProvider.OAI2.FilterEmptySets=false
+MCR.OAIDataProvider.OAI2.Sets.DDC=xslStyle:classification2sets:classification:metadata:10:children:DDC
+MCR.OAIDataProvider.OAI2.MapSetToClassification.DDC=DDC
+MCR.OAIDataProvider.OAI2.MapSetToQuery.open_access=((hasFiles:true AND mods.embargo.date:[* TO NOW]) (hasFiles:true AND ! mods.embargo.date)) AND NOT (mods.rights:"Alle Rechte vorbehalten" OR mods.rights:"All rights reserved")
+
+MCR.OAIDataProvider.MetadataFormat.oai_dc.Schema=http://www.openarchives.org/OAI/2.0/oai_dc.xsd
+MCR.OAIDataProvider.MetadataFormat.oai_dc.Namespace=http://www.openarchives.org/OAI/2.0/oai_dc/
 
 # reposis-oai allg
 MCR.OAIDataProvider.OAI2.Adapter=org.mycore.oai.MCROAIAdapter
