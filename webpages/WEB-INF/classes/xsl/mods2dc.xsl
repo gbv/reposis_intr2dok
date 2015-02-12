@@ -8,7 +8,7 @@
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:mcrurn="xalan://org.mycore.urn.MCRXMLFunctions"
   xmlns:mcrmods="xalan://org.mycore.mods.MCRMODSClassificationSupport"
-  exclude-result-prefixes="xsl mods mcrurn mcrmods">
+  exclude-result-prefixes="xsl mods mcrurn mcrmods xlink srw_dc">
 
   <!--
   Version 1.4		2013-12-13 tmee@loc.gov
