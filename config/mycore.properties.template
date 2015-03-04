@@ -9,7 +9,8 @@
 # 2015-01-27: added SherpaRomeo ApiKey (neumann@gbv.de)
 # 2015-02-11: modified OAI configuration (neumann@gbv.de)
 # 2015-02-24: added error page configuration (neumann@gbv.de)
-# 2015-03-04: changed URN and OAI specification and added DOI registration (neumann@gbv.de)
+# 2015-03-04: changed URN and OAI specification and
+#             added DOI registration (neumann@gbv.de)
 #
 
 ##############################################################################
@@ -147,8 +148,9 @@ MCR.OAIDataProvider.OAI2.Friends.RosDok=http://rosdok.uni-rostock.de/oai
 #                                                                            #
 ##############################################################################
 
-  MCR.DOI.Prefix=10.17176
-  MCR.DOI.HostingInstitution=Fachinformationsdienst f\u00FCr nationale und interdisziplin\u00E4re Rechtsforschung
+#  MCR.DOI.Prefix=10.17176
+#  MCR.DOI.HostingInstitution=Fachinformationsdienst f\u00FCr nationale und interdisziplin\u00E4re Rechtsforschung
+  MCR.DOI.HostingInstitution=Fachinformationsdienst f\u00FCr nationale und interdisziplin\u00E4re Rechtsforschung (TEST)
   MCR.DOI.NISSPattern=yyyyMMdd-HHmmss
   MIR.registerDOI=true
 
