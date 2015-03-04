@@ -102,9 +102,6 @@ MCR.OAIDataProvider.OAI2.RepositoryName=Fachinformationsdienst f\u00FCr national
 MCR.OAIDataProvider.OAI2.RepositoryIdentifier=intr2dok.vifa-recht.de
 MCR.OAIDataProvider.OAI2.AdminEmail=intR2dok@sbb.spk-berlin.de
 
-MCR.OAIDataProvider.ResumptionTokens.PartitionSize=100
-MCR.OAIDataProvider.ResumptionTokens.MaxAge=1441
-
 MCR.OAIDataProvider.OAI2.RecordSampleID=mir_mods_00000003
 
 MCR.OAIDataProvider.OAI2.MetadataFormats=oai_dc,epicur
@@ -116,20 +113,6 @@ MCR.OAIDataProvider.OAI2.Sets.GENRE=xslStyle:classification2sets:classification:
 MCR.OAIDataProvider.OAI2.Sets.DDC=xslStyle:classification2sets:classification:metadata:10:children:DDC
 MCR.OAIDataProvider.OAI2.MapSetToClassification.DDC=DDC
 MCR.OAIDataProvider.OAI2.MapSetToQuery.open_access=((hasFiles:true AND mods.embargo.date:[* TO NOW]) (hasFiles:true AND ! mods.embargo.date)) AND NOT (mods.rights:"Alle Rechte vorbehalten" OR mods.rights:"All rights reserved")
-
-MCR.OAIDataProvider.MetadataFormat.oai_dc.Schema=http://www.openarchives.org/OAI/2.0/oai_dc.xsd
-MCR.OAIDataProvider.MetadataFormat.oai_dc.Namespace=http://www.openarchives.org/OAI/2.0/oai_dc/
-
-# reposis-oai allg
-MCR.OAIDataProvider.OAI2.Adapter=org.mycore.oai.MCROAIAdapter
-MCR.OAIDataProvider.OAI2.Adapter.HeaderURIPattern=xslStyle:mods2oaiheader:mcrobject:{id}
-MCR.OAIDataProvider.OAI2.Adapter.RecordURIPattern=xslStyle:mods2{format}:mcrobject:{id}
-
-MCR.OAIDataProvider.OAI2.Search.RequestHandler=/oai_search
-# added Restriction as workaround, without we get no results
-MCR.OAIDataProvider.OAI2.Search.Restriction=objectType\:mods
-MCR.OAIDataProvider.OAI2.Search.SortBy=modified desc, id desc
-MCR.OAIDataProvider.OAI2.Search.FromUntil=modified
 
 MCR.OAIDataProvider.OAI2.Friends.OpenAgrar=https://openagrar.bmel-forschung.de/servlets/OAIDataProvider
 MCR.OAIDataProvider.OAI2.Friends.DuEPublico=http://duepublico.uni-duisburg-essen.de/servlets/OAIDataProvider
