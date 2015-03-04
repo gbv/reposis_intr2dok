@@ -9,7 +9,7 @@
 # 2015-01-27: added SherpaRomeo ApiKey (neumann@gbv.de)
 # 2015-02-11: modified OAI configuration (neumann@gbv.de)
 # 2015-02-24: added error page configuration (neumann@gbv.de)
-# 2015-03-04: change URN pesification and added DOI registration (neumann@gbv.de)
+# 2015-03-04: changed URN and OAI specification and added DOI registration (neumann@gbv.de)
 #
 
 ##############################################################################

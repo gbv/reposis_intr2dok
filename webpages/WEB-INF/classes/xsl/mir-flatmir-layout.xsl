@@ -12,11 +12,13 @@
   <xsl:include href="resource:xsl/mir-flatmir-layout-utils.xsl"/>
   <xsl:param name="MIR.DefaultLayout.CSS" select="'flatly.min'" />
   <xsl:param name="MIR.CustomLayout.CSS" select="''" />
+  <xsl:param name="MIR.CustomLayout.JS" select="''" />
+  <xsl:param name="MIR.Layout.Theme" select="'flatmir'" />
   <!-- Various versions -->
-  <xsl:variable name="bootstrap.version" select="'3.2.0'" />
+  <xsl:variable name="bootstrap.version" select="'3.3.1'" />
   <xsl:variable name="bootswatch.version" select="$bootstrap.version" />
-  <xsl:variable name="fontawesome.version" select="'4.0.3'" />
-  <xsl:variable name="jquery.version" select="'1.11.0'" />
+  <xsl:variable name="fontawesome.version" select="'4.2.0'" />
+  <xsl:variable name="jquery.version" select="'2.1.1'" />
   <xsl:variable name="jquery.migrate.version" select="'1.2.1'" />
   <!-- End of various versions -->
   <xsl:variable name="PageTitle" select="/*/@title" />
@@ -36,9 +38,12 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-{$jquery.version}.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-{$jquery.migrate.version}.min.js"></script>
         <xsl:copy-of select="head/*" />
-        <link href="{$WebApplicationBaseURL}mir-flatmir-layout/css/{$MIR.DefaultLayout.CSS}.css" rel="stylesheet" />
+        <link href="{$WebApplicationBaseURL}mir-layout/css/{$MIR.Layout.Theme}/{$MIR.DefaultLayout.CSS}.css" rel="stylesheet" />
         <xsl:if test="string-length($MIR.CustomLayout.CSS) &gt; 0">
           <link href="{$WebApplicationBaseURL}css/{$MIR.CustomLayout.CSS}" rel="stylesheet" />
+        </xsl:if>
+        <xsl:if test="string-length($MIR.CustomLayout.JS) &gt; 0">
+          <script type="text/javascript" src="{$WebApplicationBaseURL}js/{$MIR.CustomLayout.JS}"></script>
         </xsl:if>
       </head>
 
@@ -121,7 +126,7 @@
         <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
         <div id="powered_by">
           <a href="http://www.mycore.de">
-            <img src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
+            <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
           </a>
         </div>
 
