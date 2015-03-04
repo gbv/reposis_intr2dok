@@ -8,6 +8,8 @@
 # 2015-01-15: added URN configuration (neumann@gbv.de)
 # 2015-01-27: added SherpaRomeo ApiKey (neumann@gbv.de)
 # 2015-02-11: modified OAI configuration (neumann@gbv.de)
+# 2015-02-24: added error page configuration (neumann@gbv.de)
+# 2015-03-04: change URN pesification and added DOI registration (neumann@gbv.de)
 #
 
 ##############################################################################
@@ -152,5 +154,25 @@ MCR.OAIDataProvider.OAI2.Friends.RosDok=http://rosdok.uni-rostock.de/oai
 ##############################################################################
 
   MCR.URN.SubNamespace.UBL.Prefix=urn:nbn:de:0301-
-#  MCR.URN.SubNamespace.UBL.NISSBuilder=org.mycore.urn.services.MCRNISSBuilderDateCounter
-#  MCR.URN.SubNamespace.UBL.NISSPattern=yyyyMMdd-HHmmss-
+  MCR.URN.SubNamespace.UBL.NISSBuilder=org.mycore.urn.services.MCRNISSBuilderDateCounter
+  MCR.URN.SubNamespace.UBL.NISSPattern=yyyyMMdd-HHmmss
+
+
+##############################################################################
+#                                                                            #
+# DOI configuration                                                          #
+#                                                                            #
+##############################################################################
+
+  MCR.DOI.Prefix=10.17176
+  MCR.DOI.HostingInstitution=Fachinformationsdienst f\u00FCr nationale und interdisziplin\u00E4re Rechtsforschung
+  MCR.DOI.NISSPattern=yyyyMMdd-HHmmss
+  MIR.registerDOI=true
+
+
+##############################################################################
+# Error Page                                                                   #
+##############################################################################
+# Set mcr_error properties in your mycore.properties.private to show OA error page without StackTrace
+#  MCR.ContentTransformer.mcr_error.Class=org.mycore.common.content.transformer.MCRXSLTransformer
+#  MCR.ContentTransformer.mcr_error.Stylesheet=xsl/errorPage.xsl
