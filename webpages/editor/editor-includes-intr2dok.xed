@@ -17,4 +17,56 @@
     </xed:bind>
   </xed:template>
 
+  <xed:template id="related.item.reviewOf">
+    <xed:repeat xpath="mods:relatedItem" min="1" max="1">
+      <div class="form-group">
+        <div class="col-md-3 control-label">
+          <xed:bind xpath="@type" initially="reviewOf" />
+          <xed:output i18n="mir.relatedItem.reviewOf" />
+        </div>
+        <div class="col-md-6">
+          <div class="controls form-inline">
+            <xed:bind xpath="@xlink:href">
+              <input type="text" class="form-control form-control-inline" size="25" placeholder="{i18n:mir.editing.related.id}" />
+            </xed:bind>
+            <button type="submit" class="btn btn-default" xed:target="subselect" xed:href="../../mir/search/search-advanced.xed">
+              <xed:output i18n="mir.editing.related.select" />
+            </button>
+          </div>
+          <xed:if test="string-length(@xlink:href) &gt; 0">
+            <div class="controls">
+              <xed:load-resource name="relatedItem" uri="notnull:mcrobject:{@xlink:href}" />
+              <p class="form-control-static">
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo/mods:nonSort" />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo/mods:title" />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo/mods:subTitle" />
+                <br />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:name[@type='conference']/mods:namePart" />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:name[@type='personal']/mods:namePart[@type='family']" />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:name[@type='personal']/mods:namePart[@type='given']" />
+              </p>
+            </div>
+          </xed:if>
+        </div>
+        <mir:pmud />
+      </div>
+    </xed:repeat>
+  </xed:template>
+
+  <xed:template id="ddc">
+    <xed:bind xpath="mods:classification[@authority='ddc'][@displayLabel='ddc']">
+      <div class="form-group {$xed-validation-marker}">
+        <label class="col-md-3 control-label">
+          <xed:include uri="classification:editor[Text]:0:children:DDC" />
+          DDC:
+        </label>
+        <div class="col-md-6">
+          <select class="form-control form-control-inline">
+            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:DDC" />
+          </select>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
 </xed:template>
