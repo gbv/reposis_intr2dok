@@ -142,8 +142,6 @@ MCR.OAIDataProvider.OAI2.Friends.RosDok=http://rosdok.uni-rostock.de/oai
 ##############################################################################
 
   MCR.URN.SubNamespace.Default.Prefix=urn:nbn:de:0301-
-  MCR.URN.SubNamespace.Default.NISSBuilder=org.mycore.urn.services.MCRNISSBuilderDateCounter
-  MCR.URN.SubNamespace.Default.NISSPattern=yyyyMMdd-HHmmss
 
 
 ##############################################################################
