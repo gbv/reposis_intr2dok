@@ -20,7 +20,7 @@
             </div>
             <div class="panel-body">
             <!-- Title -->
-              <mir:template name="textInput" xpath="condition[@field='mods.title']/@value" id="inputTitle1" i18n="editor.search.mir.title" 
+              <mir:template name="textInput" xpath="condition[@field='mods.title']/@value" id="inputTitle1" i18n="editor.search.mir.title"
                 tooltip="editor.search.mir.title.tooltip" />
             <!-- Name -->
               <mir:template name="textInput" xpath="condition[@field='mods.name']/@value" id="inputName1" i18n="editor.search.mir.name"
@@ -36,8 +36,8 @@
                 tooltip="editor.search.mir.institute.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:mir_institutes" />
             <!-- Status -->
               <mir:template name="selectInput" xpath="condition[@field='category'][2]/@value" id="inputStatus1" i18n="editor.search.status"
-                tooltip="editor.search.status.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:mir_status"/>
-            <!--Fulltext -->        
+                tooltip="editor.search.status.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:state"/>
+            <!--Fulltext -->
               <div class="form-group">
                 <div class="col-md-offset-3 col-md-9">
                   <xed:bind xpath="condition[@field='hasFiles']/@value" >
