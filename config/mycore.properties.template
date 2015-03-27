@@ -11,6 +11,7 @@
 # 2015-02-24: added error page configuration (neumann@gbv.de)
 # 2015-03-04: changed URN and OAI specification and
 #             added DOI registration (neumann@gbv.de)
+# 2015-03-27: added piwik ID (neumann@gbv.de)
 #
 
 ##############################################################################
@@ -23,6 +24,7 @@
   MCR.NameOfProject=IntR2Dok
 
 # SOLR-URL
+# MCR.Module-solr.ServerURL=http\://esx-127.gbv.de:8081/solr/IntR2Dok/
   MCR.Module-solr.ServerURL=http\://esx-91.gbv.de:8081/solr/IntR2Dok/
 
 # Datadirecotry
@@ -31,6 +33,8 @@
 # Layout
   MIR.CustomLayout.CSS=intr2dok.css
 
+# Set PIWIK-ID in mycore.properties for productive to 22, default is 0 (no tracking)
+# piwikID=22
 
 ##############################################################################
 #                                                                            #
