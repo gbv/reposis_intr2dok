@@ -103,7 +103,7 @@
 #                                                                            #
 ##############################################################################
 
-MCR.OAIDataProvider.OAI2.RepositoryName=Fachinformationsdienst f\u00FCr nationale und interdisziplin\u00E4re Rechtsforschung
+MCR.OAIDataProvider.OAI2.RepositoryName=Fachinformationsdienst f\u00FCr internationale und interdisziplin\u00E4re Rechtsforschung
 MCR.OAIDataProvider.OAI2.RepositoryIdentifier=intr2dok.vifa-recht.de
 MCR.OAIDataProvider.OAI2.AdminEmail=intR2dok@sbb.spk-berlin.de
 
@@ -155,8 +155,8 @@ MCR.OAIDataProvider.OAI2.Friends.RosDok=http://rosdok.uni-rostock.de/oai
 ##############################################################################
 
 #  MCR.DOI.Prefix=10.17176
-#  MCR.DOI.HostingInstitution=Fachinformationsdienst f\u00FCr nationale und interdisziplin\u00E4re Rechtsforschung
-  MCR.DOI.HostingInstitution=Fachinformationsdienst f\u00FCr nationale und interdisziplin\u00E4re Rechtsforschung (TEST)
+#  MCR.DOI.HostingInstitution=Fachinformationsdienst f\u00FCr internationale und interdisziplin\u00E4re Rechtsforschung
+  MCR.DOI.HostingInstitution=Fachinformationsdienst f\u00FCr internationale und interdisziplin\u00E4re Rechtsforschung (TEST)
   MCR.DOI.NISSPattern=yyyyMMdd-HHmmss
   MIR.registerDOI=true
 
