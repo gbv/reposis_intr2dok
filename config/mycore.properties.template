@@ -12,6 +12,7 @@
 # 2015-03-04: changed URN and OAI specification and
 #             added DOI registration (neumann@gbv.de)
 # 2015-03-27: added piwik ID (neumann@gbv.de)
+# 2015-04-29: added DOI citation styles (neumann@gbv.de)
 #
 
 ##############################################################################
@@ -159,6 +160,7 @@ MCR.OAIDataProvider.OAI2.Friends.RosDok=http://rosdok.uni-rostock.de/oai
   MCR.DOI.HostingInstitution=Fachinformationsdienst f\u00FCr internationale und interdisziplin\u00E4re Rechtsforschung (TEST)
   MCR.DOI.NISSPattern=yyyyMMdd-HHmmss
   MIR.registerDOI=true
+  MIR.citationStyles=archiv-fur-die-civilistische-praxis,austrian-legal,bluebook-law-review,chicago-author-date,chicago-author-date-de,computer-und-recht,der-moderne-staat,elsevier-harvard,gewerblicher-rechtsschutz-und-urheberrecht,juristische-schulung,juristische-zitierweise,kommunikation-und-recht,law-and-society-review,leidraad-voor-juridische-auteurs,mohr-siebeck-recht,neue-juristische-wochenschrift,oxford-university-press-humsoc,polish-legal,spanish-legal,swedish-legal,the-journal-of-juristic-papyrology,vienna-legal
 
 
 ##############################################################################
