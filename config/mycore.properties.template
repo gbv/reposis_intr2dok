@@ -114,8 +114,8 @@ MCR.OAIDataProvider.OAI2.MetadataFormats=oai_dc,epicur
 
 MCR.OAIDataProvider.OAI2.FilterEmptySets=false
 MCR.OAIDataProvider.OAI2.Sets=open_access,openaire_data,GENRE,DDC
-MCR.OAIDataProvider.OAI2.Sets.open_access=webapp:servlets/OAIDataProvider/set_open_access.xml
-MCR.OAIDataProvider.OAI2.Sets.openaire_data=webapp:servlets/OAIDataProvider/set_openaire_data.xml
+MCR.OAIDataProvider.OAI2.Sets.open_access=webapp:oai/set_open_access.xml
+MCR.OAIDataProvider.OAI2.Sets.openaire_data=webapp:oai/set_openaire_data.xml
 MCR.OAIDataProvider.OAI2.Sets.GENRE=xslStyle:classification2sets:classification:metadata:10:children:mir_genres
 MCR.OAIDataProvider.OAI2.Sets.DDC=xslStyle:classification2sets:classification:metadata:10:children:DDC
 MCR.OAIDataProvider.OAI2.MapSetToClassification.DDC=DDC
