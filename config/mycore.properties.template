@@ -122,6 +122,9 @@ MCR.OAIDataProvider.OAI2.MapSetToClassification.DDC=DDC
 MCR.OAIDataProvider.OAI2.MapSetToQuery.open_access=((hasFiles:true AND mods.embargo.date:[* TO NOW]) (hasFiles:true AND ! mods.embargo.date)) AND NOT (mods.rights:"Alle Rechte vorbehalten" OR mods.rights:"All rights reserved")
 MCR.OAIDataProvider.OAI2.MapSetToQuery.openaire_data=((hasFiles:true AND mods.embargo.date:[* TO NOW]) (hasFiles:true AND ! mods.embargo.date))
 
+MCR.OAIDataProvider.OAI2.MetadataFormats=oai_dc,epicur,oai_datacite
+MCR.OAIDataProvider.MetadataFormat.oai_datacite.Namespace=http://schema.datacite.org/oai/oai-1.0/
+MCR.OAIDataProvider.MetadataFormat.oai_datacite.Schema=http://schema.datacite.org/oai/oai-1.0/oai_datacite.xsd
 
 # don't use SDNB set
 MCR.OAIDataProvider.OAI2.Sets.SDNB=
