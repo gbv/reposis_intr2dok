@@ -167,7 +167,7 @@ MCR.OAIDataProvider.OAI2.Friends.RosDok=http://rosdok.uni-rostock.de/oai
   MCR.DOI.NISSPattern=yyyyMMdd-HHmmss
   MIR.registerDOI=true
   MIR.citationStyles=archiv-fur-die-civilistische-praxis,austrian-legal,bluebook-law-review,chicago-author-date,chicago-author-date-de,computer-und-recht,der-moderne-staat,elsevier-harvard,gewerblicher-rechtsschutz-und-urheberrecht,juristische-schulung,juristische-zitierweise,kommunikation-und-recht,law-and-society-review,leidraad-voor-juridische-auteurs,mohr-siebeck-recht,neue-juristische-wochenschrift,oxford-university-press-humsoc,polish-legal,spanish-legal,swedish-legal,the-journal-of-juristic-papyrology,vienna-legal
-
+  MIR.altmetrics.hide=false
 
 ##############################################################################
 # Error Page                                                                   #
