@@ -66,10 +66,9 @@ ul.names li a:hover {
     color: #FFF;
     background-color: #9E1B34;
 }
-.pagination > li > a, .pagination > li > span {
+.pagination > li > a, .pagination > li > span, .pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
     position: relative;
     background-color: #a9a9a9;
-
 }
 .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
     background-color: #797979;
