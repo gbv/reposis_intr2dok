@@ -50,15 +50,21 @@
           <ul class="nav navbar-nav pull-left">
             <!-- xsl:apply-templates select="$loaded_navigation_xml/menu[@id='search']" / -->
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='browse']" />
-            <!-- xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" / -->
-            <li id="publish">
-              <a href="{$WebApplicationBaseURL}servlets/MCRActionMappingServlet/mods/create">
-                <xsl:choose>
-                  <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">Publizieren</xsl:when>
-                  <xsl:otherwise>Registrieren</xsl:otherwise>
-                </xsl:choose>
-              </a>
-            </li>
+            <xsl:choose>
+              <xsl:when test="mcrxsl:isCurrentUserInRole('admin')">
+                <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" />
+              </xsl:when>
+              <xsl:otherwise>
+                <li id="publish">
+                  <a href="{$WebApplicationBaseURL}servlets/MCRActionMappingServlet/mods/create">
+                    <xsl:choose>
+                      <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">Publizieren</xsl:when>
+                      <xsl:otherwise>Registrieren</xsl:otherwise>
+                    </xsl:choose>
+                  </a>
+                </li>
+              </xsl:otherwise>
+            </xsl:choose>
             <xsl:call-template name="mir.basketMenu" />
           </ul>
         </nav>
