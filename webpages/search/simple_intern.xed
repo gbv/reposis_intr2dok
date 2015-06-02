@@ -8,10 +8,9 @@
     <xed:form class="form-horizontal" role="form">
       <xed:post-processor xsl="query-postprocessor.xsl" />
       <xed:source uri="searchInput:{id}" />
-      <xed:source uri="webapp:editor/search/template/simple.xml" />
+      <xed:source uri="webapp:search/simple_intern.xml" />
       <xed:bind xpath="query">
-        <xed:bind xpath="@mask" default="content/main/search/simple.xed" />
-        <xed:bind xpath="conditions/boolean">
+        <xed:bind xpath="@mask" default="search/simple_intern.xed" />
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">
@@ -19,6 +18,8 @@
               </h3>
             </div>
             <div class="panel-body">
+
+        <xed:bind xpath="conditions/boolean[@operator='and']">
             <!-- Title -->
               <mir:template name="textInput" xpath="condition[@field='mods.title']/@value" id="inputTitle1" i18n="editor.search.mir.title"
                 tooltip="editor.search.mir.title.tooltip" />
@@ -34,25 +35,30 @@
             <!-- Institution -->
               <mir:template name="selectInput" xpath="condition[@field='category'][1]/@value" id="inputInst1" i18n="editor.search.mir.institute"
                 tooltip="editor.search.mir.institute.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:mir_institutes" />
+        <!-- /xed:bind> TODO: realize search dependent on current user and state
+        <xed:bind xpath="boolean[@operator='or']" default="{$CurrentUser}" -->
+          <!-- xed:bind xpath="condition[@field='createdby']/@value" default="{$CurrentUser}" / -->
             <!-- Status -->
-              <mir:template name="selectInput" xpath="condition[@field='category'][2]/@value" id="inputStatus1" i18n="editor.search.status"
-                tooltip="editor.search.status.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:state"/>
+              <mir:template name="selectInput" xpath="condition[@field='state']/@value" id="inputStatus1" i18n="editor.search.status"
+                tooltip="editor.search.status.tooltip" uri="xslStyle:items2options:classification:editor:-1:children:state" />
+        <!-- /xed:bind>
+        <xed:bind xpath="conditions/boolean[@operator='and']" -->
             <!--Fulltext -->
               <div class="form-group">
                 <div class="col-md-offset-3 col-md-9">
-                  <xed:bind xpath="condition[@field='hasFiles']/@value" >
+                  <xed:bind xpath="condition[@field='derCount'][@value='0']/@operator" default="=">
                     <label class="checkbox-inline">
-                      <input type="checkbox" value="true" />
+                      <input type="checkbox" value="&gt;" />
                       <xed:output i18n="editor.search.mir.hasFiles" />
                     </label>
                   </xed:bind>
                 </div>
               </div>
+        </xed:bind>
             <!-- submit -->
               <mir:template name="submitButton" i18n="editor.search.search" target="servlet_MCRQLSearchServlet" />
             </div>
           </div>
-        </xed:bind>
       </xed:bind>
     </xed:form>
   </section>
