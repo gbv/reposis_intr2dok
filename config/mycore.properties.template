@@ -13,6 +13,7 @@
 #             added DOI registration (neumann@gbv.de)
 # 2015-03-27: added piwik ID (neumann@gbv.de)
 # 2015-04-29: added DOI citation styles (neumann@gbv.de)
+# 2015-06-04: added js (neumann@gbv.de)
 #
 
 ##############################################################################
@@ -33,6 +34,7 @@
 
 # Layout
   MIR.CustomLayout.CSS=intr2dok.css
+  MIR.CustomLayout.JS=intr2dok.js
 
 # Set PIWIK-ID in mycore.properties for productive to 22, default is 0 (no tracking)
 # piwikID=22
