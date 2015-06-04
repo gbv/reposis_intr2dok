@@ -51,7 +51,7 @@
             <!-- xsl:apply-templates select="$loaded_navigation_xml/menu[@id='search']" / -->
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='browse']" />
             <xsl:choose>
-              <xsl:when test="mcrxsl:isCurrentUserInRole('admin')">
+              <xsl:when test="mcrxsl:isCurrentUserInRole('admin') or mcrxsl:isCurrentUserInRole('editor')">
                 <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" />
               </xsl:when>
               <xsl:otherwise>
