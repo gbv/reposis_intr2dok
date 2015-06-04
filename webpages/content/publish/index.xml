@@ -166,14 +166,6 @@
     <script>
       $(document).ready( function() {
 
-        // spam protection
-        $('span.madress').each(function(i) {
-            var text = $(this).text();
-            var address = text.replace(" [at] ", "@");
-            $(this).after('<a href="mailto:'+address+'">'+ address +'</a>')
-            $(this).remove();
-        });
-
         // load option view from history
         if ( typeof(Storage) !== "undefined" ) {
           switch ( localStorage.getItem("moreOptions") ) {
