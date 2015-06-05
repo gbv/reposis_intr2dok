@@ -28,32 +28,32 @@
         <p>
           Vor der erstmaligen Nutzung des Publikationsservices ist eine
           Registrierung obligatorisch. Zu diesem Zweck vervollständigen Sie
-          bitte dieses  
+          bitte dieses
           <a href="../../authorization/new-author.xed?action=save" shape="rect">Anmeldeformular</a>
           oder senden alternativ eine formlose E-Mail mit Ihren Kontaktdaten
           sowie Angaben zur Forschungseinrichtung, der Sie gegenwärtig
-          angehören, an: 
+          angehören, an:
           <span class="madress">intR2dok [at] sbb.spk-berlin.de</span>.
           Bitte verwenden Sie in beiden Fällen Ihre dienstliche
           E-Mail-Adresse. Unmittelbar im Anschluss wird Ihnen ein Link an die
           angegebene E-Mail-Adresse zugesendet, dessen Aktivierung den
           Registrierungsvorgang abschließt. Mit Ihren Zugangsdaten können Sie
-          sich nun jederzeit am Server von &lt;intR&gt;²Dok 
+          sich nun jederzeit am Server von &lt;intR&gt;²Dok
           <a href="../../servlets/MCRLoginServlet?action=login" shape="rect">anmelden</a>.
         </p>
       </div>
+
       <h3>Dokumenten-Upload</h3>
       <div class="three_column">
-        <p>Nach
-          erfolgter Registrierung haben Sie als Inhaberin bzw. als Inhaber
+        <p>Nach erfolgter Registrierung haben Sie als Inhaberin bzw. als Inhaber
           der jeweiligen Urheberrechte die Möglichkeit, in Übereinstimmung
           mit den verbindlichen Publikationsleitlinien beliebig viele Texte
           auf &lt;intR&gt;²Dok zu veröffentlichen.
           <sup>
             <a href="what.xml" shape="rect">[2]</a>
           </sup>
-          Den Publikationsvorgang starten Sie bitte durch Ihre 
-          <a href="../../servlets/MCRLoginServlet?action=login" shape="rect">Anmeldung</a> 
+          Den Publikationsvorgang starten Sie bitte durch Ihre
+          <a href="../../servlets/MCRLoginServlet?action=login" shape="rect">Anmeldung</a>
           am Server. Bitte beachten Sie, dass die von Ihnen zur
           Veröffentlichung vorgesehenen Beiträge erst nach formaler und
           inhaltlicher Prüfung auf &lt;intR&gt;²Dok freigeschaltet werden. Im
@@ -61,8 +61,8 @@
           Urheberrechte oder andere Rechte Dritter verletzt werden – etwa im
           Kontext von Gemeinschaftspublikationen. Mit dem Upload Ihres
           Dokuments im Dateiformat .pdf (Portable Document Format) sowie auf
-          Grundlage eines schriftlichen 
-          <a href="../rights/vertrag.pdf" shape="rect">Publikationsvertrags</a> 
+          Grundlage eines schriftlichen
+          <a href="../rights/vertrag.pdf" shape="rect">Publikationsvertrags</a>
           wird &lt;intR&gt;²Dok ein einfaches Nutzungsrecht zur Verbreitung
           und öffentlichen Zugänglichmachung des Werks im Internet übertragen
           sowie ergänzend das Recht, insbesondere für Archivierungszwecke
