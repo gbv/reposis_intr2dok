@@ -39,6 +39,9 @@
 # Set PIWIK-ID in mycore.properties for productive to 22, default is 0 (no tracking)
 # piwikID=22
 
+# this is a productive environment
+  MIR.testEnvironment=false
+
 ##############################################################################
 #                                                                            #
 # Google - ReCaptcha (https://www.google.com/recaptcha)                      #
