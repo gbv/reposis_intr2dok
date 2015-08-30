@@ -9,4 +9,8 @@ $﻿(document).ready(function() {
       $(this).remove();
   });
 
+  $("#open-aire_trigger").click(function(){
+      $("#open-aire_box").toggle();
+  });
+
 });
