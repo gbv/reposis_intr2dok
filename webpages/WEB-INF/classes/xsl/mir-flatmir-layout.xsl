@@ -15,13 +15,6 @@
   <xsl:param name="MIR.CustomLayout.JS" select="''" />
   <xsl:param name="MIR.Layout.Theme" select="'flatmir'" />
   <xsl:param name="piwikID" select="'0'" />
-  <!-- Various versions -->
-  <xsl:variable name="bootstrap.version" select="'3.3.4'" />
-  <xsl:variable name="bootswatch.version" select="$bootstrap.version" />
-  <xsl:variable name="fontawesome.version" select="'4.2.0'" />
-  <xsl:variable name="jquery.version" select="'2.1.1'" />
-  <xsl:variable name="jquery.migrate.version" select="'1.2.1'" />
-  <!-- End of various versions -->
   <xsl:variable name="PageTitle" select="/*/@title" />
 
   <xsl:template match="/site">
@@ -35,9 +28,9 @@
           Mobile viewport optimisation
         </xsl:comment>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="//netdna.bootstrapcdn.com/font-awesome/{$fontawesome.version}/css/font-awesome.min.css" rel="stylesheet" />
-        <script type="text/javascript" src="//code.jquery.com/jquery-{$jquery.version}.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-{$jquery.migrate.version}.min.js"></script>
+        <link href="{$WebApplicationBaseURL}assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <script type="text/javascript" src="{$WebApplicationBaseURL}mir-layout/assets/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="{$WebApplicationBaseURL}mir-layout/assets/jquery/plugins/jquery-migrate/jquery-migrate.min.js"></script>
         <xsl:copy-of select="head/*" />
         <link href="{$WebApplicationBaseURL}mir-layout/css/{$MIR.Layout.Theme}/{$MIR.DefaultLayout.CSS}.css" rel="stylesheet" />
         <xsl:if test="string-length($MIR.CustomLayout.CSS) &gt; 0">
@@ -46,6 +39,7 @@
         <xsl:if test="string-length($MIR.CustomLayout.JS) &gt; 0">
           <script type="text/javascript" src="{$WebApplicationBaseURL}js/{$MIR.CustomLayout.JS}"></script>
         </xsl:if>
+        <xsl:call-template name="mir.prop4js" />
       </head>
 
       <body>
@@ -147,23 +141,25 @@
           <!-- Bootstrap & Query-Ui button conflict workaround  -->
           if (jQuery.fn.button){jQuery.fn.btn = jQuery.fn.button.noConflict();}
         </script>
-        <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/{$bootstrap.version}/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="{$WebApplicationBaseURL}js/jquery.confirm.min.js"></script>
+        <script type="text/javascript" src="{$WebApplicationBaseURL}assets/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{$WebApplicationBaseURL}assets/jquery/plugins/jquery-confirm/jquery.confirm.min.js"></script>
         <script type="text/javascript" src="{$WebApplicationBaseURL}js/mir/base.js"></script>
         <script>
           $( document ).ready(function() {
             $('.overtext').tooltip();
             $.confirm.options = {
-              text: "<xsl:value-of select="i18n:translate('mir.confirm.text')" />",
               title: "<xsl:value-of select="i18n:translate('mir.confirm.title')" />",
               confirmButton: "<xsl:value-of select="i18n:translate('mir.confirm.confirmButton')" />",
               cancelButton: "<xsl:value-of select="i18n:translate('mir.confirm.cancelButton')" />",
-              post: false
+              post: false,
+              confirmButtonClass: "btn-danger",
+              cancelButtonClass: "btn-default",
+              dialogClass: "modal-dialog modal-lg" // Bootstrap classes for large modal
             }
           });
         </script>
         <!-- alco add placeholder for older browser -->
-        <script src="{$WebApplicationBaseURL}js/jquery.placeholder.min.js"></script>
+        <script src="{$WebApplicationBaseURL}assets/jquery/plugins/jquery-placeholder/jquery.placeholder.min.js"></script>
         <script>
           jQuery("input[placeholder]").placeholder();
           jQuery("textarea[placeholder]").placeholder();

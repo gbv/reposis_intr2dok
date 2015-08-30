@@ -33,8 +33,11 @@ body {
 }
 .mir-main-nav nav .navbar-nav .dropdown-menu {
   background-color: #9E1B34;
-
 }
+.mir-main-nav .searchfield_box .navbar-form .btn {
+  margin-left: 0px;
+}
+
 .result_body .result_filter .panel .panel-heading {
   background-color: #EFEFEF;
 }
