@@ -69,4 +69,25 @@
     </xed:bind>
   </xed:template>
 
+  <xed:template id="openAIRE_trigger">
+    <div class="form-group    ">
+      <label class="col-md-3 control-label">OpenAIRE</label>
+      <div class="col-md-6">
+        <div class="checkbox">
+          <label>
+            <input id="open-aire_trigger" type="checkbox" />
+            <span id="open-aire_trigger_text">Optionen einblenden</span>
+          </label>
+        </div>
+      </div>
+      <div class="col-md-3"><!-- TODO: add help button -->
+      </div>
+    </div>
+  </xed:template>
+
+  <xed:template id="year.issued.modspart">
+    <mir:textfield xpath="mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}"
+      class="required mir-modspart" placeholder="{i18n:mir.placeholder.year}" />
+  </xed:template>
+
 </xed:template>

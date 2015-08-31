@@ -394,6 +394,10 @@ p {
   margin-top:60px;
 }
 
+#open-aire_box {
+  display: none;
+}
+
 /* sm: tablets, 991px and less ***********************************************/
 @media (max-width: 991px) {
   .jumboHome h1 img {

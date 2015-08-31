@@ -9,8 +9,12 @@ $﻿(document).ready(function() {
       $(this).remove();
   });
 
-  $("#open-aire_trigger").click(function(){
-      $("#open-aire_box").toggle();
-  });
+  if ( localStorage.getItem('open_aire_options_are_visible') ){
+    $('#open-aire_box').css('display', 'block');
+    $('#open-aire_trigger').prop('checked', true);
+  } else {
+    $('#open-aire_box').css('display', 'none');
+    $('#open-aire_trigger').prop('checked', false);
+  }
 
 });
