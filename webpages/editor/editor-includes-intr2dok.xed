@@ -71,12 +71,12 @@
 
   <xed:template id="openAIRE_trigger">
     <div class="form-group    ">
-      <label class="col-md-3 control-label">OpenAIRE</label>
+      <label class="col-md-3 control-label">OpenAIRE:</label>
       <div class="col-md-6">
         <div class="checkbox">
           <label>
             <input id="open-aire_trigger" type="checkbox" />
-            <span id="open-aire_trigger_text">Optionen einblenden</span>
+            <span id="open-aire_trigger_text"> Optionen einblenden</span>
           </label>
         </div>
       </div>

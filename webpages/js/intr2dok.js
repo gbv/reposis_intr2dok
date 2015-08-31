@@ -17,4 +17,22 @@ $﻿(document).ready(function() {
     $('#open-aire_trigger').prop('checked', false);
   }
 
+  $("#open-aire_trigger").click(function(){
+    toggleOAOptions();
+  });
+
 });
+
+
+function toggleOAOptions() {
+  var duration = 500;
+  if ( $('#open-aire_box').is(':visible') ) {
+    $('#open-aire_box').fadeOut( duration );
+    $('#open-aire_trigger_text').html(' Optionen einblenden');
+    localStorage.setItem("open_aire_options_are_visible", false);
+  } else {
+    $('#open-aire_box').fadeIn( duration );
+    $('#open-aire_trigger_text').html(' Optionen ausblenden');
+    localStorage.setItem("open_aire_options_are_visible", true);
+  }
+}
