@@ -28,11 +28,11 @@ function toggleOAOptions() {
   var duration = 500;
   if ( $('#open-aire_box').is(':visible') ) {
     $('#open-aire_box').fadeOut( duration );
-    $('#open-aire_trigger_text').html(' Optionen einblenden');
+    $('#open-aire_trigger_text').html(' handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?');
     localStorage.setItem("open_aire_options_are_visible", false);
   } else {
     $('#open-aire_box').fadeIn( duration );
-    $('#open-aire_trigger_text').html(' Optionen ausblenden');
+    $('#open-aire_trigger_text').html(' handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?');
     localStorage.setItem("open_aire_options_are_visible", true);
   }
 }
