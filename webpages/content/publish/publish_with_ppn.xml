@@ -4,7 +4,7 @@
   <section title="Publizieren" xml:lang="de"/>
   <section title="New publication" xml:lang="en"/>
   <section xml:lang="all">
-
+    <script src='../../js/mir/select-doctype.js'> </script>
   <h1>Publizieren</h1>
 
 <!-- introduction -->
@@ -33,70 +33,6 @@
       </label>
       <div class="col-sm-7 col-md-5 col-lg-4">
         <select id="genre" class="form-control" name="genre" size="1">
-          <option title="Artikel / Aufsatz" value="article">
-            <text i18n="component.mods.genre.article" />
-          </option>
-          <option title="Buchkapitel" value="chapter">
-            &#160;&#160;&#160;<text i18n="component.mods.genre.chapter" />
-          </option>
-          <option title="Vortrag" value="speech">
-            &#160;&#160;&#160;<text i18n="component.mods.genre.speech" />
-          </option>
-          <option title="Rezension" value="review">
-            &#160;&#160;&#160;<text i18n="component.mods.genre.review" />
-          </option>
-          <option title="Buch" value="book">
-            <text i18n="component.mods.genre.book" />
-          </option>
-          <option title="Monographie" value="monograph">
-            &#160;&#160;&#160;<text i18n="component.mods.genre.monograph" />
-          </option>
-          <option title="Genuiner Open Access-Einzelbeitrag" value="book">
-            &#160;&#160;&#160;Genuiner Open Access-Einzelbeitrag<!-- text i18n="component.mods.genre.book" / -->
-          </option>
-          <option title="Dissertation" value="dissertation">
-            &#160;&#160;&#160;<text i18n="component.mods.genre.dissertation" />
-          </option>
-          <option title="Habilitation" value="habilitation">
-            &#160;&#160;&#160;<text i18n="component.mods.genre.habilitation" />
-          </option>
-          <option title="Diplomarbeit" value="diploma_thesis">
-            &#160;&#160;&#160;<text i18n="component.mods.genre.diploma_thesis" />
-          </option>
-          <option title="Abschlussarbeit (Master)" value="master_thesis">
-            &#160;&#160;&#160;<text i18n="component.mods.genre.master_thesis" />
-          </option>
-          <option title="Sammelwerk" value="collection">
-            <text i18n="component.mods.genre.collection" />
-            <text i18n="mir.select.editor" />
-          </option>
-          <option title="Tagungsband" value="proceedings">
-            &#160;&#160;&#160;<text i18n="component.mods.genre.proceedings" />
-            <text i18n="mir.select.editor" />
-          </option>
-          <option title="Bericht" value="report">
-            Bericht<!-- text i18n="component.mods.genre.report" / -->
-          </option>
-          <option title="Fachliche Stellungnahme / Gutachten" value="declaration">
-            &#160;&#160;&#160;<text i18n="component.mods.genre.declaration" />
-          </option>
-          <option title="Zeitschrift" value="journal">
-            <text i18n="component.mods.genre.journal" />
-            <text i18n="mir.select.editor" />
-          </option>
-          <option title="Schriftenreihe" value="series">
-            Schriftenreihe<!-- text i18n="component.mods.genre.series" / -->
-            <text i18n="mir.select.editor" />
-          </option>
-          <option title="Poster" value="poster">
-            <text i18n="component.mods.genre.poster" />
-          </option>
-          <option title="Tondokument" value="audio">
-            <text i18n="component.mods.genre.audio" />
-          </option>
-          <option title="Film / Video" value="video">
-            <text i18n="component.mods.genre.video" />
-          </option>
         </select>
       </div>
     </div>
@@ -108,24 +44,9 @@
       </label>
       <div class="col-sm-7 col-md-5 col-lg-4">
         <select id="host" class="form-control" name="host" size="1">
-          <option value="standalone">
-            <text i18n="mir.select" />
-          </option>
-          <option value="journal">
-            <text i18n="mir.select.journal" />
-          </option>
-          <option value="series">
-            einer Schriftenreihe<!-- text i18n="mir.select.series" / -->
-          </option>
-          <option value="collection">
-            <text i18n="mir.select.collection" />
-          </option>
-          <option value="proceedings">
-            <text i18n="mir.select.proceedings" />
-          </option>
-          </select>
-        </div>
+        </select>
       </div>
+    </div>
 
       <div id="more_options_toggle" class="row">
         <div class="col-sm-3 col-lg-2"></div>
@@ -161,55 +82,5 @@
       </div>
 
     </form>
-
-
-    <script>
-      $(document).ready( function() {
-
-        // load option view from history
-        if ( typeof(Storage) !== "undefined" ) {
-          switch ( localStorage.getItem("moreOptions") ) {
-            case 'opened':
-              if ( !$('#more_options_box').is(":visible") ) {
-                toggleMoreOptions(0);
-              }
-              break;
-            case 'closed':
-              if ( $('#more_options_box').is(":visible") ) {
-                toggleMoreOptions(0);
-              }
-              break;
-            case null:
-              if ( $('#more_options_box').is(":visible") ) {
-                localStorage.setItem("moreOptions", "opened");
-              } else {
-                localStorage.setItem("moreOptions", "closed");
-              }
-              break;
-            default:
-          }
-        }
-
-        $('#more_options_trigger').click(function(){
-          toggleMoreOptions(500);
-        });
-
-      });
-
-      function toggleMoreOptions( duration ) {
-        if ( $('#more_options_box').is(':visible') ) {
-          $('#more_options_box').fadeOut( duration );
-          $('#more_options_label').html('weitere Optionen einblenden');
-          $('#more_options_button').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
-          localStorage.setItem("moreOptions", "closed");
-        } else {
-          $('#more_options_box').fadeIn( duration );
-          $('#more_options_label').html('weitere Optionen ausblenden');
-          $('#more_options_button').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
-          localStorage.setItem("moreOptions", "opened");
-        }
-      }
-    </script>
-
   </section>
 </MyCoReWebPage>

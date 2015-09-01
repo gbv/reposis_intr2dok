@@ -33,7 +33,6 @@
       </label>
       <div class="col-sm-7 col-md-5 col-lg-4">
         <select id="genre" class="form-control" name="genre" size="1">
-
         </select>
       </div>
     </div>
