@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="DDC">
+  <label xml:lang="x-uri" text="http://intr2dok.vifa-recht.de/classifications/DDC" />
+  <label xml:lang="en" text="Dewey Decimal Classification" />
+  <label xml:lang="de" text="Dewey-Dezimalklassifikation" />
+  <label xml:lang="x-auth" text="ddc" />
+  <categories>
+    <category ID="340">
+      <label xml:lang="de" text="340 Recht" />
+      <label xml:lang="en" text="340 Law" />
+    </category>
+    <category ID="341">
+      <label xml:lang="en" text="341 Law of nations" />
+      <label xml:lang="de" text="341 Völkerrecht" />
+    </category>
+    <category ID="342">
+      <label xml:lang="en" text="342 Constitutional &amp; administrative law" />
+      <label xml:lang="de" text="342 Verfassungs- und Verwaltungsrecht" />
+    </category>
+    <category ID="343">
+      <label xml:lang="en" text="343 Military, tax, trade &amp; industrial law" />
+      <label xml:lang="de" text="343 Wehrrecht, Steuerrecht, Wirtschaftsrecht" />
+    </category>
+    <category ID="344">
+      <label xml:lang="de" text="344 Arbeitsrecht, Sozialrecht, Bildungsrecht, Kulturrecht" />
+      <label xml:lang="en" text="344 Labor, social, education &amp; cultural law" />
+    </category>
+    <category ID="345">
+      <label xml:lang="de" text="345 Strafrecht" />
+      <label xml:lang="en" text="345 Criminal law" />
+    </category>
+    <category ID="346">
+      <label xml:lang="en" text="346 Private law" />
+      <label xml:lang="de" text="346 Privatrecht" />
+    </category>
+    <category ID="347">
+      <label xml:lang="de" text="347 Zivilprozessrecht, Zivilgerichte" />
+      <label xml:lang="en" text="347 Civil procedure &amp; courts" />
+    </category>
+    <category ID="348">
+      <label xml:lang="en" text="348 Laws, regulations &amp; cases" />
+      <label xml:lang="de" text="348 Gesetze, Verordnungen, Rechtsfälle" />
+    </category>
+    <category ID="349">
+      <label xml:lang="de" text="349 Recht einzelner Gebietskörperschaften und Gebiete" />
+      <label xml:lang="en" text="349 Law of specific jurisdictions &amp; areas" />
+    </category>
+  </categories>
+</mycoreclass>
