@@ -394,6 +394,10 @@ p {
   margin-top:60px;
 }
 
+#open-aire_trigger {
+  cursor: pointer;
+}
+
 #open-aire_box {
   display: none;
 }

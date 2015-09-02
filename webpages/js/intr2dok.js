@@ -9,15 +9,19 @@ $﻿(document).ready(function() {
       $(this).remove();
   });
 
-  if ( localStorage.getItem('open_aire_options_are_visible') ){
+  if ( localStorage.getItem('open_aire_options_are_visible') === "true" ){
     $('#open-aire_box').css('display', 'block');
-    $('#open-aire_trigger').prop('checked', true);
+    $('#open-aire_trigger').removeClass('glyphicon-unchecked');
+    $('#open-aire_trigger').addClass('glyphicon-check');
+    $('#open-aire_trigger_text').html('handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?');
   } else {
     $('#open-aire_box').css('display', 'none');
-    $('#open-aire_trigger').prop('checked', false);
+    $('#open-aire_trigger').removeClass('glyphicon-check');
+    $('#open-aire_trigger').addClass('glyphicon-unchecked');
+    $('#open-aire_trigger_text').html('handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?');
   }
 
-  $("#open-aire_trigger").click(function(){
+  $("#open-aire_trigger_checkbox").click(function(){
     toggleOAOptions();
   });
 
@@ -27,12 +31,16 @@ $﻿(document).ready(function() {
 function toggleOAOptions() {
   var duration = 500;
   if ( $('#open-aire_box').is(':visible') ) {
+    $('#open-aire_trigger').removeClass('glyphicon-check');
+    $('#open-aire_trigger').addClass('glyphicon-unchecked');
     $('#open-aire_box').fadeOut( duration );
-    $('#open-aire_trigger_text').html(' handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?');
+    $('#open-aire_trigger_text').html('handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?');
     localStorage.setItem("open_aire_options_are_visible", false);
   } else {
+    $('#open-aire_trigger').removeClass('glyphicon-unchecked');
+    $('#open-aire_trigger').addClass('glyphicon-check');
     $('#open-aire_box').fadeIn( duration );
-    $('#open-aire_trigger_text').html(' handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?');
+    $('#open-aire_trigger_text').html('handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?');
     localStorage.setItem("open_aire_options_are_visible", true);
   }
 }

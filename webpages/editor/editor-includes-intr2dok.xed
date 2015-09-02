@@ -88,14 +88,12 @@
   </xed:template>
 
   <xed:template id="openAIRE_trigger">
-    <div class="form-group    ">
+    <div class="form-group">
       <label class="col-md-3 control-label">OpenAIRE:</label>
       <div class="col-md-6">
-        <div class="checkbox">
-          <label>
-            <input id="open-aire_trigger" type="checkbox" />
-            <span id="open-aire_trigger_text"> handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?</span>
-          </label>
+        <div class="checkbox" id="open-aire_trigger_checkbox">
+          <span class="glyphicon glyphicon-unchecked" id="open-aire_trigger" aria-hidden="true"></span>
+          <label id="open-aire_trigger_text">handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?</label>
         </div>
       </div>
       <mir:help-pmud help-text="{i18n:intr2dok.help.openaire}" pmud="false" />
