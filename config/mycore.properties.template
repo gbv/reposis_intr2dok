@@ -123,8 +123,6 @@ MCR.OAIDataProvider.OAI2.RecordSampleID=mir_mods_00000003
 
 MCR.OAIDataProvider.OAI2.MetadataFormats=oai_dc,epicur
 
-MCR.OAIDataProvider.OAI2.Searcher=org.mycore.oai.MCROAISolrSearcher
-
 MCR.OAIDataProvider.OAI2.FilterEmptySets=false
 MCR.OAIDataProvider.OAI2.Sets=open_access,openaire_data,GENRE,DDC
 MCR.OAIDataProvider.OAI2.Sets.open_access=webapp:oai/set_open_access.xml
