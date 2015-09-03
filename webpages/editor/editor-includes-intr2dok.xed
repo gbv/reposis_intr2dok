@@ -100,9 +100,4 @@
     </div>
   </xed:template>
 
-  <xed:template id="year.issued.modspart">
-    <mir:textfield xpath="mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}"
-      class="required mir-modspart" placeholder="{i18n:mir.placeholder.year}" />
-  </xed:template>
-
 </xed:template>

@@ -394,7 +394,6 @@
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.original" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="editor.repeated" />
-    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="producer.repeated" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="date.created" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="date.issued" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="type.of.resource" />
@@ -412,8 +411,6 @@
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="physical.description.form" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="physical.description.note" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subject.simple" />
-    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subject.genre" />
-    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="cartographics" />
   </xed:template>
 
   <xed:template id="submit">
