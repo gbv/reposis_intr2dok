@@ -138,7 +138,7 @@
             </item>
         </group>
         <group id="contentadmin">
-            <item href="/modules/classeditor/classificationEditor.xml" type="extern" replaceMenu="false" constrainPopUp="false">
+            <item href="/modules/classeditor/classificationEditor.xml?XSL.classeditor.showId=true" type="extern" replaceMenu="false" constrainPopUp="false">
                 <label xml:lang="de">Klassifikationseditor</label>
                 <label xml:lang="en">Edit Classifications</label>
             </item>
