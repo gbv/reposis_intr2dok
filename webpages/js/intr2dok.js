@@ -1,6 +1,11 @@
 
 $﻿(document).ready(function() {
 
+  // replace placeholder USERNAME with username
+  var userID = $("#currentUser strong").html();
+  var newHref = 'http://intr2dok.vifa-recht.de/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
+  $("a[href='http://intr2dok.vifa-recht.de/servlets/solr/select?q=createdby:USERNAME']").attr('href', newHref);
+
   // spam protection for mails
   $('span.madress').each(function(i) {
       var text = $(this).text();

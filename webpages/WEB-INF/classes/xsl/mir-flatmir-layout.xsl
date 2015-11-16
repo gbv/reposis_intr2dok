@@ -165,7 +165,7 @@
           jQuery("textarea[placeholder]").placeholder();
         </script>
         <!-- Piwik -->
-        <xsl:if test="$piwikID &gt; 0">
+        <xsl:if test="string-length($piwikID) &gt; 0">
           <script type="text/javascript">
             var _paq = _paq || [];
             _paq.push(['setDoNotTrack', true]);

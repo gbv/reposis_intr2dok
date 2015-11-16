@@ -107,6 +107,10 @@
             <label xml:lang="de">Dokument einreichen</label>
             <label xml:lang="en">submit document</label>
         </item>
+        <item href="/servlets/solr/select?q=createdby:USERNAME" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Eigene Dokumente</label>
+            <label xml:lang="en">My Documents</label>
+        </item>
         <item href="/content/publish/publish_with_ppn.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">mit PPN-Übernahme</label>
             <label xml:lang="en">using PPN</label>
