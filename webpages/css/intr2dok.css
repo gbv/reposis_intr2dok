@@ -9,6 +9,18 @@ color: #000;
 margin-bottom: 25px;
 }
 
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
 h3 > a {
   color: #9E1B34;
 }
