@@ -193,10 +193,6 @@
     <xed:include uri="webapp:editor/editor-genres.xed" ref="article.common" />
   </xed:template>
 
-  <xed:template id="blog_entry">
-    <xed:include uri="webapp:editor/editor-genres.xed" ref="article.common" />
-  </xed:template>
-
   <xed:template id="review">
     <xed:include uri="webapp:editor/editor-genres.xed" ref="article.common" />
     <!-- xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="related.item.reviewOf" / -->
@@ -220,6 +216,23 @@
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="openAIRE_trigger" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="openAIRE" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="embargo" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="rights" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="institutes" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="comment" />
+  </xed:template>
+
+  <xed:template id="blog_entry">
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.original" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="date.issued" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="language.simple" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="intr2dok_systematik" />
+    <!-- xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="intr2dok_projects" / -->
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="ddc" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="doi.handle.urn.repeated" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="blog_entry_link" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="abstract.repeated" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subject.simple" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="rights" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="institutes" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="comment" />
