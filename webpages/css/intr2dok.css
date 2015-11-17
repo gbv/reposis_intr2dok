@@ -449,3 +449,16 @@ p {
 .subtitle {
     color: grey;
 }
+
+.viewer .navbar.navbar-default {
+    background-color: #ECECEC;
+    border-color: #ECECEC;
+}
+.well {
+    background-color: #ECECEC;
+}
+
+.shariff .orientation-horizontal li {
+    min-width: 85px;
+    max-width: 160px;
+}
