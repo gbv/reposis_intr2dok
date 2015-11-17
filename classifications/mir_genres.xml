@@ -23,6 +23,11 @@
         <label xml:lang="en" text="Review" />
         <label xml:lang="x-hosts" text="journal collection proceedings standalone" />
       </category>
+      <category ID="blog_entry">
+        <label xml:lang="en" text="Blog Entry" />
+        <label xml:lang="x-hosts" text="blog" />
+        <label xml:lang="de" text="Blog-Eintrag" />
+      </category>
     </category>
     <category ID="book">
       <label xml:lang="de" text="Buch" />
@@ -84,15 +89,23 @@
         <label xml:lang="en" text="Professional declaration" />
       </category>
     </category>
-    <category ID="journal" counter="2">
+    <category ID="journal">
       <label xml:lang="x-hosts" text="standalone" />
       <label xml:lang="de" text="Zeitschrift" />
       <label xml:lang="en" text="Journal" />
+      <label xml:lang="x-editor" text="false" />
     </category>
     <category ID="series">
       <label xml:lang="x-hosts" text="standalone" />
       <label xml:lang="en" text="Series" />
+      <label xml:lang="x-editor" text="false" />
       <label xml:lang="de" text="Schriftenreihe" />
+    </category>
+    <category ID="blog">
+      <label xml:lang="x-hosts" text="standalone" />
+      <label xml:lang="de" text="Blog" />
+      <label xml:lang="en" text="Blog" />
+      <label xml:lang="x-editor" text="false" />
     </category>
     <category ID="research_data">
       <label xml:lang="de" text="Forschungsdaten" />
