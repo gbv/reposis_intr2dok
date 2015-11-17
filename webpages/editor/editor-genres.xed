@@ -80,6 +80,11 @@
     <xed:include uri="webapp:editor/editor-genres.xed" ref="journal.common" />
   </xed:template>
 
+  <xed:template id="blog">
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title" />
+    <xed:include uri="webapp:editor/editor-genres.xed" ref="journal.common" />
+  </xed:template>
+
   <xed:template id="newspaper">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.newspaper" />
     <xed:include uri="webapp:editor/editor-genres.xed" ref="journal.common" />
@@ -185,6 +190,10 @@
   </xed:template>
 
   <xed:template id="article">
+    <xed:include uri="webapp:editor/editor-genres.xed" ref="article.common" />
+  </xed:template>
+
+  <xed:template id="blog_entry">
     <xed:include uri="webapp:editor/editor-genres.xed" ref="article.common" />
   </xed:template>
 
