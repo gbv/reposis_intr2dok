@@ -16,6 +16,7 @@
 # 2015-04-29: added DOI citation styles (neumann@gbv.de)
 # 2015-06-04: added js (neumann@gbv.de)
 # 2015-09-04: make OAI interface OpenAIRE compliant (neumann@gbv.de)
+# 2016-03-04: removed log4j configuration its now in log4j2.xml (neumann@gbv.de)
 #
 
 ##############################################################################
@@ -95,20 +96,6 @@ MCR.GoogleSitemap.Types=mods
 
 #  MCR.mir-module.EditorMail=IntR2Dok, Editormail <IntR2Dok@sbb.spk-berlin.de>
 #  MCR.mir-module.MailSender=IntR2Dok, Repository <IntR2Dok@sbb.spk-berlin.de>
-
-
-##############################################################################
-#                                                                            #
-# Logging                                                                    #
-#                                                                            #
-##############################################################################
-  log4j.appender.R=org.apache.log4j.DailyRollingFileAppender
-  log4j.appender.R.File=/mcr/%MCR.NameOfProject%/logs/mycore-application
-  log4j.appender.R.Append = true
-  log4j.appender.R.Encoding = UTF-8
-  log4j.appender.R.DatePattern = '.'yyyy-MM-dd'.log'
-  log4j.rootLogger=INFO, R
-  log4j.logger.org.mycore=INFO, R
 
 
 ##############################################################################

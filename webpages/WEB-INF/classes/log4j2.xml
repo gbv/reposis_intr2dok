@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF">
+  <appenders>
+    <RollingFile name="RollingFile" fileName="logs/app.log"
+                 filePattern="/mcr/IntR2Dok/logs/$${date:yyyy-MM}/mycore-%d{MM-dd-yyyy}-%i.log.gz">
+      <PatternLayout>
+        <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy />
+        <SizeBasedTriggeringPolicy size="250 MB"/>
+      </Policies>
+    </RollingFile>
+  </appenders>
+  <loggers>
+    <root level="info">
+      <appender-ref ref="RollingFile" />
+    </root>
+    <logger name="org.hibernate" level="error" />
+    <logger name="org.mycore.frontend.editor.validation" level="info" />
+  </loggers>
+</configuration>
