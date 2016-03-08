@@ -4,7 +4,7 @@
 #
 # created 2014-04-24
 # 2014-12-03: added mail configuration (neumann@gbv.de)
-# 2014-12-08: added mor documentation (neumann@gbv.de)
+# 2014-12-08: added more documentation (neumann@gbv.de)
 # 2015-01-13: added FileUpload configuration (neumann@gbv.de)
 # 2015-01-15: added URN configuration (neumann@gbv.de)
 # 2015-01-27: added SherpaRomeo ApiKey (neumann@gbv.de)
@@ -17,6 +17,7 @@
 # 2015-06-04: added js (neumann@gbv.de)
 # 2015-09-04: make OAI interface OpenAIRE compliant (neumann@gbv.de)
 # 2016-03-04: removed log4j configuration its now in log4j2.xml (neumann@gbv.de)
+# 2016-03-08: changed save dir (neumann@gbv.de)
 #
 
 ##############################################################################
