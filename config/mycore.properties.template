@@ -34,6 +34,7 @@
 
 # Datadirecotry
   MCR.datadir=/mcr/IntR2Dok/data
+  MCR.Save.FileSystem=/mcr/IntR2Dok/.mycore/IntR2Dok/save
 
 # Layout
   MIR.CustomLayout.CSS=intr2dok.css
