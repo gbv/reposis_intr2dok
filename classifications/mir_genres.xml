@@ -7,7 +7,7 @@
     <category ID="article">
       <label xml:lang="en" text="Article / Chapter" />
       <label xml:lang="de" text="Artikel / Aufsatz" />
-      <label xml:lang="x-hosts" text="journal collection proceedings standalone" />
+      <label xml:lang="x-hosts" text="journal series collection proceedings standalone" />
       <category ID="chapter">
         <label xml:lang="en" text="Book chapter" />
         <label xml:lang="x-hosts" text="monograph book collection" />
