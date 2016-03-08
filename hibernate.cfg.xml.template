@@ -15,7 +15,10 @@
     <property name="show_sql">false</property>
     <property name="jdbc.batch_size">0</property>
 
-    <!-- removed ehcache configuration, since there is no ehcache.xml -->
+    <!-- removed ehcache configuration, since there is no ehcache configuration in MyCoRe -->
+    <property name="cache.region.factory_class">org.hibernate.cache.internal.NoCachingRegionFactory</property>
+    <property name="cache.use_second_level_cache">false</property>
+    <property name="cache.use_query_cache">false</property>
 
     <!-- configuration pool via c3p0 -->
     <!-- HowTo: http://howtodoinjava.com/hibernate/hibernate-c3p0-connection-pool-configuration-tutorial/ -->
