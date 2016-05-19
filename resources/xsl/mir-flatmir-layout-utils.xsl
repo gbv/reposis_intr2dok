@@ -61,7 +61,7 @@
               </xsl:when>
               <xsl:otherwise>
                 <li id="publish">
-                  <a href="{$WebApplicationBaseURL}servlets/MCRActionMappingServlet/mods/create">
+                  <a href="{$WebApplicationBaseURL}authorization/new-author.xed">
                     <xsl:choose>
                       <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">Publizieren</xsl:when>
                       <xsl:otherwise>Registrieren</xsl:otherwise>
