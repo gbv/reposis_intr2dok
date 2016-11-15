@@ -43,10 +43,10 @@
         </div>
 
         <div class="searchfield_box">
-          <form action="{$WebApplicationBaseURL}servlets/solr/find?qry={0}" class="navbar-form navbar-left pull-right" role="search">
+          <form action="{$WebApplicationBaseURL}servlets/solr/find?q={0}" class="navbar-form navbar-left pull-right" role="search">
             <div class="form-group">
               <button class="btn btn-flat" type="submit"><i class="fa fa-search"></i></button>
-              <input id="searchInput" class="form-control search-query" placeholder="Suchbegriff eingeben" name="qry" type="text" />
+              <input id="searchInput" class="form-control search-query" placeholder="Suchbegriff eingeben" name="q" type="text" />
             </div>
           </form>
         </div>
