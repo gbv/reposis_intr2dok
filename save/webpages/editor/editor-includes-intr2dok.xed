@@ -116,4 +116,21 @@
     <mir:relItemsearch searchengine="empty" genre="blog" responsefield="url.access.raw_object" xpath="mods:location/mods:url[@access='raw object']" label="mir.link.blog" help-text="{i18n:mir.help.link.blog}" />
   </xed:template>
 
+  <xed:template id="producer.speaker.repeated">
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='cre']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='pro']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='spk']" />
+    <mir:person.repeated help-text="{i18n:mir.help.producer.speaker}">
+      <option value="cre">
+        <xed:output i18n="mir.role.creator" />
+      </option>
+      <option value="pro">
+        <xed:output i18n="mir.role.producer" />
+      </option>
+      <option value="spk">
+        <xed:output i18n="mir.role.speaker" />
+      </option>
+    </mir:person.repeated>
+  </xed:template>
+
 </xed:template>
