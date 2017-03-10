@@ -34,6 +34,31 @@
     </xed:bind>
   </xed:template>
 
+  <xed:template id="type.of.resource.audio">
+    <xed:bind xpath="mods:typeOfResource/@mcr:categId">
+      <div class="form-group {$xed-validation-marker}">
+        <label class="col-md-3 control-label required">
+          <xed:output i18n="mir.typeOfResource" />
+          :
+        </label>
+        <div class="col-md-6">
+          <select class="form-control form-control-inline">
+            <option value="typeOfResource:sound_recording">
+              Tonaufnahme
+            </option>
+            <option value="typeOfResource:sound_recording-musical">
+              Tonaufnahme (Musik)
+            </option>
+            <option value="typeOfResource:sound_recording-nonmusical">
+              Tonaufnahme (keine Musik)
+            </option>
+          </select>
+        </div>
+        <mir:help-pmud help-text="{i18n:mir.help.typeOfResource}" />
+      </div>
+    </xed:bind>
+  </xed:template>
+
   <xed:template id="related.item.reviewOf">
     <xed:repeat xpath="mods:relatedItem" min="1" max="1">
       <div class="form-group">
