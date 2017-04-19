@@ -395,6 +395,9 @@
       <xsl:element name="dc:type">
         <xsl:attribute name="xsi:type">dini:PublType</xsl:attribute>
         <xsl:choose>
+          <xsl:when test="contains(./metadata/def.modsContainer/modsContainer/mods:mods/mods:classification/@authorityURI,'diniPublType')">
+            <xsl:value-of select="substring-after(./metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[contains(@authorityURI,'diniPublType')]/@valueURI,'diniPublType#')" />
+          </xsl:when>
           <xsl:when test="contains(./metadata/def.modsContainer/modsContainer/mods:mods/mods:genre/@valueURI, 'article')">
             <xsl:text>contributionToPeriodical</xsl:text>
           </xsl:when>
@@ -460,22 +463,10 @@
                 <xsl:text>application/pdf</xsl:text>
               </xsl:element>
             </xsl:when>
-            <xsl:when test="contains(./contentType,'mp3')">
+            <xsl:when test="contains(./contentType,'audio/mpeg')">
               <xsl:element name="dcterms:medium">
                 <xsl:attribute name="xsi:type">dcterms:IMT</xsl:attribute>
                 <xsl:text>audio/mpeg</xsl:text>
-              </xsl:element>
-            </xsl:when>
-            <xsl:when test="contains(./contentType,'ogg')">
-              <xsl:element name="dcterms:medium">
-                <xsl:attribute name="xsi:type">dcterms:IMT</xsl:attribute>
-                <xsl:text>audio/ogg</xsl:text>
-              </xsl:element>
-            </xsl:when>
-            <xsl:when test="contains(./contentType,'wav')">
-              <xsl:element name="dcterms:medium">
-                <xsl:attribute name="xsi:type">dcterms:IMT</xsl:attribute>
-                <xsl:text>audio/wav</xsl:text>
               </xsl:element>
             </xsl:when>
             <xsl:when test="contains(./contentType,'zip')">
@@ -644,9 +635,7 @@
               <xsl:for-each select="$ifsDirectory/mcr_directory/children/child[@type='file']">
                 <xsl:if test="contains(./contentType,'pdf') or
                               contains(./contentType,'ps')  or
-                              contains(./contentType,'mp3') or
-                              contains(./contentType,'ogg') or
-                              contains(./contentType,'wav') or
+                              contains(./contentType,'audio/mpeg') or
                               contains(./contentType,'zip')">
                   <xsl:value-of select="'true'" />
                 </xsl:if>
