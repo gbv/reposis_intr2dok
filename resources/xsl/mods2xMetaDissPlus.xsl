@@ -469,6 +469,12 @@
                 <xsl:text>audio/mpeg</xsl:text>
               </xsl:element>
             </xsl:when>
+            <xsl:when test="contains(./contentType,'audio/x-wav')">
+              <xsl:element name="dcterms:medium">
+                <xsl:attribute name="xsi:type">dcterms:IMT</xsl:attribute>
+                <xsl:text>audio/x-wav</xsl:text>
+              </xsl:element>
+            </xsl:when>
             <xsl:when test="contains(./contentType,'zip')">
               <xsl:element name="dcterms:medium">
                 <xsl:attribute name="xsi:type">dcterms:IMT</xsl:attribute>
@@ -636,6 +642,7 @@
                 <xsl:if test="contains(./contentType,'pdf') or
                               contains(./contentType,'ps')  or
                               contains(./contentType,'audio/mpeg') or
+                              contains(./contentType,'audio/x-wav') or
                               contains(./contentType,'zip')">
                   <xsl:value-of select="'true'" />
                 </xsl:if>
