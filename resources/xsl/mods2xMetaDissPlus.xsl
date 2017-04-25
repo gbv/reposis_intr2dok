@@ -223,8 +223,21 @@
               </xsl:attribute>
             </xsl:if>
             <xsl:element name="pc:name">
-              <xsl:attribute name="type">nameUsedByThePerson</xsl:attribute>
               <xsl:choose>
+                <xsl:when test="@type='corporate'">
+                  <xsl:attribute name="type">otherName</xsl:attribute>
+                  <xsl:attribute name="otherNameType">organisation</xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:attribute name="type">nameUsedByThePerson</xsl:attribute>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:choose>
+                <xsl:when test="@type='corporate'">
+                  <xsl:element name="pc:organisationName">
+                    <xsl:value-of select="mods:displayForm" />
+                  </xsl:element>
+                </xsl:when>
                 <xsl:when test="mods:nameIdentifier[@type='gnd']">
                   <xsl:variable name="gndURL" select="concat('http://d-nb.info/gnd/',normalize-space(mods:nameIdentifier[@type='gnd']),'/about/lds.rdf')" />
                   <xsl:variable name="gndEntry" select="document($gndURL)" />
