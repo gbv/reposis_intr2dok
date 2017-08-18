@@ -332,6 +332,7 @@
 -->
   <xsl:template match="mods:identifier[position() = 1]">
     <dc:identifier>
+      <xsl:if test="@type='doi'">info:doi:</xsl:if>
       <xsl:value-of select="."/>
     </dc:identifier>
   </xsl:template>
