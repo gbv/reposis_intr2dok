@@ -77,6 +77,9 @@
         <xsl:for-each select="mods:mods">
           <oai_dc:dc
             xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+            <dc:type>
+              <xsl:value-of select="concat('info:eu-repo/semantics/',substring-after(mods:classification[@authorityURI='http://www.mycore.org/classifications/diniPublType']/@valueURI,'#'))" />
+            </dc:type>
             <xsl:apply-templates/>
           </oai_dc:dc>
         </xsl:for-each>
@@ -155,12 +158,6 @@
     <dc:subject>
       <xsl:value-of select="concat('ddc:',.)" />
     </dc:subject>
-  </xsl:template>
-
-  <xsl:template match="mods:classification[@authorityURI='http://www.mycore.org/classifications/diniPublType']">
-    <dc:type>
-      <xsl:value-of select="concat('doc-type:',substring-after(@valueURI,'#'))" />
-    </dc:type>
   </xsl:template>
 
   <xsl:template match="mods:classification">
@@ -310,45 +307,6 @@
         <xsl:apply-templates select="mods:typeOfResource"/>
       </xsl:otherwise>
     </xsl:choose>
-  </xsl:template>
-
-  <xsl:template match="mods:typeOfResource">
-    <xsl:if test="@collection='yes'">
-      <dc:type><xsl:text>info:eu-repo/semantics/Collection</xsl:text></dc:type>
-    </xsl:if>
-    <xsl:if test=". ='software' and ../mods:genre='database'">
-      <dc:type><xsl:text>info:eu-repo/semantics/Dataset</xsl:text></dc:type>
-    </xsl:if>
-    <xsl:if test=".='software' and ../mods:genre='online system or service'">
-      <dc:type><xsl:text>info:eu-repo/semantics/Service</xsl:text></dc:type>
-    </xsl:if>
-    <xsl:if test=".='software'">
-      <dc:type><xsl:text>info:eu-repo/semantics/Software</xsl:text></dc:type>
-    </xsl:if>
-    <xsl:if test=".='cartographic material'">
-      <dc:type><xsl:text>info:eu-repo/semantics/Image</xsl:text></dc:type>
-    </xsl:if>
-    <xsl:if test=".='multimedia'">
-      <dc:type><xsl:text>info:eu-repo/semantics/InteractiveResource</xsl:text></dc:type>
-    </xsl:if>
-    <xsl:if test=".='moving image'">
-      <dc:type><xsl:text>info:eu-repo/semantics/MovingImage</xsl:text></dc:type>
-    </xsl:if>
-    <xsl:if test=".='three dimensional object'">
-      <dc:type><xsl:text>info:eu-repo/semantics/PhysicalObject</xsl:text></dc:type>
-    </xsl:if>
-    <xsl:if test="starts-with(.,'sound recording')">
-      <dc:type><xsl:text>info:eu-repo/semantics/Sound</xsl:text></dc:type>
-    </xsl:if>
-    <xsl:if test=".='still image'">
-      <dc:type><xsl:text>info:eu-repo/semantics/StillImage</xsl:text></dc:type>
-    </xsl:if>
-    <xsl:if test=". ='text'">
-      <dc:type><xsl:text>info:eu-repo/semantics/Text</xsl:text></dc:type>
-    </xsl:if>
-    <xsl:if test=".='notated music'">
-      <dc:type><xsl:text>info:eu-repo/semantics/Text</xsl:text></dc:type>
-    </xsl:if>
   </xsl:template>
 
   <xsl:template match="mods:physicalDescription">
@@ -555,9 +513,9 @@
 
   <!-- von Paul Borchert -->
   <xsl:template match="mods:accessCondition[@type='embargo']">
-    <dc:rights>
+    <dc:date>
       <xsl:value-of select="concat('info:eu-repo/date/embargoEnd/',.)" />
-    </dc:rights>
+    </dc:date>
     <dc:rights>info:eu-repo/semantics/embargoedAccess</dc:rights>
   </xsl:template>
 
@@ -585,6 +543,11 @@
     <xsl:if test="(contains($trimmed, 'cc_') or contains($trimmed, 'oa_')) and not(../mods:accessCondition[@type='restriction on access']) and not(../mods:accessCondition[@type='embargo'])">
       <dc:rights>
         <xsl:text>info:eu-repo/semantics/openAccess</xsl:text>
+      </dc:rights>
+    </xsl:if>
+    <xsl:if test="(contains($trimmed, 'rights_reserved'))">
+      <dc:rights>
+        <xsl:text>info:eu-repo/semantics/restrictedAccess</xsl:text>
       </dc:rights>
     </xsl:if>
   </xsl:template>
