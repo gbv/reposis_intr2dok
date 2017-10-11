@@ -548,7 +548,7 @@
     </xsl:if>
     <xsl:if test="(contains($trimmed, 'rights_reserved'))">
       <dc:rights>
-        <xsl:text>info:eu-repo/semantics/restrictedAccess</xsl:text>
+        <xsl:text>info:eu-repo/semantics/openAccess</xsl:text>
       </dc:rights>
     </xsl:if>
   </xsl:template>
