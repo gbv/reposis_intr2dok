@@ -286,6 +286,11 @@ p {
           margin-bottom: 60px;
 }
 
+.lead {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
 /* Logo nur 2 statt 15 Pixel vom Rand entfernt
    Flucht liegt bei 13px vom linken Logo-Rand */
 .navbar-brand {
