@@ -176,6 +176,10 @@
          </xsl:attribute>
          <xsl:attribute name="xsi:type">ddb:titleISO639-2</xsl:attribute>
          <xsl:apply-templates mode="mods.title" select="./metadata/def.modsContainer/modsContainer/mods:mods" />
+         <xsl:if test="./metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo[not(@type='uniform' or @type='abbreviated' or @type='alternative' or @type='translated')]/mods:subTitle">
+           <xsl:text> : </xsl:text>
+           <xsl:value-of select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo[not(@type='uniform' or @type='abbreviated' or @type='alternative' or @type='translated')]/mods:subTitle" />
+         </xsl:if>
       </xsl:element>
 
       <xsl:if test="./metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo[@type='translated']">
@@ -190,6 +194,10 @@
            <xsl:apply-templates mode="mods.title" select="./metadata/def.modsContainer/modsContainer/mods:mods">
              <xsl:with-param name="type" select="'translated'" />
            </xsl:apply-templates>
+           <xsl:if test="./metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo[@type='translated']/mods:subTitle">
+             <xsl:text> : </xsl:text>
+             <xsl:value-of select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo[@type='translated']/mods:subTitle" />
+           </xsl:if>
         </xsl:element>
       </xsl:if>
     </xsl:template>
