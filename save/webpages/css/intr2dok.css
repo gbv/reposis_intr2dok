@@ -419,6 +419,12 @@ p {
   display: none;
 }
 
+#itd_badges {
+	margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+
 /* sm: tablets, 991px and less ***********************************************/
 @media (max-width: 991px) {
   .jumboHome h1 img {

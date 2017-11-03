@@ -19,5 +19,15 @@
 <p>Als Serviceangebot des Fachinformationsdiensts für internationale und interdisziplinäre Rechtsforschung ist das Open Access-Publizieren auf &lt;intR&gt;²Dok an eine Registrierung gebunden, die vorrangig dem wissenschaftlichen Personal universitärer wie außeruniversitärer Forschungseinrichtungen offen steht. <a href="brand/how.xml" shape="rect" style="color:#9E1B34" title="mehr erfahren">[...]</a></p>
 </div>
 </div>
+<div class="row" id="itd_badges">
+<div class="col-md-6 col-md-offset-3">
+<a class="pull-left" href="https://www.re3data.org/repository/r3d100012347">
+  <object type="image/svg+xml" data="images/re3data.svg"><img src="images/re3data.png" style="max-width:100%" /></object>
+</a>
+<a class="pull-left" href="http://www.dini.de/dini-zertifikat/">
+  <img src="images/dini_zertifikat_2016.svg" alt="Logo DINI-Zertifikat 2016" width="250" height="100" />
+</a>
+</div>
+</div>
 </div>
 </section><meta><log lastEditor="cmathieu" date="2017-04-25" time="13:32" /></meta></MyCoReWebPage>
