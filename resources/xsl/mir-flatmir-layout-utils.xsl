@@ -45,10 +45,13 @@
         </div>
 
         <div class="searchfield_box">
-          <form action="{$WebApplicationBaseURL}servlets/solr/find?q={0}" class="navbar-form navbar-left pull-right" role="search">
+          <form action="{$WebApplicationBaseURL}servlets/solr/find" class="navbar-form navbar-left pull-right" role="search">
+            <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
             <div class="form-group">
-              <button class="btn btn-flat" type="submit"><i class="fa fa-search"></i></button>
-              <input id="searchInput" class="form-control search-query" placeholder="Suchbegriff eingeben" name="q" type="text" />
+              <input name="condQuery" placeholder="Suchebegriff eingeben" class="form-control search-query" id="searchInput" type="text" />
+              <xsl:if test="not(mcrxsl:isCurrentUserGuestUser())">
+                <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
+              </xsl:if>
             </div>
           </form>
         </div>
