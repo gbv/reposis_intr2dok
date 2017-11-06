@@ -46,9 +46,9 @@
 
         <div class="searchfield_box">
           <form action="{$WebApplicationBaseURL}servlets/solr/find" class="navbar-form navbar-left pull-right" role="search">
-            <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+            <button type="submit" class="btn btn-flat"><i class="fa fa-search"></i></button>
             <div class="form-group">
-              <input name="condQuery" placeholder="Suchebegriff eingeben" class="form-control search-query" id="searchInput" type="text" />
+              <input name="condQuery" placeholder="Suchbegriff eingeben" class="form-control search-query" id="searchInput" type="text" />
               <xsl:if test="not(mcrxsl:isCurrentUserGuestUser())">
                 <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
               </xsl:if>
