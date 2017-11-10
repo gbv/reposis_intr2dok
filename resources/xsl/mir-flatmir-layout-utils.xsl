@@ -88,11 +88,14 @@
     <xsl:if test="//div/@class='jumbotwo'">
       <div class="jumboHome">
         <div class="container">
-          <div class="col-md-6">
+          <div class="col-md-5">
             <h1><img alt="&lt;intR>²Dok [§]" class="intR2Dok_logo" title="IntR2Dok - Logo" src="images/logo_intR2Dok.png" /></h1>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <h2>Fachinformationsdienst für <br />internationale und interdisziplinäre<br /> Rechtsforschung</h2>
+          </div>
+          <div class="col-md-2">
+            <a href="http://www.dini.de/dini-zertifikat/" class="pull-right intR2Dok_dini"><img src="images/dini_zertifikat_2016.svg" alt="Logo DINI-Zertifikat 2016" height="150" /></a>
           </div>
         </div>
       </div>
