@@ -260,6 +260,7 @@ html body #powered_by {
 
 .intR2Dok_dini {
   margin-top: 33px;
+  margin-right: -15px;
 }
 
 .intR2Dok_logo {
@@ -329,9 +330,10 @@ p {
 }
 .jumboHome h2 {
   margin-top: 67px;
+  padding-left: 15px;
   color: #bb0734;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 26px;
   letter-spacing: .180em;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -461,7 +463,7 @@ p {
 /* lg: up to 1200 px ********************************************************/
 @media (min-width: 1200px) {
   .jumboHome h1 img {
-    width: 509px;
+    /* width: 509px; */
   }
 }
 
