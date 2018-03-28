@@ -27,7 +27,22 @@
       </xed:bind>
     </div>
   </xed:template>
-
+  
+  <xed:template id="monograph">
+    <div class="mir-form-group-body">
+      <xed:bind xpath="mods:relatedItem[@type='host']">
+        <xed:bind xpath="@xlink:href" initially="mir_mods_00000000"> <input id="relItem-collection" type="hidden" /> </xed:bind>
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="title.monograph.relItemsearch" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subtitle" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="editor.repeated" />
+        <xed:include uri="webapp:editor/editor-hosts.xed" ref="collection.common.publisher" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="identifier.isbn.monograph.relItemsearch" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host.pages" />
+      </xed:bind>
+    </div>
+  </xed:template>
+  
   <xed:template id="collection">
     <div class="mir-form-group-body">
       <xed:bind xpath="mods:relatedItem[@type='host']">
