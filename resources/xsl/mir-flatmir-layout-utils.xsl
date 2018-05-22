@@ -156,6 +156,7 @@
         <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
       </a>
     </div>
+    <script type="text/javascript" src="{$WebApplicationBaseURL}js/jquery.cookiebar.js"></script>
     <!-- Piwik -->
     <xsl:if test="$piwikID &gt; 0">
       <script type="text/javascript">

@@ -29,6 +29,19 @@ $﻿(document).ready(function() {
   $("#open-aire_trigger_checkbox").click(function(){
     toggleOAOptions();
   });
+  
+  $.cookieBar({
+    fixed: true,
+    message: 'Auf den Seiten von &lt;intR&gt;²Dok werden Cookies für einen nutzerfreundlichen Umgang verwendet. Mit der Nutzung dieser Seiten erklären Sie, dass Sie die rechtlichen Hinweise gelesen haben und diese akzeptieren.',
+    acceptText: 'Akzeptieren',
+    policyButton: true,
+    policyText: 'Hinweise zum Datenschutz',
+    policyURL: '/content/rights/privacy.xml',
+    expireDays: 356,
+    zindex: '4000',
+    domain: 'intr2dok.vifa-recht.de',
+    referrer: 'intr2dok.vifa-recht.de'
+  });
 
 });
 
