@@ -3,8 +3,8 @@ $﻿(document).ready(function() {
 
   // replace placeholder USERNAME with username
   var userID = $("#currentUser strong").html();
-  var newHref = 'http://intr2dok.vifa-recht.de/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
-  $("a[href='http://intr2dok.vifa-recht.de/servlets/solr/select?q=createdby:USERNAME']").attr('href', newHref);
+  var newHref = 'https://intr2dok.vifa-recht.de/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
+  $("a[href='https://intr2dok.vifa-recht.de/servlets/solr/select?q=createdby:USERNAME']").attr('href', newHref);
 
   // spam protection for mails
   $('span.madress').each(function(i) {
@@ -32,13 +32,13 @@ $﻿(document).ready(function() {
   
   $.cookieBar({
     fixed: true,
-    message: 'Auf den Seiten von &lt;intR&gt;²Dok werden Cookies für einen nutzerfreundlichen Umgang verwendet. Mit der Nutzung dieser Seiten erklären Sie, dass Sie die rechtlichen Hinweise gelesen haben und diese akzeptieren.',
+    message: 'Auf den Seiten von &lt;intR&gt;²Dok werden zur Erhöhung des Bedienungskomforts Cookies verwendet. Mit der Nutzung dieser Seiten erklären Sie, dass Sie die rechtlichen Hinweise gelesen haben und akzeptieren.',
     acceptText: 'Akzeptieren',
     policyButton: true,
     policyText: 'Hinweise zum Datenschutz',
     policyURL: '/content/rights/privacy.xml',
-    expireDays: 356,
-    zindex: '4000',
+    expireDays: 1,
+    zindex: '356',
     domain: 'intr2dok.vifa-recht.de',
     referrer: 'intr2dok.vifa-recht.de'
   });
