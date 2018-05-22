@@ -16,7 +16,7 @@
 
 <div class="three_column">
 <p>Für die Optimierung unserer Angebote liefern personenbezogene Daten keinerlei Mehrwert. Für die Webanalyse setzten wir daher die von Datenschützern empfohlene Nutzungsanalyse-Software Matomo ein. Durch eine automatische Anonymisierung der IP-Adressen mit dem Plugin AnonymizeIP können die erhobenen Daten nicht mehr bestimmten Personen zugeordnet werden. Damit ist ausgeschlossen, dass Nutzungsdaten oder Nutzungsprofile mit personenbezogenen Daten in Verbindung gebracht werden.</p>
-<iframe src="https://piwik.gbv.de/index.php?module=CustomOptOut&amp;action=optOut&amp;language=de&amp;idSite=22" style="border: 0; height: 250px; width: 600px;" /></div>
+<iframe src="https://matomo.gbv.de/index.php?module=CustomOptOut&amp;action=optOut&amp;language=de&amp;idSite=22" style="border: 0; height: 250px; width: 600px;" /></div>
 
 <h3>Welche Daten werden mit Hilfe die Nutzungsanalyse-Software Matomo gespeichert?</h3>
 
