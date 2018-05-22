@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
     xmlns:mcrver="xalan://org.mycore.common.MCRCoreVersion"
     xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-    exclude-result-prefixes="mcrver mcrxsl">
+    exclude-result-prefixes="i18n mcrver mcrxsl">
 
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
   <xsl:param name="piwikID" select="'0'" />
@@ -48,10 +49,15 @@
           <form action="{$WebApplicationBaseURL}servlets/solr/find" class="navbar-form navbar-left pull-right" role="search">
             <button type="submit" class="btn btn-flat"><i class="fa fa-search"></i></button>
             <div class="form-group">
-              <input name="q" placeholder="Suchbegriff eingeben" class="form-control search-query" id="searchInput" type="text" />
-              <xsl:if test="not(mcrxsl:isCurrentUserGuestUser())">
-                <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
-              </xsl:if>
+              <input name="condQuery" placeholder="{i18n:translate('mir.navsearch.placeholder')}" class="form-control search-query" id="searchInput" type="text" />
+              <xsl:choose>
+                <xsl:when test="mcrxsl:isCurrentUserInRole('admin') or mcrxsl:isCurrentUserInRole('editor')">
+                  <input name="owner" type="hidden" value="createdby:*" />
+                </xsl:when>
+                <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
+                  <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
+                </xsl:when>
+              </xsl:choose>
             </div>
           </form>
         </div>
@@ -158,7 +164,7 @@
             _paq.push(['trackPageView']);
             _paq.push(['enableLinkTracking']);
             (function() {
-              var u="https://piwik.gbv.de/";
+              var u="https://matomo.gbv.de/";
               var objectID = '<xsl:value-of select="//site/@ID" />';
               if(objectID != "") {
                 _paq.push(["setCustomVariable",1, "object", objectID, "page"]);
@@ -170,7 +176,7 @@
               g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
             })();
       </script>
-      <noscript><p><img src="https://piwik.gbv.de/piwik.php?idsite={$piwikID}" style="border:0;" alt="" /></p></noscript>
+      <noscript><p><img src="https://matomo.gbv.de/piwik.php?idsite={$piwikID}" style="border:0;" alt="" /></p></noscript>
     </xsl:if>
     <!-- End Piwik Code -->
   </xsl:template>

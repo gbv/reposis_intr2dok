@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-  <section title="Einfache Suche über alle Publikationen" xml:lang="de" />
 
-  <section title="Simple search in all publications" xml:lang="en" />
-
-  <section xml:lang="all" xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
+  <section xml:lang="all" xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir"
+      i18n="component.mods.editor.search.simple.pagetitle">
     <xed:form class="form-horizontal" role="form">
       <xed:post-processor xsl="query-postprocessor.xsl" />
       <xed:source uri="searchInput:{id}" />
@@ -21,17 +19,13 @@
 
         <xed:bind xpath="conditions/boolean[@operator='and']">
             <!-- Title -->
-              <mir:template name="textInput" xpath="condition[@field='mods.title']/@value" id="inputTitle1" i18n="editor.search.mir.title"
-                tooltip="editor.search.mir.title.tooltip" />
+              <mir:template name="textInput" xpath="condition[@field='mods.title']/@value" id="inputTitle1" i18n="editor.search.mir.title" tooltip="editor.search.mir.title.tooltip" />
             <!-- Name -->
-              <mir:template name="textInput" xpath="condition[@field='mods.name']/@value" id="inputName1" i18n="editor.search.mir.name"
-                tooltip="editor.search.mir.name.tooltip" />
+              <mir:template name="textInput" xpath="condition[@field='mods.name']/@value" id="inputName1" i18n="editor.search.mir.name" tooltip="editor.search.mir.name.tooltip" />
             <!-- Metadata -->
-              <mir:template name="textInput" xpath="condition[@field='allMeta']/@value" id="inputMeta1" i18n="editor.search.metadata"
-                tooltip="editor.search.metadata.tooltip" />
+              <mir:template name="textInput" xpath="condition[@field='allMeta']/@value" id="inputMeta1" i18n="editor.search.metadata" tooltip="editor.search.metadata.tooltip" />
             <!-- Content -->
-              <mir:template name="textInput" xpath="condition[@field='content']/@value" id="inputContent1" i18n="editor.search.derivate"
-                tooltip="editor.search.derivate.tooltip" />
+              <mir:template name="textInput" xpath="condition[@field='content']/@value" id="inputContent1" i18n="editor.search.derivate" tooltip="editor.search.derivate.tooltip" />
             <!-- Institution -->
               <mir:template name="selectInput" xpath="condition[@field='category'][1]/@value" id="inputInst1" i18n="editor.search.mir.institute"
                 tooltip="editor.search.mir.institute.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:mir_institutes" />
@@ -39,8 +33,8 @@
         <xed:bind xpath="boolean[@operator='or']" default="{$CurrentUser}" -->
           <!-- xed:bind xpath="condition[@field='createdby']/@value" default="{$CurrentUser}" / -->
             <!-- Status -->
-              <mir:template name="selectInput" xpath="condition[@field='state']/@value" id="inputStatus1" i18n="editor.search.status"
-                tooltip="editor.search.status.tooltip" uri="xslStyle:items2options:classification:editor:-1:children:state" />
+              <mir:template name="selectInput" xpath="condition[@field='state']/@value" id="inputStatus1" i18n="editor.search.status" tooltip="editor.search.status.tooltip"
+                uri="xslStyle:items2options:classification:editor:-1:children:state" />
         <!-- /xed:bind>
         <xed:bind xpath="conditions/boolean[@operator='and']" -->
             <!--Fulltext -->
@@ -55,10 +49,14 @@
                 </div>
               </div>
         </xed:bind>
+          </div>
             <!-- submit -->
+          <div class="panel-footer clearfix">
+            <div class="pull-right">
               <mir:template name="submitButton" i18n="editor.search.search" target="servlet_MCRQLSearchServlet" />
             </div>
           </div>
+        </div>
       </xed:bind>
     </xed:form>
   </section>

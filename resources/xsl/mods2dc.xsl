@@ -6,14 +6,15 @@
                 xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns:mcrurn="xalan://org.mycore.urn.MCRXMLFunctions"
                 xmlns:mcrmods="xalan://org.mycore.mods.classification.MCRMODSClassificationSupport"
                 xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-                exclude-result-prefixes="xsl mods mcrurn mcrmods mcrxsl xlink srw_dc">
+                exclude-result-prefixes="xsl mods mcrmods mcrxsl xlink srw_dc">
 
   <!-- xmlns:opf="http://www.idpf.org/2007/opf" -->
 
+  <xsl:param name="WebApplicationBaseURL" select="''" />
   <xsl:param name="MCR.URN.Resolver.MasterURL" select="''" />
+  <xsl:param name="MCR.DOI.Resolver.MasterURL" select="''" />
   <!--
   Version 1.4		2013-12-13 tmee@loc.gov
   Upgraded to MODS 3.5
@@ -59,6 +60,8 @@
 
   <xsl:template match="/">
 
+    <xsl:variable name="objId" select="@ID" />
+
     <xsl:choose>
       <!-- WS: updated schema location -->
       <xsl:when test="//mods:modsCollection">
@@ -80,7 +83,27 @@
             <dc:type>
               <xsl:value-of select="concat('info:eu-repo/semantics/',substring-after(mods:classification[@authorityURI='http://www.mycore.org/classifications/diniPublType']/@valueURI,'#'))" />
             </dc:type>
-            <xsl:apply-templates/>
+            <xsl:apply-templates select="mods:titleInfo" />
+            <xsl:apply-templates select="mods:name" />
+            <xsl:apply-templates select="mods:genre" />
+            <xsl:apply-templates select="mods:typeOfResource" />
+            <xsl:apply-templates select="mods:identifier[@type='doi']" />
+            <xsl:apply-templates select="mods:identifier[@type='urn']" />
+            <dc:identifier>
+              <xsl:value-of select="concat($WebApplicationBaseURL, 'receive/', $objId)"></xsl:value-of>
+            </dc:identifier>
+            <xsl:apply-templates select="mods:identifier[not(@type='doi')][not(@type='urn')]" />
+            <xsl:apply-templates select="mods:location" />
+            <xsl:apply-templates select="mods:classification" />
+            <xsl:apply-templates select="mods:subject" />
+            <xsl:apply-templates select="mods:abstract" />
+            <xsl:apply-templates select="." mode="dc_date" />
+            <xsl:apply-templates select="mods:originInfo" />
+            <xsl:apply-templates select="mods:temporal" />
+            <xsl:apply-templates select="mods:physicalDescription" />
+            <xsl:apply-templates select="mods:language" />
+            <xsl:apply-templates select="mods:relatedItem" />
+            <xsl:apply-templates select="mods:accessCondition" />
           </oai_dc:dc>
         </xsl:for-each>
       </xsl:otherwise>
@@ -160,6 +183,12 @@
     </dc:subject>
   </xsl:template>
 
+  <xsl:template match="mods:classification[@authorityURI='http://www.mycore.org/classifications/diniPublType']">
+    <dc:type>
+      <xsl:value-of select="concat('doc-type:',substring-after(@valueURI,'#'))" />
+    </dc:type>
+  </xsl:template>
+
   <xsl:template match="mods:classification">
 
     <xsl:variable name="classlink" select="mcrmods:getClassCategLink(.)" />
@@ -179,7 +208,7 @@
     <dc:subject>
       <xsl:for-each select="mods:topic | mods:occupation">
         <xsl:value-of select="."/>
-        <xsl:if test="position()!=last()">--</xsl:if>
+        <xsl:if test="position()!=last()"><xsl:text> -- </xsl:text></xsl:if>
       </xsl:for-each>
       <xsl:for-each select="mods:name">
         <xsl:call-template name="name"/>
@@ -203,7 +232,7 @@
         <xsl:for-each
           select="mods:continent|mods:country|mods:provence|mods:region|mods:state|mods:territory|mods:county|mods:city|mods:island|mods:area">
           <xsl:value-of select="."/>
-          <xsl:if test="position()!=last()">--</xsl:if>
+          <xsl:if test="position()!=last()"><xsl:text> -- </xsl:text></xsl:if>
         </xsl:for-each>
       </dc:coverage>
     </xsl:for-each>
@@ -228,7 +257,7 @@
         <xsl:for-each
           select="*[local-name()!='cartographics' and local-name()!='geographicCode' and local-name()!='hierarchicalGeographic'] ">
           <xsl:value-of select="."/>
-          <xsl:if test="position()!=last()">--</xsl:if>
+          <xsl:if test="position()!=last()"><xsl:text> -- </xsl:text></xsl:if>
         </xsl:for-each>
       </dc:subject>
     </xsl:if>
@@ -260,20 +289,38 @@
 
   </xsl:template>
 
+  <xsl:template match="mods:mods" mode="dc_date">
+    <xsl:choose>
+      <xsl:when test="mods:originInfo/mods:dateIssued[@point='start']">
+        <xsl:apply-templates select="mods:originInfo/mods:dateIssued[@point='start']" />
+      </xsl:when>
+      <xsl:when test="mods:originInfo/mods:dateIssued">
+        <xsl:apply-templates select="mods:originInfo/mods:dateIssued[1]" />
+      </xsl:when>
+      <xsl:when test="mods:originInfo/mods:dateCreated[@point='start']">
+        <xsl:apply-templates select="mods:originInfo/mods:dateCreated[@point='start']" />
+      </xsl:when>
+      <xsl:when test="mods:originInfo/mods:dateCreated">
+        <xsl:apply-templates select="mods:originInfo/mods:dateCreated[1]" />
+      </xsl:when>
+      <xsl:when test="mods:originInfo/mods:dateCaptured[@point='start']">
+        <xsl:apply-templates select="mods:originInfo/mods:dateCaptured[@point='start']" />
+      </xsl:when>
+      <xsl:when test="mods:originInfo/mods:dateCaptured">
+        <xsl:apply-templates select="mods:originInfo/mods:dateCaptured[1]" />
+      </xsl:when>
+      <xsl:otherwise>
+        <dc:date>
+          <xsl:comment>metadata creation date</xsl:comment>
+          <xsl:value-of select="substring-before(../../../../service/servdates/servdate[@type='createdate'],'T')" />
+        </dc:date>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
   <xsl:template match="mods:dateIssued | mods:dateCreated | mods:dateCaptured">
     <dc:date>
-      <xsl:choose>
-        <xsl:when test="@point='start'">
-          <xsl:value-of select="."/>
-          <xsl:text> - </xsl:text>
-        </xsl:when>
-        <xsl:when test="@point='end'">
-          <xsl:value-of select="."/>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="."/>
-        </xsl:otherwise>
-      </xsl:choose>
+      <xsl:value-of select="."/>
     </dc:date>
   </xsl:template>
 
@@ -281,8 +328,8 @@
     match="mods:dateIssued[@point='start'] | mods:dateCreated[@point='start'] | mods:dateCaptured[@point='start'] | mods:dateOther[@point='start'] ">
     <xsl:variable name="dateName" select="local-name()"/>
     <dc:date>
-      <xsl:value-of select="."/>-<xsl:value-of
-      select="../*[local-name()=$dateName][@point='end']"/>
+      <!-- for ranges see: http://dublincore.org/documents/date-element/ -->
+      <xsl:value-of select="concat(., '/', ../*[local-name()=$dateName and @point='end'])" />
     </dc:date>
   </xsl:template>
 
@@ -297,16 +344,59 @@
     <xsl:choose>
       <xsl:when test="@authority='dct'">
         <dc:type>
-          <xsl:value-of select="substring-after(@valueURI,'#')"/>
+          <xsl:value-of select="."/>
         </dc:type>
       </xsl:when>
-      <xsl:otherwise>
+      <xsl:when test="@authority='marcgt'">
+        <dc:type>
+          <xsl:value-of select="."/>
+        </dc:type>
+      </xsl:when>
+      <xsl:when test="contains(@valueURI,'#')">
         <dc:type>
           <xsl:value-of select="substring-after(@valueURI,'#')"/>
         </dc:type>
-        <xsl:apply-templates select="mods:typeOfResource"/>
-      </xsl:otherwise>
+      </xsl:when>
     </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="mods:typeOfResource">
+    <xsl:if test="@collection='yes'">
+      <dc:type>Collection</dc:type>
+    </xsl:if>
+    <xsl:if test=". ='software' and ../mods:genre='database'">
+      <dc:type>Dataset</dc:type>
+    </xsl:if>
+    <xsl:if test=".='software' and ../mods:genre='online system or service'">
+      <dc:type>Service</dc:type>
+    </xsl:if>
+    <xsl:if test=".='software'">
+      <dc:type>Software</dc:type>
+    </xsl:if>
+    <xsl:if test=".='cartographic material'">
+      <dc:type>Image</dc:type>
+    </xsl:if>
+    <xsl:if test=".='multimedia'">
+      <dc:type>InteractiveResource</dc:type>
+    </xsl:if>
+    <xsl:if test=".='moving image'">
+      <dc:type>MovingImage</dc:type>
+    </xsl:if>
+    <xsl:if test=".='three dimensional object'">
+      <dc:type>PhysicalObject</dc:type>
+    </xsl:if>
+    <xsl:if test="starts-with(.,'sound recording')">
+      <dc:type>Sound</dc:type>
+    </xsl:if>
+    <xsl:if test=".='still image'">
+      <dc:type>StillImage</dc:type>
+    </xsl:if>
+    <xsl:if test=". ='text'">
+      <dc:type>Text</dc:type>
+    </xsl:if>
+    <xsl:if test=".='notated music'">
+      <dc:type>Text</dc:type>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="mods:physicalDescription">
@@ -330,30 +420,40 @@
     </dc:format>
   </xsl:template>
 -->
-  <xsl:template match="mods:identifier[position() = 1]">
-    <dc:identifier>
-      <xsl:if test="@type='doi'">info:doi:</xsl:if>
-      <xsl:value-of select="."/>
-    </dc:identifier>
+
+<xsl:template match="mods:identifier[position() = 1]">
+    <xsl:variable name="type"
+      select="translate(@type,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>
+
+    <xsl:if test="@type and contains('isbn issn uri doi lccn uri urn', $type)">
+      <dc:identifier>
+        <xsl:choose>
+          <xsl:when test="@type='urn'">
+              <xsl:value-of select="concat($MCR.URN.Resolver.MasterURL, .)" />
+          </xsl:when>
+          <xsl:when test="@type='doi'">
+            <xsl:value-of select="concat($MCR.DOI.Resolver.MasterURL, .)" />
+          </xsl:when>
+          <xsl:when test="@type='hdl'">
+              <xsl:text>http://hdl.handle.net/</xsl:text>
+              <xsl:value-of select="." />
+          </xsl:when>
+          <xsl:when test="contains(.,':')">
+            <xsl:value-of select="."/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="$type"/>: <xsl:value-of select="."/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </dc:identifier>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="mods:identifier[position() != 1]">
     <xsl:variable name="type"
                   select="translate(@type,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>
 
-    <xsl:variable name="hasURN">
-      <xsl:choose>
-        <xsl:when test="//structure/derobjects/derobject/@xlink:href">
-          <xsl:value-of select="mcrurn:hasURNDefined(//structure/derobjects/derobject/@xlink:href)" />
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="boolean('false')" />
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
-
-    <xsl:if test="not($hasURN) and contains ('isbn issn uri doi lccn uri urn wos hdl ark arxiv pissn eissn purl pmid',
-     $type)">
+        <xsl:if test="contains ('isbn issn uri doi lccn uri urn', $type)">
       <dc:relation>
 
         <xsl:choose>
@@ -363,7 +463,7 @@
             <xsl:value-of select="concat('info:eu-repo/semantics/altIdentifier/urn/',$MCR.URN.Resolver.MasterURL, .)" />
           </xsl:when>
           <xsl:when test="@type='doi'">
-            <xsl:value-of select="concat('info:eu-repo/semantics/altIdentifier/doi/',.)" />
+            <xsl:value-of select="concat('info:eu-repo/semantics/altIdentifier/doi/',$MCR.DOI.Resolver.MasterURL,.)" />
           </xsl:when>
           <xsl:when test="@type='ark'">
             <xsl:value-of select="concat('info:eu-repo/semantics/altIdentifier/ark/',.)" />
@@ -398,15 +498,15 @@
           <xsl:when test="@type='pmid'">
             <xsl:value-of select="concat('info:eu-repo/semantics/altIdentifier/pmid/',.)" />
           </xsl:when>
-          <!--<xsl:when test="contains(.,':')">
+          <xsl:when test="contains(.,':')">
             <xsl:value-of select="."/>
           </xsl:when>
           <xsl:when test="@type">
             <xsl:value-of select="$type"/>: <xsl:value-of select="."/>
-          </xsl:when>-->
-          <!-- removed by Paul Borchert <xsl:otherwise>
-            <xsl:value-of select="."/>
-          </xsl:otherwise> -->
+          </xsl:when>
+          <xsl:when test="contains ('isbn issn uri doi lccn uri', $type)">
+            <xsl:value-of select="$type"/>: <xsl:value-of select="."/>
+          </xsl:when>
         </xsl:choose>
       </dc:relation>
 
@@ -462,7 +562,7 @@
   </xsl:template>
 
   <xsl:template match="mods:location">
-    <xsl:for-each select="mods:url">
+    <xsl:for-each select="mods:url[not(contains(text(), $WebApplicationBaseURL))]">
       <dc:identifier>
         <xsl:value-of select="."/>
       </dc:identifier>
@@ -486,7 +586,7 @@
             select="mods:titleInfo/mods:title | mods:identifier | mods:location/mods:url">
             <xsl:if test="normalize-space(.)!= ''">
               <xsl:value-of select="."/>
-              <xsl:if test="position()!=last()">--</xsl:if>
+              <xsl:if test="position()!=last()"><xsl:text> -- </xsl:text></xsl:if>
             </xsl:if>
           </xsl:for-each>
         </dc:source>
@@ -498,7 +598,7 @@
             select="mods:titleInfo/mods:title | mods:identifier | mods:location/mods:url">
             <xsl:if test="normalize-space(.)!= ''">
               <xsl:value-of select="."/>
-              <xsl:if test="position()!=last()">--</xsl:if>
+              <xsl:if test="position()!=last()"><xsl:text> -- </xsl:text></xsl:if>
             </xsl:if>
           </xsl:for-each>
         </dc:relation>
@@ -517,6 +617,9 @@
     <dc:date>
       <xsl:value-of select="concat('info:eu-repo/date/embargoEnd/',.)" />
     </dc:date>
+    <dc:rights>
+      <xsl:text>Fulltext available at </xsl:text> <xsl:value-of select="."/>
+    </dc:rights>
     <dc:rights>info:eu-repo/semantics/embargoedAccess</dc:rights>
   </xsl:template>
 
