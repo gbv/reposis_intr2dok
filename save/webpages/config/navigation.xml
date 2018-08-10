@@ -87,6 +87,10 @@
             <label xml:lang="de">nach &lt;intR&gt;²Dok-Systematik</label>
             <label xml:lang="en">Systematik Recht</label>
         </item>
+        <item href="/content/browse/intr2dok_projects.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">nach Projekten</label>
+            <label xml:lang="en">Projects</label>
+        </item>
         <item href="/servlets/MCRActionMappingServlet/personindex/browse" type="extern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">nach Personen</label>
             <label xml:lang="en">Persons</label>

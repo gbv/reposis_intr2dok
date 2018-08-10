@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="intr2dok_projects">
+  <label xml:lang="en" text="Projects" description="A list of projects" />
+  <label xml:lang="de" text="Projekte" description="Liste der Projekte" />
+  <label xml:lang="x-uri" text="https://intr2dok.vifa-recht.de/classifications/intr2dok_projects" />
+  <categories>
+    <category ID="Transnational_Force_of_Law">
+      <label xml:lang="de" text="Transnational Force of Law" />
+      <label xml:lang="en" text="Transnational Force of Law" />
+    </category>
+  </categories>
+</mycoreclass>
