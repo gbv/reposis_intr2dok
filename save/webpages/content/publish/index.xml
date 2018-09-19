@@ -48,31 +48,6 @@
       </div>
     </div>
 
-<!--       <div id="more_options_toggle" class="row">
-        <div class="col-sm-3 col-lg-2"></div>
-        <div class="col-sm-9 col-lg-10">
-          <span id="more_options_trigger">
-            <span id="more_options_label">weitere Optionen anzeigen</span>
-            <span id="more_options_button" class="glyphicon glyphicon-chevron-up"></span>
-          </span>
-        </div>
-      </div> -->
-
-<!-- ppn -->
-<!--       <div id="more_options_box" class="row form-group">
-        <label for="genre" class="col-sm-3 col-lg-2 control-label">mit der PPN:</label>
-        <div class="col-sm-7 col-md-5  col-lg-4">
-          <input type="text" name="ppn" id="ppn" class="form-control" size="20" placeholder="z.B. 198562268" />
-        </div>
-        <div class="hidden-xs col-sm-3 hidden-lg"></div>
-        <div class="col-sm-7 col-md-4 col-lg-5">
-          <p>
-            Sollten die Daten bereits im GVK des GBV erfasst sein, können Sie diese über Angabe der PPN in die Erfassungsmaske
-            übernehmen.
-          </p>
-        </div>
-      </div> -->
-
 <!-- submit -->
       <div class="row form-group">
         <div class="col-sm-3 col-md-2"></div>
