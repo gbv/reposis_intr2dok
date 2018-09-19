@@ -255,7 +255,7 @@
   <xed:template id="blog_entry">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.original" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
-    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="date.issued" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="date.issued.required" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="language" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="intr2dok_systematik" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="intr2dok_projects" />

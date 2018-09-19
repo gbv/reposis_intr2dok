@@ -147,7 +147,7 @@
   </xed:template>
 
   <xed:template id="blog_entry_link">
-    <mir:textfield xpath="mods:location/mods:url[@access='raw object']" label="mir.link.blog_entry" help-text="{i18n:mir.help.link.blog_entry}" />
+    <mir:textfield xpath="mods:location/mods:url[@access='raw object']" label="mir.link.blog_entry" help-text="{i18n:mir.help.link.blog_entry}"  class="required" required="true" required-i18n="mir.validation.link.blog_entry" />
   </xed:template>
 
   <xed:template id="title.blog.relItemsearch">
@@ -187,5 +187,11 @@
     <mir:relItemsearch searchengine="isbn" genre="monograph" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn"
       help-text="{i18n:mir.help.identifier.isbn}" />
   </xed:template>
+  
+  <xed:template id="date.issued.required">
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}"
+      placeholder="{i18n:mir.placeholder.date}" class="required" required="true" required-i18n="mir.validation.date.issued" />
+  </xed:template>
+  
 
 </xed:template>
