@@ -43,6 +43,10 @@ $﻿(document).ready(function() {
     referrer: 'intr2dok.vifa-recht.de'
   });
 
+  var v1 = jQuery(".nav li a:contains('Verfassungsblog')");
+  v1.on("click", function(e){ e.preventDefault(); openWpImport("Verfassungsblog"); return false; });
+  var v2 = jQuery(".nav li a:contains('Völkerrechtsblog')");
+  v2.on("click", function(e){ e.preventDefault(); openWpImport("Völkerrechtsblog"); return false;  });
 });
 
 
@@ -62,3 +66,25 @@ function toggleOAOptions() {
     localStorage.setItem("open_aire_options_are_visible", true);
   }
 }
+
+function openWpImport(config) {
+    var req = new XMLHttpRequest();
+    req.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var responseObj = JSON.parse(this.response);
+	    var link = document.createElement('a');
+    	    link.href = webApplicationBaseURL + "wordpressimport/#/token/" + config + "/" + responseObj.token_type + " " + (responseObj.access_token);
+            link.target = "_blank";
+	    document.body.appendChild(link);
+	    link.click();
+	    document.body.removeChild(link);
+        } else if (this.readyState == 4) {
+            alert("Fehler!");
+            console.error(this.status + "-" + this.statusText);
+        }
+    };
+    req.open("GET", webApplicationBaseURL + "rsc/jwt", false);
+    req.send();
+};
+
+
