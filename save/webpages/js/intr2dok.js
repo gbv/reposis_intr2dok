@@ -47,6 +47,8 @@ $﻿(document).ready(function() {
   v1.on("click", function(e){ e.preventDefault(); openWpImport("Verfassungsblog"); return false; });
   var v2 = jQuery(".nav li a:contains('Völkerrechtsblog')");
   v2.on("click", function(e){ e.preventDefault(); openWpImport("Völkerrechtsblog"); return false;  });
+  var v3 = jQuery(".nav li a:contains('JuWissBlog')");
+  v3.on("click", function(e){ e.preventDefault(); openWpImport("JuWissBlog"); return false;  });
 });
 
 
