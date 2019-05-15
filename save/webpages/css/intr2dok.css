@@ -496,8 +496,3 @@ p {
 .well {
     background-color: #ECECEC;
 }
-
-.shariff .orientation-horizontal li {
-    min-width: 85px;
-    max-width: 160px;
-}
