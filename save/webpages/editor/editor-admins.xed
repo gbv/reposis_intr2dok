@@ -31,7 +31,7 @@
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="edition" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="extent" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="type.of.resource" />
-        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="language.repeated" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="language" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="intr2dok_systematik" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="intr2dok_projects" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-intr2dok.xed" ref="ddc" />
