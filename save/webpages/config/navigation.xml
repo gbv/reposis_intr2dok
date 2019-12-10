@@ -123,6 +123,18 @@
             <label xml:lang="de">Erfassung für Experten</label>
             <label xml:lang="en">submit as expert</label>
         </item>
+        <item href="/wordpressimport/verfassungsblog" type="extern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Datenübernahme aus Verfassungsblog</label>
+            <label xml:lang="en">Import from Verfassungsblog</label>
+        </item>
+        <item href="/wordpressimport/voelkerrechtsblog" type="extern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Datenübernahme aus Völkerrechtsblog</label>
+            <label xml:lang="en">Import from Völkerrechtsblog</label>
+        </item>
+        <item href="/wordpressimport/JuWissBlog" type="extern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Datenübernahme aus JuWissBlog</label>
+            <label xml:lang="en">Import from JuWissBlog</label>
+        </item>
         <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Registrieren</label>
             <label xml:lang="en">register</label>
