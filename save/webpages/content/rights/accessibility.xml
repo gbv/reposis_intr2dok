@@ -13,7 +13,7 @@
     <div class="row">
       <div class="col-md-7 col-sm-12">
 
-        <p> Der Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung (FID) bemüht sich, sein Open Access-Repositorium <intR>²Dok barrierefrei zu gestalten. Die im Folgenden gemachte Erklärung zur digitalen Barrierefreiheit wird in den aktuell gültigen Fassungen von Barrierefreie-Informationstechnik-Verordnung (BITV 2.0) und Behindertengleichstellungsgesetz (BGG) verlangt. Aus beiden Normen ergeben sich auch die Anforderungen zur technischen Umsetzung digitaler Barrierefreiheit. </p>
+        <p> Der Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung (FID) bemüht sich, sein Open Access-Repositorium &lt;intR&gt;²Dok barrierefrei zu gestalten. Die im Folgenden gemachte Erklärung zur digitalen Barrierefreiheit wird in den aktuell gültigen Fassungen von Barrierefreie-Informationstechnik-Verordnung (BITV 2.0) und Behindertengleichstellungsgesetz (BGG) verlangt. Aus beiden Normen ergeben sich auch die Anforderungen zur technischen Umsetzung digitaler Barrierefreiheit. </p>
 
         <p> Diese Erklärung zur Barrierefreiheit gilt für <a
           href="https://intr2dok.vifa-recht.de"
@@ -48,7 +48,7 @@
           <dt>Eingeschränkte Barrierefreiheit eingebundener Dokumente im PDF-Format.</dt>
           <dd class="ml-4">
             Die eingebundenen Dokumente im PDF-Format sind möglicherweise nicht barrierefrei.<br />
-            Aufgrund der hohen Zahl eingebundener Dokumente können diese nicht vollständig in ein barrierefreies Format umgewandelt werden, zumal in Teilen die Ausgangsdateien fehlen und eine nachträgliche Bearbeitung nach § 12a, 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten ist. Wir sind bestrebt, künftig ausschließlich barrierefreie Dokumente auf <intR>²Dok zu veröffentlichen. Sollten Sie eine bestimmte PDF-Datei benötigen, die noch nicht barrierefrei zur Verfügung steht, so kontaktieren Sie uns bitte unter den weiter unten genannten Kontaktdaten.
+            Aufgrund der hohen Zahl eingebundener Dokumente können diese nicht vollständig in ein barrierefreies Format umgewandelt werden, zumal in Teilen die Ausgangsdateien fehlen und eine nachträgliche Bearbeitung nach § 12a, 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten ist. Wir sind bestrebt, künftig ausschließlich barrierefreie Dokumente auf &lt;intR&gt;²Dok zu veröffentlichen. Sollten Sie eine bestimmte PDF-Datei benötigen, die noch nicht barrierefrei zur Verfügung steht, so kontaktieren Sie uns bitte unter den weiter unten genannten Kontaktdaten.
           </dd>
           
           <dt>Audiodateien ohne Volltextalternative.</dt>
