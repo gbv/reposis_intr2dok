@@ -307,7 +307,7 @@ p {
   padding: 20px 2px;
 }
 
-/* Hauptmenü ohne linken (und rechten) Rand*/
+/* Hauptmenï¿½ ohne linken (und rechten) Rand*/
 .mir-main-nav .navbar-nav {
   margin: 0px -15px;
 }
@@ -495,4 +495,18 @@ p {
 }
 .well {
     background-color: #ECECEC;
+}
+
+/**** FIXME: remove in LTS2019, already fixed there *********/
+.pl-5, .px-5 {
+  padding-left: 3rem !important;
+}
+.ml-4, .mx-4 {
+  margin-left: 1.5rem !important;
+}
+dd {
+  margin-bottom: 1rem;
+}
+.border-left {
+  border-left: 1px solid #dee2e6 !important;
 }
