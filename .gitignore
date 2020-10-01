@@ -2,6 +2,11 @@
 .project
 .settings/
 
+#intellij
+*.iml
+intr2dok_module/*.iml
+intr2dok_module/target
+
 # application specific files on server
 jwt.secret
 messages_de.resolved.properties
