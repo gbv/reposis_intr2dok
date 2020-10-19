@@ -14,7 +14,7 @@
     <div id="header_box" class="clearfix container">
       <div id="options_nav_box" class="mir-prop-nav">
         <nav>
-          <ul class="nav navbar-nav pull-right">
+          <ul class="nav navbar-nav float-right">
             <xsl:call-template name="mir.loginMenu" />
           </ul>
         </nav>
@@ -30,62 +30,66 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="navbar navbar-default mir-main-nav">
+    <div class="mir-main-nav bg-primary">
       <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
-        <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".mir-main-nav-entries">
-            <span class="sr-only"> Toggle navigation </span>
-            <span class="icon-bar">
-            </span>
-            <span class="icon-bar">
-            </span>
-            <span class="icon-bar">
-            </span>
+          <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#mir-main-nav-collapse-box"
+                  aria-controls="mir-main-nav-collapse-box"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
 
-        <div class="searchfield_box">
-          <form action="{$WebApplicationBaseURL}servlets/solr/find" class="navbar-form navbar-left pull-right" role="search">
-            <button type="submit" class="btn btn-flat"><i class="fa fa-search"></i></button>
-            <div class="form-group">
-              <input name="condQuery" placeholder="{i18n:translate('mir.navsearch.placeholder')}" class="form-control search-query" id="searchInput" type="text" />
+          <div id="mir-main-nav-collapse-box" class="collapse navbar-collapse mir-main-nav__entries">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <xsl:for-each select="$loaded_navigation_xml/menu">
+                <xsl:choose>
+                  <!-- Ignore some menus, they are shown elsewhere in the layout -->
+                  <xsl:when test="@id='main'"/>
+                  <xsl:when test="@id='brand'"/>
+                  <xsl:when test="@id='below'"/>
+                  <xsl:when test="@id='user'"/>
+                  <xsl:otherwise>
+                    <xsl:apply-templates select="."/>
+                  </xsl:otherwise>
+                </xsl:choose>
+              </xsl:for-each>
+              <xsl:call-template name="mir.basketMenu" />
+            </ul>
+
+            <form
+                    action="{$WebApplicationBaseURL}servlets/solr/find"
+                    class="searchfield_box form-inline my-2 my-lg-0"
+                    role="search">
+              <input
+                      name="condQuery"
+                      placeholder="{i18n:translate('mir.navsearch.placeholder')}"
+                      class="form-control search-query"
+                      id="searchInput"
+                      type="text"
+                      aria-label="Search" />
               <xsl:choose>
-                <xsl:when test="mcrxsl:isCurrentUserInRole('admin') or mcrxsl:isCurrentUserInRole('editor')">
+                <xsl:when test="contains($isSearchAllowedForCurrentUser, 'true')">
                   <input name="owner" type="hidden" value="createdby:*" />
                 </xsl:when>
                 <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
                   <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
                 </xsl:when>
               </xsl:choose>
-            </div>
-          </form>
-        </div>
+              <button type="submit" class="btn btn-secondary btn-flat my-2 my-sm-0">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
 
-        <nav class="collapse navbar-collapse mir-main-nav-entries">
-          <ul class="nav navbar-nav pull-left">
-            <!-- xsl:apply-templates select="$loaded_navigation_xml/menu[@id='search']" / -->
-            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='browse']" />
-            <xsl:choose>
-              <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
-                <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='publish']" />
-              </xsl:when>
-              <xsl:otherwise>
-                <li id="publish">
-                  <a href="{$WebApplicationBaseURL}authorization/new-author.xed">
-                    <xsl:choose>
-                      <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">Publizieren</xsl:when>
-                      <xsl:otherwise>Registrieren</xsl:otherwise>
-                    </xsl:choose>
-                  </a>
-                </li>
-              </xsl:otherwise>
-            </xsl:choose>
-            <xsl:call-template name="mir.basketMenu" />
-          </ul>
+          </div>
+
         </nav>
-
-      </div><!-- /container -->
+      </div>
     </div>
   </xsl:template>
 
@@ -94,14 +98,16 @@
     <xsl:if test="//div/@class='jumbotwo'">
       <div class="jumboHome">
         <div class="container">
-          <div class="col-md-5">
-            <h1><img alt="&lt;intR>²Dok [§]" class="intR2Dok_logo" title="IntR2Dok - Logo" src="{$WebApplicationBaseURL}/content/images/logo_intR2Dok.png" /></h1>
-          </div>
-          <div class="col-md-5">
-            <h2>Fachinformationsdienst für <br />internationale und interdisziplinäre<br /> Rechtsforschung</h2>
-          </div>
-          <div class="col-md-2">
-            <a href="http://www.dini.de/dini-zertifikat/" class="pull-right intR2Dok_dini"><img src="{$WebApplicationBaseURL}/content/images/dini_zertifikat_2016.svg" alt="Logo DINI-Zertifikat 2016" height="150" /></a>
+          <div class="row">
+            <div class="col-5">
+              <h1><img alt="&lt;intR>²Dok [§]" class="intR2Dok_logo" title="IntR2Dok - Logo" src="{$WebApplicationBaseURL}content/images/logo_intR2Dok.png" /></h1>
+            </div>
+            <div class="col-5">
+              <h2>Fachinformationsdienst für <br />internationale und interdisziplinäre<br /> Rechtsforschung</h2>
+            </div>
+            <div class="col-2 intR2Dok_dini">
+              <a href="http://www.dini.de/dini-zertifikat/" class="float-right intR2Dok_dini"><img src="{$WebApplicationBaseURL}content/images/dini_zertifikat_2016.svg" alt="Logo DINI-Zertifikat 2016" height="150" /></a>
+            </div>
           </div>
         </div>
       </div>
@@ -120,7 +126,7 @@
         <div class="col-md-2 col-xs-6 col-sm-3">
           <h4>Soziales</h4>
           <ul class="social_links">
-            <li><a href="http://twitter.com/vifarecht"><img src="{$WebApplicationBaseURL}/content/images/logo_twitter.png" style="margin-right:5px;float:left;" />#vifarecht</a></li>
+            <li><a href="http://twitter.com/vifarecht"><img src="{$WebApplicationBaseURL}content/images/logo_twitter.png" style="margin-right:5px;float:left;" />#vifarecht</a></li>
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
           </ul>
         </div>
@@ -139,10 +145,10 @@
         <div class="col-md-4 col-xs-6 col-sm-3">
           <h4>Institutionelles</h4>
           <ul class="internal_links institutions">
-            <li id="vfr"><a href="http://vifa-recht.de/"><img src="{$WebApplicationBaseURL}/content/images/logo-vfr.png" /></a></li>
-            <li class="even_entry"><a id="sbb" href="http://www.staatsbibliothek-berlin.de/"><img src="{$WebApplicationBaseURL}/content/images/logo_sbb.png" /></a></li>
-            <li><a id="dfg" href="http://dfg.de/"><img src="{$WebApplicationBaseURL}/content/images/logo_dfg.png" /></a></li>
-            <li class="even_entry"><a id="oa" href="https://www.open-access.net/"><img src="{$WebApplicationBaseURL}/content/images/logo_oa.svg" width="89px" /></a></li>
+            <li id="vfr"><a href="http://vifa-recht.de/"><img src="{$WebApplicationBaseURL}content/images/logo-vfr.png" /></a></li>
+            <li class="even_entry"><a id="sbb" href="http://www.staatsbibliothek-berlin.de/"><img src="{$WebApplicationBaseURL}content/images/logo_sbb.png" /></a></li>
+            <li><a id="dfg" href="http://dfg.de/"><img src="{$WebApplicationBaseURL}content/images/logo_dfg.png" /></a></li>
+            <li class="even_entry"><a id="oa" href="https://www.open-access.net/"><img src="{$WebApplicationBaseURL}content/images/logo_oa.svg" width="89px" /></a></li>
           </ul>
         </div>
       </div>

@@ -18,7 +18,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 h3 > a {
@@ -201,9 +201,9 @@ background-color: #9E1B34;
 border-color: #9E1B34;
 }
 
-.mir-main-nav {
+.mir-main-nav, .navbar-dark {
   box-shadow: none;
-  background-color: #797979;
+  background-color: #797979 !important;
   color: #9E1B34;
 }
 
@@ -221,6 +221,10 @@ sup a {
 
 html body #powered_by {
   background-color: #444;
+}
+
+.mir-start_page>.jumbotron{
+    background: white;
 }
 
 .jumbotron{
@@ -259,7 +263,7 @@ html body #powered_by {
 }
 
 .intR2Dok_dini {
-  margin-top: 33px;
+  margin-top: 18px;
   margin-right: -15px;
 }
 
@@ -312,11 +316,13 @@ p {
   margin: 0px -15px;
 }
 .mir-main-nav .navbar-nav a {
-  color: #f3f3f3;
+  color: #f3f3f3 !important;
 }
 
-.mir-main-nav nav .navbar-nav > li > a:hover {
-  background-color: #A9A9A9;
+.mir-main-nav nav .navbar-nav > li > a:hover,
+.mir-main-nav nav .navbar-nav > li > a:focus,
+.mir-main-nav nav .navbar-nav > li > a:active {
+  background-color: #A9A9A9 !important;
 }
 .navbar-form .form-group {
     margin-bottom: 0px;
@@ -388,11 +394,11 @@ p {
     margin-top: 0px;
 }
 
-.mir-main-nav .searchfield_box .navbar-form .btn {
+.mir-main-nav .searchfield_box .btn {
   margin-top: 0px;
 }
-.mir-main-nav .searchfield_box {
-  margin: 0px 0px 0px;
+.mir-main-nav>.container>nav.navbar {
+  padding: 0px 0px 0px;
 }
 .mir-prop-nav {
     margin: 0px 0px 0px;
@@ -469,7 +475,7 @@ p {
 
 /* md: up to 992 px *********************************************************/
 @media (min-width: 992px) {
-  .jumboHome {
+  .jumboHome .container{
     height: 225px;
   }
   .jumboHome h1 img {

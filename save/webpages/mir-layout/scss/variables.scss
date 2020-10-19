@@ -10,22 +10,26 @@ $web-font-path: "https://webfonts.gbv.de/css?family=Lato:400,700,400italic";
 
 // Brand colors
 // -------------------------
-$brand-success:      #6EBA6B;
-$brand-info:         #4B8FBC;
-$brand-warning:      #F39C12;
+$success:      #6EBA6B;
+$info:         #4B8FBC;
+$warning:      #F39C12;
+
+$brand-success:     $success;
+$brand-info:        $info;
+$brand-warning:     $warning;
 
 // Links
 // -------------------------
-$link-color:         $brand-info;
-$link-hover-color:   $brand-info;
+$link-color:         $info;
+$link-hover-color:   $info;
 
 // Navbar
 // -------------------------
 // inverse
-$navbar-inverse-bg:                         $brand-warning;
-$navbar-inverse-link-hover-bg:              $brand-warning;
+$navbar-inverse-bg:                         $warning;
+$navbar-inverse-link-hover-bg:              $warning;
 // default
-$navbar-default-link-hover-color:           $brand-warning;
+$navbar-default-link-hover-color:           $warning;
 
 // Pagination
 // -------------------------
