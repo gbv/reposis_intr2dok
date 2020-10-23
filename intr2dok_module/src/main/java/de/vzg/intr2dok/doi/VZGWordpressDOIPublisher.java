@@ -28,7 +28,7 @@ import static de.vzg.intr2dok.doi.VZGDOIUtils.getIDOfRelatedItem;
 import static de.vzg.intr2dok.doi.VZGDOIUtils.getRecordIdentifier;
 import static de.vzg.intr2dok.doi.VZGDOIUtils.getRelatedItem;
 
-public class VZGWordpressDOIPublisher extends VZGDOIPublisher {
+public abstract class VZGWordpressDOIPublisher extends VZGDOIPublisher {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
@@ -38,9 +38,9 @@ public class VZGWordpressDOIPublisher extends VZGDOIPublisher {
             throw new MCRConfigurationException(
                 "BlogURL is not set in " + this.getClass().toString() + "(" + this.getId() + ")");
         }
-        if (!getProperty("Token").isPresent()) {
+        if (!getProperty("Parent").isPresent()) {
             throw new MCRConfigurationException(
-                "Token is not set in " + this.getClass().toString() + "(" + this.getId() + ")");
+                    "Parent is not set in " + this.getClass().toString() + "(" + this.getId() + ")");
         }
     }
 
@@ -49,33 +49,7 @@ public class VZGWordpressDOIPublisher extends VZGDOIPublisher {
         return getProperty("BlogURL").get();
     }
 
-    @Override
-    public void publish(MCRMODSWrapper wrapper) {
-        final String doi = getDOIElement(wrapper).getTextNormalize();
-        final String blogURL = getBlogURL();
-        final String articleID = getRecordIdentifier(wrapper).getTextNormalize();
 
-        try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
-            final HttpPut httpPut = new HttpPut(new URIBuilder(blogURL + "wp-json/wp/v2/articles/" + articleID)
-                .addParameter("meta_box", "{\"doi_json\":\"" + doi + "\"}")
-                .build());
-
-            httpPut.setHeader("Authorization", "Bearer " + getProperty("Token").get());
-
-            try (final CloseableHttpResponse response = httpClient.execute(httpPut)) {
-                final int statusCode = response.getStatusLine().getStatusCode();
-                if (statusCode != 200) {
-                    final String reasonPhrase = response.getStatusLine().getReasonPhrase();
-                    throw new MCRException("Something went wrong when sending DOI to the blog: " + statusCode + "-" + reasonPhrase);
-                } else {
-                    LOGGER.info("DOI: " + doi + " successfully sent to " + blogURL);
-                }
-            }
-
-        } catch (IOException | URISyntaxException e) {
-            throw new MCRException("Error while sending DOI to Blog!", e);
-        }
-    }
 
     @Override
     public Boolean isResponsible(MCRMODSWrapper wrapper) {
