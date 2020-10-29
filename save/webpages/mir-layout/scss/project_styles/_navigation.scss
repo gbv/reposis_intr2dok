@@ -6,73 +6,73 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
+// breadcrumb
   .breadcrumb {
     background-color: #f9f9f9;
   }
   .breadcrumb > .active {
     color: #a9a9a9;
   }
-  .mir-main-nav nav .navbar-nav>.open>a, .mir-main-nav nav .navbar-nav>.open>a:hover, .mir-main-nav nav .navbar-nav>.open>a:focus {
-    background-color: #9E1B34;
+
+// prop nav
+.mir-prop-nav .navbar-nav > li > a {
+  color: #9E1B34;
+}
+.mir-prop-nav .navbar-nav > li > a:hover,
+.mir-prop-nav .navbar-nav > li > a:focus {
+  color: #797979;
+  background-color: #FFF;
+}
+.mir-prop-nav {
+    margin: 0px 0px 0px;
+}
+
+// main-nav
+  .mir-main-nav nav .navbar-nav > .show > a,
+  .mir-main-nav nav .navbar-nav > .show > a:hover,
+  .mir-main-nav nav .navbar-nav > .show > a:focus {
+    background-color: #9E1B34 !important;
   }
   .mir-main-nav nav .navbar-nav .dropdown-menu {
     background-color: #9E1B34;
+    border-radius: 0;
   }
   .mir-main-nav .searchfield_box .navbar-form .btn {
     margin-left: 0px;
   }
-  .mir-prop-nav .navbar-nav > li > a {
-    color: #9E1B34;
-  }
-  .mir-prop-nav .navbar-nav > li > a:hover, .mir-prop-nav .navbar-nav > li > a:focus {
-    color: #797979;
-    background-color: #FFF;
-  }
-  .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-    z-index: 2;
-    color: #FFF;
-    background-color: #9E1B34;
-  }
-  .pagination > li > a, .pagination > li > span, .pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
-    position: relative;
-    background-color: #a9a9a9;
-  }
-  .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
-    background-color: #797979;
-  }
   .mir-main-nav nav .navbar-nav .dropdown-menu:before {
-  border-color: transparent transparent #9E1B34 transparent;
+    border-color: transparent transparent #9E1B34 transparent;
   }
-  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-  background-color: #797979;
-  }
-  .mir-main-nav nav .navbar-nav .dropdown-menu > li > a:hover, .mir-main-nav nav .navbar-nav .dropdown-menu > li > a:focus {
-    background-color: #a9a9a9;
-  }
-  .pagination {
-    padding-left: 65px;
-    padding-right: 65px;
-  }
-  .mir-main-nav nav .navbar-nav .dropdown-menu > .active > a, .mir-main-nav nav .navbar-nav .dropdown-menu > .active > a:hover, .mir-main-nav nav .navbar-nav .dropdown-menu > .active > a:focus {
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:hover,
+  .navbar-default .navbar-nav>.active>a:focus {
     background-color: #797979;
   }
-  .mir-main-nav, .navbar-dark {
+  .mir-main-nav nav .navbar-nav .dropdown-menu > li > a:hover,
+  .mir-main-nav nav .navbar-nav .dropdown-menu > li > a:focus {
+      background-color: #a9a9a9;
+  }
+  .mir-main-nav nav .navbar-nav .dropdown-menu > .active > a,
+  .mir-main-nav nav .navbar-nav .dropdown-menu > .active > a:hover,
+  .mir-main-nav nav .navbar-nav .dropdown-menu > .active > a:focus {
+    background-color: #797979;
+  }
+  .mir-main-nav,
+  .navbar-dark {
     box-shadow: none;
-    background-color: #797979 !important;
+    background-color: #797979  !important;
     color: #9E1B34;
   }
-
-  /* Hauptmenue ohne linken (und rechten) Rand*/
-   .mir-main-nav .navbar-nav {
+  .mir-main-nav .navbar-nav {
     margin: 0px -15px;
   }
   .mir-main-nav .navbar-nav a {
-    color: #f3f3f3 !important;
+    color: #f3f3f3  !important;
   }
   .mir-main-nav nav .navbar-nav > li > a:hover,
   .mir-main-nav nav .navbar-nav > li > a:focus,
   .mir-main-nav nav .navbar-nav > li > a:active {
-    background-color: #A9A9A9 !important;
+    background-color: #A9A9A9  !important;
   }
   .navbar-form .form-group {
       margin-bottom: 0px;
@@ -87,10 +87,6 @@
   .mir-main-nav>.container>nav.navbar {
     padding: 0px 0px 0px;
   }
-  .mir-prop-nav {
-      margin: 0px 0px 0px;
-  }
-
   .mir-main-nav__entries {
     align-items: stretch;
     .navbar-nav {
@@ -106,6 +102,39 @@
       }
     }
   }
+
+// pagintion
+  .pagination > .active > a,
+  .pagination > .active > span,
+  .pagination > .active > a:hover,
+  .pagination > .active > span:hover,
+  .pagination > .active > a:focus,
+  .pagination > .active > span:focus {
+    z-index: 2;
+    color: #FFF;
+    background-color: #9E1B34;
+  }
+  .pagination > li > a, .pagination > li > span,
+  .pagination > .disabled > span,
+  .pagination > .disabled > span:hover,
+  .pagination > .disabled > span:focus,
+  .pagination > .disabled > a,
+  .pagination > .disabled > a:hover,
+  .pagination > .disabled > a:focus {
+    position: relative;
+    background-color: #a9a9a9;
+  }
+  .pagination > li > a:hover,
+  .pagination > li > span:hover,
+  .pagination > li > a:focus,
+  .pagination > li > span:focus {
+    background-color: #797979;
+  }
+  .pagination {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
 
   // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {

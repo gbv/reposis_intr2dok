@@ -15,9 +15,14 @@
   .label-primary {
       background-color: #a9a9a9;
   }
-  .form-control, input {
+  .form-control,
+  input {
     border-width: 1px;
     border-color: #efefef;
+    box-shadow: none;
+  }
+  .form-control:focus {
+    box-shadow: none;
   }
   .form-horizontal .control-label {
     color: #000;

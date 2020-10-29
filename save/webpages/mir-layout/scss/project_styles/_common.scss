@@ -126,6 +126,7 @@
     margin-bottom: 10px;
   }
   .jumboHome {
+    padding-bottom: 30px;
     border-bottom: 1px solid #bb0734;
   }
   .jumboHome h1 {
@@ -140,6 +141,19 @@
     letter-spacing: .180em;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+  }
+  .internal_links,
+  .social_links {
+    .dropdown-item {
+      padding: 0;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $intrGrey;
+        text-decoration: underline;
+        background-color: transparent;
+      }
+    }
   }
   .internal_links.institutions li {
     float: left;
