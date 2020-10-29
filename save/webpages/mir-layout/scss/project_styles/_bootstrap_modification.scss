@@ -14,6 +14,8 @@ $success:      #6EBA6B;
 $info:         #4B8FBC;
 $warning:      #F39C12;
 
+$white:        #ffffff;
+
 $brand-success:     $success;
 $brand-info:        $info;
 $brand-warning:     $warning;
@@ -30,22 +32,3 @@ $navbar-inverse-bg:                         $warning;
 $navbar-inverse-link-hover-bg:              $warning;
 // default
 $navbar-default-link-hover-color:           $warning;
-
-// Pagination
-// -------------------------
-/*
-@pagination-bg:                             @brand-primary;
-@pagination-active-bg:                      darken(@brand-primary, 15%);
-@pagination-hover-bg:                       lighten(@brand-primary, 15%);
-@pagination-disabled-color:                 @gray;
-*/
-
-// Pager
-// -------------------------
-//gray-base:              #000 !default;
-//$gray:                   lighten($gray-base, 33.5%) !default; // #555
-//$pager-disabled-color:                      $gray;
-
-// Forms
-// -------------------------
-//$input-border-focus:                        $brand-primary;

@@ -1,0 +1,234 @@
+/* common settings
+ * - global settings, helper classes or styles with no own file
+ */
+
+// Extra large devices (large desktops)
+// set the defaults for all responsive levels here
+// no (xl) media query necessary (desktop first)
+
+  html {
+    background-color: $white;
+  }
+  body {
+    color: #000;
+    min-width: 320px;
+  }
+  ul.names li.active a {
+    background-color: #9E1B34;
+  }
+  ul.names li a {
+      border: none;
+  }
+  ul.names li a {
+      background-color: #a9a9a9;
+  }
+  ul.names li a:hover {
+      background-color: #797979;
+  }
+  ul.cbList li li a {
+    color: #9E1B34;
+  }
+  #main_content{
+    min-height:250px
+  }
+  .result_body .result_filter .panel .panel-heading {
+    background-color: #EFEFEF;
+  }
+  .result_body .result_list #hit_list .hit_item .hit_options .dropdown-menu > li > a:hover {
+      background-color: #a9a9a9;
+  }
+  .result_body .result_list #hit_list .hit_item:hover .btn {
+      border-color: #9E1B34;
+  }
+  .panel-default {
+    border-color:  #efefef;
+  }
+  .panel-default > .panel-heading {
+    background-color: #efefef;
+    border-color: #efefef;
+    color: #2c3e50;
+  }
+  .panel {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.00);
+  }
+  .panel-title {
+      color: #000;
+  }
+  .panel-footer {
+    background-color: #efefef;
+    border-top: 1px solid #efefef;
+  }
+  .panel-default > .panel-heading {
+      background-color: #ECECEC;
+      border-color: #ECECEC;
+      color: #4B4B4B;
+  }
+  .result_body .result_list #hit_list .hit_item:hover {
+      border-color: #9E1B34;
+  }
+  .result_body .result_list #hit_list .hit_item:hover .hit_icon {
+      border-left-color: #9E1B34;
+  }
+  .result_body .result_list #hit_list .hit_item:hover .hit_stars_5 .hit_star {
+      background-color: #9E1B34;
+  }
+  .result_body .result_list #hit_list .hit_item:hover .hit_counter {
+      color: #9E1B34;
+      border-color: #9E1B34;
+  }
+  sup a {
+    color: #9E1B34;
+  }
+  .jumbotron{
+    background:-webkit-linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
+    background:-o-linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
+    background:-ms-linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
+    background:-moz-linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
+    background:linear-gradient(0deg, #D7D7D7 0%, #FFF 44%, #CEBDBD 140%);
+    border-bottom: 1px solid #B7B7B7;
+    color: #2C3E50;
+  }
+  .jumbotron h1{
+    color:#9E1B34;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #fff;
+  }
+  .jumbotron h2{
+    color:#9E1B34;
+    font-size:110%;
+  }
+  .jumbotwo h3 span{
+    padding-right:30px;
+    color: #9E1B34;
+  }
+  .intR2Dok_dini {
+    margin-top: 18px;
+    margin-right: -15px;
+  }
+  .intR2Dok_logo {
+    margin-left: -15px;
+    width: 100%;
+  }
+  .intR2Dok_logo_small {
+    float: left;
+  }
+  .three_column {
+    -webkit-column-width: 350px;
+       -moz-column-width: 350px;
+            column-width: 350px;
+    -webkit-column-gap: 70px;
+       -moz-column-gap: 70px;
+            column-gap: 70px;
+            margin-bottom: 60px;
+  }
+  .lead {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .jumboHome {
+    border-bottom: 1px solid #bb0734;
+  }
+  .jumboHome h1 {
+    margin-top: 75px;
+  }
+  .jumboHome h2 {
+    margin-top: 67px;
+    padding-left: 15px;
+    color: #bb0734;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: .180em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+  }
+  .internal_links.institutions li {
+    float: left;
+    margin-bottom: 20px;
+  }
+  .internal_links.institutions .even_entry {
+    float: right;
+  }
+  .internal_links.institutions .even_entry li:after {
+    clear: both;
+  }
+  .internal_links.institutions #vfr {
+    margin-bottom: 0px;
+  }
+  .internal_links.institutions #dfg img {
+    margin-top: 12px;
+  }
+  #open-aire_trigger {
+    cursor: pointer;
+  }
+  #open-aire_box {
+    display: none;
+  }
+  #itd_badges {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /* ********************* cookie-bar ********************* */
+  #cookie-bar {background:#111111; height:auto; line-height:24px; color:#eeeeee; text-align:center; padding:20px 0;}
+  #cookie-bar.fixed {position:fixed; bottom:0; left:0; width:100%;}
+  #cookie-bar.fixed.bottom {bottom:0; top:auto;}
+  #cookie-bar p {margin:0px 0px; padding:0;}
+  #cookie-bar a {color:#ffffff; display:inline-block; border-radius:3px; text-decoration:none; padding:0 6px; margin-left:8px;}
+  #cookie-bar .cb-enable {background:#007700;}
+  #cookie-bar .cb-enable:hover {background:#009900;}
+  #cookie-bar .cb-disable {background:#990000;}
+  #cookie-bar .cb-disable:hover {background:#bb0000;}
+  #cookie-bar .cb-policy {background:#0033bb;}
+  #cookie-bar .cb-policy:hover {background:#0055dd;}
+  /* metadata view ************************************************************/
+ .subtitle {
+  color: grey;
+  }
+  .viewer .navbar.navbar-default {
+    background-color: #ECECEC;
+    border-color: #ECECEC;
+  }
+  .well {
+    background-color: #ECECEC;
+  }
+  /**** FIXME: remove in LTS2019, already fixed there *********/
+  .pl-5, .px-5 {
+  padding-left: 3rem !important;
+  }
+  .ml-4, .mx-4 {
+  margin-left: 1.5rem !important;
+  }
+  dd {
+  margin-bottom: 1rem;
+  }
+  .border-left {
+  border-left: 1px solid #dee2e6 !important;
+  }
+
+// Large devices (desktops) and below: <= 1200px
+@include media-breakpoint-down(lg) {
+  // add/overwrite styles for responsive level lg and lower
+}
+
+// Medium devices (tablets) and below: <= 992px
+@include media-breakpoint-down(md) {
+  // add/overwrite styles for responsive level md and lower
+  .jumboHome .container{
+    height: 225px;
+  }
+  .jumboHome h1 img {
+    width: 64%;
+  }
+}
+
+// Small devices (landscape phones) and below: <= 768px
+@include media-breakpoint-down(sm) {
+  // add/overwrite styles for responsive level sm and lower
+  .jumboHome h1 img {
+    width: 335px;
+  }
+}
+
+// Extra small devices (portrait phones): <= 576px
+@include media-breakpoint-down(xs) {
+  // add/overwrite styles for responsive level xs
+}
