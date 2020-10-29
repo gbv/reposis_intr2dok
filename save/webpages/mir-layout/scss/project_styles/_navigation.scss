@@ -74,6 +74,9 @@
   .mir-main-nav nav .navbar-nav > li > a:active {
     background-color: #A9A9A9  !important;
   }
+  .bg-primary .navbar-nav .active > .nav-link {
+    color: #f3f3f3 !important;
+  }
   .navbar-form .form-group {
       margin-bottom: 0px;
   }
