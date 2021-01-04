@@ -3,6 +3,8 @@ package de.vzg.intr2dok.doi;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+import java.util.Objects;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -43,8 +45,9 @@ public class VZGPublishDOIEventHandler extends MCREventHandlerBase {
     }
 
     private static List<VZGDOIPublisher> getPublisher() {
-        return Stream.of(MCRConfiguration2.getString(DOI_PUBLISHER_LIST_PROPERTY).orElse("")
-            .split(","))
+        return Stream.of(MCRConfiguration2.getString(DOI_PUBLISHER_LIST_PROPERTY).orElse("").split(","))
+            .filter(Objects::nonNull)
+            .filter(s -> !s.isEmpty())
             .map(key -> {
                 try {
                     String clazzName = MCRConfiguration2.getStringOrThrow("VZG.VZGDOIPublisher." + key + ".Class");
