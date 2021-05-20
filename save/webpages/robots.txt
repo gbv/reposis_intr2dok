@@ -1,8 +1,10 @@
-Sitemap: http://intr2dok.vifa-recht.de/sitemap_google.xml
 User-agent: *
+Crawl-delay: 10
 Allow: /servlets/MCRFileNodeServlet/
+Allow: /rsc/sass/
 Disallow: /*?
 Disallow: /servlets/
 Disallow: /browse/
 Disallow: /rsc/
 Disallow: /api/
+Sitemap: https://intr2dok.vifa-recht.de/sitemap_google.xml
