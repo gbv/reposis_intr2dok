@@ -1,160 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
-  <section xml:lang="de" title="&lt;intR&gt;²Dok - Barrierefreiheit">
-    <div class="row">
-      <div class="col-md-7 col-sm-12">
+<MyCoReWebPage><section xml:lang="de" title="&lt;intR&gt;²Dok - Barrierefreiheit"><div>
+<div class="row">
+<div class="col-md-7 col-sm-12">
+<h2>Erklärung zur Barrierefreiheit <small class="text-muted">(Stand der Erklärung: 21.09.2020)</small></h2>
+</div>
+</div>
 
-        <h2> Erklärung zur Barrierefreiheit <small class="text-muted">(Stand der Erklärung:
-            21.09.2020)</small>
-        </h2>
+<div class="row">
+<div class="col-md-7 col-sm-12">
+<p>Der Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung (FID &lt;intR&gt;²) bemüht sich, sein Open Access-Repositorium &lt;intR&gt;²Dok barrierefrei zu gestalten. Die im Folgenden gemachte Erklärung zur digitalen Barrierefreiheit wird in den aktuell gültigen Fassungen von Barrierefreie-Informationstechnik-Verordnung (BITV 2.0) und Behindertengleichstellungsgesetz (BGG) verlangt. Aus beiden Normen ergeben sich auch die Anforderungen zur technischen Umsetzung digitaler Barrierefreiheit.</p>
 
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-7 col-sm-12">
+<p>Diese Erklärung zur Barrierefreiheit gilt für <a href="https://intr2dok.vifa-recht.de">https://intr2dok.vifa-recht.de</a>.</p>
+</div>
+</div>
 
-        <p> Der Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung (FID) bemüht sich, sein Open Access-Repositorium &lt;intR&gt;²Dok barrierefrei zu gestalten. Die im Folgenden gemachte Erklärung zur digitalen Barrierefreiheit wird in den aktuell gültigen Fassungen von Barrierefreie-Informationstechnik-Verordnung (BITV 2.0) und Behindertengleichstellungsgesetz (BGG) verlangt. Aus beiden Normen ergeben sich auch die Anforderungen zur technischen Umsetzung digitaler Barrierefreiheit. </p>
+<div class="row">
+<div class="col-md-7 col-sm-12">
+<h3>Wann wurde die Erklärung zur digitalen Barrierefreiheit erstellt?</h3>
 
-        <p> Diese Erklärung zur Barrierefreiheit gilt für <a
-          href="https://intr2dok.vifa-recht.de"
-          >https://intr2dok.vifa-recht.de</a>. </p>
+<p>Diese Erklärung wurde am 21. September 2020 erstellt.</p>
+</div>
+</div>
 
-      </div>
-    </div>
+<div class="row">
+<div class="col-md-7 col-sm-12">
+<h3>Wie barrierefrei ist dieses Angebot?</h3>
 
-    <div class="row">
-      <div class="col-md-7 col-sm-12">
-        
-        <h3> Wann wurde die Erklärung zur digitalen Barrierefreiheit erstellt? </h3>
-        <p>Diese Erklärung wurde am 21. September 2020 erstellt.</p>
+<p>Dieses Angebot ist weitgehend barrierefrei. Es werden die Mehrzahl der Anforderungen der BITV 2.0 erfüllt.</p>
+</div>
+</div>
 
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-7 col-sm-12">
+<div class="row">
+<div class="col-md-7 col-sm-12">
+<h3>Welche Bereiche sind nicht barrierefrei?</h3>
 
-        <h3> Wie barrierefrei ist dieses Angebot? </h3>
+<dl>
+	<dt>Eingeschränkte Barrierefreiheit eingebundener Dokumente im PDF-Format.</dt>
+	<dd class="ml-4">Die eingebundenen Dokumente im PDF-Format sind möglicherweise nicht barrierefrei.<br />
+	Aufgrund der hohen Zahl eingebundener Dokumente können diese nicht vollständig in ein barrierefreies Format umgewandelt werden, zumal in Teilen die Ausgangsdateien fehlen und eine nachträgliche Bearbeitung nach § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten ist. Wir sind bestrebt, künftig ausschließlich barrierefreie Dokumente auf &lt;intR&gt;²Dok zu veröffentlichen. Sollten Sie eine bestimmte PDF-Datei benötigen, die noch nicht barrierefrei zur Verfügung steht, so kontaktieren Sie uns bitte unter den weiter unten genannten Kontaktdaten.</dd>
+	<dt>Audiodateien ohne Volltextalternative.</dt>
+	<dd class="ml-4">Transkriptionen oder andere Volltextalternativen von Audiodateien sind nicht verfügbar.<br />
+	Aufgrund der hohen Zahl sowie des Umfangs der auf &lt;intR&gt;²Dok veröffentlichten Audiodateien ist deren rückwirkende Transkription gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</dd>
+	<dt>Videos ohne Untertitel oder Volltextalternative</dt>
+	<dd class="ml-4">Videos mit Ton verfügen weder über Untertitel noch über Transkriptionen.<br />
+	Aufgrund der hohen Zahl sowie des Umfangs der auf &lt;intR&gt;²Dok veröffentlichten Videodateien ist deren rückwirkende Transkription gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</dd>
+	<dt>Abweichende Sprache einzelner Wörter oder Abschnitte nicht ausgezeichnet.</dt>
+	<dd class="ml-4">Anderssprachige Wörter und Abschnitte sind nicht mit lang-Attributen ausgezeichnet.<br />
+	Aufgrund der hohen Zahl sowie des Umfangs der auf &lt;intR&gt;²Dok veröffentlichten Dokumente ist deren rückwirkende Auszeichnung mit lang-Attributen gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</dd>
+	<dt>Inhalte nicht in Leichter oder Gebärdensprache verfügbar.</dt>
+	<dd class="ml-4">Sämtliche Inhalte von &lt;intR&gt;²Dok stehen nicht in Leichter oder Gebärdensprache zur Verfügung.<br />
+	Aufgrund seines ausschließlich wissenschaftlichen Zielpublikums ist die Übersetzung der Inhalte von &lt;intR&gt;²Dok in Leichte Sprache verzichtbar. Mit Blick auf Umfang und Komplexität der ausschließlich wissenschaftlichen Inhalte von &lt;intR&gt;²Dok ist deren rückwirkende Übersetzung in Gebärdensprache gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</dd>
+	<dt>Alternativtexte (1.1.1 a-c)</dt>
+	<dd class="ml-4">An einigen Stellen fehlen die Alternativtexte. Bei einem nächsten Update werden diese ergänzt werden.</dd>
+	<dt>HTML-Strukturelemente (1.3.1 a-f)</dt>
+	<dd class="ml-4">Einige HTML-Strukturelemente sind nur teilweise barrierefrei, da die entsprechenden Bootstrap-Klassen fehlen. Eine Überarbeitung ist in Arbeit.</dd>
+	<dt>Eingabefelder zu Nutzerdaten vermitteln den Zweck (1.3.5a)</dt>
+	<dd class="ml-4">Einige der eingebundenen Formulare nutzen keine Autovervollständigung. Das Fehlen der „autocomplete“-Attribute erschwert das Ausfüllen der Formulare. Bei einem Update soll die Funktionalität künftig ergänzt werden.</dd>
+	<dt>Kontraste von Texten ausreichend (1.4.3)</dt>
+	<dd class="ml-4">Da das strukturelle Layout der Webseite vor dem Erscheinen der Richtlinie (EU) 2016/2102 erstellt wurde, ist das Kontrastverhältnis von 4,5:1 nicht grundsätzlich sichergestellt. An einer Lösung wird gearbeitet.</dd>
+	<dt>Aktuelle Position des Fokus deutlich (2.4.7a)</dt>
+	<dd class="ml-4">Der Fokus ist bei der Bedienung mit der Tastatur nicht immer erkennbar. Die Anpassung des Fokus-Managements erfolgt bei der nächsten grundlegenden Überarbeitung der Website.</dd>
+	<dt>Fehlererkennung (3.3.1a)</dt>
+	<dd class="ml-4">Angaben in Formularen werden vor dem Abschicken nicht automatisch überprüft. Bei der nächsten grundlegenden Überarbeitung der Website soll die Funktionalität künftig ergänzt werden.</dd>
+	<dt>Statusmeldungen programmatisch verfügbar (4.1.3a)</dt>
+	<dd class="ml-4">Es erfolgt weder visuell noch im Screenreader ein Hinweis, dass das Dokument auf die Merkliste gesetzt wurde. Diese Funktion wird im Rahmen eines Updates ergänzt.</dd>
+</dl>
 
-        <p>Dieses Angebot ist weitgehend barrierefrei. Es werden die Mehrzahl der Anforderungen der BITV 2.0 erfüllt.</p>
+<p>Die identifizierten technischen Mängel werden sukzessive behoben.</p>
+</div>
+</div>
 
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-7 col-sm-12">
-        
-        <h3>Welche Bereiche sind nicht barrierefrei?</h3>
+<div class="row">
+<div class="col-md-7 col-sm-12">
+<h3>Wen können Sie bei Anmerkungen oder Rückfragen zur digitalen Barrierefreiheit kontaktieren?</h3>
 
-        <dl>
-          <dt>Eingeschränkte Barrierefreiheit eingebundener Dokumente im PDF-Format.</dt>
-          <dd class="ml-4">
-            Die eingebundenen Dokumente im PDF-Format sind möglicherweise nicht barrierefrei.<br />
-            Aufgrund der hohen Zahl eingebundener Dokumente können diese nicht vollständig in ein barrierefreies Format umgewandelt werden, zumal in Teilen die Ausgangsdateien fehlen und eine nachträgliche Bearbeitung nach § 12a, 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten ist. Wir sind bestrebt, künftig ausschließlich barrierefreie Dokumente auf &lt;intR&gt;²Dok zu veröffentlichen. Sollten Sie eine bestimmte PDF-Datei benötigen, die noch nicht barrierefrei zur Verfügung steht, so kontaktieren Sie uns bitte unter den weiter unten genannten Kontaktdaten.
-          </dd>
-          
-          <dt>Audiodateien ohne Volltextalternative.</dt>
-          <dd class="ml-4">
-            Transkriptionen oder andere Volltextalternativen von Audiodateien sind nicht verfügbar.<br />
-            Aufgrund der hohen Zahl sowie des Umfangs der auf &lt;intR&gt;²Dok veröffentlichten Audiodateien ist deren rückwirkende Transkription gemäß § 12a, 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.
-          </dd>
+<p>Sind Ihnen Mängel beim barrierefreien Zugang zu Inhalten von <a href="https://intr2dok.vifa-recht.de/">https://intr2dok.vifa-recht.de/</a> aufgefallen? Dann teilen Sie uns diese bitte mit – vielen Dank. Unsere Kontaktdaten lauten:</p>
 
-          <dt>Videos ohne Untertitel oder Volltextalternative</dt>
-          <dd class="ml-4">
-            Videos mit Ton verfügen weder über Untertitel noch über Transkriptionen.<br />
-            Aufgrund der hohen Zahl sowie des Umfangs der auf &lt;intR&gt;²Dok veröffentlichten Videodateien ist deren rückwirkende Transkription gemäß § 12a, 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.
-          </dd>
-          
-          <dt>Abweichende Sprache einzelner Wörter oder Abschnitte nicht ausgezeichnet.</dt>
-          <dd class="ml-4">
-            Anderssprachige Wörter und Abschnitte sind nicht mit lang-Attributen ausgezeichnet.<br />
-            Aufgrund der hohen Zahl sowie des Umfangs der auf &lt;intR&gt;²Dok veröffentlichten Dokumente ist deren rückwirkende Auszeichnung mit lang-Attributen gemäß § 12a, 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.
-          </dd>
-          
-          <dt>Inhalte nicht in Leichter oder Gebärdensprache verfügbar.</dt>
-          <dd class="ml-4">
-            Sämtliche Inhalte von &lt;intR&gt;²Dok stehen nicht in Leichter oder Gebärdensprache zur Verfügung.<br />
-            Aufgrund seines ausschließlich wissenschaftlichen Zielpublikums ist die Übersetzung der Inhalte von &lt;intR&gt;²Dok in Leichte Sprache verzichtbar. Mit Blick auf Umfang und Komplexität der ausschließlich wissenschaftlichen Inhalte von &lt;intR&gt;²Dok ist deren rückwirkende Übersetzung in Gebärdensprache gemäß § 12a, 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.
-          </dd>
-          
-          <dt>Alternativtexte (1.1.1 a-c )</dt>
-          <dd class="ml-4">An einigen Stellen fehlen die Alternativtexte. Bei einem nächsten Update werden diese ergänzt werden.</dd>
-          
-          <dt>HTML-Strukurelemente (1.3.1 a-f )</dt>
-          <dd class="ml-4">Einige HTML-Strukurelemente sind nur teilweise barrierefrei, da die entsprechenden Bootstrap-Klassen fehlen.
-            Eine Überarbeitung ist in Arbeit.</dd>
-          
-          <dt>Eingabefelder zu Nutzerdaten vermitteln den Zweck (1.3.5a)</dt>
-          <dd class="ml-4">Formulare nutzen keine Autovervollständigung. Bei Formularen fehlen die „autocomplete“-Attribute, was das Ausfüllen der Formulare erschwert.
-            Bei einem Update soll die Funktionalität künftig ergänzt werden.</dd>
-          
-          <dt>Kontraste von Texten ausreichend (1.4.3)</dt>
-          <dd class="ml-4">Da das grundsätzliche Layout der Webseite vor dem Erscheinen der Richtlinie (EU) 2016/2102 erstellt wurde, ist das Kontrastverhältnis von 4,5:1 nicht grundsätzlich sichergestellt.
-            An einer Lösung wird gearbeitet.</dd>
-          
-          <dt>Aktuelle Position des Fokus deutlich (2.4.7a)</dt>
-          <dd class="ml-4">Der Fokus ist bei der Bedienung mit der Tastatur nicht immer erkennbar.
-            Die Anpassung des Fokus-Managements erfolgt bei der nächsten grundlegenden Überarbeitung der Website.</dd>
-          
-          <dt>Fehlererkennung (3.3.1a)</dt>
-          <dd class="ml-4">Angaben in Formularen werden vor dem Abschicken nicht automatisch überprüft. 
-            Bei der nächsten grundlegenden Überarbeitung der Website soll die Funktionalität künftig ergänzt werden.</dd>
-          
-          <dt>Statusmeldungen programmatisch verfügbar (4.1.3a)</dt>
-          <dd class="ml-4">Es erfolgt weder visuell noch im Screenreader ein Hinweis das, das Dokument auf die Merkliste gesetzt wurde.
-            Die entsprechende "Role" wird im Rahmen eines Updates ergänzt.</dd>
-        </dl>
-        <p>Die identifizierten technischen Defizite und Mängel befinden sich aktuell in einem kontinuierlichen Verbesserungsprozess,
-          der sukzessive abgearbeitet wird.</p>
-      </div>
-    </div>
+<p class="border-left pl-5">Publikationsservice &lt;intR&gt;²Dok<br />
+Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung<br />
+Staatsbibliothek zu Berlin – Preußischer Kulturbesitz<br />
+Potsdamer Straße 33<br />
+D-10785 Berlin<br />
+E-Mail: <span class="madress">intR2dok [at] sbb.spk-berlin.de</span><br />
+Internet: <a href="https://intr2dok.vifa-recht.de/">https://intr2dok.vifa-recht.de/</a></p>
+</div>
+</div>
 
-    <div class="row">
-      <div class="col-md-7 col-sm-12">
-        <h3> Wen können Sie bei Anmerkungen oder Rückfragen zur digitalen Barrierefreiheit kontaktieren? </h3>
+<div class="row">
+<div class="col-md-7 col-sm-12">
+<h3>Kontakt zur Schlichtungsstelle</h3>
 
-        <p>Sind Ihnen Mängel beim barrierefreien Zugang zu Inhalten von <a href="https://intr2dok.vifa-recht.de/">https://intr2dok.vifa-recht.de/</a> aufgefallen? Dann teilen Sie uns diese bitte mit – vielen Dank. Unsere Kontaktdaten sind: </p>
+<p>Sollten Sie der Ansicht sein, durch eine nicht ausreichend barrierefreie Gestaltung von <a href="https://intr2dok.vifa-recht.de/">&lt;intR&gt;²Dok</a> benachteiligt zu werden, können Sie sich an die Schlichtungsstelle nach § 16 des Gesetzes zur Gleichstellung von Menschen mit Behinderungen (BGG) wenden.</p>
 
-        <p class="border-left pl-5">
-          Publikationsservice &lt;intR&gt;²Dok<br /> 
-          Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung <br /> 
-          Staatsbibliothek zu Berlin – Preußischer Kulturbesitz <br /> 
-          Potsdamer Straße 33 <br /> 
-          D-10785 Berlin <br /> 
-          E-Mail: <span class="madress">intR2dok [at] sbb.spk-berlin.de</span><br /> 
-          Internet: <a href="https://intr2dok.vifa-recht.de/">https://intr2dok.vifa-recht.de/</a>
-        </p>
-      </div>
-    </div>
+<p>Das Schlichtungsverfahren ist kostenlos. Sie benötigen auch keinen Rechtsbeistand.</p>
 
+<p>Auf der Internetseite der Schlichtungsstelle finden Sie alle Informationen zum Schlichtungsverfahren. Dort können Sie nachlesen, wie ein Schlichtungsverfahren abläuft und wie Sie den Antrag auf Schlichtung stellen. Sie können den Antrag auch in Leichter Sprache oder in Deutscher Gebärdensprache stellen.</p>
 
-    
-    <div class="row">
-      <div class="col-md-7 col-sm-12">
-        <h3> Kontakt zur Schlichtungsstelle </h3>
+<p>Sie erreichen die Schlichtungsstelle unter folgender Adresse:</p>
 
-        <p>Sollten Sie der Ansicht sein, durch eine nicht ausreichend barrierefreie Gestaltung von https://intr2dok.vifa-recht.de/ benachteiligt zu sein oder wenn Sie mit den Antworten aus der oben genannten Kontaktmöglichkeit nicht zufrieden sind, können Sie sich an die Schlichtungsstelle nach § 16 des Gesetzes zur Gleichstellung von Menschen mit Behinderungen (BGG) wenden.</p>
-        <p>
-          Das Schlichtungsverfahren ist kostenlos. Sie benötigen auch keinen Rechtsbeistand.
-        </p>
-        <p>
-          Auf der Internetseite der Schlichtungsstelle finden Sie alle Informationen zum Schlichtungsverfahren. Dort können Sie nachlesen, wie ein Schlichtungsverfahren abläuft und wie Sie den Antrag auf Schlichtung stellen. Sie können den Antrag auch in Leichter Sprache oder in Deutscher Gebärdensprache stellen. 
-        </p>
-        <p>
-          Sie erreichen die Schlichtungsstelle unter folgender Adresse:
-        </p>
-        <p class="border-left pl-5">
-          Schlichtungsstelle nach dem Behindertengleichstellungsgesetz bei dem Beauftragten der Bundesregierung für die Belange von Menschen mit Behinderungen<br />
-          Mauerstraße 53<br />
-          D-10117 Berlin<br />
-          Telefon: +49 30 18 527-2805<br /><br />
-          
-          E-Mail: <span class="madress">info [at] schlichtungsstelle-bgg.de</span><br />
-          Internet: <a href="https://www.schlichtungsstelle-bgg.de/">www.schlichtungsstelle-bgg.de</a>
-          
-        </p>
-      </div>
-    </div>
-  </section>
-  <meta>
-    <log lastEditor="celsner" date="2020-09-03" time="11:24"/>
-  </meta>
-</MyCoReWebPage>
+<p class="border-left pl-5">Schlichtungsstelle nach dem Behindertengleichstellungsgesetz bei dem Beauftragten der Bundesregierung für die Belange von Menschen mit Behinderungen<br />
+Mauerstraße 53<br />
+D-10117 Berlin<br />
+Telefon: +49 30 18 527-2805<br />
+<br />
+E-Mail: <span class="madress">info [at] schlichtungsstelle-bgg.de</span><br />
+Internet: <a href="https://www.schlichtungsstelle-bgg.de/">www.schlichtungsstelle-bgg.de</a></p>
+</div>
+</div>
+</div>
+</section><meta><log lastEditor="cmathieu" date="2020-09-22" time="09:47" /></meta></MyCoReWebPage>
