@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="intr2dok_systematik">
+  <label xml:lang="de" text="&lt;intR&gt;²Dok-Systematik" />
+  <label xml:lang="x-uri" text="http://intr2dok.vifa-recht.de/classifications/intr2dok_systematik" />
+  <categories>
+    <category ID="inter">
+      <label xml:lang="de" text="internationales Recht, Völkerrecht" />
+      <category ID="inter_3">
+        <label xml:lang="de" text="internationales Recht, Völkerrecht: Allgemeines" />
+      </category>
+      <category ID="inter_4">
+        <label xml:lang="de" text="Quellen des Völkerrechts" />
+      </category>
+      <category ID="inter_5">
+        <label xml:lang="de" text="Recht internationaler Organisationen und Zusammenschlüsse" />
+      </category>
+      <category ID="inter_6">
+        <label xml:lang="de" text="Völkerrechtssubjekte" />
+      </category>
+      <category ID="inter_7">
+        <label xml:lang="de" text="Territorien im Völkerrecht, Polargebiete" />
+      </category>
+      <category ID="inter_8">
+        <label xml:lang="de" text="Völkerrechtliches Vertragsrecht " />
+      </category>
+      <category ID="inter_9">
+        <label xml:lang="de" text="Internationales Recht und nationales Recht" />
+      </category>
+      <category ID="inter_10">
+        <label xml:lang="de" text="Botschafts- und Konsularrecht" />
+      </category>
+      <category ID="inter_11">
+        <label xml:lang="de" text="Menschenrechte, Humanitäres Recht und Minderheiten" />
+      </category>
+      <category ID="inter_12">
+        <label xml:lang="de" text="Internationales Asyl- und Ausländerrecht " />
+      </category>
+      <category ID="inter_13">
+        <label xml:lang="de" text="Kriegs- und Kriegsverhütungsrecht " />
+      </category>
+      <category ID="inter_14">
+        <label xml:lang="de" text="Völkerstrafrecht" />
+      </category>
+      <category ID="inter_15">
+        <label xml:lang="de" text="Internationales Wirtschaftsrecht" />
+      </category>
+      <category ID="inter_16">
+        <label xml:lang="de" text="Internationales Finanz- und Steuerrecht" />
+      </category>
+      <category ID="inter_17">
+        <label xml:lang="de" text="Wissenschaft, Forschung, Unterricht, Bildung" />
+      </category>
+      <category ID="inter_18">
+        <label xml:lang="de" text="Internationales Energierecht" />
+      </category>
+      <category ID="inter_19">
+        <label xml:lang="de" text="Internationales Umwelt- und Umweltschutzrecht" />
+      </category>
+      <category ID="inter_20">
+        <label xml:lang="de" text="Luft- und Weltraumrecht" />
+      </category>
+      <category ID="inter_21">
+        <label xml:lang="de" text="Internationales Seerecht" />
+      </category>
+      <category ID="inter_22">
+        <label xml:lang="de" text="Internationales Verkehrs- und Transportrecht" />
+      </category>
+      <category ID="inter_23">
+        <label xml:lang="de" text="Telekommunikation und Medien" />
+      </category>
+      <category ID="inter_24">
+        <label xml:lang="de" text="Internationales Kultur- und Kunstrecht" />
+      </category>
+      <category ID="inter_25">
+        <label xml:lang="de" text="Internationales Sportrecht" />
+      </category>
+      <category ID="inter_26">
+        <label xml:lang="de" text="Kanonisches Recht" />
+      </category>
+      <category ID="inter_27">
+        <label xml:lang="de" text="Internationale Verwaltungsabkommen und Rechtsverkehr" />
+      </category>
+      <category ID="inter_28">
+        <label xml:lang="de" text="Internationale Schiedsgerichtsbarkeit und außergerichtliche Streitbeilegung" />
+      </category>
+      <category ID="inter_29">
+        <label xml:lang="de" text="Internationale Gerichtsbarkeit" />
+      </category>
+      <category ID="inter_30">
+        <label xml:lang="de" text="Völkergewohnheitsrecht" />
+      </category>
+    </category>
+    <category ID="euro">
+      <label xml:lang="de" text="Europarecht" />
+      <category ID="euro_allg">
+        <label xml:lang="de" text="Europarecht: Allgemeines" />
+      </category>
+      <category ID="euro_inst">
+        <label xml:lang="de" text="Europäische Institutionen" />
+        <category ID="euro_inst_1">
+          <label xml:lang="de" text="Europäische Institutionen: Allgemeines" />
+        </category>
+        <category ID="euro_inst_2">
+          <label xml:lang="de" text="Ministerrat" />
+        </category>
+        <category ID="euro_inst_3">
+          <label xml:lang="de" text="Kommission" />
+        </category>
+        <category ID="euro_inst_4">
+          <label xml:lang="de" text="Europäisches Parlament" />
+        </category>
+        <category ID="euro_inst_5">
+          <label xml:lang="de" text="Europäischer Gerichtshof (EuGH)" />
+        </category>
+        <category ID="euro_inst_6">
+          <label xml:lang="de" text="Europäischer Gerichtshof für Menschenrechte (EGMR)" />
+        </category>
+        <category ID="euro_inst_7">
+          <label xml:lang="de" text="Europäische Zentralbank (EZB)" />
+        </category>
+        <category ID="euro_inst_8">
+          <label xml:lang="de" text="weitere europäische Institutionen" />
+        </category>
+      </category>
+      <category ID="euro_quell">
+        <label xml:lang="de" text="Europäische Rechtsquellen" />
+        <category ID="euro_quell_1">
+          <label xml:lang="de" text="Europäische Rechtsquellen: Allgemeines" />
+        </category>
+        <category ID="euro_quell_2">
+          <label xml:lang="de" text="Primäres Europäisches Recht (Europäische Verträge)" />
+        </category>
+        <category ID="euro_quell_3">
+          <label xml:lang="de" text="Sekundäres Europäisches Recht" />
+        </category>
+        <category ID="euro_quell_4">
+          <label xml:lang="de" text="Europäische Verfassung" />
+        </category>
+        <category ID="euro_quell_5">
+          <label xml:lang="de" text="Gemeinschaftsrecht und nationales Recht, Rechtsangleichung" />
+        </category>
+        <category ID="euro_quell_6">
+          <label xml:lang="de" text="Gemeinschaftsrecht und Völkerrecht" />
+        </category>
+      </category>
+      <category ID="euro_bmarkt">
+        <label xml:lang="de" text="Binnenmarkt" />
+        <category ID="euro_bmarkt_1">
+          <label xml:lang="de" text="Binnenmarkt: Allgemeines" />
+        </category>
+        <category ID="euro_bmarkt_2">
+          <label xml:lang="de" text="Freier Warenverkehr" />
+        </category>
+        <category ID="euro_bmarkt_3">
+          <label xml:lang="de" text="Freizügigkeit" />
+        </category>
+        <category ID="euro_bmarkt_4">
+          <label xml:lang="de" text="Niederlassungsfreiheit" />
+        </category>
+        <category ID="euro_bmarkt_5">
+          <label xml:lang="de" text="Dienstleistungsfreiheit" />
+        </category>
+        <category ID="euro_bmarkt_6">
+          <label xml:lang="de" text="Freiheit des Kapital- und Zahlungsverkehrs" />
+        </category>
+        <category ID="euro_bmarkt_7">
+          <label xml:lang="de" text="Diskriminierungsverbot" />
+        </category>
+        <category ID="euro_bmarkt_8">
+          <label xml:lang="de" text="Vergaberecht und Subventionen" />
+        </category>
+      </category>
+      <category ID="euro_rgeb">
+        <label xml:lang="de" text="Einzelne Rechtsgebiete" />
+        <category ID="euro_rgeb_1">
+          <label xml:lang="de" text="Menschenrechte im Europarecht" />
+        </category>
+        <category ID="euro_rgeb_2">
+          <label xml:lang="de" text="Außen- und Sicherheitspolitik (GASP)" />
+        </category>
+        <category ID="euro_rgeb_3">
+          <label xml:lang="de" text="Bildung und Kultur" />
+        </category>
+        <category ID="euro_rgeb_4">
+          <label xml:lang="de" text="Wissenschaft und Forschung" />
+        </category>
+        <category ID="euro_rgeb_5">
+          <label xml:lang="de" text="Technologie" />
+        </category>
+        <category ID="euro_rgeb_6">
+          <label xml:lang="de" text="Medien und Telekommunikation" />
+        </category>
+        <category ID="euro_rgeb_7">
+          <label xml:lang="de" text="Energie und Umwelt" />
+        </category>
+        <category ID="euro_rgeb_8">
+          <label xml:lang="de" text="Landwirtschaft, Fischerei" />
+        </category>
+        <category ID="euro_rgeb_9">
+          <label xml:lang="de" text="Gesundheitswesen und Verbraucherschutz" />
+        </category>
+        <category ID="euro_rgeb_10">
+          <label xml:lang="de" text="Handel und Zoll" />
+        </category>
+        <category ID="euro_rgeb_11">
+          <label xml:lang="de" text="Finanzverfassung" />
+        </category>
+        <category ID="euro_rgeb_12">
+          <label xml:lang="de" text="Steuerharmonisierung" />
+        </category>
+        <category ID="euro_rgeb_13">
+          <label xml:lang="de" text="Regionalförderung" />
+        </category>
+        <category ID="euro_rgeb_14">
+          <label xml:lang="de" text="Soziales und Arbeit" />
+        </category>
+        <category ID="euro_rgeb_15">
+          <label xml:lang="de" text="Strafrecht und Verbrechensbekämpfung" />
+        </category>
+        <category ID="euro_rgeb_16">
+          <label xml:lang="de" text="Wettbewerb, Subventionen, Beihilfen" />
+        </category>
+        <category ID="euro_rgeb_17">
+          <label xml:lang="de" text="Wirtschafts- und Währungspolitik" />
+        </category>
+        <category ID="euro_rgeb_18">
+          <label xml:lang="de" text="Verkehr" />
+        </category>
+        <category ID="euro_rgeb_19">
+          <label xml:lang="de" text="Verwaltungsabkommen und Rechtsverkehr" />
+        </category>
+        <category ID="euro_rgeb_20">
+          <label xml:lang="de" text="weitere Rechtsgebiete" />
+        </category>
+      </category>
+    </category>
+    <category ID="gps">
+      <label xml:lang="de" text="Rechtsgeschichte, Rechtsphilosophie, Rechtssoziologie" />
+      <category ID="rgesch">
+        <label xml:lang="de" text="Rechtsgeschichte" />
+        <category ID="rgesch_1">
+          <label xml:lang="de" text="Rechtsgeschichte: Allgemeines" />
+        </category>
+        <category ID="rgesch_2">
+          <label xml:lang="de" text="Antikes Recht" />
+        </category>
+        <category ID="rgesch_4">
+          <label xml:lang="de" text="Römisches Recht" />
+        </category>
+        <category ID="rgesch_5">
+          <label xml:lang="de" text="Deutsche Rechtsgeschichte" />
+          <category ID="rgesch_5_1">
+            <label xml:lang="de" text="Deutsche Rechtsgeschichte: Allgemeines" />
+          </category>
+          <category ID="rgesch_5_2">
+            <label xml:lang="de" text="Deutsche Rechtsgeschichte: Partikularrecht" />
+          </category>
+          <category ID="rgesch_5_3">
+            <label xml:lang="de" text="Deutsche Rechtsgeschichte: Subsidiäres Recht / Ius Commune" />
+          </category>
+          <category ID="rgesch_5_4">
+            <label xml:lang="de" text="Mittelalter" />
+          </category>
+          <category ID="rgesch_5_5">
+            <label xml:lang="de" text="Neuzeit bis 1806" />
+          </category>
+          <category ID="rgesch_5_6">
+            <label xml:lang="de" text="1806 bis 1933" />
+          </category>
+          <category ID="rgesch_5_7">
+            <label xml:lang="de" text="Recht und Justiz im Dritten Reich; Behandlung von NS-Unrecht" />
+          </category>
+          <category ID="rgesch_5_8">
+            <label xml:lang="de" text="Bundesrepublik bis 1990" />
+          </category>
+          <category ID="rgesch_5_9">
+            <label xml:lang="de" text="Deutsche Demokratische Republik bis 1990" />
+          </category>
+          <category ID="rgesch_5_10">
+            <label xml:lang="de" text="Wiedervereinigung" />
+          </category>
+        </category>
+        <category ID="rgesch_6">
+          <label xml:lang="de" text="Europäische Rechtsgeschichte" />
+        </category>
+        <category ID="rgesch_7">
+          <label xml:lang="de" text="Rechtsgeschichte Anglo-Amerikas" />
+        </category>
+        <category ID="rgesch_8">
+          <label xml:lang="de" text="Rechtsgeschichte einzelner Länder, Regionen und Völker" />
+        </category>
+        <category ID="rgesch_9">
+          <label xml:lang="de" text="Geschichte des Völkerrechts" />
+        </category>
+      </category>
+      <category ID="rphil">
+        <label xml:lang="de" text="Rechtsphilosophie, Rechtstheorie" />
+        <category ID="rphil_1">
+          <label xml:lang="de" text="Rechtsphilosophie, Rechtstheorie: Allgemeines" />
+        </category>
+        <category ID="rphil_2">
+          <label xml:lang="de" text="Geschichte der Rechtsphilosophie und Rechtstheorie" />
+        </category>
+        <category ID="rphil_3">
+          <label xml:lang="de" text="Naturrechtslehre" />
+        </category>
+        <category ID="rphil_4">
+          <label xml:lang="de" text="Kodifikation und Gerechtigkeit" />
+        </category>
+        <category ID="rphil_5">
+          <label xml:lang="de" text="Juristische Hermeneutik und Normeninterpretation" />
+        </category>
+        <category ID="rphil_6">
+          <label xml:lang="de" text="Rechtslogik" />
+        </category>
+        <category ID="rphil_7">
+          <label xml:lang="de" text="Juristische Argumentation" />
+        </category>
+        <category ID="rphil_8">
+          <label xml:lang="de" text="Entscheidungsfindung" />
+        </category>
+        <category ID="rphil_9">
+          <label xml:lang="de" text="Wissenschaftstheorie" />
+        </category>
+        <category ID="rphil_10">
+          <label xml:lang="de" text="Rechtsethik" />
+        </category>
+        <category ID="rphil_11">
+          <label xml:lang="en" text="Critical Legal Studies" />
+          <label xml:lang="de" text="Kritische Rechtstheorie " />
+        </category>
+      </category>
+      <category ID="rsoz">
+        <label xml:lang="de" text="Rechtssoziologie" />
+        <category ID="rsoz_1">
+          <label xml:lang="de" text="Rechtssoziologie: Allgemeines" />
+        </category>
+        <category ID="rsoz_2">
+          <label xml:lang="de" text="Soziologie der Gesetzgebung" />
+        </category>
+        <category ID="rsoz_3">
+          <label xml:lang="de" text="Soziologie der Verwaltung" />
+        </category>
+        <category ID="rsoz_4">
+          <label xml:lang="de" text="Soziologie der Justiz" />
+        </category>
+      </category>
+    </category>
+    <category ID="idiszi">
+      <label xml:lang="de" text="interdisziplinäre Rechtsforschung" />
+      <category ID="b49ddf56-db11-4d2f-a4f4-0b384ada1b80">
+        <label xml:lang="de" text="Rechtsinformatik und Rechtsinformation" />
+      </category>
+      <category ID="idiszi_1">
+        <label xml:lang="de" text="Rechtskultur" />
+      </category>
+      <category ID="idiszi_2">
+        <label xml:lang="de" text="Recht und Gesellschaft" />
+      </category>
+      <category ID="idiszi_3">
+        <label xml:lang="de" text="Governance " />
+      </category>
+      <category ID="idiszi_4">
+        <label xml:lang="de" text="Compliance" />
+      </category>
+      <category ID="idiszi_5">
+        <label xml:lang="de" text="Recht und Weltwirtschaftsordnung" />
+      </category>
+      <category ID="idiszi_6">
+        <label xml:lang="de" text="Ökonomische Analyse des Rechts" />
+      </category>
+      <category ID="idiszi_7">
+        <label xml:lang="de" text="Recht und Globalisierung" />
+      </category>
+      <category ID="idiszi_8">
+        <label xml:lang="de" text="Recht und Migration" />
+      </category>
+      <category ID="idiszi_9">
+        <label xml:lang="de" text="Recht und Umwelt (Klimawandel, Biodiversität)" />
+      </category>
+      <category ID="idiszi_10">
+        <label xml:lang="de" text="Recht und Technik bzw. Technologie" />
+      </category>
+      <category ID="idiszi_11">
+        <label xml:lang="de" text="Recht und Medizin" />
+      </category>
+      <category ID="idiszi_12">
+        <label xml:lang="de" text="Recht und Lebenswissenschaften" />
+      </category>
+      <category ID="idiszi_13">
+        <label xml:lang="de" text="Recht und Religion" />
+      </category>
+      <category ID="idiszi_14">
+        <label xml:lang="de" text="Recht und Sprache bzw. Literatur" />
+      </category>
+      <category ID="idiszi_15">
+        <label xml:lang="de" text="Recht und Kunst" />
+      </category>
+      <category ID="idiszi_16">
+        <label xml:lang="de" text="Rechtsikonographie" />
+      </category>
+      <category ID="idiszi_17">
+        <label xml:lang="de" text="Recht und Gender Studies " />
+      </category>
+      <category ID="idiszi_18">
+        <label xml:lang="de" text="Feministische Rechtstheorie" />
+      </category>
+      <category ID="idiszi_19">
+        <label xml:lang="de" text="Außerrechtliche gesellschaftliche Ordnungssysteme und Gewohnheitsrecht" />
+      </category>
+    </category>
+  </categories>
+</mycoreclass>

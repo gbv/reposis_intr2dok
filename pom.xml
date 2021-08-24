@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ This file is part of ***  M y C o R e  ***
+  ~ See http://www.mycore.de/ for details.
+  ~
+  ~ MyCoRe is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ MyCoRe is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with MyCoRe.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.vzg.intr2dok</groupId>
-    <artifactId>intr2dok-module</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>reposis_intr2dok</artifactId>
+    <version>2020.06-SNAPSHOT</version>
     <properties>
-        <mycore-version>2018.06.0.5-SNAPSHOT</mycore-version>
+        <mycore.version>2020.06.2</mycore.version>
     </properties>
     <parent>
         <groupId>org.mycore</groupId>
         <artifactId>mycore-parent</artifactId>
-        <version>38</version>
+        <version>45</version>
     </parent>
     <repositories>
         <repository>
@@ -39,21 +57,29 @@
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </pluginRepository>
     </pluginRepositories>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.mycore</groupId>
+                <artifactId>mycore</artifactId>
+                <version>${mycore.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.mycore</groupId>
             <artifactId>mycore-base</artifactId>
-            <version>${mycore-version}</version>
         </dependency>
         <dependency>
             <groupId>org.mycore</groupId>
             <artifactId>mycore-mods</artifactId>
-            <version>${mycore-version}</version>
         </dependency>
         <dependency>
             <groupId>org.mycore</groupId>
             <artifactId>mycore-pi</artifactId>
-            <version>${mycore-version}</version>
         </dependency>
     </dependencies>
     <build>
@@ -63,17 +89,16 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
                     <archive>
-                        <manifest>
-                            <addExtensions />
-                        </manifest>
                         <manifestEntries>
                             <MCR-Artifact-Id>${project.artifactId}</MCR-Artifact-Id>
                             <MCR-Application-Module>${project.name}</MCR-Application-Module>
+                            <Priority>99</Priority>
+                            <MCR-Auto-Deploy>true</MCR-Auto-Deploy>
                         </manifestEntries>
                     </archive>
                 </configuration>
-                <version>3.0.2</version>
             </plugin>
         </plugins>
     </build>
+
 </project>
