@@ -62,6 +62,13 @@
                   </xsl:otherwise>
                 </xsl:choose>
               </xsl:for-each>
+              <xsl:if test="mcrxsl:isCurrentUserGuestUser()">
+                <li class="nav-item">
+                   <a class="nav-link" href="{$WebApplicationBaseURL}authorization/new-author.xed">
+                     Registrieren
+                   </a>
+                 </li>
+               </xsl:if>
               <xsl:call-template name="mir.basketMenu" />
             </ul>
 
