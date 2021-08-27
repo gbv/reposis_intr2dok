@@ -5,6 +5,9 @@ $﻿(document).ready(function() {
   var userID = $("#currentUser strong").html();
   var newHref = 'https://intr2dok.vifa-recht.de/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
   $("a[href='https://intr2dok.vifa-recht.de/servlets/solr/select?q=createdby:USERNAME']").attr('href', newHref);
+  
+  var newTestHref = 'https://reposis-test.gbv.de/IntR2Dok/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
+  $("a[href='https://reposis-test.gbv.de/IntR2Dok/servlets/solr/select?q=createdby:USERNAME']").attr('href', newHref);
 
   // spam protection for mails
   $('span.madress').each(function(i) {
