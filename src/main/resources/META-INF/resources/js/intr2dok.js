@@ -14,22 +14,6 @@ $﻿(document).ready(function() {
       $(this).remove();
   });
 
-  if ( localStorage.getItem('open_aire_options_are_visible') === "true" ){
-    $('#open-aire_box').css('display', 'block');
-    $('#open-aire_trigger').removeClass('glyphicon-unchecked');
-    $('#open-aire_trigger').addClass('glyphicon-check');
-    $('#open-aire_trigger_text').html('handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?');
-  } else {
-    $('#open-aire_box').css('display', 'none');
-    $('#open-aire_trigger').removeClass('glyphicon-check');
-    $('#open-aire_trigger').addClass('glyphicon-unchecked');
-    $('#open-aire_trigger_text').html('handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?');
-  }
-
-  $("#open-aire_trigger_checkbox").click(function(){
-    toggleOAOptions();
-  });
-  
   $.cookieBar({
     fixed: true,
     message: 'Auf den Seiten von &lt;intR&gt;²Dok werden zur Erhöhung des Bedienungskomforts Cookies verwendet. Mit der Nutzung dieser Seiten erklären Sie, dass Sie die rechtlichen Hinweise gelesen haben und akzeptieren.',
@@ -43,36 +27,18 @@ $﻿(document).ready(function() {
     referrer: 'intr2dok.vifa-recht.de'
   });
 
-  var v1 = jQuery(".nav li a:contains('Verfassungsblog')");
+  var v1 = jQuery("a.dropdown-item:contains('Verfassungsblog')");
   v1.on("click", function(e){ e.preventDefault(); openWpImport("Verfassungsblog"); return false; });
-  var v2 = jQuery(".nav li a:contains('Völkerrechtsblog')");
+  var v2 = jQuery("a.dropdown-item:contains('Völkerrechtsblog')");
   v2.on("click", function(e){ e.preventDefault(); openWpImport("Völkerrechtsblog"); return false;  });
-  var v3 = jQuery(".nav li a:contains('JuWissBlog')");
+  var v3 = jQuery("a.dropdown-item:contains('JuWissBlog')");
   v3.on("click", function(e){ e.preventDefault(); openWpImport("JuWissBlog"); return false;  });
 });
-
-
-function toggleOAOptions() {
-  var duration = 500;
-  if ( $('#open-aire_box').is(':visible') ) {
-    $('#open-aire_trigger').removeClass('glyphicon-check');
-    $('#open-aire_trigger').addClass('glyphicon-unchecked');
-    $('#open-aire_box').fadeOut( duration );
-    $('#open-aire_trigger_text').html('handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?');
-    localStorage.setItem("open_aire_options_are_visible", false);
-  } else {
-    $('#open-aire_trigger').removeClass('glyphicon-unchecked');
-    $('#open-aire_trigger').addClass('glyphicon-check');
-    $('#open-aire_box').fadeIn( duration );
-    $('#open-aire_trigger_text').html('handelt es sich um eine Publikation im Rahmen von FP7- oder Horizon2020?');
-    localStorage.setItem("open_aire_options_are_visible", true);
-  }
-}
 
 function openWpImport(config) {
     var req = new XMLHttpRequest();
     req.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             var responseObj = JSON.parse(this.response);
 	    var link = document.createElement('a');
     	    link.href = webApplicationBaseURL + "wordpressimport/#/token/" + config + "/" + responseObj.token_type + " " + (responseObj.access_token);

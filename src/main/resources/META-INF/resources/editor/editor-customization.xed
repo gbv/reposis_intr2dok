@@ -57,6 +57,8 @@
 
         <!-- add openaire -->
         <xed:include ref="openAIRE" after="subject.simple"/>
+
+        <xed:remove ref="shelfmark"/>
     </xed:modify>
 
     <xed:modify ref="genres.journal.common">
