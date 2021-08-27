@@ -58,11 +58,15 @@
       </div>
 
       <!-- more options -->
-      <div id="more_options_box" class="row form-group">
-        <h2>Publikation aus PubMed, CrossRef oder K10plus importieren</h2>
+      <div id="more_options_box">
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+             <h3>Publikation aus PubMed, CrossRef oder K10plus importieren</h3>
+          </div>
+        </div>
         <div class="row form-group">
-          <label class="col-sm-3 col-lg-2 control-label">
-            <select name="type">
+          <div class="col-sm-3 col-lg-2 control-label">
+            <select class="form-control" name="type">
               <option value="doi">DOI</option>
               <option value="pubmed">PubMed-ID</option>
               <option value="isbn">ISBN</option>
@@ -71,7 +75,7 @@
               <option value="ppn">K10plus-PPN</option>
               <option value="zdbid">ZDB-ID</option>
             </select>
-          </label>
+          </div>
           <div class="col-sm-7 col-md-5 col-lg-4">
             <input class="form-control" type="text" name="modsId" />
           </div>
