@@ -57,6 +57,7 @@
                   <xsl:when test="@id='social'"/>
                   <xsl:when test="@id='rights'"/>
                   <xsl:when test="@id='technical'"/>
+                  <xsl:when test="mcrxsl:isCurrentUserGuestUser() and @id='publish'"/>
                   <xsl:otherwise>
                     <xsl:apply-templates select="."/>
                   </xsl:otherwise>

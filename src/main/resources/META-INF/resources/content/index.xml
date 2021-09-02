@@ -25,7 +25,7 @@
   <object type="image/svg+xml" data="images/re3data.svg"><img alt="re3data logo" src="images/re3data.png" /></object>
 </a>
 <a class="ml-5" title="Link zur OpenAIRE-Seite" href="https://explore.openaire.eu/search/dataprovider?datasourceId=opendoar____::8ce5d989374d216a867cdc8871484b43">
-  <img alt="OpenAIRE validated logo" src="images/OpenAIRE_validated.png" style="height: 100px;" />
+  <img alt="OpenAIRE validated logo" src="images/OpenAIRE_validated.png" style="height: 100px;vertical-align: top;" />
 </a>
 </div>
 </div>
