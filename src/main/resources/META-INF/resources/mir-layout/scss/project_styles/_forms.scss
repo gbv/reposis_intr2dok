@@ -1,0 +1,84 @@
+/*  forms
+ *  - all about form fields but not buttons :)
+ */
+
+// Extra large devices (large desktops)
+// set the defaults for all responsive levels here
+// no (xl) media query necessary (desktop first)
+
+  .label-info[href]:hover, .label-info[href]:focus {
+    background-color: #797979;
+  }
+  .label-info {
+    background-color: #9E1B34;
+  }
+  .label-primary {
+      background-color: #a9a9a9;
+  }
+  .form-control,
+  input {
+    border-width: 1px;
+    border-color: #efefef;
+    box-shadow: none;
+  }
+  .form-control:focus {
+    box-shadow: none;
+  }
+  .form-horizontal .control-label {
+    color: #000;
+  }
+  #searchInput {
+    color: #f3f3f3;
+    background-color: #a9a9a9;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    padding: 0 20px 0 20px;
+    height: 60px;
+    border-left: 1px solid #f3f3f3;
+    float: right;
+  }
+  .form-control::-moz-placeholder{
+    color:#c3c3c3;
+  }
+  .form-control:-ms-input-placeholder{
+      color:#c3c3c3;
+  }
+  .form-control::-webkit-input-placeholder{
+      color:#c3c3c3;
+  }
+  #searchInput.form-control::-moz-placeholder{
+      color: #f3f3f3;
+  }
+  #searchInput.form-control:-ms-input-placeholder{
+      color: #f3f3f3;
+  }
+  #searchInput.form-control::-webkit-input-placeholder{
+      color: #f3f3f3;
+  }
+  .form-login-heading {
+    display: none;
+  }
+  .form-login {
+    margin-top:60px;
+  }
+
+// Large devices (desktops) and below: <= 1200px
+@include media-breakpoint-down(lg) {
+  // add/overwrite styles for responsive level lg and lower
+}
+
+// Medium devices (tablets) and below: <= 992px
+@include media-breakpoint-down(md) {
+  // add/overwrite styles for responsive level md and lower
+}
+
+// Small devices (landscape phones) and below: <= 768px
+@include media-breakpoint-down(sm) {
+  // add/overwrite styles for responsive level sm and lower
+}
+
+// Extra small devices (portrait phones): <= 576px
+@include media-breakpoint-down(xs) {
+  // add/overwrite styles for responsive level xs
+}

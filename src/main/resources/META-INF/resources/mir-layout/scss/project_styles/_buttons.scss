@@ -1,0 +1,80 @@
+/*  buttons
+ *  - all about buttons
+ */
+
+// Extra large devices (large desktops)
+// set the defaults for all responsive levels here
+// no (xl) media query necessary (desktop first)
+
+  .btn-default {
+    background-color: #A9A9A9;
+    border-color: #A9A9A9;
+    color: #fff;
+  }
+  .btn-default:hover,
+  .btn-default:focus,
+  .btn-default:active,
+  .btn-default.active,
+  .show > .dropdown-toggle.btn-default {
+    background-color: #797979;
+    border-color: #797979;
+  }
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active,
+  .btn-primary.active,
+  .show > .dropdown-toggle.btn-primary {
+    color: #FFF;
+    background-color: #797979;
+    border-color: #797979;
+  }
+  .btn-primary {
+    color: #fff;
+    background-color: #9E1B34;
+    border-color: #9E1B34;
+  }
+  .btn-flat {
+    color: #bb0734;
+    background-color: #a9a9a9;
+    border:none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 60px;
+    border-left: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
+  }
+  .btn-flat .fa-search {
+      font-size: 20px;
+  }
+  .searchfield_box {
+    .btn-secondary {
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $intrGrey;
+        border-color: $white;
+      }
+    }
+  }
+
+// Large devices (desktops) and below: <= 1200px
+@include media-breakpoint-down(lg) {
+  // add/overwrite styles for responsive level lg and lower
+}
+
+// Medium devices (tablets) and below: <= 992px
+@include media-breakpoint-down(md) {
+  // add/overwrite styles for responsive level md and lower
+}
+
+// Small devices (landscape phones) and below: <= 768px
+@include media-breakpoint-down(sm) {
+  // add/overwrite styles for responsive level sm and lower
+}
+
+// Extra small devices (portrait phones): <= 576px
+@include media-breakpoint-down(xs) {
+  // add/overwrite styles for responsive level xs
+}

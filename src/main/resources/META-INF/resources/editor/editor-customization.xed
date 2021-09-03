@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ This file is part of ***  M y C o R e  ***
+  ~ See http://www.mycore.de/ for details.
+  ~
+  ~ MyCoRe is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ MyCoRe is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with MyCoRe.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
+
+    <xed:param name="host" default="standalone"/>
+
+    <xed:template id="genres.openaccess_contribution">
+        <xed:include ref="genres.book"/>
+    </xed:template>
+
+    <xed:template id="genres.monograph">
+        <xed:include ref="genres.book"/>
+    </xed:template>
+
+    <xed:template id="hosts.monograph">
+        <xed:include ref="hosts.book"/>
+    </xed:template>
+
+    <xed:modify ref="admin.fields">
+        <xed:include ref="intr2dok_systematik" after="language"/>
+        <xed:include ref="intr2dok_projects" after="intr2dok_systematik"/>
+        <xed:include ref="intr2dok.ddc" after="intr2dok_projects"/>
+        <xed:remove ref="sdnb.repeat"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.book.common">
+        <!-- replace sdnb with intr2dok fields -->
+        <xed:include ref="intr2dok_systematik" after="sdnb.repeat"/>
+        <xed:include ref="intr2dok_projects" after="intr2dok_systematik"/>
+        <xed:include ref="intr2dok.ddc" after="intr2dok_projects"/>
+        <xed:remove ref="sdnb.repeat"/>
+
+        <!-- add link -->
+        <xed:include ref="link" after="doi.handle.urn.repeated"/>
+
+        <!-- make abstract repeatable -->
+        <xed:include ref="abstract.repeated" after="abstract.simple"/>
+        <xed:remove ref="abstract.simple"/>
+
+        <!-- add openaire -->
+        <xed:include ref="openAIRE" after="subject.simple"/>
+
+        <xed:remove ref="shelfmark"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.journal.common">
+        <!--- remove sdnb field -->
+        <xed:remove ref="sdnb.repeat"/>
+
+        <!-- add link -->
+        <xed:include ref="link" after="identifier.zdbid"/>
+
+        <xed:remove ref="shelfmark"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.thesis">
+        <!-- add link -->
+        <xed:include ref="link" after="genres.other_thesis.common"/>
+        <!-- add subject simple -->
+        <xed:include ref="subject.simple" after="link"/>
+
+        <xed:remove ref="classification"/>
+        <xed:remove ref="related.item"/>
+    </xed:modify>
+
+    <xed:modify ref="dissertation">
+        <!-- replace thesis.advisor.reviewer.all.repeated with thesis.advisor.repeated -->
+        <xed:include ref="thesis.advisor.repeated" after="thesis.advisor.reviewer.all.repeated"/>
+        <xed:remove red="thesis.advisor.reviewer.all.repeated"/>
+
+        <xed:remove ref="shelfmark"/>
+    </xed:modify>
+
+
+    <xed:modify ref="habilitation">
+        <!-- replace thesis.advisor.reviewer.all.repeated with thesis.advisor.repeated -->
+        <xed:include ref="thesis.advisor.repeated" after="thesis.advisor.reviewer.all.repeated"/>
+        <xed:remove red="thesis.advisor.reviewer.all.repeated"/>
+
+        <xed:remove ref="shelfmark"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.diploma_thesis">
+        <xed:remove ref="thesis.advisor.reviewer.all.repeated"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.master_thesis">
+        <xed:remove ref="thesis.advisor.reviewer.all.repeated"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.bachelor_thesis">
+        <xed:remove ref="thesis.advisor.reviewer.all.repeated"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.student_resarch_project">
+        <xed:remove ref="thesis.advisor.reviewer.all.repeated"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.magister_thesis">
+        <xed:remove ref="thesis.advisor.reviewer.all.repeated"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.other_thesis.common">
+        <xed:include ref="author.repeated" before="thesis.advisor.reviewer.repeated"/>
+        <xed:include ref="advisor.repeated" after="thesis.advisor.reviewer.repeated"/>
+        <xed:remove ref="thesis.advisor.reviewer.repeated"/>
+    </xed:modify>
+
+    <xed:template id="genres.thesis.common">
+        <xed:include ref="creator.place.college"/>
+        <xed:include ref="creator.college"/>
+        <xed:include ref="place"/>
+        <xed:include ref="publisher"/>
+        <xed:include ref="extent"/>
+        <xed:include ref="language"/>
+        <xed:include ref="intr2dok_systematik"/>
+        <xed:include ref="intr2dok_projects"/>
+        <xed:include ref="intr2dok.ddc"/>
+        <xed:include ref="identifier.isbn"/>
+        <xed:include ref="identifier.managed"/>
+        <xed:include ref="doi.handle.urn.repeated"/>
+        <xed:bind xpath="mods:abstract[@xml:lang='de']"/> 
+        <xed:bind xpath="mods:abstract[@xml:lang='en']"/>
+        <xed:include ref="abstract.repeated"/>
+        <xed:include ref="subject.simple"/>
+        <xed:include ref="openAIRE"/>
+        <xed:include ref="rights"/>
+        <xed:include ref="institutes"/>
+        <xed:include ref="comment"/>
+    </xed:template>
+
+    <xed:modify ref="genres.publication.common">
+        <xed:include ref="intr2dok_systematik" after="language"/>
+        <xed:include ref="intr2dok_projects" after="intr2dok_systematik"/>
+        <xed:include ref="intr2dok.ddc" after="intr2dok_projects"/>
+
+        <xed:include ref="link" before="sdnb.repeat"/>
+        <xed:remove ref="sdnb.repeat"/>
+
+        <xed:include ref="abstract.repeated" before="subject.simple"/>
+        <xed:remove ref="abstract.simple"/>
+
+        <xed:include ref="embargo.datetimepicker" before="rights"/>
+        <xed:include ref="openAIRE" before="embargo.datetimepicker"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.review">
+        <xed:include ref="genres.publication.common"/>
+        <xed:include ref="related.item.reviewOf"/> <!-- replace with related.item ??? -->
+    </xed:modify>
+
+    <xed:template id="genres.issue">
+        <xed:include ref="title"/>
+        <xed:include ref="author.repeated"/>
+        <xed:include ref="editor.repeated"/>
+        <xed:include ref="publisher.organization.repeat"/>
+        <xed:include ref="place"/>
+        <xed:include ref="publisher"/>
+        <xed:include ref="year.issued"/>
+        <xed:bind xpath="mods:relatedItem[@type='host']">
+            <xed:include ref="host.volume"/>
+            <xed:include ref="host.issue"/>
+        </xed:bind>
+        <xed:include ref="extent"/>
+        <xed:include ref="identifier.issn"/>
+        <xed:include ref="language"/>
+        <xed:include ref="intr2dok_systematik"/>
+        <xed:include ref="intr2dok_projects"/>
+        <xed:include ref="intr2dok.ddc"/>
+        <xed:include ref="abstract.repeated"/>
+        <xed:include ref="subject.simple"/>
+        <xed:include ref="openAIRE"/>
+        <xed:include ref="rights"/>
+        <xed:include ref="institutes"/>
+        <xed:include ref="comment"/>
+    </xed:template>
+
+    <xed:modify ref="genres.blog_entry">
+        <xed:include ref="intr2dok_systematik" after="language"/>
+        <xed:include ref="intr2dok_projects" after="intr2dok_systematik"/>
+        <xed:include ref="intr2dok.ddc" after="intr2dok_projects"/>
+        <xed:include ref="institutes" after="rights"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.report.common">
+        <xed:include ref="intr2dok_systematik" after="language"/>
+        <xed:include ref="intr2dok_projects" after="intr2dok_systematik"/>
+        <xed:include ref="intr2dok.ddc" after="intr2dok_projects"/>
+
+        <xed:include ref="link" before="sdnb.repeat"/>
+        <xed:remove ref="sdnb.repeat"/>
+
+        <xed:include ref="abstract.repeated" before="subject.simple"/>
+        <xed:remove ref="abstract.simple"/>
+
+        <xed:include ref="openAIRE" before="rights"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.speech">
+        <xed:include ref="intr2dok_systematik" after="language"/>
+        <xed:include ref="intr2dok_projects" after="intr2dok_systematik"/>
+        <xed:include ref="intr2dok.ddc" after="intr2dok_projects"/>
+
+        <xed:include ref="link" after="sdnb.repeat"/>
+        <xed:remove ref="sdnb.repeat"/>
+
+        <xed:include ref="abstract.repeated" before="subject.simple"/>
+        <xed:remove ref="abstract.simple"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.patent">
+        <xed:include ref="link" after="sdnb.repeat"/>
+        <xed:remove ref="sdnb.repeat"/>
+
+        <xed:include ref="intr2dok_systematik" after="language"/>
+        <xed:include ref="intr2dok_projects" after="intr2dok_systematik"/>
+        <xed:include ref="intr2dok.ddc" after="intr2dok_projects"/>
+
+        <xed:include ref="abstract.repeated" before="subject.simple"/>
+        <xed:remove ref="abstract.simple"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.poster">
+        <xed:include ref="link" after="sdnb.repeat"/>
+        <xed:remove ref="sdnb.repeat"/>
+
+        <xed:include ref="intr2dok_systematik" after="language"/>
+        <xed:include ref="intr2dok_projects" after="intr2dok_systematik"/>
+        <xed:include ref="intr2dok.ddc" after="intr2dok_projects"/>
+    </xed:modify>
+
+    <xed:modify ref="genres.av.common">
+        <xed:include ref="link" after="sdnb.repeat"/>
+        <xed:remove ref="sdnb.repeat"/>
+
+        <xed:include ref="intr2dok_systematik" after="language"/>
+        <xed:include ref="intr2dok_projects" after="intr2dok_systematik"/>
+        <xed:include ref="intr2dok.ddc" after="intr2dok_projects"/>
+        <!-- sender etc. -->
+
+        <xed:include  ref="date.broadcasted.datetimepicker" after="date.recorded.datetimepicker" />
+        <xed:remove  ref="date.recorded.datetimepicker" />
+        <xed:include  ref="station" after="date.broadcasted.datetimepicker" />
+
+        <xed:include ref="producer.speaker.repeated" after="name.repeated" />
+        <xed:remove ref="name.repeated" />
+
+    </xed:modify>
+
+    <xed:modify ref="genres.research_data">
+        <xed:include ref="link" after="sdnb.repeat"/>
+        <xed:remove ref="sdnb.repeat"/>
+
+        <xed:include ref="intr2dok_systematik" after="language"/>
+        <xed:include ref="intr2dok_projects" after="intr2dok_systematik"/>
+        <xed:include ref="intr2dok.ddc" after="intr2dok_projects"/>
+
+        <xed:include ref="physical.description.form" before="physical.description.note" />
+
+        <!-- make abstract repeatable -->
+        <xed:include ref="abstract.repeated" after="abstract.simple"/>
+        <xed:remove ref="abstract.simple"/>
+    </xed:modify>
+
+    <xed:template id="intr2dok.ddc">
+        <xed:bind xpath="mods:classification[@authority='ddc'][@displayLabel='ddc']">
+            <div class="form-group row {$xed-validation-marker}">
+                <label class="col-3 col-form-label text-right">
+                    <xed:include uri="classification:editor[Text]:0:children:DDC"/>
+                    DDC:
+                </label>
+                <div class="col-6">
+                    <div class="controls">
+                        <select class="form-control form-control-inline">
+                            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:DDC"/>
+                        </select>
+                    </div>
+                </div>
+                <mir:help-pmud help-text="{i18n:intr2dok.help.ddc}" pmud="false"/>
+            </div>
+        </xed:bind>
+    </xed:template>
+
+    <xed:template id="intr2dok_systematik">
+        <xed:bind
+                xpath="mods:classification[@authorityURI='http://intr2dok.vifa-recht.de/classifications/intr2dok_systematik'][@displayLabel='intr2dok']/@valueURIxEditor">
+            <div class="form-group row {$xed-validation-marker}">
+                <label class="col-3 col-form-label text-right">
+                    <xed:output i18n="intr2dok.class.systematik"/>
+                </label>
+                <div class="col-6">
+                    <div class="controls">
+                        <select class="form-control form-control-inline">
+                            <xed:include
+                                    uri="xslStyle:items2options:classification:editor:-1:children:intr2dok_systematik"/>
+                        </select>
+                    </div>
+                </div>
+                <mir:help-pmud help-text="{i18n:intr2dok.help.systematik}" pmud="false"/>
+            </div>
+        </xed:bind>
+    </xed:template>
+
+
+    <xed:template id="intr2dok_projects">
+        <xed:bind
+                xpath="mods:classification[@authorityURI='https://intr2dok.vifa-recht.de/classifications/intr2dok_projects'][@displayLabel='project']/@valueURIxEditor">
+            <div class="form-group row {$xed-validation-marker}">
+                <label class="col-3 col-form-label text-right">
+                    <xed:output i18n="intr2dok.class.projects"/>
+                </label>
+                <div class="col-6">
+                    <div class="controls">
+                        <select class="form-control form-control-inline">
+                            <option value="">
+                                <xed:output i18n="mir.select.optional"/>
+                            </option>
+                            <xed:include
+                                    uri="xslStyle:items2options:classification:editor:-1:children:intr2dok_projects"/>
+                        </select>
+                    </div>
+                </div>
+                <mir:help-pmud help-text="{i18n:intr2dok.help.project}" pmud="false"/>
+            </div>
+        </xed:bind>
+    </xed:template>
+
+
+</xed:template>

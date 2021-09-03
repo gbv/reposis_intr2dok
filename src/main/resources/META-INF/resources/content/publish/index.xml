@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MyCoReWebPage>
+  <section title="Publizieren" xml:lang="de"/>
+  <section title="New publication" xml:lang="en"/>
+  <section xml:lang="de">
+    <script src='../../js/mir/select-doctype.min.js'> </script>
+    
+    <form id="submit_publication"
+          class="form-horizontal"
+          role="form"
+          method="get"
+          action="../../editor/editor-dynamic.xed">
+
+      <h1>Publizieren</h1>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-8">
+          <p>
+            Zur Veröffentlichung Ihres Beitrags auf &lt;intR>²Dok ist zunächst die Erfassung seiner bibliographischen Daten erforderlich. Dazu kombinieren Sie bitte
+            aus dem zweiteiligen Auswahlmenu – so im konkreten Fall überhaupt erforderlich – die dem Typus Ihrer Publikation entsprechende Erfassungsmaske. Bitte
+            beachten Sie, dass alle mit einen Asterisk * gekennzeichneten Felder der jeweils gewählten Erfassungsmaske verpflichtend zu befüllen sind. Für jede
+            angemeldete Veröffentlichung übersenden Sie bitte ergänzend einen vollständig ausgefüllten und mit Ihrer elektronischen Unterschrift versehenen
+            <a href="../rights/vertrag.pdf">Publikationsvertrag</a> an: <span class="madress">intR2dok [at] sbb.spk-berlin.de</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <label for="genre" class="col-sm-3 col-lg-2 control-label">
+          <text i18n="component.mods.genre" />
+        </label>
+        <div class="col-sm-7 col-md-5 col-lg-4">
+          <select id="genre" class="form-control" name="genre" size="1">
+          </select>
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <label for="host"  class="col-sm-3 col-lg-2 control-label">
+          <text i18n="mir.select.host" />
+        </label>
+        <div class="col-sm-7 col-md-5 col-lg-4">
+          <select id="host" class="form-control" name="host" size="1">
+          </select>
+        </div>
+      </div>
+
+      <div id="more_options_toggle" class="row">
+        <div class="col-sm-3 col-lg-2"></div>
+        <div class="col-sm-9 col-lg-10">
+          <span id="more_options_trigger">
+            <span id="more_options_label">weitere Optionen anzeigen</span>
+            <span id="more_options_label_hide" class="d-none">weitere Optionen ausblenden</span>
+            <span id="more_options_button" class="fas fa-chevron-up"></span>
+          </span>
+        </div>
+      </div>
+
+      <!-- more options -->
+      <div id="more_options_box">
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+             <h3>Publikation aus PubMed, CrossRef oder K10plus importieren</h3>
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-sm-3 col-lg-2 control-label">
+            <select class="form-control" name="type">
+              <option value="doi">DOI</option>
+              <option value="pubmed">PubMed-ID</option>
+              <option value="isbn">ISBN</option>
+              <option value="issn">ISSN</option>
+              <option value="ieee">IEEE</option>
+              <option value="ppn">K10plus-PPN</option>
+              <option value="zdbid">ZDB-ID</option>
+            </select>
+          </div>
+          <div class="col-sm-7 col-md-5 col-lg-4">
+            <input class="form-control" type="text" name="modsId" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <div class="col-sm-3 col-md-2"></div>
+        <div class="col-sm-5 col-md-4">
+          <button type="submit" class="btn btn-secondary">Melden</button>
+        </div>
+      </div>
+
+    </form>
+  </section>
+</MyCoReWebPage>

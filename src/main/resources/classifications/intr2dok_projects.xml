@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="intr2dok_projects">
+  <label xml:lang="de" text="Projekte" description="Liste der Projekte" />
+  <label xml:lang="x-uri" text="https://intr2dok.vifa-recht.de/classifications/intr2dok_projects" />
+  <label xml:lang="en" text="Projects" description="A list of projects" />
+  <categories>
+    <category ID="466b2a16-1bdd-4e35-88cc-4004c3d67292">
+      <label xml:lang="de" text="Berliner Seminar &quot;Recht im Kontext&quot;" />
+    </category>
+    <category ID="e04b8b2f-dd7f-4fe4-90ae-1642c9ad4a58">
+      <label xml:lang="de" text="Europas Weg: Podcast zur Verfassungsgeschichte der Europäischen Union" />
+    </category>
+    <category ID="8958b07f-9fd3-4d21-bbcc-0c75d7462f3b">
+      <label xml:lang="de" text="FAU Human Rights Podcast " />
+    </category>
+    <category ID="c28bde3f-93d8-4f3c-997f-b46b94c05f49">
+      <label xml:lang="de" text="Justitias Töchter - Der Podcast zu feministischer Rechtspolitik" />
+    </category>
+    <category ID="abc206fb-f881-4ce7-a1b6-a9014595b54a">
+      <label xml:lang="de" text="Law &amp; Society Lecture Series" />
+    </category>
+    <category ID="d76f8d0a-5bc3-47c5-94df-18c92897aebe">
+      <label xml:lang="de" text="Law &amp; Society Podcast" />
+    </category>
+    <category ID="5d4bacc2-cc93-4d01-bbc1-89597fcd55d9">
+      <label xml:lang="de" text="Open Access IT Law" />
+    </category>
+    <category ID="63df1223-5aff-48b6-8ee4-97a2a79896f8">
+      <label xml:lang="de" text="Rule of Law Rules: Podcast" />
+    </category>
+    <category ID="a8f9457f-dd1d-4a80-ac67-b152e334d300">
+      <label xml:lang="de" text="RZE: Podcast des Rechtswissenschaftlichen Zentrums für Europaforschung" />
+    </category>
+    <category ID="6a00ca53-25e6-4fc4-b67d-47056a8a13df">
+      <label xml:lang="de" text="Thomas Franck Lectures: The International Rule of Law - Rise or Decline?" />
+    </category>
+    <category ID="Transnational_Force_of_Law">
+      <label xml:lang="en" text="Transnational Force of Law" />
+      <label xml:lang="de" text="Transnational Force of Law" />
+    </category>
+    <category ID="118af89c-841e-4f04-a733-053ab8e45a76">
+      <label xml:lang="de" text="Verfassungsblog &quot;Corona Constitutional&quot;" />
+    </category>
+    <category ID="b93322d4-9350-4499-9ab9-312ac548d141">
+      <label xml:lang="de" text="Verfassungsblog &quot;We need to talk about the Rule of Law&quot;" />
+    </category>
+    <category ID="bb2741e4-7792-4ce4-9422-6808481f0033">
+      <label xml:lang="de" text="Völkerrechtliche Tagesthemen: Spotlight" />
+    </category>
+    <category ID="4c7e35a3-8f68-472e-96d6-f7c7fab7f339">
+      <label xml:lang="de" text="Völkerrechtspodcast: Wissenschaft und Praxis des internationalen Rechts" />
+    </category>
+  </categories>
+</mycoreclass>
