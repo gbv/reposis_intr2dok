@@ -68,7 +68,7 @@
             <label xml:lang="en">Contact</label>
         </item>
         <item href="/content/social/questions.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Fragen Sie uns</label>
+            <label xml:lang="de">Fragen zu Open Access</label>
             <label xml:lang="en">Questions</label>
         </item>
     </menu>
@@ -134,6 +134,10 @@
         <item href="/wordpressimport/JuWissBlog" type="extern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Datenübernahme aus JuWissBlog</label>
             <label xml:lang="en">Import from JuWissBlog</label>
+        </item>
+        <item href="/wordpressimport/rechtsempirie" type="extern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Datenübernahme aus Rechts|Empirie</label>
+            <label xml:lang="en">Import from Rechts|Empirie</label>
         </item>
         <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Registrieren</label>
