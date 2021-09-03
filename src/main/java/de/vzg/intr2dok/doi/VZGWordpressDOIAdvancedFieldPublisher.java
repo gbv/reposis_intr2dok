@@ -1,6 +1,5 @@
 package de.vzg.intr2dok.doi;
 
-import com.google.common.base.Charsets;
 import org.apache.http.HttpHeaders;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
@@ -16,6 +15,7 @@ import org.mycore.mods.MCRMODSWrapper;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
 import static de.vzg.intr2dok.doi.VZGDOIUtils.getDOIElement;
@@ -72,8 +72,8 @@ public class VZGWordpressDOIAdvancedFieldPublisher extends VZGWordpressDOIPublis
     }
 
     private String getEncodedAuth() {
-        final byte[] encoded = Base64.getEncoder().encode((getUsername() + ":" + getPassword()).getBytes(Charsets.UTF_8));
-        return new String(encoded);
+        final byte[] encoded = Base64.getEncoder().encode((getUsername() + ":" + getPassword()).getBytes(StandardCharsets.UTF_8));
+        return new String(encoded, StandardCharsets.UTF_8);
     }
 
     private String getPassword() {

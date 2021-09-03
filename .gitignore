@@ -1,6 +1,7 @@
 # eclipse
 .project
 .settings/
+pom.xml.bak
 
 #intellij
 *.iml

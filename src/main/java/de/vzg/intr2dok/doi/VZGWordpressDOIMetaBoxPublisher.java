@@ -90,7 +90,7 @@ public class VZGWordpressDOIMetaBoxPublisher extends VZGWordpressDOIPublisher {
                 } else {
                     try(InputStream is = response.getEntity().getContent()){
                         final Gson gson = new Gson();
-                        final TokenResponse tokenResponse = gson.fromJson(new InputStreamReader(is), TokenResponse.class);
+                        final TokenResponse tokenResponse = gson.fromJson(new InputStreamReader(is, StandardCharsets.UTF_8), TokenResponse.class);
                         LOGGER.info("Token received from Server: " + tokenResponse.toString());
                         return tokenResponse.token;
                     }
