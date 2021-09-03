@@ -36,6 +36,8 @@ $﻿(document).ready(function() {
   v2.on("click", function(e){ e.preventDefault(); openWpImport("Völkerrechtsblog"); return false;  });
   var v3 = jQuery("a.dropdown-item:contains('JuWissBlog')");
   v3.on("click", function(e){ e.preventDefault(); openWpImport("JuWissBlog"); return false;  });
+  var v4 = jQuery("a.dropdown-item:contains('Rechts|Empirie')");
+  v4.on("click", function(e){ e.preventDefault(); openWpImport("Rechts%7CEmpirie:%20Legal%20Empirics%20in%20Europe"); return false;  });
 });
 
 function openWpImport(config) {
@@ -49,7 +51,7 @@ function openWpImport(config) {
 	    document.body.appendChild(link);
 	    link.click();
 	    document.body.removeChild(link);
-        } else if (this.readyState == 4) {
+        } else if (this.readyState === 4) {
             alert("Fehler!");
             console.error(this.status + "-" + this.statusText);
         }
