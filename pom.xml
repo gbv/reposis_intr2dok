@@ -111,6 +111,12 @@
     <dependency>
       <groupId>org.mycore</groupId>
       <artifactId>mycore-mods</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.bibsonomy</groupId>
+          <artifactId>bibsonomy-bibtex-parser</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.mycore</groupId>
