@@ -128,37 +128,37 @@
   <xsl:template name="mir.footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-2 col-xs-6 col-sm-3">
+        <div class="col-md-2 col-6 col-sm-3">
           <h4>Über uns</h4>
           <ul class="internal_links">
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
           </ul>
         </div>
-        <div class="col-md-2 col-xs-6 col-sm-3">
+        <div class="col-md-2 col-6 col-sm-3">
           <h4>Soziales</h4>
           <ul class="social_links">
             <li><a href="http://twitter.com/vifarecht"><img src="{$WebApplicationBaseURL}content/images/logo_twitter.png" style="margin-right:5px;float:left;" />#vifarecht</a></li>
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
           </ul>
         </div>
-        <div class="col-md-2 col-xs-6 col-sm-3">
+        <div class="col-md-2 col-6 col-sm-3">
           <h4>Rechtliches</h4>
           <ul class="internal_links">
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='rights']/*" />
           </ul>
         </div>
-        <div class="col-md-2 col-xs-6 col-sm-3">
+        <div class="col-md-2 col-6 col-sm-3">
           <h4>Technisches</h4>
           <ul class="internal_links">
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='technical']/*" />
           </ul>
         </div>
-        <div class="col-md-4 col-xs-6 col-sm-3">
+        <div class="col-md-4 col-6 col-sm-3">
           <h4>Institutionelles</h4>
           <ul class="internal_links institutions">
-            <li id="vfr"><a href="http://vifa-recht.de/"><img src="{$WebApplicationBaseURL}content/images/logo-vfr.png" /></a></li>
-            <li class="even_entry"><a id="sbb" href="http://www.staatsbibliothek-berlin.de/"><img src="{$WebApplicationBaseURL}content/images/logo_sbb.png" /></a></li>
-            <li><a id="dfg" href="http://dfg.de/"><img src="{$WebApplicationBaseURL}content/images/logo_dfg.png" /></a></li>
+            <li id="vfr"><a href="https://vifa-recht.de/"><img src="{$WebApplicationBaseURL}content/images/logo-vfr.png" /></a></li>
+            <li class="even_entry"><a id="sbb" href="https://www.staatsbibliothek-berlin.de/"><img src="{$WebApplicationBaseURL}content/images/logo_sbb.png" /></a></li>
+            <li><a id="dfg" href="https://dfg.de/"><img src="{$WebApplicationBaseURL}content/images/logo_dfg.png" /></a></li>
             <li class="even_entry"><a id="oa" href="https://www.open-access.net/"><img src="{$WebApplicationBaseURL}content/images/logo_oa.svg" width="89px" /></a></li>
           </ul>
         </div>
@@ -169,7 +169,7 @@
   <xsl:template name="mir.powered_by">
     <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
     <div id="powered_by">
-      <a href="http://www.mycore.de">
+      <a href="https://www.mycore.de">
         <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
       </a>
     </div>
