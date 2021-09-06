@@ -20,6 +20,8 @@ package de.vzg.intr2dok;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxDriverLogLevel;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -31,11 +33,10 @@ public class Intr2DokLibIT {
 
     @Test
     public void testStart() throws InterruptedException {
-        FirefoxOptions firefoxOptions = new FirefoxOptions();
-        firefoxOptions.setLogLevel(FirefoxDriverLogLevel.TRACE);
-        firefoxOptions.setHeadless(true);
+        ChromeOptions options = new ChromeOptions();
+        options.setHeadless(true);
+        ChromeDriver driver = new ChromeDriver(options);
 
-        FirefoxDriver driver = new FirefoxDriver(firefoxOptions);
         WebDriverWait wait = new WebDriverWait(driver, 100);
 
         Thread.sleep(10000);

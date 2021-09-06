@@ -165,8 +165,7 @@
         </dependency>
         <dependency>
           <groupId>org.seleniumhq.selenium</groupId>
-          <artifactId>selenium-firefox-driver</artifactId>
-          <version>3.141.59</version>
+          <artifactId>selenium-chrome-driver</artifactId>
           <scope>test</scope>
         </dependency>
         <dependency>
