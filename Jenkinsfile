@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        ENV_SELENIUM_BROWSER = 'chrome'
+    }
     stages {
         stage('Build') {
             steps {
