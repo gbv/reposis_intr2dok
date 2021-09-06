@@ -59,6 +59,17 @@
       <id>ossrh</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </repository>
+    <repository>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>dev.bibsonomy.org</id>
+      <name>Official Source Code Releases of selected BibSonomy Modules</name>
+      <url>https://dev.bibsonomy.org/maven2/</url>
+    </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
@@ -275,6 +286,7 @@
           <plugin>
             <groupId>org.mycore.plugins</groupId>
             <artifactId>solr-runner-maven-plugin</artifactId>
+            <version>1.2-SNAPSHOT</version>
             <configuration>
               <solrHome>${solr.home}</solrHome>
               <solrPort>${solr.port}</solrPort>
