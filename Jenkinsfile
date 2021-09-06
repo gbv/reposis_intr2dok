@@ -1,8 +1,10 @@
 pipeline {
     agent any
+
     environment {
-        ENV_SELENIUM_BROWSER = 'chrome'
+        SELENIUM_BROWSER = 'chrome'
     }
+
     stages {
         stage('Build') {
             steps {
@@ -17,5 +19,14 @@ pipeline {
                 cleanWs()
             }
         }
+    }
+
+    post {
+      success {
+          setBuildStatus("Build succeeded", "SUCCESS");
+      }
+      failure {
+          setBuildStatus("Build failed", "FAILURE");
+      }
     }
 }
