@@ -19,31 +19,18 @@
 package de.vzg.intr2dok;
 
 import org.junit.Test;
+import org.mycore.common.selenium.MCRSeleniumTestBase;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxDriverLogLevel;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Intr2DokLibIT {
-
+public class Intr2DokLibIT extends MCRSeleniumTestBase {
 
     @Test
     public void testStart() throws InterruptedException {
-        ChromeOptions options = new ChromeOptions();
-        options.setHeadless(true);
-        ChromeDriver driver = new ChromeDriver(options);
-
-        WebDriverWait wait = new WebDriverWait(driver, 100);
-
         Thread.sleep(10000);
         driver.get("http://localhost:9107/mir/content/index.xml");
-
-        wait.until(ExpectedConditions.titleContains("Willkommen bei <intR>²Dok!"));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(), 'Fachinformationsdienst')]")));
+        driver.waitFor(ExpectedConditions.titleContains("Willkommen bei <intR>²Dok!"));
+        driver.waitAndFindElement(By.xpath("//*[contains(text(), 'Fachinformationsdienst')]"));
     }
 
 
