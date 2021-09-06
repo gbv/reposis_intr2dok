@@ -28,7 +28,7 @@ public class Intr2DokLibIT extends MCRSeleniumTestBase {
     @Test
     public void testStart() throws InterruptedException {
         Thread.sleep(10000);
-        driver.get("http://localhost:9107/mir/content/index.xml");
+        driver.get("http://localhost:9107/intr2dok/content/index.xml");
         driver.waitFor(ExpectedConditions.titleContains("Willkommen bei <intR>²Dok!"));
         driver.waitAndFindElement(By.xpath("//*[contains(text(), 'Fachinformationsdienst')]"));
     }
