@@ -18,6 +18,7 @@
 
 package de.vzg.intr2dok;
 
+import org.junit.After;
 import org.junit.Test;
 import org.mycore.common.selenium.MCRSeleniumTestBase;
 import org.openqa.selenium.By;
@@ -33,5 +34,9 @@ public class Intr2DokLibIT extends MCRSeleniumTestBase {
         driver.waitAndFindElement(By.xpath("//*[contains(text(), 'Fachinformationsdienst')]"));
     }
 
+    @After
+    public void tearDown() {
+        takeScreenshot();
+    }
 
 }
