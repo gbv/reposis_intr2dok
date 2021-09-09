@@ -32,6 +32,15 @@
     <mycore.version>2020.06.3-SNAPSHOT</mycore.version>
   </properties>
   <repositories>
+    <!-- central is required for bibsonomy not to take over every artifact -->
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
     <repository>
       <releases>
         <enabled>false</enabled>
@@ -43,11 +52,8 @@
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </repository>
     <repository>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
       <snapshots>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
       </snapshots>
       <id>dev.bibsonomy.org</id>
       <name>Official Source Code Releases of selected BibSonomy Modules</name>
