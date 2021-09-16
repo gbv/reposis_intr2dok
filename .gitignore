@@ -9,7 +9,7 @@ intr2dok_module/*.iml
 intr2dok_module/target
 
 # application specific files on server
-jwt.secret
+./jwt.secret
 messages_de.resolved.properties
 messages_en.resolved.properties
 deprecated.active.properties

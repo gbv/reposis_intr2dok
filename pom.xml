@@ -19,36 +19,36 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.mycore</groupId>
-    <artifactId>mycore-parent</artifactId>
-    <version>45</version>
+    <groupId>de.vzg.reposis</groupId>
+    <artifactId>reposis_parent</artifactId>
+    <version>2020.06-SNAPSHOT</version>
   </parent>
 
   <groupId>de.vzg.intr2dok</groupId>
   <artifactId>reposis_intr2dok</artifactId>
   <version>2020.06-SNAPSHOT</version>
   <properties>
-    <mycore.version>2020.06.2</mycore.version>
+    <MCR.AppName>intr2dok</MCR.AppName>
+    <mycore.version>2020.06.3-SNAPSHOT</mycore.version>
   </properties>
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <configuration>
-          <archive>
-            <manifestEntries>
-              <MCR-Artifact-Id>${project.artifactId}</MCR-Artifact-Id>
-              <MCR-Application-Module>${project.name}</MCR-Application-Module>
-              <Priority>99</Priority>
-              <MCR-Auto-Deploy>true</MCR-Auto-Deploy>
-            </manifestEntries>
-          </archive>
-        </configuration>
       </plugin>
     </plugins>
   </build>
   <repositories>
+    <!-- central is required for bibsonomy not to take over every artifact -->
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
     <repository>
       <releases>
         <enabled>false</enabled>
@@ -59,19 +59,15 @@
       <id>ossrh</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
+    <repository>
       <snapshots>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
       </snapshots>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </pluginRepository>
-  </pluginRepositories>
+      <id>dev.bibsonomy.org</id>
+      <name>Official Source Code Releases of selected BibSonomy Modules</name>
+      <url>https://dev.bibsonomy.org/maven2/</url>
+    </repository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>com.google.code.gson</groupId>
@@ -105,17 +101,10 @@
       <groupId>org.mycore</groupId>
       <artifactId>mycore-pi</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.mycore</groupId>
+      <artifactId>selenium-utils</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.mycore</groupId>
-        <artifactId>mycore</artifactId>
-        <version>${mycore.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-
 </project>

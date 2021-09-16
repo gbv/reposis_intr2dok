@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                    withMaven (maven: 'mvn', jdk: 'OJDK11', mavenLocalRepo: '.repository') {
+                    withMaven (maven: 'mvn', jdk: 'OJDK11') {
                       sh "mvn clean verify"
                     }
             }
