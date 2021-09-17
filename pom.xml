@@ -24,7 +24,7 @@
     <version>2020.06-SNAPSHOT</version>
   </parent>
 
-  <groupId>de.vzg.intr2dok</groupId>
+  <groupId>de.vzg.reposis</groupId>
   <artifactId>reposis_intr2dok</artifactId>
   <version>2020.06-SNAPSHOT</version>
   <properties>
