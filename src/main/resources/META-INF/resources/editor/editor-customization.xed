@@ -39,6 +39,7 @@
         <xed:include ref="intr2dok_projects" after="intr2dok_systematik"/>
         <xed:include ref="intr2dok.ddc" after="intr2dok_projects"/>
         <xed:remove ref="sdnb.repeat"/>
+        <xed:remove ref="shelfmark"/>
     </xed:modify>
 
     <xed:modify ref="genres.book.common">
@@ -81,7 +82,7 @@
         <xed:remove ref="related.item"/>
     </xed:modify>
 
-    <xed:modify ref="dissertation">
+    <xed:modify ref="genres.dissertation">
         <!-- replace thesis.advisor.reviewer.all.repeated with thesis.advisor.repeated -->
         <xed:include ref="thesis.advisor.repeated" after="thesis.advisor.reviewer.all.repeated"/>
         <xed:remove red="thesis.advisor.reviewer.all.repeated"/>
@@ -90,7 +91,7 @@
     </xed:modify>
 
 
-    <xed:modify ref="habilitation">
+    <xed:modify ref="genres.habilitation">
         <!-- replace thesis.advisor.reviewer.all.repeated with thesis.advisor.repeated -->
         <xed:include ref="thesis.advisor.repeated" after="thesis.advisor.reviewer.all.repeated"/>
         <xed:remove red="thesis.advisor.reviewer.all.repeated"/>
