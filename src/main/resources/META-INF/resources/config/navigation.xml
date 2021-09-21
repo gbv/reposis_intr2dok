@@ -99,7 +99,7 @@
             <label xml:lang="de">nach Personen</label>
             <label xml:lang="en">Persons</label>
         </item>
-        <item href="/search/simple_intern.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/search/simple_intern.xed" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">einfache Suche</label>
             <label xml:lang="en">Simple search</label>
         </item>
