@@ -85,7 +85,7 @@
     <xed:modify ref="genres.dissertation">
         <!-- replace thesis.advisor.reviewer.all.repeated with thesis.advisor.repeated -->
         <xed:include ref="thesis.advisor.repeated" after="thesis.advisor.reviewer.all.repeated"/>
-        <xed:remove red="thesis.advisor.reviewer.all.repeated"/>
+        <xed:remove ref="thesis.advisor.reviewer.all.repeated"/>
 
         <xed:remove ref="shelfmark"/>
     </xed:modify>
@@ -94,7 +94,7 @@
     <xed:modify ref="genres.habilitation">
         <!-- replace thesis.advisor.reviewer.all.repeated with thesis.advisor.repeated -->
         <xed:include ref="thesis.advisor.repeated" after="thesis.advisor.reviewer.all.repeated"/>
-        <xed:remove red="thesis.advisor.reviewer.all.repeated"/>
+        <xed:remove ref="thesis.advisor.reviewer.all.repeated"/>
 
         <xed:remove ref="shelfmark"/>
     </xed:modify>
