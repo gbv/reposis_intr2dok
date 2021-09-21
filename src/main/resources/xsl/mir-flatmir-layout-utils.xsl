@@ -137,7 +137,7 @@
         <div class="col-md-2 col-6 col-sm-3">
           <h4>Soziales</h4>
           <ul class="social_links">
-            <li><a href="http://twitter.com/vifarecht"><img src="{$WebApplicationBaseURL}content/images/logo_twitter.png" style="margin-right:5px;float:left;" />#vifarecht</a></li>
+            <li><a href="http://twitter.com/vifarecht"><img src="{$WebApplicationBaseURL}content/images/logo_twitter.png" alt="Twitter-Logo" style="margin-right:5px;float:left;" />#vifarecht</a></li>
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
           </ul>
         </div>
@@ -156,10 +156,10 @@
         <div class="col-md-4 col-6 col-sm-3">
           <h4>Institutionelles</h4>
           <ul class="internal_links institutions">
-            <li id="vfr"><a href="https://vifa-recht.de/"><img src="{$WebApplicationBaseURL}content/images/logo-vfr.png" /></a></li>
-            <li class="even_entry"><a id="sbb" href="https://www.staatsbibliothek-berlin.de/"><img src="{$WebApplicationBaseURL}content/images/logo_sbb.png" /></a></li>
-            <li><a id="dfg" href="https://dfg.de/"><img src="{$WebApplicationBaseURL}content/images/logo_dfg.png" /></a></li>
-            <li class="even_entry"><a id="oa" href="https://www.open-access.net/"><img src="{$WebApplicationBaseURL}content/images/logo_oa.svg" width="89px" /></a></li>
+            <li id="vfr"><a href="https://vifa-recht.de/"><img src="{$WebApplicationBaseURL}content/images/logo-vfr.png" alt="ViFa-Recht-Logo" /></a></li>
+            <li class="even_entry"><a id="sbb" href="https://www.staatsbibliothek-berlin.de/"><img src="{$WebApplicationBaseURL}content/images/logo_sbb.png" alt="Logo der Staatsbibliothek zu Berlin" /></a></li>
+            <li><a id="dfg" href="https://dfg.de/"><img src="{$WebApplicationBaseURL}content/images/logo_dfg.png" alt="DFG-Logo" /></a></li>
+            <li class="even_entry"><a id="oa" href="https://www.open-access.net/"><img src="{$WebApplicationBaseURL}content/images/logo_oa.svg" alt="OpenAccess-Logo" width="89px" /></a></li>
           </ul>
         </div>
       </div>
@@ -194,7 +194,7 @@
               g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
             })();
       </script>
-      <noscript><p><img src="https://matomo.gbv.de/piwik.php?idsite={$piwikID}" style="border:0;" alt="" /></p></noscript>
+      <noscript><p><img src="https://matomo.gbv.de/piwik.php?idsite={$piwikID}" style="border:0;" alt="matomo" /></p></noscript>
     </xsl:if>
     <!-- End Piwik Code -->
   </xsl:template>
