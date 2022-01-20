@@ -942,7 +942,7 @@
         </xsl:when>
       </xsl:choose>
     </xsl:variable>
-    <xsl:if test="$publisher_name" >
+    <xsl:if test="string-length($publisher_name) &gt; 0" >
       <xsl:variable name="place2">
         <xsl:if test="string-length($publisher_place) &gt; 0">
           <xsl:value-of select="concat(', ',$publisher_place)" />
