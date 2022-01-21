@@ -501,7 +501,7 @@
         <!-- GND is attribute of dc:creator and not of pc:person. Description in standard is wrong, the example
              is right. (see Mail Mirka Kaiser)  -->
         <xsl:if test="mods:nameIdentifier[@type='gnd']">
-          <xsl:attribute name="GND-Nr">
+          <xsl:attribute name="ddb:GND-Nr">
             <xsl:value-of select="mods:nameIdentifier[@type='gnd']" />
           </xsl:attribute>
         </xsl:if>
