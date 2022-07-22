@@ -21,11 +21,11 @@
   <parent>
     <groupId>de.gbv.reposis</groupId>
     <artifactId>reposis_mir_parent</artifactId>
-    <version>2020.06-SNAPSHOT</version>
+    <version>2021.06-SNAPSHOT</version>
   </parent>
 
   <artifactId>reposis_intr2dok</artifactId>
-  <version>2020.06-SNAPSHOT</version>
+  <version>2021.06-SNAPSHOT</version>
   <properties>
     <MCR.AppName>intr2dok</MCR.AppName>
   </properties>
