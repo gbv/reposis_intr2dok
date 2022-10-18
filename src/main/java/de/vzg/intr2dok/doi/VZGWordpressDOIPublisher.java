@@ -64,7 +64,8 @@ public abstract class VZGWordpressDOIPublisher extends VZGDOIPublisher {
             return false;
         }
 
-        if (!getIDOfRelatedItem(relatedItem).equals(parent)) {
+        String relatedItemHref = getIDOfRelatedItem(relatedItem);
+        if (!parent.equals(relatedItemHref)) {
             return false;
         }
         final Element element = getRecordIdentifier(wrapper);
