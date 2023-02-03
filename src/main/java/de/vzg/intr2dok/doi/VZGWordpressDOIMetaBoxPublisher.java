@@ -1,11 +1,16 @@
 package de.vzg.intr2dok.doi;
 
-import com.google.gson.Gson;
+import static de.vzg.intr2dok.doi.VZGDOIUtils.getDOIElement;
+import static de.vzg.intr2dok.doi.VZGDOIUtils.getRecordIdentifier;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
+
 import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpPut;
 import org.apache.http.client.utils.URIBuilder;
-import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.logging.log4j.LogManager;
@@ -13,15 +18,6 @@ import org.apache.logging.log4j.Logger;
 import org.mycore.common.MCRException;
 import org.mycore.common.config.MCRConfigurationException;
 import org.mycore.mods.MCRMODSWrapper;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URISyntaxException;
-import java.nio.charset.StandardCharsets;
-
-import static de.vzg.intr2dok.doi.VZGDOIUtils.getDOIElement;
-import static de.vzg.intr2dok.doi.VZGDOIUtils.getRecordIdentifier;
 
 public class VZGWordpressDOIMetaBoxPublisher extends VZGWordpressDOIPublisher {
 
@@ -54,7 +50,7 @@ public class VZGWordpressDOIMetaBoxPublisher extends VZGWordpressDOIPublisher {
                 .addParameter("meta_box", "{\"doi\":\"" + doi + "\"}")
                     .build());
 
-            httpPut.setHeader("Authorization", "Bearer " + getToken());
+            httpPut.setHeader("Authorization", "Basic " + getEncodedAuth());
 
             try (final CloseableHttpResponse response = httpClient.execute(httpPut)) {
                 final int statusCode = response.getStatusLine().getStatusCode();
@@ -71,35 +67,9 @@ public class VZGWordpressDOIMetaBoxPublisher extends VZGWordpressDOIPublisher {
         }
     }
 
-    private String getToken() {
-        final String blogURL = getBlogURL();
-        try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
-            final HttpPost httpPost = new HttpPost(new URIBuilder(blogURL + "/wp-json/jwt-auth/v1/token")
-                    .build());
-
-            httpPost.setEntity(new StringEntity("{\"username\":\"" + getUsername() + "\", " +
-                    "\"password\":\""+getPassword()+"\"}", StandardCharsets.UTF_8));
-
-            httpPost.setHeader("content-type", "application/json");
-
-            try (final CloseableHttpResponse response = httpClient.execute(httpPost)) {
-                final int statusCode = response.getStatusLine().getStatusCode();
-                if (statusCode != 200) {
-                    final String reasonPhrase = response.getStatusLine().getReasonPhrase();
-                    throw new MCRException("Something went wrong while getting Token from blog: " + statusCode + "-" + reasonPhrase);
-                } else {
-                    try(InputStream is = response.getEntity().getContent()){
-                        final Gson gson = new Gson();
-                        final TokenResponse tokenResponse = gson.fromJson(new InputStreamReader(is, StandardCharsets.UTF_8), TokenResponse.class);
-                        LOGGER.info("Token received from Server: " + tokenResponse.toString());
-                        return tokenResponse.token;
-                    }
-                }
-            }
-
-        } catch (IOException | URISyntaxException e) {
-            throw new MCRException("Error while getting token from Blog!", e);
-        }
+    private String getEncodedAuth() {
+        final byte[] encoded = Base64.getEncoder().encode((getUsername() + ":" + getPassword()).getBytes(StandardCharsets.UTF_8));
+        return new String(encoded, StandardCharsets.UTF_8);
     }
 
     private String getUsername() {
