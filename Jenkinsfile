@@ -38,7 +38,7 @@ pipeline {
                         usernamePassword(credentialsId: 'gpg', passwordVariable: 'KEYPW_VAR', usernameVariable: 'KEYID_VAR')
                         ])
                         {
-                            sh 'mvn -U clean deploy -Dgpg.executable=gpg -Dgpg.keyname=${KEYID_VAR} -Dgpg.passphrase=${KEYPW_VAR} -Dossrhs01.username=${USERNAME_VAR} -Dossrhs01.password=${PASSWORD_VAR}'
+                            sh 'mvn -U clean deploy -Dossrhs01.username=${USERNAME_VAR} -Dossrhs01.password=${PASSWORD_VAR}'
                         }
                     }
             }
