@@ -1,5 +1,5 @@
 
-# reposis_fdrwiso
+# reposis_intr2dock
 
 ## Installation Instructions
 
