@@ -1,5 +1,5 @@
 
-# reposis_intr2dock
+# reposis_intr2dok
 
 ## Installation Instructions
 
