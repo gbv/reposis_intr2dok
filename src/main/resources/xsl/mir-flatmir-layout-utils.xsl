@@ -137,7 +137,7 @@
         <div class="col-md-2 col-6 col-sm-3">
           <h4>Soziales</h4>
           <ul class="social_links">
-            <li><a href="http://twitter.com/vifarecht"><img src="{$WebApplicationBaseURL}content/images/logo_twitter.png" alt="Twitter-Logo" style="margin-right:5px;float:left;" />#vifarecht</a></li>
+            <li><a href="https://x.com/FID_intRecht"><img src="{$WebApplicationBaseURL}content/images/logo_twitter.png" alt="Twitter-Logo" style="margin-right:5px;float:left;" />#vifarecht</a></li>
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
           </ul>
         </div>
