@@ -137,7 +137,6 @@
         <div class="col-md-2 col-6 col-sm-3">
           <h4>Soziales</h4>
           <ul class="social_links">
-            <li><a href="https://x.com/FID_intRecht"><img src="{$WebApplicationBaseURL}content/images/logo-X-small.png" alt="X-Logo" style="margin-right:5px;float:left;" />#intRecht</a></li>
             <li><a href="https://bsky.app/profile/intrecht.bsky.social"><img src="{$WebApplicationBaseURL}content/images/logo-bluesky-small.png" alt="Bluesky-Logo" style="margin-right:5px;float:left;" />#intRecht</a></li>
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
           </ul>
