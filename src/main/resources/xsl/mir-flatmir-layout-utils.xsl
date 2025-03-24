@@ -156,7 +156,7 @@
         <div class="col-md-4 col-6 col-sm-3">
           <h4>Institutionelles</h4>
           <ul class="internal_links institutions">
-            <li id="vfr"><a href="https://vifa-recht.de/"><img src="{$WebApplicationBaseURL}content/images/logo-vfr.png" alt="ViFa-Recht-Logo" /></a></li>
+            <li id="vfr"><a href="https://vifa-recht.de/"><img src="{$WebApplicationBaseURL}content/images/logo25/Logo_intRecht-weiss.png" alt="ViFa-Recht-Logo" /></a></li>
             <li class="even_entry"><a id="sbb" href="https://www.staatsbibliothek-berlin.de/"><img src="{$WebApplicationBaseURL}content/images/logo_sbb.png" alt="Logo der Staatsbibliothek zu Berlin" /></a></li>
             <li><a id="dfg" href="https://dfg.de/"><img src="{$WebApplicationBaseURL}content/images/logo_dfg.png" alt="DFG-Logo" /></a></li>
             <li class="even_entry"><a id="oa" href="https://www.open-access.net/"><img src="{$WebApplicationBaseURL}content/images/logo_oa.svg" alt="OpenAccess-Logo" width="89px" /></a></li>
