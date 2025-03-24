@@ -22,7 +22,7 @@
       <div id="project_logo_box">
         <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"
            class="">
-          <img src="{$WebApplicationBaseURL}content/images/logo_intR2Dok_small.png" title="IntR2Dok - Logo" class="intR2Dok_logo_small" alt="&lt;intR&gt;²Dok [§]" />
+          <img src="{$WebApplicationBaseURL}content/images/logo25/Logo_intRechtDok-rot.svg" title="IntR2Dok - Logo" class="intR2Dok_logo_small" alt="&lt;intR&gt;²Dok [§]" />
           <!-- span id="logo_modul">Repositorium</span -->
           <!-- span id="logo_slogan">mods institutional repository</span -->
         </a>
@@ -111,7 +111,7 @@
         <div class="container">
           <div class="row">
             <div class="col-5">
-              <h1><img alt="&lt;intR>²Dok [§]" class="intR2Dok_logo" title="IntR2Dok - Logo" src="{$WebApplicationBaseURL}content/images/logo_intR2Dok.png" /></h1>
+              <h1><img alt="&lt;intR>²Dok [§]" class="intR2Dok_logo" title="IntR2Dok - Logo" src="{$WebApplicationBaseURL}content/images/logo25/Logo_intRechtDok-rot.svg" /></h1>
             </div>
             <div class="col-5">
               <h2>Fachinformationsdienst für <br />internationale und interdisziplinäre<br /> Rechtsforschung</h2>
