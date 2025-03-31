@@ -113,11 +113,11 @@
             <div class="col-5">
               <h1><img alt="&lt;intR>²Dok [§]" class="intR2Dok_logo" title="IntR2Dok - Logo" src="{$WebApplicationBaseURL}content/images/logo25/Logo_intRechtDok-rot.svg" /></h1>
             </div>
-            <div class="col-5">
-              <h2>Fachinformationsdienst für <br />internationale und interdisziplinäre<br /> Rechtsforschung</h2>
-            </div>
-            <div class="col-2 intR2Dok_dini">
-              <a href="http://www.dini.de/dini-zertifikat/" class="float-right intR2Dok_dini"><img src="{$WebApplicationBaseURL}content/images/dini_zertifikat_2016.svg" alt="Logo DINI-Zertifikat 2016" height="150" /></a>
+            <div class="col-7">
+              <h2>
+                Dokumentenserver für internationale<br />
+                und interdisziplinäre Rechtsforschung
+              </h2>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@
         <div class="col-md-4 col-6 col-sm-3">
           <h4>Institutionelles</h4>
           <ul class="internal_links institutions">
-            <li id="vfr"><a href="https://vifa-recht.de/"><img src="{$WebApplicationBaseURL}content/images/logo25/Logo_intRecht-weiss.png" alt="ViFa-Recht-Logo" /></a></li>
+            <li id="vfr"><a href="https://intrecht.de/"><img src="{$WebApplicationBaseURL}content/images/logo25/Logo_intRecht-weiss.png" alt="ViFa-Recht-Logo" /></a></li>
             <li class="even_entry"><a id="sbb" href="https://www.staatsbibliothek-berlin.de/"><img src="{$WebApplicationBaseURL}content/images/logo_sbb.png" alt="Logo der Staatsbibliothek zu Berlin" /></a></li>
             <li><a id="dfg" href="https://dfg.de/"><img src="{$WebApplicationBaseURL}content/images/logo_dfg.png" alt="DFG-Logo" /></a></li>
             <li class="even_entry"><a id="oa" href="https://www.open-access.net/"><img src="{$WebApplicationBaseURL}content/images/logo_oa.svg" alt="OpenAccess-Logo" width="89px" /></a></li>
