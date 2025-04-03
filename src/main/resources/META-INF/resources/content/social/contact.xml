@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="&lt;intR&gt;²Dok - Kontakt"><div>
+<MyCoReWebPage><section xml:lang="de" title="intRechtDok - Kontakt"><div>
 <h2>Kontakt</h2>
 
 <div class="row">
 <div class="col-md-7 col-sm-12">
-<p>Publikationsservice &lt;intR&gt;²Dok<br />
+<p>Publikationsservice intRechtDok<br />
 Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung<br />
 Staatsbibliothek zu Berlin – Preußischer Kulturbesitz<br />
 Potsdamer Straße 33<br />
 D-10785 Berlin<br />
-E-Mail: <span class="madress">intR2dok [at] sbb.spk-berlin.de</span><br />
-<a href="http://www.vifa-recht.de/">https://www.vifa-recht.de/</a></p>
+E-Mail: <span class="madress">intrechtdok [at] sbb.spk-berlin.de</span><br />
+<a href="https://www.intrecht.de/" target="_blank">https://www.intrecht.de/</a></p>
 </div>
 </div>
 </div>
-</section><meta><log lastEditor="cmathieu" date="2020-08-28" time="10:43" /></meta></MyCoReWebPage>
+</section><meta><log lastEditor="apohl" date="2025-02-11" time="15:09" /></meta></MyCoReWebPage>

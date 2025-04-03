@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="&lt;intR&gt;²Dok - Barrierefreiheit"><div>
+<MyCoReWebPage><section xml:lang="de" title="intRechtDok - Barrierefreiheit"><div>
 <div class="row">
 <div class="col-md-7 col-sm-12">
 <h2>Erklärung zur Barrierefreiheit <small class="text-muted">(Stand der Erklärung: 21.09.2020)</small></h2>
@@ -8,7 +8,7 @@
 
 <div class="row">
 <div class="col-md-7 col-sm-12">
-<p>Der Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung (FID &lt;intR&gt;²) bemüht sich, sein Open Access-Repositorium &lt;intR&gt;²Dok barrierefrei zu gestalten. Die im Folgenden gemachte Erklärung zur digitalen Barrierefreiheit wird in den aktuell gültigen Fassungen von Barrierefreie-Informationstechnik-Verordnung (BITV 2.0) und Behindertengleichstellungsgesetz (BGG) verlangt. Aus beiden Normen ergeben sich auch die Anforderungen zur technischen Umsetzung digitaler Barrierefreiheit.</p>
+<p>Der Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung (FID intRecht) bemüht sich, sein Open Access-Repositorium intRechtDok barrierefrei zu gestalten. Die im Folgenden gemachte Erklärung zur digitalen Barrierefreiheit wird in den aktuell gültigen Fassungen von Barrierefreie-Informationstechnik-Verordnung (BITV 2.0) und Behindertengleichstellungsgesetz (BGG) verlangt. Aus beiden Normen ergeben sich auch die Anforderungen zur technischen Umsetzung digitaler Barrierefreiheit.</p>
 
 <p>Diese Erklärung zur Barrierefreiheit gilt für <a href="https://intr2dok.vifa-recht.de">https://intr2dok.vifa-recht.de</a>.</p>
 </div>
@@ -37,19 +37,19 @@
 <dl>
 	<dt>Eingeschränkte Barrierefreiheit eingebundener Dokumente im PDF-Format.</dt>
 	<dd class="ml-4">Die eingebundenen Dokumente im PDF-Format sind möglicherweise nicht barrierefrei.<br />
-	Aufgrund der hohen Zahl eingebundener Dokumente können diese nicht vollständig in ein barrierefreies Format umgewandelt werden, zumal in Teilen die Ausgangsdateien fehlen und eine nachträgliche Bearbeitung nach § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten ist. Wir sind bestrebt, künftig ausschließlich barrierefreie Dokumente auf &lt;intR&gt;²Dok zu veröffentlichen. Sollten Sie eine bestimmte PDF-Datei benötigen, die noch nicht barrierefrei zur Verfügung steht, so kontaktieren Sie uns bitte unter den weiter unten genannten Kontaktdaten.</dd>
+        Aufgrund der hohen Zahl eingebundener Dokumente können diese nicht vollständig in ein barrierefreies Format umgewandelt werden, zumal in Teilen die Ausgangsdateien fehlen und eine nachträgliche Bearbeitung nach § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten ist. Wir sind bestrebt, künftig ausschließlich barrierefreie Dokumente auf intRechtDok zu veröffentlichen. Sollten Sie eine bestimmte PDF-Datei benötigen, die noch nicht barrierefrei zur Verfügung steht, so kontaktieren Sie uns bitte unter den weiter unten genannten Kontaktdaten.</dd>
 	<dt>Audiodateien ohne Volltextalternative.</dt>
 	<dd class="ml-4">Transkriptionen oder andere Volltextalternativen von Audiodateien sind nicht verfügbar.<br />
-	Aufgrund der hohen Zahl sowie des Umfangs der auf &lt;intR&gt;²Dok veröffentlichten Audiodateien ist deren rückwirkende Transkription gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</dd>
+        Aufgrund der hohen Zahl sowie des Umfangs der auf intRechtDok veröffentlichten Audiodateien ist deren rückwirkende Transkription gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</dd>
 	<dt>Videos ohne Untertitel oder Volltextalternative</dt>
 	<dd class="ml-4">Videos mit Ton verfügen weder über Untertitel noch über Transkriptionen.<br />
-	Aufgrund der hohen Zahl sowie des Umfangs der auf &lt;intR&gt;²Dok veröffentlichten Videodateien ist deren rückwirkende Transkription gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</dd>
+        Aufgrund der hohen Zahl sowie des Umfangs der auf intRechtDok veröffentlichten Videodateien ist deren rückwirkende Transkription gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</dd>
 	<dt>Abweichende Sprache einzelner Wörter oder Abschnitte nicht ausgezeichnet.</dt>
 	<dd class="ml-4">Anderssprachige Wörter und Abschnitte sind nicht mit lang-Attributen ausgezeichnet.<br />
-	Aufgrund der hohen Zahl sowie des Umfangs der auf &lt;intR&gt;²Dok veröffentlichten Dokumente ist deren rückwirkende Auszeichnung mit lang-Attributen gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</dd>
+        Aufgrund der hohen Zahl sowie des Umfangs der auf intRechtDok veröffentlichten Dokumente ist deren rückwirkende Auszeichnung mit lang-Attributen gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</dd>
 	<dt>Inhalte nicht in Leichter oder Gebärdensprache verfügbar.</dt>
-	<dd class="ml-4">Sämtliche Inhalte von &lt;intR&gt;²Dok stehen nicht in Leichter oder Gebärdensprache zur Verfügung.<br />
-	Aufgrund seines ausschließlich wissenschaftlichen Zielpublikums ist die Übersetzung der Inhalte von &lt;intR&gt;²Dok in Leichte Sprache verzichtbar. Mit Blick auf Umfang und Komplexität der ausschließlich wissenschaftlichen Inhalte von &lt;intR&gt;²Dok ist deren rückwirkende Übersetzung in Gebärdensprache gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</dd>
+        <dd class="ml-4">Sämtliche Inhalte von intRechtDok stehen nicht in Leichter oder Gebärdensprache zur Verfügung.<br />
+        Aufgrund seines ausschließlich wissenschaftlichen Zielpublikums ist die Übersetzung der Inhalte von intRechtDok in Leichte Sprache verzichtbar. Mit Blick auf Umfang und Komplexität der ausschließlich wissenschaftlichen Inhalte von intRechtDok ist deren rückwirkende Übersetzung in Gebärdensprache gemäß § 12a Abs. 6 BGG als unverhältnismäßig arbeitsaufwendig zu werten.</dd>
 	<dt>Alternativtexte (1.1.1 a-c)</dt>
 	<dd class="ml-4">An einigen Stellen fehlen die Alternativtexte. Bei einem nächsten Update werden diese ergänzt werden.</dd>
 	<dt>HTML-Strukturelemente (1.3.1 a-f)</dt>
@@ -76,7 +76,7 @@
 
 <p>Sind Ihnen Mängel beim barrierefreien Zugang zu Inhalten von <a href="https://intr2dok.vifa-recht.de/">https://intr2dok.vifa-recht.de/</a> aufgefallen? Dann teilen Sie uns diese bitte mit – vielen Dank. Unsere Kontaktdaten lauten:</p>
 
-<p class="border-left pl-5">Publikationsservice &lt;intR&gt;²Dok<br />
+<p class="border-left pl-5">Publikationsservice intRechtDok<br />
 Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung<br />
 Staatsbibliothek zu Berlin – Preußischer Kulturbesitz<br />
 Potsdamer Straße 33<br />
@@ -90,7 +90,7 @@ Internet: <a href="https://intr2dok.vifa-recht.de/">https://intr2dok.vifa-recht.
 <div class="col-md-7 col-sm-12">
 <h3>Kontakt zur Schlichtungsstelle</h3>
 
-<p>Sollten Sie der Ansicht sein, durch eine nicht ausreichend barrierefreie Gestaltung von <a href="https://intr2dok.vifa-recht.de/">&lt;intR&gt;²Dok</a> benachteiligt zu werden, können Sie sich an die Schlichtungsstelle nach § 16 des Gesetzes zur Gleichstellung von Menschen mit Behinderungen (BGG) wenden.</p>
+<p>Sollten Sie der Ansicht sein, durch eine nicht ausreichend barrierefreie Gestaltung von <a href="https://intr2dok.vifa-recht.de/">intRechtDok</a> benachteiligt zu werden, können Sie sich an die Schlichtungsstelle nach § 16 des Gesetzes zur Gleichstellung von Menschen mit Behinderungen (BGG) wenden.</p>
 
 <p>Das Schlichtungsverfahren ist kostenlos. Sie benötigen auch keinen Rechtsbeistand.</p>
 
@@ -108,4 +108,4 @@ Internet: <a href="https://www.schlichtungsstelle-bgg.de/">www.schlichtungsstell
 </div>
 </div>
 </div>
-</section><meta><log lastEditor="cmathieu" date="2020-09-22" time="09:47" /></meta></MyCoReWebPage>
+</section><meta><log lastEditor="apohl" date="2025-02-11" time="15:05" /></meta></MyCoReWebPage>
