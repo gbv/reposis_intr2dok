@@ -30,7 +30,7 @@
 <h2>Spezifische Datenschutzaspekte der Nutzung von intRechtDok</h2>
 
 <div class="three_column">
-<p>Zwar ist für Ansicht und Download der auf intRechtDok publizierten Inhalte keine Registrierung erforderlich, dennoch werden auch dabei personenbezogene Daten in der Absicht gespeichert, statistische Informationen über die Häufigkeit des Zugriffs auf einzelne Beiträge zu gewinnen. Zu diesem Zweck nutzt intRechtDok das von der Verbundzentrale des Gemeinsamen Bibliotheksverbunds (Platz der Göttinger Sieben 1, D-37073 Göttingen, <a href="mailto:gbv@gbv.de">gbv@gbv.de</a>) betriebene Instrument <a href="https://www.gbv.de/Verbundzentrale/serviceangebote/oas-service/">Open Access Statistik</a>, dessen datenschutzrechtliche Unbedenklichkeit im Rahmen zweier <a href="https://dini.de/projekte/oa-statistik/rechtliche-aspekte/">Gutachten</a> der Zentralen Datenschutzstelle der baden-württembergischen Universitäten bestätigt wurde.</p>
+<p>Zwar ist für Ansicht und Download der auf intRechtDok publizierten Inhalte keine Registrierung erforderlich, dennoch werden auch dabei personenbezogene Daten in der Absicht gespeichert, statistische Informationen über die Häufigkeit des Zugriffs auf einzelne Beiträge zu gewinnen. Zu diesem Zweck nutzt intRechtDok das von der Verbundzentrale des Gemeinsamen Bibliotheksverbunds (Platz der Göttinger Sieben 1, D-37073 Göttingen, <span class="madress">gbv [at] gbv.de</span>) betriebene Instrument <a href="https://www.gbv.de/Verbundzentrale/serviceangebote/oas-service/">Open Access Statistik</a>, dessen datenschutzrechtliche Unbedenklichkeit im Rahmen zweier <a href="https://dini.de/projekte/oa-statistik/rechtliche-aspekte/">Gutachten</a> der Zentralen Datenschutzstelle der baden-württembergischen Universitäten bestätigt wurde.</p>
 
 <p>Für die Nutzung von intRechtDok als Publikationsplattform für die Open Access-Veröffentlichung ausschließlich von rechtswissenschaftlichen Texten, Forschungsdaten, Videoaufzeichnungen und Tondokumenten ist eine persönliche Registrierung verpflichtend, die gemäß Art. 4 Nr. 11 der EU-Datenschutzgrundverordnung von der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz als Einwilligung in die Verarbeitung der angegebenen personenbezogen Daten betrachtet wird. Für die Registrierung bei intRechtDok sind Angaben zu Vor- und Nachname der Autorin bzw. des Autors oder einer anderen Person, die mit der Veröffentlichung eines Beitrags betraut wurde (z.B. Sekretariat), sowie die Nennung einer – idealerweise dienstlichen – E-Mail-Adresse obligatorisch. Zusätzlich werden serverseitig Datum und Uhrzeit des letzten Logins des jeweiligen Kontos protokolliert. Auf die personenbezogenen Daten in den serverbasierten Nutzungskonten haben neben den Verantwortlichen auf Seiten des Auftragsdatenverarbeiters auch ein mit Administratorrechten ausgestatteter Mitarbeiter des Fachinformationsdiensts für internationale und interdisziplinäre Rechtsforschung Zugriff. Die im Zuge der Erstregistrierung versandten E-Mails sind dagegen von allen Angehörigen des  FID intRecht-Teams einsehbar. Da aus der Speicherung dieser personenbezogenen Daten mit größter Wahrscheinlichkeit kein hohes Risiko für Rechte und Freiheiten der betroffenen Person zu erwarten ist, kann eine Datenschutz-Folgenabschätzung hier unterbleiben.</p>
 
@@ -40,7 +40,7 @@
 
 <p> </p>
 
-<p>Alle erhobenen personenbezogenen Daten werden auf Serverinfrastrukturen der Verbundzentrale des Gemeinsamen Bibliotheksverbunds (Platz der Göttinger Sieben 1, D-37073 Göttingen, <a href="mailto:gbv@gbv.de">gbv@gbv.de</a>) gespeichert. Die gesamte Datenübertragung erfolgt abhörsicher verschlüsselt über den Internet-Kommunikationsstandard <em>Hypertext Transfer Protocol Secure</em> (HTTPS). Eine darüber hinausgehende Weitergabe personenbezogener Daten erfolgt nicht. Sämtliche personenbezogenen Daten werden auf unbestimmte Zeit, höchstens jedoch bis zum Widerruf der Einwilligung zu deren Nutzung – in der Regel in Form der Löschung des betreffenden Nutzungskontos – gespeichert. Die dauerhafte Löschung des eigenen Nutzungskontos bei intRechtDok kann jederzeit durch formlose Nachricht an die <a href="https://intr2dok.vifa-recht.de/content/social/contact.xml">hier</a> aufgeführten Kontaktadressen oder durch Mitteilung an den für die Datenerhebung Verantwortlichen beauftragt werden. Hierdurch wird ebenfalls ein Widerruf der Einwilligung der Speicherung der während des Registrierungsvorgangs erhobenen personenbezogenen Daten ermöglicht. Die sonstigen im Rahmen des Anmeldevorgangs erhobenen personenbezogenen Daten (IP-Adresse, Datum und Uhrzeit der Registrierung) werden in der Regel nach einer Frist von sieben Tagen nach der Anmeldung gelöscht.</p>
+<p>Alle erhobenen personenbezogenen Daten werden auf Serverinfrastrukturen der Verbundzentrale des Gemeinsamen Bibliotheksverbunds (Platz der Göttinger Sieben 1, D-37073 Göttingen, <span class="madress">gbv [at] gbv.de</span>) gespeichert. Die gesamte Datenübertragung erfolgt abhörsicher verschlüsselt über den Internet-Kommunikationsstandard <em>Hypertext Transfer Protocol Secure</em> (HTTPS). Eine darüber hinausgehende Weitergabe personenbezogener Daten erfolgt nicht. Sämtliche personenbezogenen Daten werden auf unbestimmte Zeit, höchstens jedoch bis zum Widerruf der Einwilligung zu deren Nutzung – in der Regel in Form der Löschung des betreffenden Nutzungskontos – gespeichert. Die dauerhafte Löschung des eigenen Nutzungskontos bei intRechtDok kann jederzeit durch formlose Nachricht an die <a href="https://intr2dok.vifa-recht.de/content/social/contact.xml">hier</a> aufgeführten Kontaktadressen oder durch Mitteilung an den für die Datenerhebung Verantwortlichen beauftragt werden. Hierdurch wird ebenfalls ein Widerruf der Einwilligung der Speicherung der während des Registrierungsvorgangs erhobenen personenbezogenen Daten ermöglicht. Die sonstigen im Rahmen des Anmeldevorgangs erhobenen personenbezogenen Daten (IP-Adresse, Datum und Uhrzeit der Registrierung) werden in der Regel nach einer Frist von sieben Tagen nach der Anmeldung gelöscht.</p>
 
 <p>Für die Datenhebung im Rahmen der Nutzung von intRechtDok als Publikationsplattform ist verantwortlich im Sinne der Datenschutz-Grundverordnung und sonstiger datenschutzrechtlicher Bestimmungen:</p>
 
@@ -49,7 +49,7 @@ Prof. Dr. Hermann Parzinger<br />
 Von-der-Heydt-Str. 16-18<br />
 D-10785 Berlin<br />
 +49 (0)30 / 266 411 401<br />
-<a href="mailto:info@hv.spk-berlin.de">info@hv.spk-berlin.de</a></p>
+<span class="madress">info [at] hv.spk-berlin.de</span></p>
 
 <p>Als behördliche Datenschutzbeauftragte der Staatsbibliothek zu Berlin steht Ihnen bei Rückfragen zur Verfügung:</p>
 
@@ -58,7 +58,7 @@ Stiftung Preußischer Kulturbesitz – Hauptverwaltung<br />
 Von-der-Heydt-Str. 16-18<br />
 D-10785 Berlin<br />
 +49 (0)30 / 266 411 414<br />
-<a href="mailto:Datenschutzbeauftragte@hv.spk-berlin.de">Datenschutzbeauftragte@hv.spk-berlin.de</a></p>
+<span class="madress">Datenschutzbeauftragte [at] hv.spk-berlin.de</span></p>
 
 <p>Als behördlicher Datenschutzbeauftragter des Gemeinsamen Bibliotheksverbunds steht Ihnen bei Rückfragen zur Verfügung:</p>
 
@@ -67,10 +67,10 @@ Verbundzentrale des Gemeinsamen Bibliotheksverbunds<br />
 Platz der Göttinger Sieben 1<br />
 D-37073 Göttingen<br />
 +49 (0)551 / 395 207<br />
-<a href="mailto:datenschutz@gbv.de">datenschutz@gbv.de</a></p>
+<span class="madress">datenschutz [at] gbv.de</span></p>
 
 <p>Sie haben Anspruch auf Auskunft über die Sie betreffenden personenbezogenen Daten sowie auf Berichtigung oder Löschung oder auf Einschränkung der Verarbeitung oder – im Falle der Datenverarbeitung aufgrund Ihrer Einwilligung – ein Widerspruchsrecht gegen die Verarbeitung sowie gegebenenfalls ein Recht auf Datenübertragbarkeit.</p>
 
-<p>Außerdem haben Sie das Recht zur Beschwerde bei unserer Datenschutz-Aufsichtsbehörde, der  Bundesbeauftragten für den Datenschutz und die Informationsfreiheit, Husarenstr. 30, 53117 Bonn, E-Mail: <a href="mailto:poststelle@bfdi.bund.de" title="E-Mail an: poststelle@bfdi.bund.de">poststelle@bfdi.bund.de</a></p>
+<p>Außerdem haben Sie das Recht zur Beschwerde bei unserer Datenschutz-Aufsichtsbehörde, der  Bundesbeauftragten für den Datenschutz und die Informationsfreiheit, Husarenstr. 30, 53117 Bonn, E-Mail: <span class="madress">poststelle [at] bfdi.bund.de</span></p>
 </div>
 </section><meta><log lastEditor="apohl" date="2025-02-11" time="15:05" /></meta></MyCoReWebPage>
