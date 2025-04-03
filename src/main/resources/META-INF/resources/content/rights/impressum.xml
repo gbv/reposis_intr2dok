@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="&lt;intR&gt;²Dok - Impressum"><div>
+<MyCoReWebPage><section xml:lang="de" title="intRechtDok - Impressum"><div>
 <h2>Impressum</h2>
 
 <div class="row">
 <div class="col-md-7 col-sm-12">
-<p>Die nachstehenden Informationen enthalten die gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung, sowie wichtige rechtliche Hinweise zur Internetpräsenz von &lt;intR&gt;²Dok.</p>
+<p>Die nachstehenden Informationen enthalten die gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung, sowie wichtige rechtliche Hinweise zur Internetpräsenz von intRechtDok.</p>
 </div>
 </div>
 
@@ -25,7 +25,7 @@ D-10117 Berlin</p>
 <div class="col-md-7 col-sm-12">
 <h3>Vertreter</h3>
 
-<p>Die Stiftung Preußischer Kulturbesitz wird gesetzlich vertreten durch ihren Präsidenten, Herrn Prof. Dr. Dr. hc. mult. Hermann Parzinger. Dieser wird vertreten durch die Generaldirektorin der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz, Frau Barbara Schneider-Kempf.</p>
+<p>Die Stiftung Preußischer Kulturbesitz wird gesetzlich vertreten durch ihren Präsidenten, Prof. Dr. Dr. hc. mult. Hermann Parzinger. Dieser wird vertreten durch den Generaldirektor der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz, Prof. Dr. Achim Bonte.</p>
 </div>
 </div>
 
@@ -44,10 +44,10 @@ D-10117 Berlin</p>
 <p>Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung<br />
 Staatsbibliothek zu Berlin – Preußischer Kulturbesitz<br />
 Potsdamer Straße 33<br />
-D-10785 Berlin<br /><br />
-E-Mail: <span class="madress">vifa-recht [at] sbb.spk-berlin.de</span><br />
-<a href="https://vifa-recht.de/kontakt/">https://vifa-recht.de/kontakt/</a>
-</p>
+D-10785 Berlin<br />
+<br />
+E-Mail: <span class="madress">intrecht [at] sbb.spk-berlin.de</span><br />
+<a href="https://vifa-recht.de/kontakt/">https://vifa-recht.de/kontakt/</a></p>
 </div>
 </div>
 
@@ -57,13 +57,13 @@ E-Mail: <span class="madress">vifa-recht [at] sbb.spk-berlin.de</span><br />
 
 <p>Verbundzentrale des GBV (VZG)<br />
 Platz der Göttinger Sieben 1<br />
-D-37073 Göttingen<br /><br />
+D-37073 Göttingen<br />
+<br />
 <b>Digitale Bibliothek, Reposis</b><br />
 Telefon: 0551 39 5398<br />
 E-Mail: <span class="madress">dms-list [at] lists.gbv.de</span><br />
-<a href="https://www.gbv.de/Verbundzentrale/serviceangebote/reposis-repository-service">https://www.gbv.de/Verbundzentrale/serviceangebote/reposis-repository-service</a>
-</p>
+<a href="https://www.gbv.de/Verbundzentrale/serviceangebote/reposis-repository-service">https://www.gbv.de/Verbundzentrale/serviceangebote/reposis-repository-service</a></p>
 </div>
 </div>
 </div>
-</section><meta><log lastEditor="cmathieu" date="2017-09-29" time="13:10" /></meta></MyCoReWebPage>
+</section><meta><log lastEditor="apohl" date="2025-02-11" time="15:05" /></meta></MyCoReWebPage>

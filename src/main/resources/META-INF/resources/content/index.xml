@@ -8,8 +8,8 @@
             <a href="brand/who.xml" shape="rect">WER wir sind</a>
           </h3>
 
-          <p>Das disziplinäre Open Access-Repositorium &lt;intR&gt;²Dok (gesprochen:
-            "Inter-Zwei-Dok") ist die zentrale Publikationsplattform des von der Deutschen
+          <p>Das disziplinäre Open Access-Repositorium intRechtDok 
+            ist die zentrale Publikationsplattform des von der Deutschen 
             Forschungsgemeinschaft an der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz
             eingerichteten Fachinformationsdiensts für internationale und interdisziplinäre
             Rechtsforschung. <a href="brand/who.xml" shape="rect" style="color:#9E1B34"
@@ -22,7 +22,7 @@
           </h3>
 
           <p>Als erstes rechtswissenschaftliches Fachrepositorium in Deutschland ist
-            &lt;intR&gt;²Dok dem Ziel verpflichtet, offenen und kostenfreien Zugang zu
+            intRechtDok dem Ziel verpflichtet, offenen und kostenfreien Zugang zu
             qualitätsgesicherten wissenschaftlichen Originalbeiträgen und Zweitveröffentlichungen
             aus allen Bereichen der internationalen und interdisziplinären Rechtsforschung dauerhaft
             sicherzustellen. <a href="brand/what.xml" shape="rect" style="color:#9E1B34"
@@ -35,7 +35,7 @@
           </h3>
 
           <p>Als Serviceangebot des Fachinformationsdiensts für internationale und interdisziplinäre
-            Rechtsforschung ist das Open Access-Publizieren auf &lt;intR&gt;²Dok an eine
+            Rechtsforschung ist das Open Access-Publizieren auf intRechtDok an eine
             Registrierung gebunden, die vorrangig dem wissenschaftlichen Personal universitärer wie
             außeruniversitärer Forschungseinrichtungen offen steht. <a href="brand/how.xml"
               shape="rect" style="color:#9E1B34" title="mehr erfahren">[...]</a></p>
@@ -61,6 +61,6 @@
     </div>
   </section>
   <meta>
-    <log lastEditor="cmathieu" date="2021-08-30" time="13:32" />
+    <log lastEditor="administrator" date="2025-04-03" time="13:38" />
   </meta>
 </MyCoReWebPage>
