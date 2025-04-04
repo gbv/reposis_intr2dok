@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - 'main'
-      - 'INTR2DOk-60_Migration_auf_LTS_2023.06'
+      - 'INTR2DOK-60_Migration_auf_LTS_2023.06'
 jobs:
   build:
 
