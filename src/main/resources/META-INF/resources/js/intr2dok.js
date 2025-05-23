@@ -19,7 +19,7 @@ $﻿(document).ready(function() {
 
   $.cookieBar({
     fixed: true,
-    message: 'Auf den Seiten von &lt;intR&gt;²Dok werden zur Erhöhung des Bedienungskomforts Cookies verwendet. Mit der Nutzung dieser Seiten erklären Sie, dass Sie die rechtlichen Hinweise gelesen haben und akzeptieren.',
+    message: 'Auf den Seiten von intRechtDok werden zur Erhöhung des Bedienungskomforts Cookies verwendet. Mit der Nutzung dieser Seiten erklären Sie, dass Sie die rechtlichen Hinweise gelesen haben und akzeptieren.',
     acceptText: 'Akzeptieren',
     policyButton: true,
     policyText: 'Hinweise zum Datenschutz',
