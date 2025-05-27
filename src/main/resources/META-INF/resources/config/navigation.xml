@@ -88,7 +88,7 @@
             <label xml:lang="en">DDC</label>
         </item>
         <item href="/content/browse/intr2dok_systematik.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">nach &lt;intR&gt;²Dok-Systematik</label>
+            <label xml:lang="de">nach intRechtDok-Systematik</label>
             <label xml:lang="en">Systematik Recht</label>
         </item>
         <item href="/content/browse/intr2dok_projects.xml" type="intern" replaceMenu="false" constrainPopUp="false">
