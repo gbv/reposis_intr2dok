@@ -3,11 +3,11 @@ $﻿(document).ready(function() {
 
   // replace placeholder USERNAME with username
   var userID = $("#currentUser strong").html();
-  var newHref = 'https://intr2dok.vifa-recht.de/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
-  $("a[href='https://intr2dok.vifa-recht.de/servlets/solr/select?q=createdby:USERNAME']").attr('href', newHref);
+  var newHref = 'https://intrechtdock.de/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
+  $("a[href='https://intrechtdok.de/servlets/solr/select?q=createdby:USERNAME']").attr('href', newHref);
   
-  var newTestHref = 'https://reposis-test.gbv.de/IntR2Dok/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
-  $("a[href='https://reposis-test.gbv.de/IntR2Dok/servlets/solr/select?q=createdby:USERNAME']").attr('href', newHref);
+  var newTestHref = 'https://intrechtdok-test.gbv.de/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
+  $("a[href='https://intrechtdok-test.gbv.de/servlets/solr/select?q=createdby:USERNAME']").attr('href', newHref);
 
   // spam protection for mails
   $('span.madress').each(function(i) {
@@ -19,7 +19,7 @@ $﻿(document).ready(function() {
 
   $.cookieBar({
     fixed: true,
-    message: 'Auf den Seiten von &lt;intR&gt;²Dok werden zur Erhöhung des Bedienungskomforts Cookies verwendet. Mit der Nutzung dieser Seiten erklären Sie, dass Sie die rechtlichen Hinweise gelesen haben und akzeptieren.',
+    message: 'Auf den Seiten von intRechtDok werden zur Erhöhung des Bedienungskomforts Cookies verwendet. Mit der Nutzung dieser Seiten erklären Sie, dass Sie die rechtlichen Hinweise gelesen haben und akzeptieren.',
     acceptText: 'Akzeptieren',
     policyButton: true,
     policyText: 'Hinweise zum Datenschutz',
