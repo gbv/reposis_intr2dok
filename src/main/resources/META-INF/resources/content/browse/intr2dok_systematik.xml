@@ -5,7 +5,7 @@
 
   <section i18n="browse.mods.institution.corporate" xml:lang="all">
 
-    <h3>&lt;intR>²Dok-Systematik</h3>
+    <h3>intRechtDok-Systematik</h3>
     <classificationbrowser classification="intr2dok_systematik"
                                objecttype="mods"
                               restriction="+category.top:&quot;state:published&quot;"
