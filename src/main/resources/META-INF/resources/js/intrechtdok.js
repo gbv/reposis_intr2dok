@@ -7,7 +7,7 @@ $﻿(document).ready(function() {
   $("a[href='https://intrechtdok.de/servlets/solr/select?q=createdby:USERNAME']").attr('href', newHref);
   
   var newTestHref = 'https://intrechtdok-test.gbv.de/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
-  $("a[href='https://intrechtdok-test.gbv.de/servlets/solr/select?q=createdby:USERNAME']").attr('href', newHref);
+  $("a[href='https://intrechtdok-test.gbv.de/servlets/solr/select?q=createdby:USERNAME']").attr('href', newTestHref);
 
   // spam protection for mails
   $('span.madress').each(function(i) {
