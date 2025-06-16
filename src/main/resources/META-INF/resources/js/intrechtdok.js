@@ -3,7 +3,7 @@ $﻿(document).ready(function() {
 
   // replace placeholder USERNAME with username
   var userID = $("#currentUser strong").html();
-  var newHref = 'https://intrechtdock.de/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
+  var newHref = 'https://intrechtdok.de/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
   $("a[href='https://intrechtdok.de/servlets/solr/select?q=createdby:USERNAME']").attr('href', newHref);
   
   var newTestHref = 'https://intrechtdok-test.gbv.de/servlets/solr/select?q=createdby:' + userID + '&fq=objectType:mods';
