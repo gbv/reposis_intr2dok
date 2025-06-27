@@ -123,21 +123,29 @@
             <label xml:lang="de">Erfassung für Experten</label>
             <label xml:lang="en">submit as expert</label>
         </item>
-        <item href="/wordpressimport/verfassungsblog" type="extern" replaceMenu="false" constrainPopUp="false">
+        <item href="/servlets/solr/select?q=%2BobjectType%3A&quot;mods&quot;+AND+parent%3Amir_mods_00000217&amp;fq=state:imported&amp;fq=mods.genre:blog_entry" type="extern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Datenübernahme aus Verfassungsblog</label>
             <label xml:lang="en">Import from Verfassungsblog</label>
         </item>
-        <item href="/wordpressimport/voelkerrechtsblog" type="extern" replaceMenu="false" constrainPopUp="false">
+        <item href="/servlets/solr/select?q=%2BobjectType%3A&quot;mods&quot;+AND+parent%3Amir_mods_00000733&amp;fq=state:imported&amp;fq=mods.genre:blog_entry" type="extern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Datenübernahme aus Völkerrechtsblog</label>
             <label xml:lang="en">Import from Völkerrechtsblog</label>
         </item>
-        <item href="/wordpressimport/JuWissBlog" type="extern" replaceMenu="false" constrainPopUp="false">
+        <item href="/servlets/solr/select?q=%2BobjectType%3A&quot;mods&quot;+AND+parent%3Amir_mods_00002496&amp;fq=state:imported&amp;fq=mods.genre:blog_entry" type="extern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Datenübernahme aus JuWissBlog</label>
             <label xml:lang="en">Import from JuWissBlog</label>
         </item>
-        <item href="/wordpressimport/rechtsempirie" type="extern" replaceMenu="false" constrainPopUp="false">
+        <item href="/servlets/solr/select?q=%2BobjectType%3A&quot;mods&quot;+AND+parent%3Amir_mods_00010751&amp;fq=state:imported&amp;fq=mods.genre:blog_entry" type="extern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Datenübernahme aus Rechts|Empirie</label>
             <label xml:lang="en">Import from Rechts|Empirie</label>
+        </item>
+        <item href="/servlets/solr/select?q=%2BobjectType%3A&quot;mods&quot;+AND+parent%3Amir_mods_00011445&amp;fq=state:imported&amp;fq=mods.genre:blog_entry" type="extern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Datenübernahme aus GPIL - German Practice in International Law</label>
+            <label xml:lang="en">Import from GPIL - German Practice in International Law</label>
+        </item>
+        <item href="/servlets/solr/select?q=%2BobjectType%3A&quot;mods&quot;+AND+parent%3Amir_mods_00011510&amp;fq=state:imported&amp;fq=mods.genre:blog_entry" type="extern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Datenübernahme aus Youth Delegate Search</label>
+            <label xml:lang="en">Import from Youth Delegate Search</label>
         </item>
         <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Registrieren</label>
