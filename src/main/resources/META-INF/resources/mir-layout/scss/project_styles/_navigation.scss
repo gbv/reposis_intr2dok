@@ -139,6 +139,25 @@
     padding-right: 65px;
   }
 
+  // overwrite bootswatch settings
+  // .bg-primary .navbar-nav .nav-link:hover
+  .bg-primary {
+    .navbar-nav {
+      color: $mir-navlink-color;
+      .nav-link {
+        &:hover,
+        &:focus {
+          color: $mir-navlink-hover-color !important;
+        }
+      }
+      .show,
+      .active {
+        & > .nav-link {
+          color: $mir-navlink-active-color !important;
+        }
+      }
+    }
+  }
 
   // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
