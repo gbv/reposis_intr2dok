@@ -44,7 +44,7 @@ public class VZGPublishDOIEventHandler extends MCREventHandlerBase {
         }
     }
 
-    private static List<VZGDOIPublisher> getPublisher() {
+    public static List<VZGDOIPublisher> getPublisher() {
         return Stream.of(MCRConfiguration2.getString(DOI_PUBLISHER_LIST_PROPERTY).orElse("").split(","))
             .filter(Objects::nonNull)
             .filter(s -> !s.isEmpty())
