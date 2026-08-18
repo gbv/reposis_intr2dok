@@ -44,8 +44,8 @@
       <div id="itd_badges">
         <div class="d-flex flex-wrap justify-content-around">
           <a title="Link zur re3data-Seite" href="https://www.re3data.org/repository/r3d100012347">
-            <object type="image/svg+xml" data="images/re3data.svg">
-              <img alt="re3data logo" src="images/re3data.png" />
+            <object type="image/svg+xml" data="images/re3data.svg" width="360" height="120">
+              <img alt="re3data logo" src="images/re3data.png" width="360" height="120" />
             </object>
           </a>
           <a title="Link zur OpenAIRE-Seite"
